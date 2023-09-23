@@ -2,4 +2,4 @@ User-agent: *
 
 Disallow: /norobots/
 
-Sitemap: /sitemap.xml
+Sitemap: /https://redesxuquer.github.io/redes.github.io/sitemap.xml
