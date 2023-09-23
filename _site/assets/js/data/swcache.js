@@ -1,35 +1,35 @@
 const resource = [
   /* --- CSS --- */
-  '/https://redesxuquer.github.io/redes.github.io/assets/css/jekyll-theme-chirpy.css',
+  '/redes.github.io/_site/assets/css/jekyll-theme-chirpy.css',
 
   /* --- PWA --- */
-  '/https://redesxuquer.github.io/redes.github.io/app.js',
-  '/https://redesxuquer.github.io/redes.github.io/sw.js',
+  '/redes.github.io/_site/app.js',
+  '/redes.github.io/_site/sw.js',
 
   /* --- HTML --- */
-  '/https://redesxuquer.github.io/redes.github.io/index.html',
-  '/https://redesxuquer.github.io/redes.github.io/404.html',
+  '/redes.github.io/_site/index.html',
+  '/redes.github.io/_site/404.html',
 
   
-    '/https://redesxuquer.github.io/redes.github.io/categories/',
+    '/redes.github.io/_site/categories/',
   
-    '/https://redesxuquer.github.io/redes.github.io/tags/',
+    '/redes.github.io/_site/tags/',
   
-    '/https://redesxuquer.github.io/redes.github.io/archives/',
+    '/redes.github.io/_site/archives/',
   
-    '/https://redesxuquer.github.io/redes.github.io/about/',
+    '/redes.github.io/_site/about/',
   
 
   /* --- Favicons & compressed JS --- */
   
   
-    '/https://redesxuquer.github.io/redes.github.io/assets/img/favicons/android-chrome-192x192.png',
-    '/https://redesxuquer.github.io/redes.github.io/assets/img/favicons/android-chrome-512x512.png',
-    '/https://redesxuquer.github.io/redes.github.io/assets/img/favicons/apple-touch-icon.png',
-    '/https://redesxuquer.github.io/redes.github.io/assets/img/favicons/favicon-16x16.png',
-    '/https://redesxuquer.github.io/redes.github.io/assets/img/favicons/favicon-32x32.png',
-    '/https://redesxuquer.github.io/redes.github.io/assets/img/favicons/favicon.ico',
-    '/https://redesxuquer.github.io/redes.github.io/assets/img/favicons/mstile-150x150.png'
+    '/redes.github.io/_site/assets/img/favicons/android-chrome-192x192.png',
+    '/redes.github.io/_site/assets/img/favicons/android-chrome-512x512.png',
+    '/redes.github.io/_site/assets/img/favicons/apple-touch-icon.png',
+    '/redes.github.io/_site/assets/img/favicons/favicon-16x16.png',
+    '/redes.github.io/_site/assets/img/favicons/favicon-32x32.png',
+    '/redes.github.io/_site/assets/img/favicons/favicon.ico',
+    '/redes.github.io/_site/assets/img/favicons/mstile-150x150.png'
 ];
 
 /* The request url with below domain will be cached */
