@@ -4,7 +4,7 @@
   <id>/redes.github.io/_site/</id>
   <title>Chirpy</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-09-23T20:09:47+08:00</updated>
+  <updated>2023-09-24T03:21:23+08:00</updated>
   <author>
     <name>your_full_name</name>
     <uri>/redes.github.io/_site/</uri>
@@ -17,6 +17,46 @@
   <icon>redes.github.io/_site//assets/img/favicons/favicon.ico</icon>
   <logo>redes.github.io/_site//assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Introducción a las redes locales</title>
+    <link href="/redes.github.io/_site/posts/introduccion-redes-locales/" rel="alternate" type="text/html" title="Introducción a las redes locales" />
+    <published>2022-05-16T19:00:00+08:00</published>
+  
+    <updated>2022-05-16T19:00:00+08:00</updated>
+  
+    <id>/redes.github.io/_site/posts/introduccion-redes-locales/</id>
+    <content src="/redes.github.io/_site/posts/introduccion-redes-locales/" />
+    <author>
+      <name>your_full_name</name>
+    </author>
+
+  
+    
+    <category term="Sistemas Microinformáticos y Redes" />
+    
+    <category term="Redes Locales" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Introducción
+
+Los ordenadores son máquinas especializadas en procesar información de acuerdo con las instrucciones recogidas en un programa. Sin embargo, no siempre la información se produce o se almacena en el lugar donde se procesa. Esto añade la necesidad de transportar los datos desde su lugar de origen o almacenamiento hasta el de su proceso, originando una comunicación.
+
+A través del cabl...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
