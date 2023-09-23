@@ -1,35 +1,35 @@
 const resource = [
   /* --- CSS --- */
-  '/assets/css/jekyll-theme-chirpy.css',
+  '/redes.github.io/_site/assets/css/jekyll-theme-chirpy.css',
 
   /* --- PWA --- */
-  '/app.js',
-  '/sw.js',
+  '/redes.github.io/_site/app.js',
+  '/redes.github.io/_site/sw.js',
 
   /* --- HTML --- */
-  '/index.html',
-  '/404.html',
+  '/redes.github.io/_site/index.html',
+  '/redes.github.io/_site/404.html',
 
   
-    '/categories/',
+    '/redes.github.io/_site/categories/',
   
-    '/tags/',
+    '/redes.github.io/_site/tags/',
   
-    '/archives/',
+    '/redes.github.io/_site/archives/',
   
-    '/about/',
+    '/redes.github.io/_site/about/',
   
 
   /* --- Favicons & compressed JS --- */
   
   
-    '/assets/img/favicons/android-chrome-192x192.png',
-    '/assets/img/favicons/android-chrome-512x512.png',
-    '/assets/img/favicons/apple-touch-icon.png',
-    '/assets/img/favicons/favicon-16x16.png',
-    '/assets/img/favicons/favicon-32x32.png',
-    '/assets/img/favicons/favicon.ico',
-    '/assets/img/favicons/mstile-150x150.png'
+    '/redes.github.io/_site/assets/img/favicons/android-chrome-192x192.png',
+    '/redes.github.io/_site/assets/img/favicons/android-chrome-512x512.png',
+    '/redes.github.io/_site/assets/img/favicons/apple-touch-icon.png',
+    '/redes.github.io/_site/assets/img/favicons/favicon-16x16.png',
+    '/redes.github.io/_site/assets/img/favicons/favicon-32x32.png',
+    '/redes.github.io/_site/assets/img/favicons/favicon.ico',
+    '/redes.github.io/_site/assets/img/favicons/mstile-150x150.png'
 ];
 
 /* The request url with below domain will be cached */
