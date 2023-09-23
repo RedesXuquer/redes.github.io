@@ -1,35 +1,35 @@
 const resource = [
   /* --- CSS --- */
-  '/assets/css/jekyll-theme-chirpy.css',
+  '/https://redesxuquer.github.io/redes.github.io/assets/css/jekyll-theme-chirpy.css',
 
   /* --- PWA --- */
-  '/app.js',
-  '/sw.js',
+  '/https://redesxuquer.github.io/redes.github.io/app.js',
+  '/https://redesxuquer.github.io/redes.github.io/sw.js',
 
   /* --- HTML --- */
-  '/index.html',
-  '/404.html',
+  '/https://redesxuquer.github.io/redes.github.io/index.html',
+  '/https://redesxuquer.github.io/redes.github.io/404.html',
 
   
-    '/categories/',
+    '/https://redesxuquer.github.io/redes.github.io/categories/',
   
-    '/tags/',
+    '/https://redesxuquer.github.io/redes.github.io/tags/',
   
-    '/archives/',
+    '/https://redesxuquer.github.io/redes.github.io/archives/',
   
-    '/about/',
+    '/https://redesxuquer.github.io/redes.github.io/about/',
   
 
   /* --- Favicons & compressed JS --- */
   
   
-    '/assets/img/favicons/android-chrome-192x192.png',
-    '/assets/img/favicons/android-chrome-512x512.png',
-    '/assets/img/favicons/apple-touch-icon.png',
-    '/assets/img/favicons/favicon-16x16.png',
-    '/assets/img/favicons/favicon-32x32.png',
-    '/assets/img/favicons/favicon.ico',
-    '/assets/img/favicons/mstile-150x150.png'
+    '/https://redesxuquer.github.io/redes.github.io/assets/img/favicons/android-chrome-192x192.png',
+    '/https://redesxuquer.github.io/redes.github.io/assets/img/favicons/android-chrome-512x512.png',
+    '/https://redesxuquer.github.io/redes.github.io/assets/img/favicons/apple-touch-icon.png',
+    '/https://redesxuquer.github.io/redes.github.io/assets/img/favicons/favicon-16x16.png',
+    '/https://redesxuquer.github.io/redes.github.io/assets/img/favicons/favicon-32x32.png',
+    '/https://redesxuquer.github.io/redes.github.io/assets/img/favicons/favicon.ico',
+    '/https://redesxuquer.github.io/redes.github.io/assets/img/favicons/mstile-150x150.png'
 ];
 
 /* The request url with below domain will be cached */
