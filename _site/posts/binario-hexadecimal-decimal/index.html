@@ -52,7 +52,7 @@
 <meta property="twitter:title" content="Binario, Hexadeciaml y Decimal" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-25T03:03:22+08:00","datePublished":"2023-09-24T03:30:00+08:00","description":"¿Qué es el sistema binario?","headline":"Binario, Hexadeciaml y Decimal","mainEntityOfPage":{"@type":"WebPage","@id":"/redes.github.io/_site/posts/binario-hexadecimal-decimal/"},"url":"/redes.github.io/_site/posts/binario-hexadecimal-decimal/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-25T03:08:41+08:00","datePublished":"2023-09-24T03:30:00+08:00","description":"¿Qué es el sistema binario?","headline":"Binario, Hexadeciaml y Decimal","mainEntityOfPage":{"@type":"WebPage","@id":"/redes.github.io/_site/posts/binario-hexadecimal-decimal/"},"url":"/redes.github.io/_site/posts/binario-hexadecimal-decimal/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -564,6 +564,41 @@
   
 
   
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+
+    
+
+  
 
   
   
@@ -630,7 +665,7 @@
 
 <time
   
-  data-ts="1695582202"
+  data-ts="1695582521"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -679,9 +714,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="813 words"
+  title="1494 words"
 >
-  <em>4 min</em> read</span>
+  <em>8 min</em> read</span>
 
     </div>
     <!-- .d-flex -->
@@ -775,7 +810,7 @@
 
 <p>En resumen, para convertir un número binario a decimal, debes multiplicar cada dígito binario por 2 elevado a la potencia de su posición de bits correspondiente y luego sumar estos valores. Esto te dará el valor decimal equivalente.</p>
 
-<h3 class="subsection" id="21-consejos-para-el-paso-de-binario-a-decimal">2.1 Consejos para el paso de binario a decimal</h3>
+<h3 class="subsection" id="consejos-para-el-paso-de-binario-a-decimal">Consejos para el paso de binario a decimal</h3>
 <ul>
   <li>Si el bit de menor peso vale 1 nos encontraremos ante un número impar.</li>
   <li>Si añadimos ceros por la izquierda a un número binario, el número no cambia.</li>
@@ -783,8 +818,247 @@
   <li>Si el número que es todo unos, una forma rápida de calcular su valor es calcular el siguiente número y restarle uno a posteriori. Es decir, si tengo que obtener el valor de 111111, puedo calcular el valor de 1000000 que es 64 y restarle uno obteniendo que (111111)2 = (63)10.</li>
 </ul>
 
-<h3 class="subsection" id="22-binario-a-hexadecimal">2.2 Binario a hexadecimal</h3>
+<h3 class="subsection" id="binario-a-decimal">Binario a decimal</h3>
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IQpDcrMrlsE?si=i8YMvAW32Mn1d1nz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+
+<h2 class="section" id="pasar-de-decimal-a-binario">Pasar de decimal a binario</h2>
+<p>Para convertir un número decimal a binario, debes realizar una serie de divisiones y anotar los restos en cada paso hasta que el cociente sea igual a 0. Aquí tienes un procedimiento paso a paso:</p>
+
+<p>Supongamos que deseas convertir el número decimal 45 a binario:</p>
+
+<p>Divide el número decimal por 2.</p>
+<ul>
+  <li>45 ÷ 2 = 22 (cociente) con un resto de 1</li>
+  <li>Anota el resto (1) a la derecha.</li>
+</ul>
+
+<p>Divide el cociente resultante en el paso anterior (22) por 2.</p>
+<ul>
+  <li>22 ÷ 2 = 11 (cociente) con un resto de 0</li>
+  <li>Anota el resto (0) a la derecha del resto anterior.</li>
+</ul>
+
+<p>Continúa dividiendo el cociente en cada paso por 2 y anotando los restos hasta que obtengas un cociente de 0. Continúa con los pasos anteriores:</p>
+<ul>
+  <li>11 ÷ 2 = 5 (cociente) con un resto de 1</li>
+  <li>5 ÷ 2 = 2 (cociente) con un resto de 1</li>
+  <li>2 ÷ 2 = 1 (cociente) con un resto de 0</li>
+  <li>1 ÷ 2 = 0 (cociente) con un resto de 1</li>
+</ul>
+
+<p>Ahora, escribe los restos en orden inverso, desde abajo hacia arriba. Esto te dará la representación en binario del número decimal.
+Los restos en orden inverso son 101101.
+Entonces, el número decimal 45 se convierte en el número binario 101101.</p>
+
+<p>En resumen, para convertir un número decimal a binario, divide sucesivamente el número por 2, anotando el resto en cada paso hasta que el cociente sea 0. Luego, escribe los restos en orden inverso para obtener la representación en binario.</p>
+
+<h3 class="section" id="decimal-a-binario">Decimal a binario</h3>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QqVcxYR8Zb8?si=1qgz6JcsIggIzzJZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+
+<h2 id="pasar-de-hexadecimal-a-binario"><span class="me-2">Pasar de hexadecimal a binario</span><a href="#pasar-de-hexadecimal-a-binario" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Para convertir un número hexadecimal a binario, primero debes comprender la relación entre estos dos sistemas numéricos y luego seguir estos pasos:</p>
+
+<p>Convierte cada dígito hexadecimal en su equivalente binario. Aquí está la tabla de conversión:</p>
+
+<div class="table-wrapper"><table>
+  <tbody>
+    <tr>
+      <td><sup>Hexadecimal</sup></td>
+      <td><sup>Binario</sup></td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0000</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0001</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>0010</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>0011</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>0100</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>0101</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>0110</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>0111</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>1001</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>1010</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>1011</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>1100</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>1101</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>1110</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>1111</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>Divide el número hexadecimal en dígitos y reemplaza cada dígito con su equivalente binario. Por ejemplo, si tienes el número hexadecimal “3A7”, lo descompones en dígitos y lo conviertes en binario:</p>
+
+<p>3 en hexadecimal es 0011 en binario.
+A en hexadecimal es 1010 en binario.
+7 en hexadecimal es 0111 en binario.
+Concatena los valores binarios resultantes para obtener el número binario equivalente al número hexadecimal original. En este ejemplo, tendrías:</p>
+
+<p>3A7 en hexadecimal es igual a 0011 1010 0111 en binario.
+Así que, has convertido con éxito el número hexadecimal “3A7” en su representación binaria “001110100111”.</p>
+
+<p>Este proceso es bastante directo, ya que cada dígito hexadecimal tiene una representación binaria fija, lo que facilita la conversión.</p>
+
+<h2 id="pasar-de-hexadecimal-a-binario-1"><span class="me-2">Pasar de hexadecimal a binario</span><a href="#pasar-de-hexadecimal-a-binario-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Para convertir un número binario a hexadecimal, debes seguir un proceso similar al de la conversión de binario a decimal, pero en lugar de agrupar en potencias de 2 como en el sistema decimal, agruparás los dígitos binarios en grupos de cuatro para obtener su equivalente hexadecimal. Aquí tienes un paso a paso:</p>
+
+<ul>
+  <li>
+    <p>Divide el número binario en grupos de cuatro dígitos, comenzando desde la derecha y agregando ceros a la izquierda si es necesario para que cada grupo tenga cuatro dígitos. Si el número de dígitos binarios no es múltiplo de cuatro, agrupa los dígitos restantes en el primer grupo.</p>
+  </li>
+  <li>
+    <p>Luego, convierte cada grupo de cuatro dígitos binarios en su equivalente hexadecimal utilizando la siguiente tabla de conversión:</p>
+  </li>
+</ul>
+
+<div class="table-wrapper"><table>
+  <tbody>
+    <tr>
+      <td><sup>Hexadecimal</sup></td>
+      <td><sup>Binario</sup></td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>0000</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0001</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>0010</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>0011</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>0100</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>0101</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>0110</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>0111</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>1000</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>1001</td>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>1010</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>1011</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>1100</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>1101</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>1110</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>1111</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<ul>
+  <li>Escribe el valor hexadecimal resultante para cada grupo de cuatro dígitos binarios y colócalos juntos en orden desde la izquierda hasta la derecha para formar el número hexadecimal.</li>
+</ul>
+
+<p>Ejemplo:</p>
+
+<p>Supongamos que tenemos el número binario “110101101011”. Lo dividimos en grupos de cuatro:
+“1101 0110 1011”</p>
+
+<p>Ahora, convertimos cada grupo en su equivalente hexadecimal:</p>
+
+<div class="table-wrapper"><table>
+  <tbody>
+    <tr>
+      <td>1101</td>
+      <td>0110</td>
+      <td>1011</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>6</td>
+      <td>B</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<p>Finalmente, juntamos los valores hexadecimales:</p>
+
+<p>Entonces, el número binario “110101101011” es igual a “D6B” en hexadecimal.</p>
 
 </div>
 
@@ -953,14 +1227,14 @@
         
         
         <li class="text-truncate lh-lg">
-          <a href="/redes.github.io/_site/posts/binario-hexadecimal-decimal/">Binario, Hexadeciaml y Decimal</a>
+          <a href="/redes.github.io/_site/posts/binario/">Binario</a>
         </li>
       
         
         
         
         <li class="text-truncate lh-lg">
-          <a href="/redes.github.io/_site/posts/binario/">Binario</a>
+          <a href="/redes.github.io/_site/posts/binario-hexadecimal-decimal/">Binario, Hexadeciaml y Decimal</a>
         </li>
       
         

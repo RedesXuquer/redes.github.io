@@ -4,7 +4,7 @@
   <id>/redes.github.io/_site/</id>
   <title>Chirpy</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-09-25T03:08:41+08:00</updated>
+  <updated>2023-09-25T03:27:52+08:00</updated>
   <author>
     <name>your_full_name</name>
     <uri>/redes.github.io/_site/</uri>
@@ -24,7 +24,7 @@
     <link href="/redes.github.io/_site/posts/binario-hexadecimal-decimal/" rel="alternate" type="text/html" title="Binario, Hexadeciaml y Decimal" />
     <published>2023-09-24T03:30:00+08:00</published>
   
-    <updated>2023-09-25T03:03:22+08:00</updated>
+    <updated>2023-09-25T03:08:41+08:00</updated>
   
     <id>/redes.github.io/_site/posts/binario-hexadecimal-decimal/</id>
     <content src="/redes.github.io/_site/posts/binario-hexadecimal-decimal/" />
@@ -102,7 +102,7 @@ A través del cabl...
     <link href="/redes.github.io/_site/posts/binario/" rel="alternate" type="text/html" title="Binario" />
     <published>2022-01-31T05:30:00+08:00</published>
   
-    <updated>2023-09-25T02:48:05+08:00</updated>
+    <updated>2023-09-25T03:08:41+08:00</updated>
   
     <id>/redes.github.io/_site/posts/binario/</id>
     <content src="/redes.github.io/_site/posts/binario/" />
