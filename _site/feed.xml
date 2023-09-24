@@ -4,7 +4,7 @@
   <id>/redes.github.io/_site/</id>
   <title>Chirpy</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-09-25T03:03:22+08:00</updated>
+  <updated>2023-09-25T03:08:41+08:00</updated>
   <author>
     <name>your_full_name</name>
     <uri>/redes.github.io/_site/</uri>
@@ -24,7 +24,7 @@
     <link href="/redes.github.io/_site/posts/binario-hexadecimal-decimal/" rel="alternate" type="text/html" title="Binario, Hexadeciaml y Decimal" />
     <published>2023-09-24T03:30:00+08:00</published>
   
-    <updated>2023-09-25T03:01:55+08:00</updated>
+    <updated>2023-09-25T03:03:22+08:00</updated>
   
     <id>/redes.github.io/_site/posts/binario-hexadecimal-decimal/</id>
     <content src="/redes.github.io/_site/posts/binario-hexadecimal-decimal/" />
@@ -48,9 +48,9 @@
 
 
 
-      1. ¿Qué es el sistema binario?
+      ¿Qué es el sistema binario?
 
-El sistema binario es un sistema numérico que utiliza solo dos dígitos para representar números y realizar operaciones matemáticas: 0 y 1. Este sistema es fundamental en la informática y la electrónica, ya que se adapta perfectamente a la forma en que los ordenadores almacenan y procesan la información en forma de corriente eléctrica (encendido/apagado) y se util...
+El sistema binario es un sistema numérico que utiliza solo dos dígitos para representar números y realizar operaciones matemáticas: 0 y 1. Este sistema es fundamental en la informática y la electrónica, ya que se adapta perfectamente a la forma en que los ordenadores almacenan y procesan la información en forma de corriente eléctrica (encendido/apagado) y se utiliza...
     </summary>
   
 
@@ -91,6 +91,57 @@ El sistema binario es un sistema numérico que utiliza solo dos dígitos para re
 Los ordenadores son máquinas especializadas en procesar información de acuerdo con las instrucciones recogidas en un programa. Sin embargo, no siempre la información se produce o se almacena en el lugar donde se procesa. Esto añade la necesidad de transportar los datos desde su lugar de origen o almacenamiento hasta el de su proceso, originando una comunicación.
 
 A través del cabl...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Binario</title>
+    <link href="/redes.github.io/_site/posts/binario/" rel="alternate" type="text/html" title="Binario" />
+    <published>2022-01-31T05:30:00+08:00</published>
+  
+    <updated>2023-09-25T02:48:05+08:00</updated>
+  
+    <id>/redes.github.io/_site/posts/binario/</id>
+    <content src="/redes.github.io/_site/posts/binario/" />
+    <author>
+      <name>your_full_name</name>
+    </author>
+
+  
+    
+    <category term="Sistemas Microinformáticos y Redes" />
+    
+    <category term="Redes Locales" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Existen 10 tipos de personas… las que saben binario y las que no.
+
+
+  ¿Porqué los seres humanos usamos el sistema decimal?
+  
+
+    Porque tenemos 10 dedos
+
+  
+
+
+
+  ¿Porqué las máquinas usan el sistema binario?
+  
+
+    El motivo por el cual los ordenadores trabajan en binario, es por el hecho que a la hora de construir una unidad de ejecución que pueda sumar o multiplicar números es mucho más fá...
     </summary>
   
 
@@ -179,46 +230,6 @@ There are two ways to create a new repository for this theme:
 
   Using the Chirpy Starter - Easy to upgrade, isolates irrelevant project files so you can focus on writing.
   GitHub Fork - Convenient for custom devel...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Writing a New Post</title>
-    <link href="/redes.github.io/_site/posts/write-a-new-post/" rel="alternate" type="text/html" title="Writing a New Post" />
-    <published>2019-08-08T14:10:00+08:00</published>
-  
-    <updated>2023-02-20T05:46:33+08:00</updated>
-  
-    <id>/redes.github.io/_site/posts/write-a-new-post/</id>
-    <content src="/redes.github.io/_site/posts/write-a-new-post/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Tutorial" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      This tutorial will guide you how to write a post in the Chirpy template, and it’s worth reading even if you’ve used Jekyll before, as many features require specific variables to be set.
-
-Naming and Path
-
-Create a new file named YYYY-MM-DD-TITLE.EXTENSION and put it in the _posts of the root directory. Please note that the EXTENSION must be one of md and markdown. If you want to save time of cre...
     </summary>
   
 
