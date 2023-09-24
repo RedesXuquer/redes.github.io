@@ -134,7 +134,9 @@ Así que, has convertido con éxito el número hexadecimal "3A7" en su represent
 
 Este proceso es bastante directo, ya que cada dígito hexadecimal tiene una representación binaria fija, lo que facilita la conversión.
 
-## Pasar de hexadecimal a binario
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/s_cO5svy1KY?si=W-Tzdv0ly0-Vo9_x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+## Pasar de binario a hexadecimal
 Para convertir un número binario a hexadecimal, debes seguir un proceso similar al de la conversión de binario a decimal, pero en lugar de agrupar en potencias de 2 como en el sistema decimal, agruparás los dígitos binarios en grupos de cuatro para obtener su equivalente hexadecimal. Aquí tienes un paso a paso:
 
 - Divide el número binario en grupos de cuatro dígitos, comenzando desde la derecha y agregando ceros a la izquierda si es necesario para que cada grupo tenga cuatro dígitos. Si el número de dígitos binarios no es múltiplo de cuatro, agrupa los dígitos restantes en el primer grupo.
@@ -174,3 +176,5 @@ Ahora, convertimos cada grupo en su equivalente hexadecimal:
 Finalmente, juntamos los valores hexadecimales:
 
 Entonces, el número binario "110101101011" es igual a "D6B" en hexadecimal.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/uQaLpYDCkAA?si=_5WKbAwrg0VHgLKF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
