@@ -1,6 +1,6 @@
 ---
-title: Binario
-date: 2023-09-24 20:30:00 +0100
+title: Binario, Hexadeciaml y Decimal
+date: 2023-09-23 20:30:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [redes locales, binario, decimal, hexadecimal, smr]
 ---

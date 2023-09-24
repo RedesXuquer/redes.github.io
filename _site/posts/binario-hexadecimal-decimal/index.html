@@ -39,24 +39,25 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Tutorial" />
+<meta property="og:title" content="Binario, Hexadeciaml y Decimal" />
 <meta property="og:locale" content="en" />
-<meta name="description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<meta property="og:description" content="A minimal, responsive and feature-rich Jekyll theme for technical writing." />
-<link rel="canonical" href="/redes.github.io/_site/categories/tutorial/" />
-<meta property="og:url" content="/redes.github.io/_site/categories/tutorial/" />
+<meta name="description" content="1. ¿Qué es el sistema binario?" />
+<meta property="og:description" content="1. ¿Qué es el sistema binario?" />
+<link rel="canonical" href="/redes.github.io/_site/posts/binario-hexadecimal-decimal/" />
+<meta property="og:url" content="/redes.github.io/_site/posts/binario-hexadecimal-decimal/" />
 <meta property="og:site_name" content="Chirpy" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-09-24T03:30:00+08:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Tutorial" />
+<meta property="twitter:title" content="Binario, Hexadeciaml y Decimal" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"A minimal, responsive and feature-rich Jekyll theme for technical writing.","headline":"Tutorial","url":"/redes.github.io/_site/categories/tutorial/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-24T03:30:00+08:00","datePublished":"2023-09-24T03:30:00+08:00","description":"1. ¿Qué es el sistema binario?","headline":"Binario, Hexadeciaml y Decimal","mainEntityOfPage":{"@type":"WebPage","@id":"/redes.github.io/_site/posts/binario-hexadecimal-decimal/"},"url":"/redes.github.io/_site/posts/binario-hexadecimal-decimal/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>Tutorial | Chirpy
+  <title>Binario, Hexadeciaml y Decimal | Chirpy
   </title>
 
   <!--
@@ -108,7 +109,12 @@
   <link rel="stylesheet" href="/redes.github.io/_site/assets/css/jekyll-theme-chirpy.css">
 
   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.21.1/dist/tocbot.min.css">
+  
 
+  
+    <!-- Manific Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css">
   
 
   <!-- JavaScript -->
@@ -462,16 +468,10 @@
           
         
           
-            <span>
-              <a href="/redes.github.io/_site/categories">
-                Categories
-              </a>
-            </span>
-          
         
           
             
-              <span>Tutorial</span>
+              <span>Binario, Hexadeciaml y Decimal</span>
             
 
           
@@ -485,7 +485,7 @@
     </button>
 
     <div id="topbar-title">
-      Category
+      Post
     </div>
 
     <button type="button" id="search-trigger" class="btn btn-link">
@@ -511,7 +511,7 @@
         <div class="row flex-grow-1">
           <main
             aria-label="Main Content"
-            class="col-12 col-lg-11 col-xl-9 px-md-4 pb-5"
+            class="col-12 col-lg-11 col-xl-9 px-md-4"
           >
             
 
@@ -523,23 +523,79 @@
   
     
   
-    
+    <!-- Refactor the HTML structure -->
 
 
 
-<div id="page-category">
-  <h1 class="ps-lg-2">
-    <i class="far fa-folder-open fa-fw text-muted"></i>
-    Tutorial
-    <span class="lead text-muted ps-2">3</span>
-  </h1>
+<!--
+  In order to allow a wide table to scroll horizontally,
+  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
+-->
 
-  <ul class="content ps-0">
-    
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="/redes.github.io/_site/posts/customize-the-favicon/">Customize the Favicon</a>
-        <span class="dash flex-grow-1"></span>
-        <!--
+
+
+<!--
+  Fixed kramdown code highlight rendering:
+  https://github.com/penibelst/jekyll-compress-html/issues/101
+  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
+-->
+
+
+
+<!-- Change the icon of checkbox -->
+
+
+<!-- images -->
+
+
+
+
+<!-- Add header for code snippets -->
+
+
+
+<!-- Create heading anchors -->
+
+
+
+
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+<!-- return -->
+
+
+
+
+<header>
+  <h1 data-toc-skip>Binario, Hexadeciaml y Decimal</h1>
+
+  <div class="post-meta text-muted">
+    <!-- published date -->
+    <span>
+      Posted
+      <!--
   Date format snippet
   See: ${JS_ROOT}/utils/locale-dateime.js
 -->
@@ -549,67 +605,297 @@
 
 <time
   
-    class="text-muted small text-nowrap"
-  
-  data-ts="1565454840"
+  data-ts="1695497400"
   data-df="ll"
   
->
-  Aug 11, 2019
-</time>
-
-      </li>
-    
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="/redes.github.io/_site/posts/getting-started/">Getting Started</a>
-        <span class="dash flex-grow-1"></span>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-    class="text-muted small text-nowrap"
-  
-  data-ts="1565355300"
-  data-df="ll"
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Aug  9, 2019
+  Sep 24, 2023
 </time>
 
-      </li>
+    </span>
+
+    <!-- lastmod date -->
     
-      <li class="d-flex justify-content-between px-md-3">
-        <a href="/redes.github.io/_site/posts/write-a-new-post/">Writing a New Post</a>
-        <span class="dash flex-grow-1"></span>
-        <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
+
+    
+
+    <div class="d-flex justify-content-between">
+      <!-- author(s) -->
+      <span>
+        
+
+        By
+
+        <em>
+          
+            <a href="https://twitter.com/username">your_full_name</a>
+          
+        </em>
+      </span>
+
+      <!-- read time -->
+      <!-- Calculate the post's reading time, and display the word count in tooltip -->
+
+
+
+<!-- words per minute -->
 
 
 
 
-<time
-  
-    class="text-muted small text-nowrap"
-  
-  data-ts="1565244600"
-  data-df="ll"
-  
+
+
+
+
+
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="815 words"
 >
-  Aug  8, 2019
-</time>
+  <em>4 min</em> read</span>
 
-      </li>
-    
-  </ul>
+    </div>
+    <!-- .d-flex -->
+  </div>
+  <!-- .post-meta -->
+</header>
+
+<div class="content">
+  <h1 id="1-qué-es-el-sistema-binario">1. ¿Qué es el sistema binario?</h1>
+
+<p>El sistema binario es un sistema numérico que utiliza solo dos dígitos para representar números y realizar operaciones matemáticas: 0 y 1. Este sistema es fundamental en la informática y la electrónica, ya que se adapta perfectamente a la forma en que los ordenadores almacenan y procesan la información en forma de corriente eléctrica (encendido/apagado) y se utiliza como base para todos los cálculos y operaciones que realizan.</p>
+
+<p>A diferencia del sistema decimal, que utiliza diez dígitos (0 al 9) para representar números, el sistema binario se limita a dos dígitos, lo que lo hace muy eficiente y fácil de implementar en circuitos electrónicos. Cada dígito binario se llama un “bit” (abreviatura de “binary digit”). Los bits se agrupan en conjuntos más grandes llamados “bytes” para representar información más compleja.</p>
+
+<p>El sistema binario se basa en los mismos principios que otros sistemas numéricos, como el decimal. Por ejemplo, en el sistema decimal, el valor de cada posición en un número se multiplica por diez a la potencia de la posición. En el sistema binario, el valor de cada posición se multiplica por dos a la potencia de la posición. Por lo tanto, un número binario se puede expresar como una suma de potencias de dos.</p>
+
+<p>Por ejemplo, consideremos el número binario “1011”, que consta de cuatro bits. Podemos calcular su valor en base 10 de la siguiente manera:</p>
+
+<ul>
+  <li>El bit más a la derecha tiene un valor de 2^0 = 1.</li>
+  <li>El siguiente bit tiene un valor de 2^1 = 2.</li>
+  <li>El siguiente bit tiene un valor de 2^2 = 4.</li>
+  <li>El bit más a la izquierda tiene un valor de 2^3 = 8.</li>
+  <li>Entonces, el número binario “1011” en base 10 es igual a 8 + 0 + 2 + 1 = 11.</li>
+</ul>
+
+<p>El sistema binario es esencial en la programación de computadoras porque todas las operaciones de la CPU se realizan en binario. Los programas y datos se almacenan en memoria en formato binario, y los circuitos electrónicos dentro de las computadoras utilizan señales binarias para representar y procesar información. Además, el sistema binario se utiliza para representar información en forma de texto, gráficos, audio y video en las computadoras.</p>
+
+<p>En resumen, el sistema binario es un sistema numérico que utiliza solo dos dígitos, 0 y 1, para representar números y es fundamental en la informática y la electrónica debido a su eficiencia y capacidad para representar y procesar información en el mundo de las computadoras y la tecnología digital.</p>
+
+<h1 id="2-pasar-de-binario-a-decimal">2. Pasar de binario a decimal</h1>
+
+<p>Para convertir un número binario a decimal, simplemente debes entender cómo funcionan las posiciones en el sistema binario y cómo calcular el valor decimal correspondiente. Aquí tienes un paso a paso para realizar esta conversión:</p>
+
+<ol>
+  <li>
+    <p>Escribe el número binario que deseas convertir. Por ejemplo, tomemos el número binario “101101”.</p>
+  </li>
+  <li>
+    <p>Enumera las posiciones de derecha a izquierda, comenzando desde 0 y aumentando en 1 para cada posición hacia la izquierda. Esto se llama “posición de bits” y se usa para asignar poderes de 2 a cada dígito binario. Por ejemplo:</p>
+  </li>
+</ol>
+
+<div class="table-wrapper"><table>
+  <tbody>
+    <tr>
+      <td>5</td>
+      <td>4</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table></div>
+
+<ol>
+  <li>Ahora, para convertir el número binario a decimal, realiza los siguientes pasos para cada dígito binario:
+    <ul>
+      <li>Multiplica el dígito binario (0 o 1) por 2 elevado a la potencia de su posición de bits.</li>
+      <li>Suma estos valores para obtener el equivalente decimal.</li>
+      <li>Siguiendo nuestro ejemplo:</li>
+    </ul>
+  </li>
+</ol>
+
+<ul>
+  <li>Para el bit en la posición 0: 1 * 2^0 = 1.</li>
+  <li>Para el bit en la posición 1: 0 * 2^1 = 0.</li>
+  <li>Para el bit en la posición 2: 1 * 2^2 = 4.</li>
+  <li>Para el bit en la posición 3: 1 * 2^3 = 8.</li>
+  <li>Para el bit en la posición 4: 0 * 2^4 = 0.</li>
+  <li>Para el bit en la posición 5: 1 * 2^5 = 32.</li>
+</ul>
+
+<ol>
+  <li>Ahora, suma todos estos valores juntos:</li>
+</ol>
+
+<p>1 + 4 + 8 + 0 + 32 = 45</p>
+
+<p>Entonces, el número binario “101101” es igual a 45 en decimal.</p>
+
+<p>En resumen, para convertir un número binario a decimal, debes multiplicar cada dígito binario por 2 elevado a la potencia de su posición de bits correspondiente y luego sumar estos valores. Esto te dará el valor decimal equivalente.</p>
+
+<h1 id="21-consejos-para-el-paso-de-binario-a-decimal">2.1 Consejos para el paso de binario a decimal</h1>
+<ul>
+  <li>Si el bit de menor peso vale 1 nos encontraremos ante un número impar.</li>
+  <li>Si añadimos ceros por la izquierda a un número binario, el número no cambia.</li>
+  <li>Si añadimos ceros por la derecha a un número binario lo estamos multiplicando por dos.</li>
+  <li>Si el número que es todo unos, una forma rápida de calcular su valor es calcular el siguiente número y restarle uno a posteriori. Es decir, si tengo que obtener el valor de 111111, puedo calcular el valor de 1000000 que es 64 y restarle uno obteniendo que (111111)2 = (63)10.</li>
+</ul>
+
+<h1 id="22-binario-a-hexadecimal">2.2 Binario a hexadecimal</h1>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IQpDcrMrlsE?si=i8YMvAW32Mn1d1nz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+
 </div>
+
+<div class="post-tail-wrapper text-muted">
+  <!-- categories -->
+  
+    <div class="post-meta mb-3">
+      <i class="far fa-folder-open fa-fw me-1"></i>
+      
+        <a href="redes.github.io/_site//categories/sistemas-microinform%C3%A1ticos-y-redes/">Sistemas Microinformáticos y Redes</a>,
+        <a href="redes.github.io/_site//categories/redes-locales/">Redes Locales</a>
+    </div>
+  
+
+  <!-- tags -->
+  
+    <div class="post-tags">
+      <i class="fa fa-tags fa-fw me-1"></i>
+      
+        <a
+          href="redes.github.io/_site//tags/redes-locales/"
+          class="post-tag no-text-decoration"
+        >redes locales</a>
+      
+        <a
+          href="redes.github.io/_site//tags/binario/"
+          class="post-tag no-text-decoration"
+        >binario</a>
+      
+        <a
+          href="redes.github.io/_site//tags/decimal/"
+          class="post-tag no-text-decoration"
+        >decimal</a>
+      
+        <a
+          href="redes.github.io/_site//tags/hexadecimal/"
+          class="post-tag no-text-decoration"
+        >hexadecimal</a>
+      
+        <a
+          href="redes.github.io/_site//tags/smr/"
+          class="post-tag no-text-decoration"
+        >smr</a>
+      
+    </div>
+  
+
+  <div
+    class="
+      post-tail-bottom
+      d-flex justify-content-between align-items-center mt-5 pb-2
+    "
+  >
+    <div class="license-wrapper">
+      
+        
+
+        This post is licensed under 
+        <a href="https://creativecommons.org/licenses/by/4.0/">
+          CC BY 4.0
+        </a>
+         by the author.
+      
+    </div>
+
+    <!-- Post sharing snippet -->
+
+<div class="share-wrapper d-flex align-items-center">
+  <span class="share-label text-muted me-1">Share</span>
+  <span class="share-icons">
+    
+    
+    
+
+    
+      
+      <a
+        href="https://twitter.com/intent/tweet?text=Binario,%20Hexadeciaml%20y%20Decimal%20-%20Chirpy&url=%2Fredes.github.io%2F_site%2Fposts%2Fbinario-hexadecimal-decimal%2F"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Twitter"
+        target="_blank"
+        rel="noopener"
+        aria-label="Twitter"
+      >
+        <i class="fa-fw fa-brands fa-square-x-twitter"></i>
+      </a>
+    
+      
+      <a
+        href="https://www.facebook.com/sharer/sharer.php?title=Binario,%20Hexadeciaml%20y%20Decimal%20-%20Chirpy&u=%2Fredes.github.io%2F_site%2Fposts%2Fbinario-hexadecimal-decimal%2F"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Facebook"
+        target="_blank"
+        rel="noopener"
+        aria-label="Facebook"
+      >
+        <i class="fa-fw fab fa-facebook-square"></i>
+      </a>
+    
+      
+      <a
+        href="https://t.me/share/url?url=%2Fredes.github.io%2F_site%2Fposts%2Fbinario-hexadecimal-decimal%2F&text=Binario,%20Hexadeciaml%20y%20Decimal%20-%20Chirpy"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Telegram"
+        target="_blank"
+        rel="noopener"
+        aria-label="Telegram"
+      >
+        <i class="fa-fw fab fa-telegram"></i>
+      </a>
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
+    >
+      <i class="fa-fw fas fa-link pe-none"></i>
+    </button>
+  </span>
+</div>
+
+  </div>
+  <!-- .post-tail-bottom -->
+</div>
+<!-- div.post-tail-wrapper -->
+
 
   
 
@@ -1105,12 +1391,151 @@
             </div>
 
             
+              
+              
+
+
+
+
+            
           </aside>
         </div>
 
         <div class="row">
           <!-- tail -->
           <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+                
+                <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/redes.github.io/_site/posts/introduccion-redes-locales/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+    class="small"
+  
+  data-ts="1652698800"
+  data-df="ll"
+  
+>
+  May 16, 2022
+</time>
+
+              <h4 class="pt-0 my-2">Introducción a las redes locales</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  Introducción
+
+Los ordenadores son máquinas especializadas en procesar información de acuerdo con las instrucciones recogidas en un programa. Sin embargo, no siempre la información se produce o se a...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
+
+
+              
+                
+                <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="redes.github.io/_site//posts/introduccion-redes-locales/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>Introducción a las redes locales</p>
+    </a>
+  
+
+  
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
+  
+</nav>
+
+              
+                
+                <!--  The comments switcher -->
+
+
+              
             
 
             <!-- The Footer -->
@@ -1631,6 +2056,13 @@
 <!-- layout specified -->
 
 
+  
+
+  
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
+
 
 
 
@@ -1694,16 +2126,37 @@
 
   
 
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/dayjs@1.11.9/dayjs.min.js,npm/dayjs@1.11.9/locale/en.min.js,npm/dayjs@1.11.9/plugin/relativeTime.min.js,npm/dayjs@1.11.9/plugin/localizedFormat.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/lazysizes@5.3.2/lazysizes.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.9/dayjs.min.js,npm/dayjs@1.11.9/locale/en.min.js,npm/dayjs@1.11.9/plugin/relativeTime.min.js,npm/dayjs@1.11.9/plugin/localizedFormat.min.js"></script>
 
 
 
 
 
 
-<script defer src="/redes.github.io/_site/assets/js/dist/misc.min.js"></script>
+<script defer src="/redes.github.io/_site/assets/js/dist/post.min.js"></script>
 
 
 
