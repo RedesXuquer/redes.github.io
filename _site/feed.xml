@@ -4,7 +4,7 @@
   <id>/redes.github.io/_site/</id>
   <title>Chirpy</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-09-24T13:48:25+08:00</updated>
+  <updated>2023-09-25T02:39:51+08:00</updated>
   <author>
     <name>your_full_name</name>
     <uri>/redes.github.io/_site/</uri>
@@ -115,7 +115,7 @@ A través del cabl...
     <link href="/redes.github.io/_site/posts/customize-the-favicon/" rel="alternate" type="text/html" title="Customize the Favicon" />
     <published>2019-08-11T00:34:00+08:00</published>
   
-    <updated>2019-08-11T00:34:00+08:00</updated>
+    <updated>2022-03-17T02:05:45+08:00</updated>
   
     <id>/redes.github.io/_site/posts/customize-the-favicon/</id>
     <content src="/redes.github.io/_site/posts/customize-the-favicon/" />
@@ -155,7 +155,7 @@ Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and th
     <link href="/redes.github.io/_site/posts/getting-started/" rel="alternate" type="text/html" title="Getting Started" />
     <published>2019-08-09T20:55:00+08:00</published>
   
-    <updated>2019-08-09T20:55:00+08:00</updated>
+    <updated>2023-09-23T17:44:44+08:00</updated>
   
     <id>/redes.github.io/_site/posts/getting-started/</id>
     <content src="/redes.github.io/_site/posts/getting-started/" />
@@ -203,7 +203,7 @@ There are two ways to create a new repository for this theme:
     <link href="/redes.github.io/_site/posts/write-a-new-post/" rel="alternate" type="text/html" title="Writing a New Post" />
     <published>2019-08-08T14:10:00+08:00</published>
   
-    <updated>2019-08-08T14:10:00+08:00</updated>
+    <updated>2023-02-20T05:46:33+08:00</updated>
   
     <id>/redes.github.io/_site/posts/write-a-new-post/</id>
     <content src="/redes.github.io/_site/posts/write-a-new-post/" />
