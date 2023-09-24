@@ -1,5 +1,5 @@
 ---
-title: Binario, Hexadeciaml y Decimal
+title: Binario, Hexadecimal y Decimal
 date: 2023-09-23 20:30:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [redes locales, binario, decimal, hexadecimal, smr]
@@ -134,6 +134,7 @@ Así que, has convertido con éxito el número hexadecimal "3A7" en su represent
 
 Este proceso es bastante directo, ya que cada dígito hexadecimal tiene una representación binaria fija, lo que facilita la conversión.
 
+### Hexadecimal a binario
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/s_cO5svy1KY?si=W-Tzdv0ly0-Vo9_x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Pasar de binario a hexadecimal
@@ -176,5 +177,5 @@ Ahora, convertimos cada grupo en su equivalente hexadecimal:
 Finalmente, juntamos los valores hexadecimales:
 
 Entonces, el número binario "110101101011" es igual a "D6B" en hexadecimal.
-
+### Binario a hexadecimal
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/uQaLpYDCkAA?si=_5WKbAwrg0VHgLKF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
