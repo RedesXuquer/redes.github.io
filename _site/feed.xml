@@ -2,21 +2,68 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>/redes.github.io/_site/</id>
-  <title>Chirpy</title>
+  <title>Redes</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-09-25T03:39:31+08:00</updated>
+  <updated>2023-09-26T00:41:13+08:00</updated>
   <author>
-    <name>your_full_name</name>
+    <name>Luis</name>
     <uri>/redes.github.io/_site/</uri>
   </author>
   <link rel="self" type="application/atom+xml" href="/redes.github.io/_site/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
     href="/redes.github.io/_site/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
-  <rights> © 2023 your_full_name </rights>
+  <rights> © 2023 Luis </rights>
   <icon>redes.github.io/_site//assets/img/favicons/favicon.ico</icon>
   <logo>redes.github.io/_site//assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Clasificación de las redes</title>
+    <link href="/redes.github.io/_site/posts/Clasificaci%C3%B3n-redes/" rel="alternate" type="text/html" title="Clasificación de las redes" />
+    <published>2023-09-25T19:00:00+08:00</published>
+  
+    <updated>2023-09-25T19:00:00+08:00</updated>
+  
+    <id>/redes.github.io/_site/posts/Clasificaci%C3%B3n-redes/</id>
+    <content src="/redes.github.io/_site/posts/Clasificaci%C3%B3n-redes/" />
+    <author>
+      <name>Luis</name>
+    </author>
+
+  
+    
+    <category term="Sistemas Microinformáticos y Redes" />
+    
+    <category term="Redes Locales" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Introducción:
+
+Las infraestructuras de red pueden variar en gran medida en términos de:
+
+
+  El tamaño del área que abarcan.
+  La cantidad de usuarios conectados.
+  La cantidad y los tipos de servicios disponibles.
+  El área de responsabilidad.
+
+
+Los dos tipos más comunes de infraestructuras de red son las redes de área local (LAN) y las redes de área amplia (WAN). Una LAN es una infraestructura...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -29,7 +76,7 @@
     <id>/redes.github.io/_site/posts/binario-hexadecimal-decimal/</id>
     <content src="/redes.github.io/_site/posts/binario-hexadecimal-decimal/" />
     <author>
-      <name>your_full_name</name>
+      <name>Luis</name>
     </author>
 
   
@@ -67,7 +114,7 @@ El sistema binario es un sistema numérico que utiliza solo dos dígitos para re
     <id>/redes.github.io/_site/posts/introduccion-redes-locales/</id>
     <content src="/redes.github.io/_site/posts/introduccion-redes-locales/" />
     <author>
-      <name>your_full_name</name>
+      <name>Luis</name>
     </author>
 
   
@@ -107,7 +154,7 @@ A través del cabl...
     <id>/redes.github.io/_site/posts/binario/</id>
     <content src="/redes.github.io/_site/posts/binario/" />
     <author>
-      <name>your_full_name</name>
+      <name>Luis</name>
     </author>
 
   
@@ -182,54 +229,6 @@ A través del cabl...
 Generate the favicon
 
 Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and then go to the online tool Real Favicon Generator and click the button Select your Favicon image ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Getting Started</title>
-    <link href="/redes.github.io/_site/posts/getting-started/" rel="alternate" type="text/html" title="Getting Started" />
-    <published>2019-08-09T20:55:00+08:00</published>
-  
-    <updated>2023-09-23T17:44:44+08:00</updated>
-  
-    <id>/redes.github.io/_site/posts/getting-started/</id>
-    <content src="/redes.github.io/_site/posts/getting-started/" />
-    <author>
-      <name>cotes</name>
-    </author>
-
-  
-    
-    <category term="Blogging" />
-    
-    <category term="Tutorial" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Prerequisites
-
-Follow the instructions in the Jekyll Docs to complete the installation of the basic environment. Git also needs to be installed.
-
-Installation
-
-Creating a New Site
-
-There are two ways to create a new repository for this theme:
-
-
-  Using the Chirpy Starter - Easy to upgrade, isolates irrelevant project files so you can focus on writing.
-  GitHub Fork - Convenient for custom devel...
     </summary>
   
 
