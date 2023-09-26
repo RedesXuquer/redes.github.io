@@ -197,7 +197,7 @@ Una red en bus es aquella topología que se caracteriza por tener un único bus 
 ## 2.Red en estrella
 
 ![Red en estrella](topologia-de-red-en-estrella-2022.webp)
-_Red en estrella
+_Red en estrella_
 
 Una red en estrella es una red de computadoras donde las estaciones están conectadas directamente a un punto central y todas las comunicaciones se hacen necesariamente a través de ese punto (conmutador, repetidor o concentrador). Los dispositivos no están directamente conectados entre sí, además de que no se permite tanto tráfico de información. Dada su transmisión, una red en estrella activa tiene un nodo central “activo” que normalmente tiene los medios para prevenir problemas relacionados con el eco.
 
