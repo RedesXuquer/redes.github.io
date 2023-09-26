@@ -3,7 +3,7 @@ title: Clasificación de las redes
 date: 2023-09-25 12:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [redes locales, teoría, smr]
-img_path: /assets/img/introduccion-redes-locales/
+img_path: /assets/img/topologias/
 ---
 # Introducción:
 
@@ -173,10 +173,7 @@ La figura ilustra los niveles de acceso que los diferentes grupos tienen a una i
 
 Una red en bus es aquella topología que se caracteriza por tener un único bus de comunicaciones (denominado bus, troncal o backbone) al cual se conectan los diferentes dispositivos. De esta forma todos los dispositivos comparten el mismo canal.
 
-![Red en bus](/assets/img/topologias/topologia-red-bus.webp)
-_Red en bus_
-
-![Red en bus](/../assets/img/topologias/topologia-red-bus.webp)
+![Red en bus](topologia-red-bus.webp)
 _Red en bus_
 
 ### Ventajas
