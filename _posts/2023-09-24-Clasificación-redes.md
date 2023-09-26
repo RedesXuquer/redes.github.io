@@ -171,10 +171,10 @@ La figura ilustra los niveles de acceso que los diferentes grupos tienen a una i
 # Redes por tología física
 ## 1.Red en bus
 
-Una red en bus es aquella topología que se caracteriza por tener un único bus de comunicaciones (denominado bus, troncal o backbone) al cual se conectan los diferentes dispositivos. De esta forma todos los dispositivos comparten el mismo canal.
-
 ![Red en bus](topologia-red-bus.webp)
 _Red en bus_
+
+Una red en bus es aquella topología que se caracteriza por tener un único bus de comunicaciones (denominado bus, troncal o backbone) al cual se conectan los diferentes dispositivos. De esta forma todos los dispositivos comparten el mismo canal.
 
 ### Ventajas
 - Facilidad de implementación y crecimiento.
@@ -196,6 +196,9 @@ _Red en bus_
 
 ## 2.Red en estrella
 
+![Red en estrella](topologia-de-red-en-estrella-2022.webp)
+_Red en estrella
+
 Una red en estrella es una red de computadoras donde las estaciones están conectadas directamente a un punto central y todas las comunicaciones se hacen necesariamente a través de ese punto (conmutador, repetidor o concentrador). Los dispositivos no están directamente conectados entre sí, además de que no se permite tanto tráfico de información. Dada su transmisión, una red en estrella activa tiene un nodo central “activo” que normalmente tiene los medios para prevenir problemas relacionados con el eco.
 
 Se utiliza sobre todo para redes locales (LAN). La mayoría de las redes de área local que tienen un conmutador (switch) o un concentrador (hub) siguen esta topología. El punto o nodo central en estas sería el switch o el hub, por el que pasan todos los paquetes de usuarios.
@@ -214,5 +217,3 @@ Es la topología utilizada por la plataforma de Google.
 - Es costosa, ya que requiere más cables que otras topologías
 - El cable viaja por separado del concentrador a cada computadora.
 
-![Red en anillo](topologia-de-red-en-estrella-2022.webp)
-_Red en anillo_
