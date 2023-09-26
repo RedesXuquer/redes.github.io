@@ -39,8 +39,6 @@ const allowedDomains = [
   '',
 
   
-    'chirpy-img.netlify.app',
-  
 
   'fonts.gstatic.com',
   'fonts.googleapis.com',
