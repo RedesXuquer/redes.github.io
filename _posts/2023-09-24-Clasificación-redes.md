@@ -4,6 +4,8 @@ date: 2023-09-25 12:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [redes locales, teoría, smr]
 img_path: /assets/img/topologias/
+image: 
+    path: /assets/img/topologias/diagrama-topologia-de-red-en-arbol.webp
 ---
 # Introducción:
 
