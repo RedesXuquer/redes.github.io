@@ -5,7 +5,7 @@ categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [redes locales, teoría, smr]
 img_path: /assets/img/topologias/
 image: 
-    path: /assets/img/topologias/diagrama-topologia-de-red-en-arbol.webp
+    path: diagrama-topologia-de-red-en-arbol.webp
 ---
 # Introducción:
 
