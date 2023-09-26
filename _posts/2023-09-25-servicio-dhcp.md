@@ -3,9 +3,9 @@ title: Montaje del servicio DHCP
 date: 2023-09-25 12:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Servicios en red]
 tags: [redes locales, teoría, smr]
-img_path: /assets/img/DHCP/
+img_path: /assets/img/dhcp/
 image: 
-    path: diagrama-topologia-de-red-en-arbol.webp
+    path: dhcp.jpg
 ---
 
 # Introducción
