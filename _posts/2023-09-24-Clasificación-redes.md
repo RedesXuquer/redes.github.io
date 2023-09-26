@@ -217,3 +217,79 @@ Es la topología utilizada por la plataforma de Google.
 - Es costosa, ya que requiere más cables que otras topologías
 - El cable viaja por separado del concentrador a cada computadora.
 
+## 3. Red en anillo
+
+![Red en anillo](topologia-de-red-en-anillo.webp)
+_Red en anillo_
+
+Una red en anillo es una topología de red en la que cada nodo se conecta exactamente a otros dos nódos, formando una única ruta continua, para las señales a través de cada nodo: un anillo. Los datos viajan de un nodo a otro, y cada nodo maneja cada paquete.
+
+### Ventajas
+- Red muy ordenada donde cada dispositivo tiene acceso al token y la oportunidad de transmitir.
+- Se desempeña mejor que una topología de bus bajo una gran carga de red 
+- No requiere un nodo central para administrar la conectividad entre las computadoras
+- Debido a la configuración de línea de punto a punto de los dispositivos con un dispositivo en cada lado (cada dispositivo está conectado a su vecino inmediato), es bastante fácil de instalar y reconfigurar, ya que agregar o quitar un dispositivo requiere mover solo dos conexiones.
+- La configuración de línea punto a punto facilita la identificación y el aislamiento de fallas.
+- La reconfiguración de las fallas de línea de los anillos bidireccionales puede ser muy rápida, ya que la conmutación se produce en un nivel alto y, por lo tanto, el tráfico no requiere ser redirigido individualmente.
+
+### Desventajas
+- Una estación de trabajo defectuosa puede crear problemas para toda la red. Esto se puede resolver utilizando un anillo doble o un switch que cierre la interrupción.
+- Mover, agregar y cambiar los dispositivos puede afectar la red
+- El retraso en la comunicación es directamente proporcional al número de nodos en la caja de cambios
+- El ancho de banda se comparte en todos los enlaces entre dispositivos
+- Más difícil de configurar que una topología en estrella
+
+## 4. Red anillo doble
+
+Una topología en anillo doble consta de dos anillos concéntricos, donde cada Host de la red está conectado a ambos anillos, aunque los dos anillos no están conectados directamente entre sí. Es análoga a la topología de anillo, con la diferencia de que, para incrementar la confiabilidad y flexibilidad de la red, hay un segundo anillo redundante que conecta los mismos dispositivos. La topología de anillo doble actúa como si fueran dos anillos independientes, de los cuales se usa solamente uno por vez.
+
+## 5. Red en malla
+![Red en malla](topologia-red-en-malla-2022.webp)
+_Red en malla_
+
+La topología de malla es en la que cada nodo está conectado a todos los nodos. De esta manera es posible llevar los mensajes de un nodo a otro por distintos caminos. Si la red de malla está completamente conectada, no puede existir absolutamente ninguna interrupción en las comunicaciones.
+
+### Ventajas
+- Mayor redundancia, pues existen múltiples caminos para que el paquete llegue a su destino. (Si falla una conexión o un nodo, se encontrará un camino alternativo)
+- No requiere un nodo (o servidor) central, reduciendo el coste de mantenimiento.
+
+### Desventajas
+- La topología malla es muy cara de mantener, ya que se necesita mucho cableado.
+- Si se utiliza de manera inalámbrica el precio de la instalación es mucho más cara.
+- Puede dificultar en la instalación de nuevos dispositivos, ya que se necesitaría conectar el dispositivo con todos los otros dispositivos.
+- Las redes malla son difíciles de gestionar y solucionar problemas.
+
+## 6. Red en malla
+![Red en malla](diagrama-topologia-de-red-en-arbol.webp)
+_Red en malla_
+
+La red en árbol es una topología de red en la que los nodos están colocados en forma de árbol. Desde una visión topológica, es parecida a una serie de redes en estrella interconectadas salvo en que no tiene un concentrador central. En cambio, tiene un nodo de enlace troncal, generalmente ocupado por un hub o switch, desde el que se ramifican los demás nodos. Es una variación de la red en bus, el fallo de un nodo implica una interrupción en las comunicaciones. Se comparte el mismo canal de comunicaciones.
+
+La topología en árbol puede verse como una combinación de varias topologías en estrella. Tanto la de árbol como la de estrella son similares a la de bus cuando el nodo de interconexión trabaja en modo difusión, pues la información se propaga hacia todas las estaciones, solo que en esta topología las ramificaciones se extienden a partir de un punto raíz (estrella), a tantas ramificaciones como sean posibles, según las características del árbol.
+
+Los problemas asociados a las topologías anteriores radican en que los datos son recibidos por todas las estaciones sin importar para quién vayan dirigidos. Es entonces necesario dotar a la red de un mecanismo que permita identificar al destinatario de los mensajes, para que estos puedan recogerlos a su arribo. Además, debido a la presencia de un medio de transmisión compartido entre muchas estaciones, pueden producirse interferencia entre las señales cuando dos o más estaciones transmiten al mismo tiempo. Es la mejor topología de red que existe y con ella los datos fluyen de una manera más rápida que en los otros tipos de topologías de red.
+
+### Desventajas
+- Se requiere mucho cable
+- Es poco fiable para las empresas distribuidas
+- La medida de cada segmento viene determinada por el tipo de cable utilizado.
+- Si se cae el segmento principal todo el segmento también cae.
+- Es más difícil su configuración.
+- Si se llegara a desconectar un nodo, todos los que están conectados a él se desconectan tamb
+
+## 7. Red mixta o híbrida
+![Red mixta](topologia-de-red-hibrida-1.webp)
+_Red mixta_
+
+En la topología híbrida o topología mixta las redes pueden utilizar diversas topologías para conectarse.
+
+La topología mixta es una de las más frecuentes y se deriva de la unión de varios tipos de topologías de red, de aquí el nombre de “mixtas” o “híbridas”.
+
+Ejemplos de topologías mixtas: en árbol, estrella-estrella, bus-estrella, etc.
+
+Su implementación se debe a la complejidad de la solución de red, o bien al aumento en el número de dispositivos, lo que hace necesario establecer una topología de este tipo. Las topologías mixtas tienen un costo muy elevado debido a su administración y mantenimiento, ya que cuentan con segmentos de diferentes tipos, lo que obliga a invertir en equipo adicional para lograr la conectividad deseada.
+
+### Ventajas y desventajas
+La topología de red híbrida es sin duda alguna una red bastante confiable cuando se crea de manera correcta. Observando todos los puntos de vulnerabilidad y buscando una posible solución, combinando otro tipo de topología de red se encontrarán resultados positivos.
+
+Sin embargo, como ya hemos comentado no todo es perfecto, por tal razón acá te presentaremos algunas ventajas y desventajas que siempre debes tener presente a la hora de establecer este tipo de red.
