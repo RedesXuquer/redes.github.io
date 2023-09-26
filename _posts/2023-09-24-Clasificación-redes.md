@@ -175,6 +175,10 @@ Una red en bus es aquella topología que se caracteriza por tener un único bus 
 
 ![Red en bus](/../assets/img/topologias/Archivo:Topologia_magistrali.svg)
 _Red en bus_
+
+![Red en bus](/../assets/img/topologias/Topologia_magistrali.svg)
+_Red en bus_
+
 ### Ventajas
 - Facilidad de implementación y crecimiento.
 - Fácil adaptación.

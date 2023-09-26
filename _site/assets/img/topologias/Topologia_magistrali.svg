@@ -1,0 +1,1265 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<!-- Wygenerowane w aplikacji Microsoft Visio 11.0, SVG Export, wersja 1.0. Magistrali.svg Page-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="5.18274in" height="4.49876in"
+		viewBox="0 0 373.157 323.91" xml:space="preserve" color-interpolation-filters="sRGB" class="st22">
+	<title>Topologia magistrali. Copyright (c) 2011 Marcin Łukasz Kiejzik, marcin@kiejzik.eu. All rights reserved.</title>
+	<v:documentProperties v:langID="1045" v:metric="true" v:viewMarkup="false">
+		<v:userDefs>
+			<v:ud v:nameU="msvNoAutoConnect" v:val="VT0(0):26"/>
+		</v:userDefs>
+	</v:documentProperties>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {visibility:visible}
+		.st2 {fill:#6f6f84;fill-opacity:0.3;stroke:#6f6f84;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.3;stroke-width:0.72}
+		.st3 {fill:#ff00ff;fill-opacity:0;stroke:#46465d;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0;stroke-width:0.72}
+		.st4 {fill:url(#grad30-9)}
+		.st5 {stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.36}
+		.st6 {fill:url(#grad32-14)}
+		.st7 {stroke:#a78450;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.36}
+		.st8 {fill:url(#grad31-21);stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.36}
+		.st9 {stroke:#46465d;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5}
+		.st10 {fill:url(#grad31-30);stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.36}
+		.st11 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.6}
+		.st12 {fill:#a3abcd;fill-opacity:0.65;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.36}
+		.st13 {fill:url(#grad34-46);stroke:#ffffff;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.12}
+		.st14 {fill:url(#grad35-51);stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.12}
+		.st15 {fill:#a3abcd;fill-opacity:0.65;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st16 {stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.36}
+		.st17 {fill:#6f6f84;fill-opacity:0.3;stroke:#6f6f84;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.3;stroke-width:0.75}
+		.st18 {fill:#ff00ff;fill-opacity:0;stroke:#46465d;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0;stroke-width:0.75}
+		.st19 {stroke:#46465d;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.375}
+		.st20 {fill:url(#grad29-320);stroke:#46465d;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.375}
+		.st21 {stroke:#46465d;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75}
+		.st22 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<defs id="Patterns_And_Gradients">
+		<linearGradient id="grad30-9" v:fillPattern="30" v:foreground="#dce195" v:foregroundOpacity="0.65" v:background="#e4e9af"
+				v:backgroundOpacity="0.65" x1="0" y1="1" x2="0" y2="0">
+			<stop offset="0" style="stop-color:#dce195;stop-opacity:0.65"/>
+			<stop offset="1" style="stop-color:#e4e9af;stop-opacity:0.65"/>
+		</linearGradient>
+		<pattern id="grad32-14" v:fillPattern="32" v:foreground="#d2da7a" v:foregroundOpacity="0.65" v:background="#dce195"
+				v:backgroundOpacity="0.65" x="0" y="0" width="1" height="1" patternContentUnits="objectBoundingBox">
+			<path d="M 0 1 L 0 0 L 1 0 z" style="fill:url(#grad27-15)"/>
+			<path d="M 0 1 L 1 1 L 1 0 z" style="fill:url(#grad28-16)"/>
+		</pattern>
+		<linearGradient id="grad27-15" v:fillPattern="32" v:foreground="#d2da7a" v:foregroundOpacity="0.65" v:background="#dce195"
+				v:backgroundOpacity="0.65" x1="1" y1="0" x2="0" y2="0">
+			<stop offset="0" style="stop-color:#d2da7a;stop-opacity:0.65"/>
+			<stop offset="1" style="stop-color:#dce195;stop-opacity:0.65"/>
+		</linearGradient>
+		<linearGradient id="grad28-16" v:fillPattern="32" v:foreground="#d2da7a" v:foregroundOpacity="0.65" v:background="#dce195"
+				v:backgroundOpacity="0.65" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" style="stop-color:#d2da7a;stop-opacity:0.65"/>
+			<stop offset="1" style="stop-color:#dce195;stop-opacity:0.65"/>
+		</linearGradient>
+		<pattern id="grad31-21" v:fillPattern="31" v:foreground="#c8d158" v:foregroundOpacity="0.65" v:background="#bdc837"
+				v:backgroundOpacity="0.65" x="0" y="0" width="1" height="1" patternContentUnits="objectBoundingBox">
+			<path d="M 0 0 L 0 1 L 1 1 z" style="fill:url(#grad28-22)"/>
+			<path d="M 0 0 L 1 0 L 1 1 z" style="fill:url(#grad25-23)"/>
+		</pattern>
+		<linearGradient id="grad28-22" v:fillPattern="31" v:foreground="#c8d158" v:foregroundOpacity="0.65" v:background="#bdc837"
+				v:backgroundOpacity="0.65" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" style="stop-color:#c8d158;stop-opacity:0.65"/>
+			<stop offset="1" style="stop-color:#bdc837;stop-opacity:0.65"/>
+		</linearGradient>
+		<linearGradient id="grad25-23" v:fillPattern="31" v:foreground="#c8d158" v:foregroundOpacity="0.65" v:background="#bdc837"
+				v:backgroundOpacity="0.65" x1="0" y1="0" x2="1" y2="0">
+			<stop offset="0" style="stop-color:#c8d158;stop-opacity:0.65"/>
+			<stop offset="1" style="stop-color:#bdc837;stop-opacity:0.65"/>
+		</linearGradient>
+		<pattern id="grad31-30" v:fillPattern="31" v:foreground="#b5bace" v:foregroundOpacity="0.65" v:background="#a3abcd"
+				v:backgroundOpacity="0.65" x="0" y="0" width="1" height="1" patternContentUnits="objectBoundingBox">
+			<path d="M 0 0 L 0 1 L 1 1 z" style="fill:url(#grad28-31)"/>
+			<path d="M 0 0 L 1 0 L 1 1 z" style="fill:url(#grad25-32)"/>
+		</pattern>
+		<linearGradient id="grad28-31" v:fillPattern="31" v:foreground="#b5bace" v:foregroundOpacity="0.65" v:background="#a3abcd"
+				v:backgroundOpacity="0.65" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" style="stop-color:#b5bace;stop-opacity:0.65"/>
+			<stop offset="1" style="stop-color:#a3abcd;stop-opacity:0.65"/>
+		</linearGradient>
+		<linearGradient id="grad25-32" v:fillPattern="31" v:foreground="#b5bace" v:foregroundOpacity="0.65" v:background="#a3abcd"
+				v:backgroundOpacity="0.65" x1="0" y1="0" x2="1" y2="0">
+			<stop offset="0" style="stop-color:#b5bace;stop-opacity:0.65"/>
+			<stop offset="1" style="stop-color:#a3abcd;stop-opacity:0.65"/>
+		</linearGradient>
+		<linearGradient id="grad30-36" v:fillPattern="30" v:foreground="#b5bace" v:foregroundOpacity="0.65" v:background="#a3abcd"
+				v:backgroundOpacity="0.65" x1="0" y1="1" x2="0" y2="0">
+			<stop offset="0" style="stop-color:#b5bace;stop-opacity:0.65"/>
+			<stop offset="1" style="stop-color:#a3abcd;stop-opacity:0.65"/>
+		</linearGradient>
+		<pattern id="grad34-46" v:fillPattern="34" v:foreground="#b5bace" v:foregroundOpacity="0.65" v:background="#a3abcd"
+				v:backgroundOpacity="0.65" x="0" y="0" width="1" height="1" patternContentUnits="objectBoundingBox">
+			<path d="M 0 0 L 1 0 L 1 1 z" style="fill:url(#grad30-36)"/>
+			<path d="M 0 0 L 0 1 L 1 1 z" style="fill:url(#grad27-47)"/>
+		</pattern>
+		<linearGradient id="grad27-47" v:fillPattern="34" v:foreground="#b5bace" v:foregroundOpacity="0.65" v:background="#a3abcd"
+				v:backgroundOpacity="0.65" x1="1" y1="0" x2="0" y2="0">
+			<stop offset="0" style="stop-color:#b5bace;stop-opacity:0.65"/>
+			<stop offset="1" style="stop-color:#a3abcd;stop-opacity:0.65"/>
+		</linearGradient>
+		<pattern id="grad35-51" v:fillPattern="35" v:foreground="#b5bace" v:foregroundOpacity="0.65" v:background="#a3abcd"
+				v:backgroundOpacity="0.65" x="0" y="0" width="1" height="1" patternContentUnits="objectBoundingBox">
+			<path d="M 0.5 0.5 L 0 0 L 0 1 z" style="fill:url(#grad27-47)"/>
+			<path d="M 0.5 0.5 L 1 0 L 1 1 z" style="fill:url(#grad25-32)"/>
+			<path d="M 0.5 0.5 L 0 0 L 1 0 z" style="fill:url(#grad30-36)"/>
+			<path d="M 0.5 0.5 L 0 1 L 1 1 z" style="fill:url(#grad28-31)"/>
+		</pattern>
+		<linearGradient id="grad29-320" v:fillPattern="29" v:foreground="#fada7a" v:foregroundOpacity="0.65" v:background="#fbe195"
+				v:backgroundOpacity="0.65" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" style="stop-color:#fbe195;stop-opacity:0.65"/>
+			<stop offset="0.5" style="stop-color:#fada7a;stop-opacity:0.65"/>
+			<stop offset="1" style="stop-color:#fbe195;stop-opacity:0.65"/>
+		</linearGradient>
+	</defs>
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<v:userDefs>
+			<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+			<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+			<v:ud v:nameU="msvThemeOrder" v:val="VT0(0):26"/>
+		</v:userDefs>
+		<title>Topologia gwiazdy</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<v:layer v:name="Łącznik" v:index="0"/>
+		<g id="group41-1" transform="translate(154.813,-233.544)" v:mID="41" v:groupContext="group">
+			<v:custProps>
+				<v:cp v:nameU="Manufacturer" v:lbl="Producent" v:type="0" v:sortKey="Equipment" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="ProductNumber" v:lbl="Numer produktu" v:type="0" v:sortKey="Equipment" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="PartNumber" v:lbl="Numer katalogowy" v:type="0" v:sortKey="Equipment" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="ProductDescription" v:lbl="Opis produktu" v:type="0" v:sortKey="Equipment" v:invis="false"
+						v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="AssetNumber" v:lbl="Numer wyposażenia" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="SerialNumber" v:lbl="Numer seryjny" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="Location" v:lbl="Lokalizacja" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="Building" v:lbl="Budynek" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="Room" v:lbl="Pomieszczenie" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="Department" v:lbl="Dział" v:type="0" v:invis="false" v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="NetworkName" v:lbl="Nazwa sieci" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="IPAddress" v:lbl="Adres IP" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="SubnetMask" v:lbl="Maska podsieci" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="AdminInterface" v:lbl="Interfejs administracyjny" v:type="0" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="NumberofPorts" v:lbl="Liczba portów" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="CommunityString" v:lbl="Ciąg identyfikacyjny" v:type="0" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="NetworkDescription" v:lbl="Opis sieci" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="CPU" v:lbl="CPU" v:type="0" v:sortKey="Workstation" v:invis="false" v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="Memory" v:lbl="Pamięć" v:type="0" v:sortKey="Workstation" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="OperatingSystem" v:lbl="System operacyjny" v:type="0" v:sortKey="Workstation" v:invis="false"
+						v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="BelongsTo" v:lbl="Przynależność" v:type="0" v:invis="true" v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="ShapeClass" v:lbl="ShapeClass" v:type="0" v:invis="true" v:ask="false" v:langID="1045"
+						v:val="VT4(Sprzęt)"/>
+				<v:cp v:nameU="ShapeType" v:lbl="ShapeType" v:type="0" v:invis="true" v:ask="false" v:langID="1045"
+						v:val="VT4(Serwer)"/>
+				<v:cp v:nameU="MACAddress" v:lbl="Adres MAC" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="HardDriveSize" v:lbl="Pojemność dysku twardego" v:type="0" v:sortKey="Workstation" v:invis="false"
+						v:ask="false" v:langID="1045"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="HasText" v:val="VT0(0):5"/>
+				<v:ud v:nameU="ShapeClass" v:val="VT0(5):26"/>
+				<v:ud v:nameU="ShapeType" v:val="VT0(24):26"/>
+				<v:ud v:nameU="SolSH" v:val="VT14({BF0433D9-CD73-4EB5-8390-8653BE590246}):41"/>
+				<v:ud v:nameU="visLegendShape" v:val="VT0(2):26"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(14):26"/>
+				<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+				<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+			</v:userDefs>
+			<title>Serwer.41</title>
+			<g id="shape42-2" v:mID="42" v:groupContext="shape">
+				<title>Arkusz.42</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<g id="shadow42-3" v:groupContext="shadow" v:shadowOffsetX="2.16" v:shadowOffsetY="-2.16" v:shadowType="1"
+						v:shadowScale="0.99" transform="matrix(0.99,0,0,0.99,2.41512,5.04478)" class="st1">
+					<path d="M51.02 263.55 L31.4 253.05 L0 270.15 L0.01 314.09 A33.0369 30.8521 -180 0 0 19.37 323.91 L51.02 306.8
+								 L51.02 263.55 ZM8.71 276.99 A34.0948 31.84 -180 0 0 19.37 280.78 A33.7139 31.4843 0 0 1 8.71 276.99
+								 Z" class="st2"/>
+				</g>
+				<path d="M51.02 263.55 L31.4 253.05 L0 270.15 L0.01 314.09 A33.0369 30.8521 -180 0 0 19.37 323.91 L51.02 306.8 L51.02
+							 263.55 ZM8.71 276.99 A34.0948 31.84 -180 0 0 19.37 280.78 A33.7139 31.4843 0 0 1 8.71 276.99 Z"
+						class="st3"/>
+			</g>
+			<g id="shape43-6" v:mID="43" v:groupContext="shape" transform="translate(0,-43.1295)">
+				<title>Arkusz.43</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<path d="M19.36 323.91 L51.02 306.68 L31.4 296.18 L0 313.28 A34.0948 31.84 -180 0 0 19.37 323.91 L19.36 323.91 Z"
+						class="st4"/>
+				<path d="M19.36 323.91 L51.02 306.68 L31.4 296.18 L0 313.28 A34.0948 31.84 -180 0 0 19.37 323.91" class="st5"/>
+			</g>
+			<g id="shape44-11" v:mID="44" v:groupContext="shape" transform="translate(0.0115937,-3.41061E-013)">
+				<title>Arkusz.44</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<path d="M19.36 280.78 A33.7139 31.4843 0 0 1 -0 270.1 L0 314.09 A33.0369 30.8521 -180 0 0 19.36 323.91 L19.35 280.78
+							 L19.36 280.78 Z" class="st6"/>
+				<path d="M19.36 280.78 A33.7139 31.4843 0 0 1 -0 270.1 L0 314.09 A33.0369 30.8521 -180 0 0 19.36 323.91 L19.35 280.78"
+						class="st7"/>
+			</g>
+			<g id="shape45-18" v:mID="45" v:groupContext="shape" transform="translate(19.3628,-0.0487457)">
+				<title>Arkusz.45</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<path d="M0 280.83 L0 323.91 L31.66 306.85 L31.66 263.6 L0 280.83 Z" class="st8"/>
+			</g>
+			<g id="shape46-24" v:mID="46" v:groupContext="shape" transform="translate(0,-0.00156214)">
+				<title>Arkusz.46</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<path d="M51.02 263.55 L31.4 253.05 L0 270.15 L0.01 314.09 A33.0369 30.8521 -180 0 0 19.37 323.91 L51.02 306.8 L51.02
+							 263.55" class="st9"/>
+			</g>
+			<g id="shape47-27" v:mID="47" v:groupContext="shape" transform="translate(-102.576,-3.24703) rotate(-20)">
+				<title>Arkusz.47</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<ellipse cx="1.4821" cy="321.892" rx="1.4821" ry="2.01816" class="st10"/>
+			</g>
+			<g id="shape48-33" v:mID="48" v:groupContext="shape" transform="translate(3.13992,-6.23262)">
+				<title>Arkusz.48</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<path d="M0 311.94 A37.8205 34.5426 -96.44 0 0 13.08 318.66" class="st11"/>
+				<path d="M0 314.56 A37.8205 34.5426 -96.44 0 0 13.08 321.28" class="st11"/>
+				<path d="M0 317.19 A37.8205 34.5426 -96.44 0 0 13.08 323.91" class="st11"/>
+			</g>
+			<g id="group49-40" transform="translate(2.6166,-30.546)" v:mID="49" v:groupContext="group">
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<title>Arkusz.49</title>
+				<g id="shape50-41" v:mID="50" v:groupContext="shape" transform="translate(0,-7.06961)">
+					<title>Arkusz.50</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M0.47 317.19 A32.9981 30.8159 -180 0 0 13.55 323.91 a0.670503 0.62616 -180 0 0 1.77636E-015 -1.22178
+								 A32.1003 29.9774 0 0 1 0.73 316.16 a0.434387 0.40566 -180 0 0 -0.725202 0.344859 a0.946727 0.884117
+								 -180 0 0 0.463543 0.681433 Z" class="st12"/>
+				</g>
+				<g id="shape51-43" v:mID="51" v:groupContext="shape" transform="translate(4.16081,-8.60965)">
+					<title>Arkusz.51</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M4.02 323.86 A4.90309 2.98481 -90.9 0 0 0.1 321.91 A3.22599 1.60837 -180 0 0 4.02 323.86 Z"
+							class="st13"/>
+				</g>
+				<g id="shape52-48" v:mID="52" v:groupContext="shape" transform="translate(0.523319,-0.0610888)">
+					<title>Arkusz.52</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M0 313.77 L0 317.19 A35.496 33.1485 -180 0 0 13.08 323.91 L13.08 320.49 A36.6577 34.2334 0 0 1 0 313.77
+								 Z" class="st14"/>
+				</g>
+				<g id="shape53-52" v:mID="53" v:groupContext="shape" transform="translate(0.523319,-1.95484)">
+					<title>Arkusz.53</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M0 317.19 A32.1279 30.0032 -180 0 0 13.08 323.91 L13.08 323.06 A35.5103 33.1619 0 0 1 -0 316.34 L0 317.19
+								 Z" class="st15"/>
+				</g>
+				<g id="shape54-54" v:mID="54" v:groupContext="shape" transform="translate(0.523319,-0.122178)">
+					<title>Arkusz.54</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M0 313.77 L0 317.19 A35.496 33.1485 -180 0 0 13.08 323.91" class="st5"/>
+				</g>
+				<g id="shape55-57" v:mID="55" v:groupContext="shape" transform="translate(0.523319,5.68434E-014)">
+					<title>Arkusz.55</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M13.08 323.91 L13.08 320.49 A36.6577 34.2334 0 0 1 0 313.77" class="st16"/>
+				</g>
+			</g>
+		</g>
+		<g id="group1-61" transform="translate(279.88,-233.544)" v:mID="1" v:groupContext="group">
+			<v:custProps>
+				<v:cp v:nameU="Manufacturer" v:lbl="Producent" v:type="0" v:sortKey="Equipment" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="ProductNumber" v:lbl="Numer produktu" v:type="0" v:sortKey="Equipment" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="PartNumber" v:lbl="Numer katalogowy" v:type="0" v:sortKey="Equipment" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="ProductDescription" v:lbl="Opis produktu" v:type="0" v:sortKey="Equipment" v:invis="false"
+						v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="AssetNumber" v:lbl="Numer wyposażenia" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="SerialNumber" v:lbl="Numer seryjny" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="Location" v:lbl="Lokalizacja" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="Building" v:lbl="Budynek" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="Room" v:lbl="Pomieszczenie" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="Department" v:lbl="Dział" v:type="0" v:invis="false" v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="NetworkName" v:lbl="Nazwa sieci" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="IPAddress" v:lbl="Adres IP" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="SubnetMask" v:lbl="Maska podsieci" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="AdminInterface" v:lbl="Interfejs administracyjny" v:type="0" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="NumberofPorts" v:lbl="Liczba portów" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="CommunityString" v:lbl="Ciąg identyfikacyjny" v:type="0" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="NetworkDescription" v:lbl="Opis sieci" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="CPU" v:lbl="CPU" v:type="0" v:sortKey="Workstation" v:invis="false" v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="Memory" v:lbl="Pamięć" v:type="0" v:sortKey="Workstation" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="OperatingSystem" v:lbl="System operacyjny" v:type="0" v:sortKey="Workstation" v:invis="false"
+						v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="BelongsTo" v:lbl="Przynależność" v:type="0" v:invis="true" v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="ShapeClass" v:lbl="ShapeClass" v:type="0" v:invis="true" v:ask="false" v:langID="1045"
+						v:val="VT4(Sprzęt)"/>
+				<v:cp v:nameU="ShapeType" v:lbl="ShapeType" v:type="0" v:invis="true" v:ask="false" v:langID="1045"
+						v:val="VT4(Serwer)"/>
+				<v:cp v:nameU="MACAddress" v:lbl="Adres MAC" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="HardDriveSize" v:lbl="Pojemność dysku twardego" v:type="0" v:sortKey="Workstation" v:invis="false"
+						v:ask="false" v:langID="1045"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="HasText" v:val="VT0(0):5"/>
+				<v:ud v:nameU="ShapeClass" v:val="VT0(5):26"/>
+				<v:ud v:nameU="ShapeType" v:val="VT0(24):26"/>
+				<v:ud v:nameU="SolSH" v:val="VT14({BF0433D9-CD73-4EB5-8390-8653BE590246}):41"/>
+				<v:ud v:nameU="visLegendShape" v:val="VT0(2):26"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(14):26"/>
+				<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+				<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+			</v:userDefs>
+			<title>Serwer.1</title>
+			<g id="shape2-62" v:mID="2" v:groupContext="shape">
+				<title>Arkusz.2</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<g id="shadow2-63" v:groupContext="shadow" v:shadowOffsetX="2.16" v:shadowOffsetY="-2.16" v:shadowType="1"
+						v:shadowScale="0.99" transform="matrix(0.99,0,0,0.99,2.41512,5.04478)" class="st1">
+					<path d="M51.02 263.55 L31.4 253.05 L0 270.15 L0.01 314.09 A33.0369 30.8521 -180 0 0 19.37 323.91 L51.02 306.8
+								 L51.02 263.55 ZM8.71 276.99 A34.0948 31.84 -180 0 0 19.37 280.78 A33.7139 31.4843 0 0 1 8.71 276.99
+								 Z" class="st2"/>
+				</g>
+				<path d="M51.02 263.55 L31.4 253.05 L0 270.15 L0.01 314.09 A33.0369 30.8521 -180 0 0 19.37 323.91 L51.02 306.8 L51.02
+							 263.55 ZM8.71 276.99 A34.0948 31.84 -180 0 0 19.37 280.78 A33.7139 31.4843 0 0 1 8.71 276.99 Z"
+						class="st3"/>
+			</g>
+			<g id="shape3-66" v:mID="3" v:groupContext="shape" transform="translate(0,-43.1295)">
+				<title>Arkusz.3</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<path d="M19.36 323.91 L51.02 306.68 L31.4 296.18 L0 313.28 A34.0948 31.84 -180 0 0 19.37 323.91 L19.36 323.91 Z"
+						class="st4"/>
+				<path d="M19.36 323.91 L51.02 306.68 L31.4 296.18 L0 313.28 A34.0948 31.84 -180 0 0 19.37 323.91" class="st5"/>
+			</g>
+			<g id="shape4-70" v:mID="4" v:groupContext="shape" transform="translate(0.0115937,-3.41061E-013)">
+				<title>Arkusz.4</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<path d="M19.36 280.78 A33.7139 31.4843 0 0 1 -0 270.1 L0 314.09 A33.0369 30.8521 -180 0 0 19.36 323.91 L19.35 280.78
+							 L19.36 280.78 Z" class="st6"/>
+				<path d="M19.36 280.78 A33.7139 31.4843 0 0 1 -0 270.1 L0 314.09 A33.0369 30.8521 -180 0 0 19.36 323.91 L19.35 280.78"
+						class="st7"/>
+			</g>
+			<g id="shape5-74" v:mID="5" v:groupContext="shape" transform="translate(19.3628,-0.0487457)">
+				<title>Arkusz.5</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<path d="M0 280.83 L0 323.91 L31.66 306.85 L31.66 263.6 L0 280.83 Z" class="st8"/>
+			</g>
+			<g id="shape6-77" v:mID="6" v:groupContext="shape" transform="translate(0,-0.00156214)">
+				<title>Arkusz.6</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<path d="M51.02 263.55 L31.4 253.05 L0 270.15 L0.01 314.09 A33.0369 30.8521 -180 0 0 19.37 323.91 L51.02 306.8 L51.02
+							 263.55" class="st9"/>
+			</g>
+			<g id="shape7-80" v:mID="7" v:groupContext="shape" transform="translate(-102.576,-3.24703) rotate(-20)">
+				<title>Arkusz.7</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<ellipse cx="1.4821" cy="321.892" rx="1.4821" ry="2.01816" class="st10"/>
+			</g>
+			<g id="shape8-83" v:mID="8" v:groupContext="shape" transform="translate(3.13992,-6.23262)">
+				<title>Arkusz.8</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<path d="M0 311.94 A37.8205 34.5426 -96.44 0 0 13.08 318.66" class="st11"/>
+				<path d="M0 314.56 A37.8205 34.5426 -96.44 0 0 13.08 321.28" class="st11"/>
+				<path d="M0 317.19 A37.8205 34.5426 -96.44 0 0 13.08 323.91" class="st11"/>
+			</g>
+			<g id="group9-89" transform="translate(2.6166,-30.546)" v:mID="9" v:groupContext="group">
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<title>Arkusz.9</title>
+				<g id="shape10-90" v:mID="10" v:groupContext="shape" transform="translate(0,-7.06961)">
+					<title>Arkusz.10</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M0.47 317.19 A32.9981 30.8159 -180 0 0 13.55 323.91 a0.670503 0.62616 -180 0 0 1.77636E-015 -1.22178
+								 A32.1003 29.9774 0 0 1 0.73 316.16 a0.434387 0.40566 -180 0 0 -0.725202 0.344859 a0.946727 0.884117
+								 -180 0 0 0.463543 0.681433 Z" class="st12"/>
+				</g>
+				<g id="shape11-92" v:mID="11" v:groupContext="shape" transform="translate(4.16081,-8.60965)">
+					<title>Arkusz.11</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M4.02 323.86 A4.90309 2.98481 -90.9 0 0 0.1 321.91 A3.22599 1.60837 -180 0 0 4.02 323.86 Z"
+							class="st13"/>
+				</g>
+				<g id="shape12-95" v:mID="12" v:groupContext="shape" transform="translate(0.523319,-0.0610888)">
+					<title>Arkusz.12</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M0 313.77 L0 317.19 A35.496 33.1485 -180 0 0 13.08 323.91 L13.08 320.49 A36.6577 34.2334 0 0 1 0 313.77
+								 Z" class="st14"/>
+				</g>
+				<g id="shape13-98" v:mID="13" v:groupContext="shape" transform="translate(0.523319,-1.95484)">
+					<title>Arkusz.13</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M0 317.19 A32.1279 30.0032 -180 0 0 13.08 323.91 L13.08 323.06 A35.5103 33.1619 0 0 1 -0 316.34 L0 317.19
+								 Z" class="st15"/>
+				</g>
+				<g id="shape14-100" v:mID="14" v:groupContext="shape" transform="translate(0.523319,-0.122178)">
+					<title>Arkusz.14</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M0 313.77 L0 317.19 A35.496 33.1485 -180 0 0 13.08 323.91" class="st5"/>
+				</g>
+				<g id="shape15-103" v:mID="15" v:groupContext="shape" transform="translate(0.523319,5.68434E-014)">
+					<title>Arkusz.15</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M13.08 323.91 L13.08 320.49 A36.6577 34.2334 0 0 1 0 313.77" class="st16"/>
+				</g>
+			</g>
+		</g>
+		<g id="group16-107" transform="translate(29.7461,-233.544)" v:mID="16" v:groupContext="group">
+			<v:custProps>
+				<v:cp v:nameU="Manufacturer" v:lbl="Producent" v:type="0" v:sortKey="Equipment" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="ProductNumber" v:lbl="Numer produktu" v:type="0" v:sortKey="Equipment" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="PartNumber" v:lbl="Numer katalogowy" v:type="0" v:sortKey="Equipment" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="ProductDescription" v:lbl="Opis produktu" v:type="0" v:sortKey="Equipment" v:invis="false"
+						v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="AssetNumber" v:lbl="Numer wyposażenia" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="SerialNumber" v:lbl="Numer seryjny" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="Location" v:lbl="Lokalizacja" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="Building" v:lbl="Budynek" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="Room" v:lbl="Pomieszczenie" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="Department" v:lbl="Dział" v:type="0" v:invis="false" v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="NetworkName" v:lbl="Nazwa sieci" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="IPAddress" v:lbl="Adres IP" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="SubnetMask" v:lbl="Maska podsieci" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="AdminInterface" v:lbl="Interfejs administracyjny" v:type="0" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="NumberofPorts" v:lbl="Liczba portów" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="CommunityString" v:lbl="Ciąg identyfikacyjny" v:type="0" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="NetworkDescription" v:lbl="Opis sieci" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="CPU" v:lbl="CPU" v:type="0" v:sortKey="Workstation" v:invis="false" v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="Memory" v:lbl="Pamięć" v:type="0" v:sortKey="Workstation" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="OperatingSystem" v:lbl="System operacyjny" v:type="0" v:sortKey="Workstation" v:invis="false"
+						v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="BelongsTo" v:lbl="Przynależność" v:type="0" v:invis="true" v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="ShapeClass" v:lbl="ShapeClass" v:type="0" v:invis="true" v:ask="false" v:langID="1045"
+						v:val="VT4(Sprzęt)"/>
+				<v:cp v:nameU="ShapeType" v:lbl="ShapeType" v:type="0" v:invis="true" v:ask="false" v:langID="1045"
+						v:val="VT4(Serwer)"/>
+				<v:cp v:nameU="MACAddress" v:lbl="Adres MAC" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="HardDriveSize" v:lbl="Pojemność dysku twardego" v:type="0" v:sortKey="Workstation" v:invis="false"
+						v:ask="false" v:langID="1045"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="HasText" v:val="VT0(0):5"/>
+				<v:ud v:nameU="ShapeClass" v:val="VT0(5):26"/>
+				<v:ud v:nameU="ShapeType" v:val="VT0(24):26"/>
+				<v:ud v:nameU="SolSH" v:val="VT14({BF0433D9-CD73-4EB5-8390-8653BE590246}):41"/>
+				<v:ud v:nameU="visLegendShape" v:val="VT0(2):26"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(14):26"/>
+				<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+				<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+			</v:userDefs>
+			<title>Serwer.16</title>
+			<g id="shape17-108" v:mID="17" v:groupContext="shape">
+				<title>Arkusz.17</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<g id="shadow17-109" v:groupContext="shadow" v:shadowOffsetX="2.16" v:shadowOffsetY="-2.16" v:shadowType="1"
+						v:shadowScale="0.99" transform="matrix(0.99,0,0,0.99,2.41512,5.04478)" class="st1">
+					<path d="M51.02 263.55 L31.4 253.05 L0 270.15 L0.01 314.09 A33.0369 30.8521 -180 0 0 19.37 323.91 L51.02 306.8
+								 L51.02 263.55 ZM8.71 276.99 A34.0948 31.84 -180 0 0 19.37 280.78 A33.7139 31.4843 0 0 1 8.71 276.99
+								 Z" class="st2"/>
+				</g>
+				<path d="M51.02 263.55 L31.4 253.05 L0 270.15 L0.01 314.09 A33.0369 30.8521 -180 0 0 19.37 323.91 L51.02 306.8 L51.02
+							 263.55 ZM8.71 276.99 A34.0948 31.84 -180 0 0 19.37 280.78 A33.7139 31.4843 0 0 1 8.71 276.99 Z"
+						class="st3"/>
+			</g>
+			<g id="shape18-112" v:mID="18" v:groupContext="shape" transform="translate(0,-43.1295)">
+				<title>Arkusz.18</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<path d="M19.36 323.91 L51.02 306.68 L31.4 296.18 L0 313.28 A34.0948 31.84 -180 0 0 19.37 323.91 L19.36 323.91 Z"
+						class="st4"/>
+				<path d="M19.36 323.91 L51.02 306.68 L31.4 296.18 L0 313.28 A34.0948 31.84 -180 0 0 19.37 323.91" class="st5"/>
+			</g>
+			<g id="shape19-116" v:mID="19" v:groupContext="shape" transform="translate(0.0115937,-3.41061E-013)">
+				<title>Arkusz.19</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<path d="M19.36 280.78 A33.7139 31.4843 0 0 1 -0 270.1 L0 314.09 A33.0369 30.8521 -180 0 0 19.36 323.91 L19.35 280.78
+							 L19.36 280.78 Z" class="st6"/>
+				<path d="M19.36 280.78 A33.7139 31.4843 0 0 1 -0 270.1 L0 314.09 A33.0369 30.8521 -180 0 0 19.36 323.91 L19.35 280.78"
+						class="st7"/>
+			</g>
+			<g id="shape20-120" v:mID="20" v:groupContext="shape" transform="translate(19.3628,-0.0487457)">
+				<title>Arkusz.20</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<path d="M0 280.83 L0 323.91 L31.66 306.85 L31.66 263.6 L0 280.83 Z" class="st8"/>
+			</g>
+			<g id="shape21-123" v:mID="21" v:groupContext="shape" transform="translate(0,-0.00156214)">
+				<title>Arkusz.21</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<path d="M51.02 263.55 L31.4 253.05 L0 270.15 L0.01 314.09 A33.0369 30.8521 -180 0 0 19.37 323.91 L51.02 306.8 L51.02
+							 263.55" class="st9"/>
+			</g>
+			<g id="shape22-126" v:mID="22" v:groupContext="shape" transform="translate(-102.576,-3.24703) rotate(-20)">
+				<title>Arkusz.22</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<ellipse cx="1.4821" cy="321.892" rx="1.4821" ry="2.01816" class="st10"/>
+			</g>
+			<g id="shape23-129" v:mID="23" v:groupContext="shape" transform="translate(3.13992,-6.23262)">
+				<title>Arkusz.23</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<path d="M0 311.94 A37.8205 34.5426 -96.44 0 0 13.08 318.66" class="st11"/>
+				<path d="M0 314.56 A37.8205 34.5426 -96.44 0 0 13.08 321.28" class="st11"/>
+				<path d="M0 317.19 A37.8205 34.5426 -96.44 0 0 13.08 323.91" class="st11"/>
+			</g>
+			<g id="group24-135" transform="translate(2.6166,-30.546)" v:mID="24" v:groupContext="group">
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<title>Arkusz.24</title>
+				<g id="shape25-136" v:mID="25" v:groupContext="shape" transform="translate(0,-7.06961)">
+					<title>Arkusz.25</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M0.47 317.19 A32.9981 30.8159 -180 0 0 13.55 323.91 a0.670503 0.62616 -180 0 0 1.77636E-015 -1.22178
+								 A32.1003 29.9774 0 0 1 0.73 316.16 a0.434387 0.40566 -180 0 0 -0.725202 0.344859 a0.946727 0.884117
+								 -180 0 0 0.463543 0.681433 Z" class="st12"/>
+				</g>
+				<g id="shape56-138" v:mID="56" v:groupContext="shape" transform="translate(4.16081,-8.60965)">
+					<title>Arkusz.56</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M4.02 323.86 A4.90309 2.98481 -90.9 0 0 0.1 321.91 A3.22599 1.60837 -180 0 0 4.02 323.86 Z"
+							class="st13"/>
+				</g>
+				<g id="shape57-141" v:mID="57" v:groupContext="shape" transform="translate(0.523319,-0.0610888)">
+					<title>Arkusz.57</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M0 313.77 L0 317.19 A35.496 33.1485 -180 0 0 13.08 323.91 L13.08 320.49 A36.6577 34.2334 0 0 1 0 313.77
+								 Z" class="st14"/>
+				</g>
+				<g id="shape58-144" v:mID="58" v:groupContext="shape" transform="translate(0.523319,-1.95484)">
+					<title>Arkusz.58</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M0 317.19 A32.1279 30.0032 -180 0 0 13.08 323.91 L13.08 323.06 A35.5103 33.1619 0 0 1 -0 316.34 L0 317.19
+								 Z" class="st15"/>
+				</g>
+				<g id="shape59-146" v:mID="59" v:groupContext="shape" transform="translate(0.523319,-0.122178)">
+					<title>Arkusz.59</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M0 313.77 L0 317.19 A35.496 33.1485 -180 0 0 13.08 323.91" class="st5"/>
+				</g>
+				<g id="shape60-149" v:mID="60" v:groupContext="shape" transform="translate(0.523319,5.68434E-014)">
+					<title>Arkusz.60</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M13.08 323.91 L13.08 320.49 A36.6577 34.2334 0 0 1 0 313.77" class="st16"/>
+				</g>
+			</g>
+		</g>
+		<g id="group61-153" transform="translate(220.352,-43.623)" v:mID="61" v:groupContext="group">
+			<v:custProps>
+				<v:cp v:nameU="Manufacturer" v:lbl="Producent" v:type="0" v:sortKey="Equipment" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="ProductNumber" v:lbl="Numer produktu" v:type="0" v:sortKey="Equipment" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="PartNumber" v:lbl="Numer katalogowy" v:type="0" v:sortKey="Equipment" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="ProductDescription" v:lbl="Opis produktu" v:type="0" v:sortKey="Equipment" v:invis="false"
+						v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="AssetNumber" v:lbl="Numer wyposażenia" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="SerialNumber" v:lbl="Numer seryjny" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="Location" v:lbl="Lokalizacja" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="Building" v:lbl="Budynek" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="Room" v:lbl="Pomieszczenie" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="Department" v:lbl="Dział" v:type="0" v:invis="false" v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="NetworkName" v:lbl="Nazwa sieci" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="IPAddress" v:lbl="Adres IP" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="SubnetMask" v:lbl="Maska podsieci" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="AdminInterface" v:lbl="Interfejs administracyjny" v:type="0" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="NumberofPorts" v:lbl="Liczba portów" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="CommunityString" v:lbl="Ciąg identyfikacyjny" v:type="0" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="NetworkDescription" v:lbl="Opis sieci" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="CPU" v:lbl="CPU" v:type="0" v:sortKey="Workstation" v:invis="false" v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="Memory" v:lbl="Pamięć" v:type="0" v:sortKey="Workstation" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="OperatingSystem" v:lbl="System operacyjny" v:type="0" v:sortKey="Workstation" v:invis="false"
+						v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="BelongsTo" v:lbl="Przynależność" v:type="0" v:invis="true" v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="ShapeClass" v:lbl="ShapeClass" v:type="0" v:invis="true" v:ask="false" v:langID="1045"
+						v:val="VT4(Sprzęt)"/>
+				<v:cp v:nameU="ShapeType" v:lbl="ShapeType" v:type="0" v:invis="true" v:ask="false" v:langID="1045"
+						v:val="VT4(Serwer)"/>
+				<v:cp v:nameU="MACAddress" v:lbl="Adres MAC" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="HardDriveSize" v:lbl="Pojemność dysku twardego" v:type="0" v:sortKey="Workstation" v:invis="false"
+						v:ask="false" v:langID="1045"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="HasText" v:val="VT0(0):5"/>
+				<v:ud v:nameU="ShapeClass" v:val="VT0(5):26"/>
+				<v:ud v:nameU="ShapeType" v:val="VT0(24):26"/>
+				<v:ud v:nameU="SolSH" v:val="VT14({BF0433D9-CD73-4EB5-8390-8653BE590246}):41"/>
+				<v:ud v:nameU="visLegendShape" v:val="VT0(2):26"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(14):26"/>
+				<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+				<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+			</v:userDefs>
+			<title>Serwer.61</title>
+			<g id="shape62-154" v:mID="62" v:groupContext="shape">
+				<title>Arkusz.62</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<g id="shadow62-155" v:groupContext="shadow" v:shadowOffsetX="2.16" v:shadowOffsetY="-2.16" v:shadowType="1"
+						v:shadowScale="0.99" transform="matrix(0.99,0,0,0.99,2.41512,5.04478)" class="st1">
+					<path d="M51.02 263.55 L31.4 253.05 L0 270.15 L0.01 314.09 A33.0369 30.8521 -180 0 0 19.37 323.91 L51.02 306.8
+								 L51.02 263.55 ZM8.71 276.99 A34.0948 31.84 -180 0 0 19.37 280.78 A33.7139 31.4843 0 0 1 8.71 276.99
+								 Z" class="st2"/>
+				</g>
+				<path d="M51.02 263.55 L31.4 253.05 L0 270.15 L0.01 314.09 A33.0369 30.8521 -180 0 0 19.37 323.91 L51.02 306.8 L51.02
+							 263.55 ZM8.71 276.99 A34.0948 31.84 -180 0 0 19.37 280.78 A33.7139 31.4843 0 0 1 8.71 276.99 Z"
+						class="st3"/>
+			</g>
+			<g id="shape63-158" v:mID="63" v:groupContext="shape" transform="translate(0,-43.1295)">
+				<title>Arkusz.63</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<path d="M19.36 323.91 L51.02 306.68 L31.4 296.18 L0 313.28 A34.0948 31.84 -180 0 0 19.37 323.91 L19.36 323.91 Z"
+						class="st4"/>
+				<path d="M19.36 323.91 L51.02 306.68 L31.4 296.18 L0 313.28 A34.0948 31.84 -180 0 0 19.37 323.91" class="st5"/>
+			</g>
+			<g id="shape64-162" v:mID="64" v:groupContext="shape" transform="translate(0.0115937,-3.41061E-013)">
+				<title>Arkusz.64</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<path d="M19.36 280.78 A33.7139 31.4843 0 0 1 -0 270.1 L0 314.09 A33.0369 30.8521 -180 0 0 19.36 323.91 L19.35 280.78
+							 L19.36 280.78 Z" class="st6"/>
+				<path d="M19.36 280.78 A33.7139 31.4843 0 0 1 -0 270.1 L0 314.09 A33.0369 30.8521 -180 0 0 19.36 323.91 L19.35 280.78"
+						class="st7"/>
+			</g>
+			<g id="shape65-166" v:mID="65" v:groupContext="shape" transform="translate(19.3628,-0.0487457)">
+				<title>Arkusz.65</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<path d="M0 280.83 L0 323.91 L31.66 306.85 L31.66 263.6 L0 280.83 Z" class="st8"/>
+			</g>
+			<g id="shape66-169" v:mID="66" v:groupContext="shape" transform="translate(0,-0.00156214)">
+				<title>Arkusz.66</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<path d="M51.02 263.55 L31.4 253.05 L0 270.15 L0.01 314.09 A33.0369 30.8521 -180 0 0 19.37 323.91 L51.02 306.8 L51.02
+							 263.55" class="st9"/>
+			</g>
+			<g id="shape67-172" v:mID="67" v:groupContext="shape" transform="translate(-102.576,-3.24703) rotate(-20)">
+				<title>Arkusz.67</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<ellipse cx="1.4821" cy="321.892" rx="1.4821" ry="2.01816" class="st10"/>
+			</g>
+			<g id="shape68-175" v:mID="68" v:groupContext="shape" transform="translate(3.13992,-6.23262)">
+				<title>Arkusz.68</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<path d="M0 311.94 A37.8205 34.5426 -96.44 0 0 13.08 318.66" class="st11"/>
+				<path d="M0 314.56 A37.8205 34.5426 -96.44 0 0 13.08 321.28" class="st11"/>
+				<path d="M0 317.19 A37.8205 34.5426 -96.44 0 0 13.08 323.91" class="st11"/>
+			</g>
+			<g id="group69-181" transform="translate(2.6166,-30.546)" v:mID="69" v:groupContext="group">
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<title>Arkusz.69</title>
+				<g id="shape70-182" v:mID="70" v:groupContext="shape" transform="translate(0,-7.06961)">
+					<title>Arkusz.70</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M0.47 317.19 A32.9981 30.8159 -180 0 0 13.55 323.91 a0.670503 0.62616 -180 0 0 1.77636E-015 -1.22178
+								 A32.1003 29.9774 0 0 1 0.73 316.16 a0.434387 0.40566 -180 0 0 -0.725202 0.344859 a0.946727 0.884117
+								 -180 0 0 0.463543 0.681433 Z" class="st12"/>
+				</g>
+				<g id="shape71-184" v:mID="71" v:groupContext="shape" transform="translate(4.16081,-8.60965)">
+					<title>Arkusz.71</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M4.02 323.86 A4.90309 2.98481 -90.9 0 0 0.1 321.91 A3.22599 1.60837 -180 0 0 4.02 323.86 Z"
+							class="st13"/>
+				</g>
+				<g id="shape72-187" v:mID="72" v:groupContext="shape" transform="translate(0.523319,-0.0610888)">
+					<title>Arkusz.72</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M0 313.77 L0 317.19 A35.496 33.1485 -180 0 0 13.08 323.91 L13.08 320.49 A36.6577 34.2334 0 0 1 0 313.77
+								 Z" class="st14"/>
+				</g>
+				<g id="shape73-190" v:mID="73" v:groupContext="shape" transform="translate(0.523319,-1.95484)">
+					<title>Arkusz.73</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M0 317.19 A32.1279 30.0032 -180 0 0 13.08 323.91 L13.08 323.06 A35.5103 33.1619 0 0 1 -0 316.34 L0 317.19
+								 Z" class="st15"/>
+				</g>
+				<g id="shape74-192" v:mID="74" v:groupContext="shape" transform="translate(0.523319,-0.122178)">
+					<title>Arkusz.74</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M0 313.77 L0 317.19 A35.496 33.1485 -180 0 0 13.08 323.91" class="st5"/>
+				</g>
+				<g id="shape75-195" v:mID="75" v:groupContext="shape" transform="translate(0.523319,5.68434E-014)">
+					<title>Arkusz.75</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M13.08 323.91 L13.08 320.49 A36.6577 34.2334 0 0 1 0 313.77" class="st16"/>
+				</g>
+			</g>
+		</g>
+		<g id="group76-199" transform="translate(89.9587,-42.2057)" v:mID="76" v:groupContext="group">
+			<v:custProps>
+				<v:cp v:nameU="Manufacturer" v:lbl="Producent" v:type="0" v:sortKey="Equipment" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="ProductNumber" v:lbl="Numer produktu" v:type="0" v:sortKey="Equipment" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="PartNumber" v:lbl="Numer katalogowy" v:type="0" v:sortKey="Equipment" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="ProductDescription" v:lbl="Opis produktu" v:type="0" v:sortKey="Equipment" v:invis="false"
+						v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="AssetNumber" v:lbl="Numer wyposażenia" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="SerialNumber" v:lbl="Numer seryjny" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="Location" v:lbl="Lokalizacja" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="Building" v:lbl="Budynek" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="Room" v:lbl="Pomieszczenie" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="Department" v:lbl="Dział" v:type="0" v:invis="false" v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="NetworkName" v:lbl="Nazwa sieci" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="IPAddress" v:lbl="Adres IP" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="SubnetMask" v:lbl="Maska podsieci" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="AdminInterface" v:lbl="Interfejs administracyjny" v:type="0" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="NumberofPorts" v:lbl="Liczba portów" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="CommunityString" v:lbl="Ciąg identyfikacyjny" v:type="0" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="NetworkDescription" v:lbl="Opis sieci" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="CPU" v:lbl="CPU" v:type="0" v:sortKey="Workstation" v:invis="false" v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="Memory" v:lbl="Pamięć" v:type="0" v:sortKey="Workstation" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="OperatingSystem" v:lbl="System operacyjny" v:type="0" v:sortKey="Workstation" v:invis="false"
+						v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="BelongsTo" v:lbl="Przynależność" v:type="0" v:invis="true" v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="ShapeClass" v:lbl="ShapeClass" v:type="0" v:invis="true" v:ask="false" v:langID="1045"
+						v:val="VT4(Sprzęt)"/>
+				<v:cp v:nameU="ShapeType" v:lbl="ShapeType" v:type="0" v:invis="true" v:ask="false" v:langID="1045"
+						v:val="VT4(Serwer)"/>
+				<v:cp v:nameU="MACAddress" v:lbl="Adres MAC" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="HardDriveSize" v:lbl="Pojemność dysku twardego" v:type="0" v:sortKey="Workstation" v:invis="false"
+						v:ask="false" v:langID="1045"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="HasText" v:val="VT0(0):5"/>
+				<v:ud v:nameU="ShapeClass" v:val="VT0(5):26"/>
+				<v:ud v:nameU="ShapeType" v:val="VT0(24):26"/>
+				<v:ud v:nameU="SolSH" v:val="VT14({BF0433D9-CD73-4EB5-8390-8653BE590246}):41"/>
+				<v:ud v:nameU="visLegendShape" v:val="VT0(2):26"/>
+				<v:ud v:nameU="visVersion" v:prompt="" v:val="VT0(14):26"/>
+				<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+				<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+			</v:userDefs>
+			<title>Serwer.76</title>
+			<g id="shape77-200" v:mID="77" v:groupContext="shape">
+				<title>Arkusz.77</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<g id="shadow77-201" v:groupContext="shadow" v:shadowOffsetX="2.16" v:shadowOffsetY="-2.16" v:shadowType="1"
+						v:shadowScale="0.99" transform="matrix(0.99,0,0,0.99,2.41512,5.04478)" class="st1">
+					<path d="M51.02 263.55 L31.4 253.05 L0 270.15 L0.01 314.09 A33.0369 30.8521 -180 0 0 19.37 323.91 L51.02 306.8
+								 L51.02 263.55 ZM8.71 276.99 A34.0948 31.84 -180 0 0 19.37 280.78 A33.7139 31.4843 0 0 1 8.71 276.99
+								 Z" class="st2"/>
+				</g>
+				<path d="M51.02 263.55 L31.4 253.05 L0 270.15 L0.01 314.09 A33.0369 30.8521 -180 0 0 19.37 323.91 L51.02 306.8 L51.02
+							 263.55 ZM8.71 276.99 A34.0948 31.84 -180 0 0 19.37 280.78 A33.7139 31.4843 0 0 1 8.71 276.99 Z"
+						class="st3"/>
+			</g>
+			<g id="shape78-204" v:mID="78" v:groupContext="shape" transform="translate(0,-43.1295)">
+				<title>Arkusz.78</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<path d="M19.36 323.91 L51.02 306.68 L31.4 296.18 L0 313.28 A34.0948 31.84 -180 0 0 19.37 323.91 L19.36 323.91 Z"
+						class="st4"/>
+				<path d="M19.36 323.91 L51.02 306.68 L31.4 296.18 L0 313.28 A34.0948 31.84 -180 0 0 19.37 323.91" class="st5"/>
+			</g>
+			<g id="shape79-208" v:mID="79" v:groupContext="shape" transform="translate(0.0115937,-3.41061E-013)">
+				<title>Arkusz.79</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<path d="M19.36 280.78 A33.7139 31.4843 0 0 1 -0 270.1 L0 314.09 A33.0369 30.8521 -180 0 0 19.36 323.91 L19.35 280.78
+							 L19.36 280.78 Z" class="st6"/>
+				<path d="M19.36 280.78 A33.7139 31.4843 0 0 1 -0 270.1 L0 314.09 A33.0369 30.8521 -180 0 0 19.36 323.91 L19.35 280.78"
+						class="st7"/>
+			</g>
+			<g id="shape80-212" v:mID="80" v:groupContext="shape" transform="translate(19.3628,-0.0487457)">
+				<title>Arkusz.80</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<path d="M0 280.83 L0 323.91 L31.66 306.85 L31.66 263.6 L0 280.83 Z" class="st8"/>
+			</g>
+			<g id="shape81-215" v:mID="81" v:groupContext="shape" transform="translate(0,-0.00156214)">
+				<title>Arkusz.81</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<path d="M51.02 263.55 L31.4 253.05 L0 270.15 L0.01 314.09 A33.0369 30.8521 -180 0 0 19.37 323.91 L51.02 306.8 L51.02
+							 263.55" class="st9"/>
+			</g>
+			<g id="shape82-218" v:mID="82" v:groupContext="shape" transform="translate(-102.576,-3.24703) rotate(-20)">
+				<title>Arkusz.82</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<ellipse cx="1.4821" cy="321.892" rx="1.4821" ry="2.01816" class="st10"/>
+			</g>
+			<g id="shape83-221" v:mID="83" v:groupContext="shape" transform="translate(3.13992,-6.23262)">
+				<title>Arkusz.83</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<path d="M0 311.94 A37.8205 34.5426 -96.44 0 0 13.08 318.66" class="st11"/>
+				<path d="M0 314.56 A37.8205 34.5426 -96.44 0 0 13.08 321.28" class="st11"/>
+				<path d="M0 317.19 A37.8205 34.5426 -96.44 0 0 13.08 323.91" class="st11"/>
+			</g>
+			<g id="group84-227" transform="translate(2.6166,-30.546)" v:mID="84" v:groupContext="group">
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<title>Arkusz.84</title>
+				<g id="shape85-228" v:mID="85" v:groupContext="shape" transform="translate(0,-7.06961)">
+					<title>Arkusz.85</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M0.47 317.19 A32.9981 30.8159 -180 0 0 13.55 323.91 a0.670503 0.62616 -180 0 0 1.77636E-015 -1.22178
+								 A32.1003 29.9774 0 0 1 0.73 316.16 a0.434387 0.40566 -180 0 0 -0.725202 0.344859 a0.946727 0.884117
+								 -180 0 0 0.463543 0.681433 Z" class="st12"/>
+				</g>
+				<g id="shape86-230" v:mID="86" v:groupContext="shape" transform="translate(4.16081,-8.60965)">
+					<title>Arkusz.86</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M4.02 323.86 A4.90309 2.98481 -90.9 0 0 0.1 321.91 A3.22599 1.60837 -180 0 0 4.02 323.86 Z"
+							class="st13"/>
+				</g>
+				<g id="shape87-233" v:mID="87" v:groupContext="shape" transform="translate(0.523319,-0.0610888)">
+					<title>Arkusz.87</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M0 313.77 L0 317.19 A35.496 33.1485 -180 0 0 13.08 323.91 L13.08 320.49 A36.6577 34.2334 0 0 1 0 313.77
+								 Z" class="st14"/>
+				</g>
+				<g id="shape88-236" v:mID="88" v:groupContext="shape" transform="translate(0.523319,-1.95484)">
+					<title>Arkusz.88</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M0 317.19 A32.1279 30.0032 -180 0 0 13.08 323.91 L13.08 323.06 A35.5103 33.1619 0 0 1 -0 316.34 L0 317.19
+								 Z" class="st15"/>
+				</g>
+				<g id="shape89-238" v:mID="89" v:groupContext="shape" transform="translate(0.523319,-0.122178)">
+					<title>Arkusz.89</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M0 313.77 L0 317.19 A35.496 33.1485 -180 0 0 13.08 323.91" class="st5"/>
+				</g>
+				<g id="shape90-241" v:mID="90" v:groupContext="shape" transform="translate(0.523319,5.68434E-014)">
+					<title>Arkusz.90</title>
+					<v:userDefs>
+						<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+						<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+					</v:userDefs>
+					<path d="M13.08 323.91 L13.08 320.49 A36.6577 34.2334 0 0 1 0 313.77" class="st16"/>
+				</g>
+			</g>
+		</g>
+		<g id="group91-245" transform="translate(18.75,-159.489)" v:mID="91" v:groupContext="group">
+			<v:custProps>
+				<v:cp v:nameU="Manufacturer" v:lbl="Producent" v:type="0" v:sortKey="Equipment" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="ProductNumber" v:lbl="Numer produktu" v:type="0" v:sortKey="Equipment" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="PartNumber" v:lbl="Numer katalogowy" v:type="0" v:sortKey="Equipment" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="ProductDescription" v:lbl="Opis produktu" v:type="0" v:sortKey="Equipment" v:invis="false"
+						v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="AssetNumber" v:lbl="Numer wyposażenia" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="SerialNumber" v:lbl="Numer seryjny" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="Location" v:lbl="Lokalizacja" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="Building" v:lbl="Budynek" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="Room" v:lbl="Pomieszczenie" v:type="0" v:sortKey="Asset" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="Department" v:lbl="Dział" v:type="0" v:invis="false" v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="ShapeClass" v:lbl="ShapeClass" v:type="0" v:invis="true" v:ask="false" v:langID="1045"
+						v:val="VT4(Połączenia)"/>
+				<v:cp v:nameU="ShapeType" v:lbl="ShapeType" v:type="0" v:invis="true" v:ask="false" v:langID="1045"
+						v:val="VT4(Kabel sieci Ethernet)"/>
+				<v:cp v:nameU="NetworkName" v:lbl="Nazwa sieci" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="IPAddress" v:lbl="Adres IP" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="SubnetMask" v:lbl="Maska podsieci" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="AdminInterface" v:lbl="Interfejs administracyjny" v:type="0" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="NumberofPorts" v:lbl="Liczba portów" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="MACAddress" v:lbl="Adres MAC" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+				<v:cp v:nameU="CommunityString" v:lbl="Ciąg identyfikacyjny" v:type="0" v:sortKey="Network" v:invis="false"
+						v:ask="false" v:langID="1045"/>
+				<v:cp v:nameU="NetworkDescription" v:lbl="Opis sieci" v:type="0" v:sortKey="Network" v:invis="false" v:ask="false"
+						v:langID="1045"/>
+			</v:custProps>
+			<v:userDefs>
+				<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+				<v:ud v:nameU="AntiScale" v:val="VT0(1):26"/>
+				<v:ud v:nameU="ShapeClass" v:val="VT0(4):26"/>
+				<v:ud v:nameU="ShapeType" v:val="VT0(12):26"/>
+				<v:ud v:nameU="SolSH" v:val="VT14({BF0433D9-CD73-4EB5-8390-8653BE590246}):41"/>
+				<v:ud v:nameU="visLegendShape" v:val="VT0(2):26"/>
+				<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+				<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+			</v:userDefs>
+			<title>Ethernet</title>
+			<g id="shape92-246" v:mID="92" v:groupContext="shape">
+				<title>Arkusz.92</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<g id="shadow92-247" v:groupContext="shadow" v:shadowOffsetX="2.16" v:shadowOffsetY="-2.16" v:shadowType="1"
+						v:shadowScale="0.99" transform="matrix(0.99,0,4.12149E-031,0.99,3.83587,5.31052)" class="st1">
+					<path d="M13.09 306.19 A13.0927 8.85827 -0 0 0 13.09 323.91 L322.08 323.91 A13.0927 8.85827 -0 0 0 322.08 306.19
+								 L13.09 306.19 ZM329.94 315.05 A7.85562 7.08661 0 1 1 314.22 315.05 A7.85562 7.08661 0 1 1 329.94
+								 315.05 Z" class="st17"/>
+				</g>
+				<path d="M13.09 306.19 A13.0927 8.85827 -0 0 0 13.09 323.91 L322.08 323.91 A13.0927 8.85827 -0 0 0 322.08 306.19
+							 L13.09 306.19 ZM329.94 315.05 A7.85562 7.08661 0 1 1 314.22 315.05 A7.85562 7.08661 0 1 1 329.94 315.05
+							 Z" class="st18"/>
+			</g>
+			<g id="group93-250" v:mID="93" v:groupContext="group">
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<title>Arkusz.93</title>
+				<g id="shape93-251" v:mID="93" v:groupContext="groupContent">
+					<path d="M36.51 214.42 L36.51 315.05 L167.59 315.05" class="st19"/>
+					<path d="M96.72 405.76 L96.72 315.05 L167.59 315.05" class="st19"/>
+					<path d="M227.11 404.34 L227.11 315.05 L167.59 315.05" class="st19"/>
+					<path d="M161.57 214.42 L161.57 315.05 L167.59 315.05" class="st19"/>
+					<path d="M286.64 214.42 L286.64 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+					<path d="M251.38 315.05 L167.59 315.05" class="st19"/>
+					<path d="M83.79 315.05 L167.59 315.05" class="st19"/>
+				</g>
+			</g>
+			<g id="shape94-317" v:mID="94" v:groupContext="shape">
+				<title>Arkusz.94</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<path d="M333.4 315.05 A2.65748 7.08661 -180 1 0 328.09 315.05 A2.65748 7.08661 -180 1 0 333.4 315.05 ZM4.43 306.19
+							 L330.74 306.19 A8.85827 4.42913 90 1 1 330.74 323.91 L4.43 323.91 A8.85827 4.42913 90 0 1 4.43 306.19
+							 Z" class="st20"/>
+			</g>
+			<g id="shape95-321" v:mID="95" v:groupContext="shape">
+				<title>Arkusz.95</title>
+				<v:userDefs>
+					<v:ud v:nameU="msvThemeColors" v:val="VT0(18):26"/>
+					<v:ud v:nameU="msvThemeEffects" v:val="VT0(7):26"/>
+				</v:userDefs>
+				<path d="M4.43 306.19 L330.74 306.19 A8.85827 4.42913 90 1 1 330.74 323.91 L4.43 323.91 A8.85827 4.42913 90 0 1 4.43
+							 306.19" class="st21"/>
+			</g>
+			<g id="shape91-324" v:mID="91" v:groupContext="groupContent">
+				<v:textBlock v:margins="rect(0,0,0,0)" v:tabSpace="42.5197"/>
+				<g id="shadow91-325" v:groupContext="shadow" v:shadowOffsetX="2.16" v:shadowOffsetY="-2.16" v:shadowType="1"
+						v:shadowScale="0.99" transform="matrix(0.99,0,4.12149E-031,0.99,3.83587,5.31052)" class="st1"/>
+			</g>
+		</g>
+	</g>
+</svg>
