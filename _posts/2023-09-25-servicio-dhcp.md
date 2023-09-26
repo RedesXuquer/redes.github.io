@@ -13,7 +13,7 @@ El protocolo DHCP es uno de los más utilizados por los routers, tanto doméstic
 
 Por más que este protocolo sea tan utilizado, lo cierto es que seguramente no conozcas para qué sirve exactamente. Además de esto, no todo el mundo conoce cada una de sus funcionalidades y también cómo funciona. Entre otros aspectos, también puedes encontrar qué mensajes se intercambian entre el servidor y los clientes. Por eso mismo, en RedesZone puedes encontrar todo lo que debes saber sobre el protocolo DHCP.
 
-# ¿Qué es y para que sirve este protocolo?
+# ¿Qué es y para qué sirve este protocolo?
 El protocolo DHCP (Protocolo de configuración dinámica de host) o también conocido como «Dynamic Host Configuration Protocol«, es un protocolo de red que utiliza una arquitectura cliente-servidor. Por tanto, tendremos uno o varios servidores DHCP y también uno o varios clientes, que se deberán comunicar entre ellos correctamente para que el servidor DHCP brinde información a los diferentes clientes conectados.
 
 Este protocolo se encarga de asignar de manera dinámica y automática una dirección IP, ya sea una dirección IP privada desde el router hacia los equipos de la red local, o también una IP pública por parte de un operador que utilice este tipo de protocolo para el establecimiento de la conexión.
@@ -52,33 +52,44 @@ Una vez que ya conocemos qué es el protocolo DHCP y sus principales caracterís
 
 Con permisos de root ejecutamos el comando:
 
+```console
 sudo apt-get install isc-dhcp-server
+```
 
 Comprobamos que el servicio está activo en su respectivo puerto:
 
+```console
 netstat -putona
+```
 
 Tras completar la instalación del servidor vamos a definir la interfaz de red sobre la que funcionará el servidor DHCP. Para este laboratorio de ejemplo será *enp0s3*, por lo que declaramos esta interfaz de IPv4 en */etc/default/isc-dhcp-server*
 
+```console
 INTERFACESV4="enp0s3"
 INTERFACESV6=""
+```
 
 Lo siguiente es configurar nuestro DHCP, para ello vamos a */etc/dhcp* y editamos el fichero *dhcpd.conf*
 
 Podemos comprobar la sintaxis con:
 
+```console
 dhcpd -t -cf /etc/dhcp/dhcpd.conf
-
+```
 De ser errónea nos mostrara el punto donde se encontró el error, este sería el output que se recibe si no hay fallos de sintaxis:
 
 Tras esta configuración solo queda reiniciar el servidor y comprobar que se encuentra en buen estado:
 
+```console
 service isc-dhcp-server restart
 service isc-dhcp.server status
+```
 
 ## Comprobación
 En una máquina cliente Xubuntu vamos a las propiedades de red IPv4 y marcamos la opción para que asigne los parámetros de red automáticamente, tras eso podemos hacer un *ip a* para verificar que nos ha dado una IP del rango que hemos definido en la configuración del DHCP.
 
+```console
 ip a
+```
 
 ## Extras

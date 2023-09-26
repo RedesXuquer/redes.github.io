@@ -838,7 +838,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="993 words"
+  title="1001 words"
 >
   <em>5 min</em> read</span>
 
@@ -854,7 +854,7 @@
 
 <p>Por más que este protocolo sea tan utilizado, lo cierto es que seguramente no conozcas para qué sirve exactamente. Además de esto, no todo el mundo conoce cada una de sus funcionalidades y también cómo funciona. Entre otros aspectos, también puedes encontrar qué mensajes se intercambian entre el servidor y los clientes. Por eso mismo, en RedesZone puedes encontrar todo lo que debes saber sobre el protocolo DHCP.</p>
 
-<h1 id="qué-es-y-para-que-sirve-este-protocolo">¿Qué es y para que sirve este protocolo?</h1>
+<h1 id="qué-es-y-para-qué-sirve-este-protocolo">¿Qué es y para qué sirve este protocolo?</h1>
 <p>El protocolo DHCP (Protocolo de configuración dinámica de host) o también conocido como «Dynamic Host Configuration Protocol«, es un protocolo de red que utiliza una arquitectura cliente-servidor. Por tanto, tendremos uno o varios servidores DHCP y también uno o varios clientes, que se deberán comunicar entre ellos correctamente para que el servidor DHCP brinde información a los diferentes clientes conectados.</p>
 
 <p>Este protocolo se encarga de asignar de manera dinámica y automática una dirección IP, ya sea una dirección IP privada desde el router hacia los equipos de la red local, o también una IP pública por parte de un operador que utilice este tipo de protocolo para el establecimiento de la conexión.</p>
@@ -898,34 +898,59 @@ Aunque el protocolo DHCP es muy conocido por proporcionar la dirección IP, más
 
 <p>Con permisos de root ejecutamos el comando:</p>
 
-<p>sudo apt-get install isc-dhcp-server</p>
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="go">sudo apt-get install isc-dhcp-server
+</span></pre></td></tr></tbody></table></code></div></div>
 
 <p>Comprobamos que el servicio está activo en su respectivo puerto:</p>
 
-<p>netstat -putona</p>
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="go">netstat -putona
+</span></pre></td></tr></tbody></table></code></div></div>
 
 <p>Tras completar la instalación del servidor vamos a definir la interfaz de red sobre la que funcionará el servidor DHCP. Para este laboratorio de ejemplo será <em>enp0s3</em>, por lo que declaramos esta interfaz de IPv4 en <em>/etc/default/isc-dhcp-server</em></p>
 
-<p>INTERFACESV4=”enp0s3”
-INTERFACESV6=””</p>
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="go">INTERFACESV4="enp0s3"
+INTERFACESV6=""
+</span></pre></td></tr></tbody></table></code></div></div>
 
 <p>Lo siguiente es configurar nuestro DHCP, para ello vamos a <em>/etc/dhcp</em> y editamos el fichero <em>dhcpd.conf</em></p>
 
 <p>Podemos comprobar la sintaxis con:</p>
 
-<p>dhcpd -t -cf /etc/dhcp/dhcpd.conf</p>
-
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="go">dhcpd -t -cf /etc/dhcp/dhcpd.conf
+</span></pre></td></tr></tbody></table></code></div></div>
 <p>De ser errónea nos mostrara el punto donde se encontró el error, este sería el output que se recibe si no hay fallos de sintaxis:</p>
 
 <p>Tras esta configuración solo queda reiniciar el servidor y comprobar que se encuentra en buen estado:</p>
 
-<p>service isc-dhcp-server restart
-service isc-dhcp.server status</p>
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="go">service isc-dhcp-server restart
+service isc-dhcp.server status
+</span></pre></td></tr></tbody></table></code></div></div>
 
 <h2 id="comprobación"><span class="me-2">Comprobación</span><a href="#comprobación" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>En una máquina cliente Xubuntu vamos a las propiedades de red IPv4 y marcamos la opción para que asigne los parámetros de red automáticamente, tras eso podemos hacer un <em>ip a</em> para verificar que nos ha dado una IP del rango que hemos definido en la configuración del DHCP.</p>
 
-<p>ip a</p>
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="go">ip a
+</span></pre></td></tr></tbody></table></code></div></div>
 
 <h2 id="extras"><span class="me-2">Extras</span><a href="#extras" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
