@@ -259,9 +259,9 @@ La topología de malla es en la que cada nodo está conectado a todos los nodos.
 - Puede dificultar en la instalación de nuevos dispositivos, ya que se necesitaría conectar el dispositivo con todos los otros dispositivos.
 - Las redes malla son difíciles de gestionar y solucionar problemas.
 
-## 6. Red en malla
-![Red en malla](diagrama-topologia-de-red-en-arbol.webp)
-_Red en malla_
+## 6. Red en árbol
+![Red en árbol](diagrama-topologia-de-red-en-arbol.webp)
+_Red en árbol_
 
 La red en árbol es una topología de red en la que los nodos están colocados en forma de árbol. Desde una visión topológica, es parecida a una serie de redes en estrella interconectadas salvo en que no tiene un concentrador central. En cambio, tiene un nodo de enlace troncal, generalmente ocupado por un hub o switch, desde el que se ramifican los demás nodos. Es una variación de la red en bus, el fallo de un nodo implica una interrupción en las comunicaciones. Se comparte el mismo canal de comunicaciones.
 
