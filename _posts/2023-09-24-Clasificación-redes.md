@@ -194,3 +194,25 @@ _Red en bus_
 - ocupa mucho espacio.
 - Hay mejores opciones de red.
 
+## 2.Red en estrella
+
+Una red en estrella es una red de computadoras donde las estaciones están conectadas directamente a un punto central y todas las comunicaciones se hacen necesariamente a través de ese punto (conmutador, repetidor o concentrador). Los dispositivos no están directamente conectados entre sí, además de que no se permite tanto tráfico de información. Dada su transmisión, una red en estrella activa tiene un nodo central “activo” que normalmente tiene los medios para prevenir problemas relacionados con el eco.
+
+Se utiliza sobre todo para redes locales (LAN). La mayoría de las redes de área local que tienen un conmutador (switch) o un concentrador (hub) siguen esta topología. El punto o nodo central en estas sería el switch o el hub, por el que pasan todos los paquetes de usuarios.
+
+Es la topología utilizada por la plataforma de Google.
+
+### Ventajas
+- Posee un sistema que permite agregar nuevos equipos fácilmente.
+- Reconfiguración rápida de cada daño.
+- Fácil de prevenir daños y/o conflictos, ya que no afecta a los demás equipos si ocurre algún fallo.
+- Centralización de la red.
+- Fácil de encontrar fallas de cada uno de ellos.
+
+### Desventajas
+- Si el hub (repetidor) o switch central falla, toda la red deja de transmitir.
+- Es costosa, ya que requiere más cables que otras topologías
+- El cable viaja por separado del concentrador a cada computadora.
+
+![Red en anillo](topologia-de-red-en-estrella-2022.webp)
+_Red en anillo_
