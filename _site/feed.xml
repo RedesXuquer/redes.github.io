@@ -4,7 +4,7 @@
   <id>/redes.github.io/_site/</id>
   <title>Redes</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-09-26T21:22:15+08:00</updated>
+  <updated>2023-09-27T00:58:06+08:00</updated>
   <author>
     <name>Luis</name>
     <uri>/redes.github.io/_site/</uri>
@@ -24,7 +24,7 @@
     <link href="/redes.github.io/_site/posts/Clasificaci%C3%B3n-redes/" rel="alternate" type="text/html" title="Clasificación de las redes" />
     <published>2023-09-25T19:00:00+08:00</published>
   
-    <updated>2023-09-26T21:18:31+08:00</updated>
+    <updated>2023-09-26T21:22:16+08:00</updated>
   
     <id>/redes.github.io/_site/posts/Clasificaci%C3%B3n-redes/</id>
     <content src="/redes.github.io/_site/posts/Clasificaci%C3%B3n-redes/" />
@@ -145,57 +145,6 @@ A través del cabl...
 
   
   <entry>
-    <title>Binario</title>
-    <link href="/redes.github.io/_site/posts/binario/" rel="alternate" type="text/html" title="Binario" />
-    <published>2022-01-31T05:30:00+08:00</published>
-  
-    <updated>2023-09-25T03:08:41+08:00</updated>
-  
-    <id>/redes.github.io/_site/posts/binario/</id>
-    <content src="/redes.github.io/_site/posts/binario/" />
-    <author>
-      <name>Luis</name>
-    </author>
-
-  
-    
-    <category term="Sistemas Microinformáticos y Redes" />
-    
-    <category term="Redes Locales" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Existen 10 tipos de personas… las que saben binario y las que no.
-
-
-  ¿Porqué los seres humanos usamos el sistema decimal?
-  
-
-    Porque tenemos 10 dedos
-
-  
-
-
-
-  ¿Porqué las máquinas usan el sistema binario?
-  
-
-    El motivo por el cual los ordenadores trabajan en binario, es por el hecho que a la hora de construir una unidad de ejecución que pueda sumar o multiplicar números es mucho más fá...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
     <title>Customize the Favicon</title>
     <link href="/redes.github.io/_site/posts/customize-the-favicon/" rel="alternate" type="text/html" title="Customize the Favicon" />
     <published>2019-08-11T00:34:00+08:00</published>
@@ -229,6 +178,54 @@ A través del cabl...
 Generate the favicon
 
 Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and then go to the online tool Real Favicon Generator and click the button Select your Favicon image ...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Getting Started</title>
+    <link href="/redes.github.io/_site/posts/getting-started/" rel="alternate" type="text/html" title="Getting Started" />
+    <published>2019-08-09T20:55:00+08:00</published>
+  
+    <updated>2023-09-23T17:44:44+08:00</updated>
+  
+    <id>/redes.github.io/_site/posts/getting-started/</id>
+    <content src="/redes.github.io/_site/posts/getting-started/" />
+    <author>
+      <name>cotes</name>
+    </author>
+
+  
+    
+    <category term="Blogging" />
+    
+    <category term="Tutorial" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Prerequisites
+
+Follow the instructions in the Jekyll Docs to complete the installation of the basic environment. Git also needs to be installed.
+
+Installation
+
+Creating a New Site
+
+There are two ways to create a new repository for this theme:
+
+
+  Using the Chirpy Starter - Easy to upgrade, isolates irrelevant project files so you can focus on writing.
+  GitHub Fork - Convenient for custom devel...
     </summary>
   
 
