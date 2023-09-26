@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-zebra-design-disabled vector-feature-custom-font-size-clientpref-disabled vector-feature-client-preferences-disabled" lang="es" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Archivo:Topologia magistrali.svg - Wikipedia, la enciclopedia libre</title>
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-sticky-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-zebra-design-disabled vector-feature-custom-font-size-clientpref-disabled vector-feature-client-preferences-disabled";var cookie=document.cookie.match(/(?:^|; )eswikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":[",\t."," \t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","enero",
+"febrero","marzo","abril","mayo","junio","julio","agosto","septiembre","octubre","noviembre","diciembre"],"wgRequestId":"f29d294a-b3bf-40dd-894d-c8f6bab1e9bc","wgCanonicalNamespace":"File","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":6,"wgPageName":"Archivo:Topologia_magistrali.svg","wgTitle":"Topologia magistrali.svg","wgCurRevisionId":0,"wgRevisionId":0,"wgArticleId":0,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgPageViewLanguage":"es","wgPageContentLanguage":"es","wgPageContentModel":"wikitext","wgRelevantPageName":"Archivo:Topologia_magistrali.svg","wgRelevantArticleId":0,"wgIsProbablyEditable":false,"wgRelevantPageIsProbablyEditable":false,"wgRestrictionCreate":[],"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":true,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":0,"wgNoticeProject":"wikipedia","wgMediaViewerOnClick":true,
+"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":10,"wgVisualEditor":{"pageLanguageCode":"es","pageLanguageDir":"ltr","pageVariantFallbacks":"es"},"wgULSCurrentAutonym":"español","wgCentralAuthMobileDomain":false,"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":true,"wgULSisLanguageSelectorEmpty":true,"wgCheckUserClientHintsHeadersJsApi":["architecture","bitness","brands","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGETopicsMatchModeEnabled":true,"wgGEStructuredTaskRejectionReasonTextInputEnabled":false,"wgGELevelingUpEnabledForUser":false};RLSTATE={"skins.vector.user.styles":"ready","ext.gadget.imagenesinfobox":"ready","ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","skins.vector.user":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","mediawiki.interface.helpers.styles":"ready","filepage":"ready",
+"mediawiki.action.view.filepage":"ready","codex-search-styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.wikimediaBadges":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready"};RLPAGEMODULES=["mediawiki.action.view.metadata","site","mediawiki.page.ready","skins.vector.js","ext.urlShortener.toolbar","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.cx.eventlogging.campaigns","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.a-commons-directo","ext.gadget.ReferenceTooltips","ext.gadget.refToolbar","ext.gadget.switcher","ext.centralauth.centralautologin","mmv.head","mmv.bootstrap.autostart","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.uls.compactlinks","ext.uls.interface","ext.checkUser.clientHints"];</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
+}];});});</script>
+<link rel="stylesheet" href="/w/load.php?lang=es&amp;modules=codex-search-styles%2Cfilepage%7Cext.uls.interlanguage%7Cext.visualEditor.desktopArticleTarget.noscript%7Cext.wikimediaBadges%7Cmediawiki.action.view.filepage%7Cmediawiki.interface.helpers.styles%7Cskins.vector.icons%2Cstyles&amp;only=styles&amp;skin=vector-2022">
+<script async="" src="/w/load.php?lang=es&amp;modules=startup&amp;only=scripts&amp;raw=1&amp;skin=vector-2022"></script>
+<link rel="stylesheet" href="https://commons.wikimedia.org/w/index.php?title=MediaWiki:Filepage.css&amp;action=raw&amp;ctype=text/css">
+<meta name="ResourceLoaderDynamicStyles" content="">
+<link rel="stylesheet" href="/w/load.php?lang=es&amp;modules=ext.gadget.imagenesinfobox&amp;only=styles&amp;skin=vector-2022">
+<link rel="stylesheet" href="/w/load.php?lang=es&amp;modules=site.styles&amp;only=styles&amp;skin=vector-2022">
+<noscript><link rel="stylesheet" href="/w/load.php?lang=es&amp;modules=noscript&amp;only=styles&amp;skin=vector-2022"></noscript>
+<meta name="generator" content="MediaWiki 1.41.0-wmf.27">
+<meta name="referrer" content="origin">
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="robots" content="max-image-preview:standard">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Topologia_magistrali.svg/1200px-Topologia_magistrali.svg.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="1043">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Topologia_magistrali.svg/800px-Topologia_magistrali.svg.png">
+<meta property="og:image:width" content="800">
+<meta property="og:image:height" content="695">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Topologia_magistrali.svg/640px-Topologia_magistrali.svg.png">
+<meta property="og:image:width" content="640">
+<meta property="og:image:height" content="556">
+<meta name="viewport" content="width=1000">
+<meta property="og:title" content="Archivo:Topologia magistrali.svg - Wikipedia, la enciclopedia libre">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="preconnect" href="//upload.wikimedia.org">
+<link rel="alternate" media="only screen and (max-width: 720px)" href="//es.m.wikipedia.org/wiki/Archivo:Topologia_magistrali.svg">
+<link rel="apple-touch-icon" href="/static/apple-touch/wikipedia.png">
+<link rel="icon" href="/static/favicon/wikipedia.ico">
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Wikipedia (es)">
+<link rel="EditURI" type="application/rsd+xml" href="//es.wikipedia.org/w/api.php?action=rsd">
+<link rel="canonical" href="https://commons.wikimedia.org/wiki/File:Topologia_magistrali.svg">
+<link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed.es">
+<link rel="alternate" type="application/atom+xml" title="Canal Atom de Wikipedia" href="/w/index.php?title=Especial:CambiosRecientes&amp;feed=atom">
+<link rel="dns-prefetch" href="//meta.wikimedia.org" />
+<link rel="dns-prefetch" href="//login.wikimedia.org">
+</head>
+<body class="skin-vector skin-vector-search-vue mediawiki ltr sitedir-ltr mw-hide-empty-elt ns-6 ns-subject page-Archivo_Topologia_magistrali_svg rootpage-Archivo_Topologia_magistrali_svg skin-vector-2022 action-view"><a class="mw-jump-link" href="#bodyContent">Ir al contenido</a>
+<div class="vector-header-container">
+	<header class="vector-header mw-header">
+		<div class="vector-header-start">
+			<nav class="vector-main-menu-landmark" aria-label="Sitio" role="navigation">
+				
+<div id="vector-main-menu-dropdown" class="vector-dropdown vector-main-menu-dropdown vector-button-flush-left vector-button-flush-right"  >
+	<input type="checkbox" id="vector-main-menu-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-main-menu-dropdown" class="vector-dropdown-checkbox "  aria-label="Menú principal"  >
+	<label id="vector-main-menu-dropdown-label" for="vector-main-menu-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-menu mw-ui-icon-wikimedia-menu"></span>
+
+<span class="vector-dropdown-label-text">Menú principal</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+				<div id="vector-main-menu-unpinned-container" class="vector-unpinned-container">
+		
+<div id="vector-main-menu" class="vector-main-menu vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-main-menu-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="main-menu-pinned"
+	data-pinnable-element-id="vector-main-menu"
+	data-pinned-container-id="vector-main-menu-pinned-container"
+	data-unpinned-container-id="vector-main-menu-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Menú principal</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-main-menu.pin">mover a la barra lateral</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-main-menu.unpin">ocultar</button>
+</div>
+
+	
+<div id="p-navigation" class="vector-menu mw-portlet mw-portlet-navigation"  >
+	<div class="vector-menu-heading">
+		Navegación
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="n-mainpage-description" class="mw-list-item"><a href="/wiki/Wikipedia:Portada" title="Visitar la página principal [z]" accesskey="z"><span>Portada</span></a></li><li id="n-portal" class="mw-list-item"><a href="/wiki/Portal:Comunidad" title="Acerca del proyecto, lo que puedes hacer, dónde encontrar información"><span>Portal de la comunidad</span></a></li><li id="n-currentevents" class="mw-list-item"><a href="/wiki/Portal:Actualidad" title="Encuentra información de contexto sobre acontecimientos actuales"><span>Actualidad</span></a></li><li id="n-recentchanges" class="mw-list-item"><a href="/wiki/Especial:CambiosRecientes" title="Lista de cambios recientes en la wiki [r]" accesskey="r"><span>Cambios recientes</span></a></li><li id="n-newpages" class="mw-list-item"><a href="/wiki/Especial:P%C3%A1ginasNuevas"><span>Páginas nuevas</span></a></li><li id="n-randompage" class="mw-list-item"><a href="/wiki/Especial:Aleatoria" title="Cargar una página al azar [x]" accesskey="x"><span>Página aleatoria</span></a></li><li id="n-help" class="mw-list-item"><a href="/wiki/Ayuda:Contenidos" title="El lugar para aprender"><span>Ayuda</span></a></li><li id="n-sitesupport" class="mw-list-item"><a href="//donate.wikimedia.org/wiki/Special:FundraiserRedirector?utm_source=donate&amp;utm_medium=sidebar&amp;utm_campaign=C13_es.wikipedia.org&amp;uselang=es" title="Apóyanos"><span>Donaciones</span></a></li><li id="n-bug_in_article" class="mw-list-item"><a href="/wiki/Wikipedia:Informes_de_error"><span>Notificar un error</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	
+	
+</div>
+
+				</div>
+
+	</div>
+</div>
+
+		</nav>
+			
+<a href="/wiki/Wikipedia:Portada" class="mw-logo">
+	<img class="mw-logo-icon" src="/static/images/icons/wikipedia.png" alt="" aria-hidden="true" height="50" width="50">
+	<span class="mw-logo-container">
+		<img class="mw-logo-wordmark" alt="Wikipedia" src="/static/images/mobile/copyright/wikipedia-wordmark-en.svg" style="width: 7.5em; height: 1.125em;">
+		<img class="mw-logo-tagline" alt="La enciclopedia libre" src="/static/images/mobile/copyright/wikipedia-tagline-es.svg" width="120" height="13" style="width: 7.5em; height: 0.8125em;">
+	</span>
+</a>
+
+		</div>
+		<div class="vector-header-end">
+			
+<div id="p-search" role="search" class="vector-search-box-vue  vector-search-box-collapses vector-search-box-show-thumbnail vector-search-box-auto-expand-width vector-search-box">
+	<a href="/wiki/Especial:Buscar" class="cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only search-toggle" id="" title="Buscar en este wiki [f]" accesskey="f"><span class="vector-icon mw-ui-icon-search mw-ui-icon-wikimedia-search"></span>
+
+<span>Buscar</span>
+	</a>
+	<div class="vector-typeahead-search-container">
+		<div class="cdx-typeahead-search cdx-typeahead-search--show-thumbnail cdx-typeahead-search--auto-expand-width">
+			<form action="/w/index.php" id="searchform" class="cdx-search-input cdx-search-input--has-end-button">
+				<div id="simpleSearch" class="cdx-search-input__input-wrapper"  data-search-loc="header-moved">
+					<div class="cdx-text-input cdx-text-input--has-start-icon">
+						<input
+							class="cdx-text-input__input"
+							 type="search" name="search" placeholder="Buscar en Wikipedia" aria-label="Buscar en Wikipedia" autocapitalize="sentences" title="Buscar en este wiki [f]" accesskey="f" id="searchInput"
+							>
+						<span class="cdx-text-input__icon cdx-text-input__start-icon"></span>
+					</div>
+					<input type="hidden" name="title" value="Especial:Buscar">
+				</div>
+				<button class="cdx-button cdx-search-input__end-button">Buscar</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+			<nav class="vector-user-links" aria-label="Herramientas personales" role="navigation" >
+	
+<div id="p-vector-user-menu-overflow" class="vector-menu mw-portlet mw-portlet-vector-user-menu-overflow"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-createaccount-2" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Especial:Crear_una_cuenta&amp;returnto=Archivo%3ATopologia+magistrali.svg" title="Te recomendamos crear una cuenta e iniciar sesión; sin embargo, no es obligatorio"><span>Crear una cuenta</span></a></li><li id="pt-login-2" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Especial:Entrar&amp;returnto=Archivo%3ATopologia+magistrali.svg" title="Te recomendamos iniciar sesión, aunque no es obligatorio [o]" accesskey="o"><span>Acceder</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+<div id="vector-user-links-dropdown" class="vector-dropdown vector-user-menu vector-button-flush-right vector-user-menu-logged-out"  title="Más opciones" >
+	<input type="checkbox" id="vector-user-links-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-user-links-dropdown" class="vector-dropdown-checkbox "  aria-label="Herramientas personales"  >
+	<label id="vector-user-links-dropdown-label" for="vector-user-links-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only " aria-hidden="true"  ><span class="vector-icon mw-ui-icon-ellipsis mw-ui-icon-wikimedia-ellipsis"></span>
+
+<span class="vector-dropdown-label-text">Herramientas personales</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+		
+<div id="p-personal" class="vector-menu mw-portlet mw-portlet-personal user-links-collapsible-item"  title="Menú de usuario" >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-createaccount" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Especial:Crear_una_cuenta&amp;returnto=Archivo%3ATopologia+magistrali.svg" title="Te recomendamos crear una cuenta e iniciar sesión; sin embargo, no es obligatorio"><span class="vector-icon mw-ui-icon-userAdd mw-ui-icon-wikimedia-userAdd"></span> <span>Crear una cuenta</span></a></li><li id="pt-login" class="user-links-collapsible-item mw-list-item"><a href="/w/index.php?title=Especial:Entrar&amp;returnto=Archivo%3ATopologia+magistrali.svg" title="Te recomendamos iniciar sesión, aunque no es obligatorio [o]" accesskey="o"><span class="vector-icon mw-ui-icon-logIn mw-ui-icon-wikimedia-logIn"></span> <span>Acceder</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-user-menu-anon-editor" class="vector-menu mw-portlet mw-portlet-user-menu-anon-editor"  >
+	<div class="vector-menu-heading">
+		Páginas para editores desconectados <a href="/wiki/Ayuda:Introducci%C3%B3n" aria-label="Obtenga más información sobre editar"><span>más información</span></a>
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="pt-anoncontribs" class="mw-list-item"><a href="/wiki/Especial:MisContribuciones" title="Una lista de modificaciones hechas desde esta dirección IP [y]" accesskey="y"><span>Contribuciones</span></a></li><li id="pt-anontalk" class="mw-list-item"><a href="/wiki/Especial:MiDiscusi%C3%B3n" title="Discusión sobre ediciones hechas desde esta dirección IP [n]" accesskey="n"><span>Discusión</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+	
+	</div>
+</div>
+
+</nav>
+
+		</div>
+	</header>
+</div>
+<div class="mw-page-container">
+	<div class="mw-page-container-inner">
+		<div class="vector-main-menu-container vector-sidebar-container-no-toc">
+			<div id="mw-navigation">
+				<nav id="mw-panel" class="vector-main-menu-landmark" aria-label="Sitio" role="navigation">
+					<div id="vector-main-menu-pinned-container" class="vector-pinned-container">
+				
+					</div>
+		</nav>
+			</div>
+		</div>
+		<div class="vector-sitenotice-container">
+			<div id="siteNotice"><!-- CentralNotice --></div>
+		</div>
+		<div class="mw-content-container">
+			<main id="content" class="mw-body" role="main">
+				<header class="mw-body-header vector-page-titlebar">
+					<h1 id="firstHeading" class="firstHeading mw-first-heading">Archivo:Topologia magistrali.svg</h1>
+							
+<div id="p-lang-btn" class="vector-dropdown mw-portlet mw-portlet-lang mw-portlet-lang-icon-only"  >
+	<input type="checkbox" id="p-lang-btn-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-lang-btn" class="vector-dropdown-checkbox mw-interlanguage-selector-empty" aria-label="Este artículo existe sólo en este idioma. Añade el artículo para otros idiomas"   >
+	<label id="p-lang-btn-label" for="p-lang-btn-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet cdx-button--icon-only mw-portlet-lang-heading-empty" aria-hidden="true"  ><span class="vector-icon mw-ui-icon-language mw-ui-icon-wikimedia-language"></span>
+
+<span class="vector-dropdown-label-text">Añadir idiomas</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+		<div class="mw-portlet-empty-language-selector-body">
+						Contenido de la página no disponible en otros idiomas.
+					</div>
+			
+	</div>
+</div>
+</header>
+				<div class="vector-page-toolbar">
+					<div class="vector-page-toolbar-container">
+						<div id="left-navigation">
+							<nav aria-label="Espacios de nombres">
+								
+<div id="p-associated-pages" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-associated-pages"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-nstab-image" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Archivo:Topologia_magistrali.svg" title="Ver la página del archivo [c]" accesskey="c"><span>Archivo</span></a></li><li id="ca-talk" class="new vector-tab-noicon mw-list-item"><a href="/w/index.php?title=Archivo_discusi%C3%B3n:Topologia_magistrali.svg&amp;action=edit&amp;redlink=1" rel="discussion" title="Discusión acerca de la página (aún no redactado) [t]" accesskey="t"><span>Discusión</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+								
+<div id="p-variants" class="vector-dropdown emptyPortlet"  >
+	<input type="checkbox" id="p-variants-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-p-variants" class="vector-dropdown-checkbox " aria-label="Cambiar variante de idioma"   >
+	<label id="p-variants-label" for="p-variants-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">español</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+					
+<div id="p-variants" class="vector-menu mw-portlet mw-portlet-variants emptyPortlet"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			
+		</ul>
+		
+	</div>
+</div>
+
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+						<div id="right-navigation" class="vector-collapsible">
+							<nav aria-label="Vistas">
+								
+<div id="p-views" class="vector-menu vector-menu-tabs mw-portlet mw-portlet-views"  >
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-view" class="selected vector-tab-noicon mw-list-item"><a href="/wiki/Archivo:Topologia_magistrali.svg"><span>Leer</span></a></li><li id="ca-view-foreign" class="vector-tab-noicon mw-list-item"><a href="https://commons.wikimedia.org/wiki/File:Topologia_magistrali.svg"><span>Ver en Wikimedia Commons</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+							</nav>
+				
+							<nav class="vector-page-tools-landmark" aria-label="Page tools">
+								
+<div id="vector-page-tools-dropdown" class="vector-dropdown vector-page-tools-dropdown"  >
+	<input type="checkbox" id="vector-page-tools-dropdown-checkbox" role="button" aria-haspopup="true" data-event-name="ui.dropdown-vector-page-tools-dropdown" class="vector-dropdown-checkbox "  aria-label="Herramientas"  >
+	<label id="vector-page-tools-dropdown-label" for="vector-page-tools-dropdown-checkbox" class="vector-dropdown-label cdx-button cdx-button--fake-button cdx-button--fake-button--enabled cdx-button--weight-quiet" aria-hidden="true"  ><span class="vector-dropdown-label-text">Herramientas</span>
+	</label>
+	<div class="vector-dropdown-content">
+
+
+									<div id="vector-page-tools-unpinned-container" class="vector-unpinned-container">
+						
+<div id="vector-page-tools" class="vector-page-tools vector-pinnable-element">
+	<div
+	class="vector-pinnable-header vector-page-tools-pinnable-header vector-pinnable-header-unpinned"
+	data-feature-name="page-tools-pinned"
+	data-pinnable-element-id="vector-page-tools"
+	data-pinned-container-id="vector-page-tools-pinned-container"
+	data-unpinned-container-id="vector-page-tools-unpinned-container"
+>
+	<div class="vector-pinnable-header-label">Herramientas</div>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-pin-button" data-event-name="pinnable-header.vector-page-tools.pin">mover a la barra lateral</button>
+	<button class="vector-pinnable-header-toggle-button vector-pinnable-header-unpin-button" data-event-name="pinnable-header.vector-page-tools.unpin">ocultar</button>
+</div>
+
+	
+<div id="p-cactions" class="vector-menu mw-portlet mw-portlet-cactions emptyPortlet vector-has-collapsible-items"  title="Más opciones" >
+	<div class="vector-menu-heading">
+		Acciones
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="ca-more-view" class="selected vector-more-collapsible-item mw-list-item"><a href="/wiki/Archivo:Topologia_magistrali.svg"><span>Leer</span></a></li><li id="ca-more-view-foreign" class="vector-more-collapsible-item mw-list-item"><a href="https://commons.wikimedia.org/wiki/File:Topologia_magistrali.svg"><span>Ver en Wikimedia Commons</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+<div id="p-tb" class="vector-menu mw-portlet mw-portlet-tb"  >
+	<div class="vector-menu-heading">
+		General
+	</div>
+	<div class="vector-menu-content">
+		
+		<ul class="vector-menu-content-list">
+			
+			<li id="t-whatlinkshere" class="mw-list-item"><a href="/wiki/Especial:LoQueEnlazaAqu%C3%AD/Archivo:Topologia_magistrali.svg" title="Lista de todas las páginas de la wiki que enlazan aquí [j]" accesskey="j"><span>Lo que enlaza aquí</span></a></li><li id="t-upload" class="mw-list-item"><a href="//commons.wikimedia.org/wiki/Special:UploadWizard?uselang=es" title="Subir archivos [u]" accesskey="u"><span>Subir archivo</span></a></li><li id="t-specialpages" class="mw-list-item"><a href="/wiki/Especial:P%C3%A1ginasEspeciales" title="Lista de todas las páginas especiales [q]" accesskey="q"><span>Páginas especiales</span></a></li><li id="t-print" class="mw-list-item"><a href="javascript:print();" rel="alternate" title="Versión imprimible de esta página [p]" accesskey="p"><span>Versión para imprimir</span></a></li><li id="t-info" class="mw-list-item"><a href="/w/index.php?title=Archivo:Topologia_magistrali.svg&amp;action=info" title="Más información sobre esta página"><span>Información de la página</span></a></li><li id="t-urlshortener" class="mw-list-item"><a href="/w/index.php?title=Especial:Acortador_de_URL&amp;url=https%3A%2F%2Fes.wikipedia.org%2Fwiki%2FArchivo%3ATopologia_magistrali.svg"><span>Obtener URL acortado</span></a></li>
+		</ul>
+		
+	</div>
+</div>
+
+</div>
+
+									</div>
+				
+	</div>
+</div>
+
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="vector-column-end">
+					<nav class="vector-page-tools-landmark vector-sticky-pinned-container" aria-label="Page tools">
+						<div id="vector-page-tools-pinned-container" class="vector-pinned-container">
+			
+						</div>
+	</nav>
+				</div>
+				<div id="bodyContent" class="vector-body" aria-labelledby="firstHeading" data-mw-ve-target-container>
+					<div class="vector-body-before-content">
+							<div class="mw-indicators">
+		</div>
+
+						<div id="siteSub" class="noprint">De Wikipedia, la enciclopedia libre</div>
+					</div>
+					<div id="contentSub"><div id="mw-content-subtitle"></div></div>
+					
+					
+					<div id="mw-content-text" class="mw-body-content"><ul id="filetoc"><li><a href="#file">Archivo</a></li>
+<li><a href="#filehistory">Historial del archivo</a></li>
+<li><a href="#filelinks">Usos del archivo</a></li>
+<li><a href="#globalusage">Uso global del archivo</a></li>
+<li><a href="#metadata">Metadatos</a></li></ul><div class="fullImageLink" id="file"><a href="//upload.wikimedia.org/wikipedia/commons/d/dd/Topologia_magistrali.svg"><img alt="Archivo:Topologia magistrali.svg" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Topologia_magistrali.svg/466px-Topologia_magistrali.svg.png" decoding="async" width="466" height="405" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Topologia_magistrali.svg/699px-Topologia_magistrali.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Topologia_magistrali.svg/932px-Topologia_magistrali.svg.png 2x" data-file-width="466" data-file-height="405" /></a><div class="mw-filepage-resolutioninfo">Tamaño de esta previsualización PNG del archivo SVG: <a href="//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Topologia_magistrali.svg/466px-Topologia_magistrali.svg.png" class="mw-thumbnail-link">466 × 405 píxeles</a>. <span class="mw-filepage-other-resolutions">Otras resoluciones: <a href="//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Topologia_magistrali.svg/276px-Topologia_magistrali.svg.png" class="mw-thumbnail-link">276 × 240 píxeles</a> · <a href="//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Topologia_magistrali.svg/552px-Topologia_magistrali.svg.png" class="mw-thumbnail-link">552 × 480 píxeles</a> · <a href="//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Topologia_magistrali.svg/884px-Topologia_magistrali.svg.png" class="mw-thumbnail-link">884 × 768 píxeles</a> · <a href="//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Topologia_magistrali.svg/1178px-Topologia_magistrali.svg.png" class="mw-thumbnail-link">1178 × 1024 píxeles</a> · <a href="//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Topologia_magistrali.svg/2357px-Topologia_magistrali.svg.png" class="mw-thumbnail-link">2357 × 2048 píxeles</a>.</span></div></div>
+<div class="fullMedia"><p><a href="//upload.wikimedia.org/wikipedia/commons/d/dd/Topologia_magistrali.svg" class="internal" title="Topologia magistrali.svg">Ver la imagen en su resolución original</a> &#8206;<span class="fileInfo">((Imagen SVG, nominalmente 466 × 405 pixels, tamaño de archivo: 72&#160;kB))</span>
+</p></div><div class="sharedUploadNotice">
+<div class="issues-group-B"><table style="" class="noprint plainlinks ambox ambox-notice">
+<tbody><tr>
+<td class="ambox-image" width="40">
+<span class="mw-default-size" typeof="mw:File"><a href="/wiki/Archivo:Commons-logo.svg" class="mw-file-description"><img alt="" src="//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/30px-Commons-logo.svg.png" decoding="async" width="30" height="40" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/45px-Commons-logo.svg.png 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Commons-logo.svg/59px-Commons-logo.svg.png 2x" data-file-width="1024" data-file-height="1376" /></a></span></td>
+<td class="ambox-text"><div class="ambox-text-div"><strong>Este es un archivo de <a href="https://commons.wikimedia.org/wiki/Portada" class="extiw" title="commons:Portada">Wikimedia Commons</a>, un depósito de <a href="/wiki/Contenido_libre" title="Contenido libre">contenido libre</a> hospedado por la Fundación <a href="/wiki/Wikimedia" class="mw-redirect" title="Wikimedia">Wikimedia</a>.</strong> <span class="hide-when-compact">Más abajo se reproduce su <i><b><a class="external text" href="https://commons.wikimedia.org/wiki/File:Topologia_magistrali.svg?uselang=es">página de descripción</a></b></i> con la información sobre su origen y licencia.</span></div></td>
+</tr>
+</tbody></table></div>
+</div>
+<div id="shared-image-desc"><div class="mw-parser-output"><h2><span class="mw-headline" id="Resumen">Resumen</span></h2>
+<div class="hproduct commons-file-information-table">
+<style data-mw-deduplicate="TemplateStyles:r773143704">.mw-parser-output table.commons-file-information-table,.mw-parser-output .fileinfotpl-type-information,.mw-parser-output .fileinfotpl-type-artwork{border:1px solid #a2a9b1;background-color:#f8f9fa;padding:5px;font-size:95%;border-spacing:2px;box-sizing:border-box;margin:0;width:100%}.mw-parser-output table.commons-file-information-table>tbody>tr,.mw-parser-output .fileinfotpl-type-information>tbody>tr,.mw-parser-output .fileinfotpl-type-artwork>tbody>tr{vertical-align:top}.mw-parser-output table.commons-file-information-table>tbody>tr>td,.mw-parser-output table.commons-file-information-table>tbody>tr>th,.mw-parser-output .fileinfotpl-type-information>tbody>tr>td,.mw-parser-output .fileinfotpl-type-information>tbody>tr>th,.mw-parser-output .fileinfotpl-type-artwork>tbody>tr>td,.mw-parser-output .fileinfotpl-type-artwork>tbody>tr>th{padding:4px}.mw-parser-output .fileinfo-paramfield{background:#ccf;text-align:right;padding-right:0.4em;width:15%;font-weight:bold}.mw-parser-output .commons-file-information-table+table.commons-file-information-table,.mw-parser-output .commons-file-information-table+div.commons-file-information-table>table{border-top:0;padding-top:0;margin-top:-8px}@media only screen and (max-width:719px){.mw-parser-output table.commons-file-information-table,.mw-parser-output .commons-file-information-table .fileinfotpl-type-information,.mw-parser-output .commons-file-information-table .fileinfotpl-type-artwork{border-spacing:0;padding:0;word-break:break-word;width:100%!important}.mw-parser-output .commons-file-information-table>tbody,.mw-parser-output .fileinfotpl-type-information>tbody,.mw-parser-output .fileinfotpl-type-artwork>tbody{display:block}.mw-parser-output .commons-file-information-table>tbody>tr>td,.mw-parser-output .commons-file-information-table>tbody>tr>th,.mw-parser-output .fileinfotpl-type-information>tbody>tr>td,.mw-parser-output .fileinfotpl-type-information>tbody>tr>th,.mw-parser-output .fileinfotpl-type-artwork>tbody>tr>td,.mw-parser-output .fileinfotpl-type-artwork>tbody>tr>th{padding:0.2em 0.4em;text-align:left;text-align:start}.mw-parser-output .commons-file-information-table>tbody>tr,.mw-parser-output .fileinfotpl-type-information>tbody>tr,.mw-parser-output .fileinfotpl-type-artwork>tbody>tr{display:flex;flex-direction:column}.mw-parser-output .commons-file-information-table+table.commons-file-information-table,.mw-parser-output .commons-file-information-table+div.commons-file-information-table>table{margin-top:-1px}.mw-parser-output .fileinfo-paramfield{box-sizing:border-box;flex:1 0 100%;width:100%}}</style>
+<table class="fileinfotpl-type-information vevent mw-content-ltr" style="direction: ltr;">
+
+<tbody><tr>
+<td id="fileinfotpl_desc" class="fileinfo-paramfield" lang="es">Descripción<span class="summary fn" style="display:none">Topologia magistrali.svg</span></td>
+<td class="description">
+<div class="description mw-content-ltr pl" dir="ltr" lang="pl"><span class="language pl" title="polaco"><b>Polski: </b></span> Topologia magistrali</div></td>
+</tr>
+
+<tr>
+<td id="fileinfotpl_date" class="fileinfo-paramfield" lang="es">Fecha</td>
+<td lang="es">
+<time class="dtstart" datetime="2011-11-09" lang="es" dir="ltr" style="white-space:nowrap">9 de noviembre de 2011</time></td>
+</tr>
+
+<tr>
+<td id="fileinfotpl_src" class="fileinfo-paramfield" lang="es">Fuente</td>
+<td>
+<span class="int-own-work" lang="es">Trabajo propio</span></td>
+</tr>
+
+<tr>
+<td id="fileinfotpl_aut" class="fileinfo-paramfield" lang="es">Autor</td>
+<td>
+<a href="//commons.wikimedia.org/w/index.php?title=User:Marcin_%C5%81ukasz_Kiejzik&amp;action=edit&amp;redlink=1" class="new" title="User:Marcin Łukasz Kiejzik (page does not exist)">Marcin Łukasz Kiejzik</a></td>
+</tr>
+
+<tr>
+<td id="fileinfotpl_perm" class="fileinfo-paramfield" lang="es">Permiso<br><small>(<a href="//commons.wikimedia.org/wiki/Commons:Reutilizaci%C3%B3n_del_contenido_fuera_de_Wikimedia" class="mw-redirect" title="Commons:Reutilización del contenido fuera de Wikimedia">Reutilización de este archivo</a>)</small></td>
+<td>
+<div class="description mw-content-ltr en" dir="ltr" lang="en"><span class="language en" title="inglés"><b>English: </b></span> It is  requested (<small>but not required</small>) to inform me when you use this file, at <a rel="nofollow" class="external text" href="mailto:wikimedia@kiejzik.eu">wikimedia@kiejzik.eu</a>. The license terms are below.</div><div class="description mw-content-ltr pl" dir="ltr" lang="pl"><span class="language pl" title="polaco"><b>Polski: </b></span> Proszę o informację w razie użycia tego pliku, pod adresem <a rel="nofollow" class="external text" href="mailto:wikimedia@kiejzik.eu">wikimedia@kiejzik.eu</a> (<small>ale nie jest to wymagane</small>). Warunki licencyjne znajdują się w sekcji <i>Licencja</i> poniżej.</div></td>
+</tr>
+
+<tr style="vertical-align: top"><td style="" class="fileinfo-paramfield">Atribución<br><small>(<a href="//commons.wikimedia.org/wiki/Commons:Credit_line" title="Commons:Credit line">requerido por la licencia</a>)</small><div style="display: none;">InfoField</div></td><td style="">© Marcin Łukasz Kiejzik&nbsp;/&nbsp;<a rel="nofollow" class="external free" href="https://kiejzik.eu">https://kiejzik.eu</a>&nbsp;/&nbsp;<div class="plainlinks noprint" style="display:inline;"><a rel="nofollow" class="external text" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></div></td>
+</tr><tr style="vertical-align: top"><td style="display:none;" class="fileinfo-paramfield fileinfotpl_credit" id="fileinfotpl_credit"><div style="display: none;">InfoField</div></td><td style="display:none;">© Marcin Łukasz Kiejzik&nbsp;/&nbsp;<a rel="nofollow" class="external free" href="https://kiejzik.eu">https://kiejzik.eu</a></td>
+</tr>
+</tbody></table>
+</div>
+<h2><span class="mw-headline" id="Licencia">Licencia</span></h2>
+<div style="clear:both; margin:0.5em auto; background-color:#eee; border:2px solid #ddd; padding:8px; direction: ltr;" class="licensetpl_wrapper">
+<div class="center" style="font-weight:bold;"><div lang="es" dir="ltr" class="description es" style="display:inline;">Yo, titular de los derechos de autor de esta obra, la publico en los términos de las siguientes licencias:</div></div>
+<table class="layouttemplate licensetpl mw-content-ltr" lang="es" dir="ltr" cellpadding="0" style="width:100%; clear:both; margin:0.5em auto; background-color:#e2f2d2; border:2px solid #acce79; border-spacing:8px;">
+<tbody><tr>
+<td style="width:90px;" rowspan="3"><span typeof="mw:File"><span title="©"><img alt="©" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Green_copyright.svg/64px-Green_copyright.svg.png" decoding="async" width="64" height="64" class="mw-file-element" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Green_copyright.svg/96px-Green_copyright.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Green_copyright.svg/128px-Green_copyright.svg.png 2x" data-file-width="197" data-file-height="197"></span></span>
+</td>
+<td>El titular de los derechos de autor de este archivo permite que cualquiera pueda usarlo <b>para cualquier propósito, siempre que</b> el titular de los derechos de autor sea atribuido apropiadamente. La redistribución, obras derivadas, uso comercial, y todo otro uso está permitido.
+</td></tr>
+<tr style="text-align:center;">
+<td>
+<p><span class="licensetpl_short" style="display:none;">Attribution</span>
+</p>
+</td></tr></tbody></table><style data-mw-deduplicate="TemplateStyles:r666199556">.mw-parser-output .responsive-license-cc{clear:both;text-align:center;box-sizing:border-box;width:100%;justify-content:space-around;align-items:center;margin:0.5em auto;background-color:#f9f9f9;border:2px solid #e0e0e0;border-spacing:8px;display:flex}.mw-parser-output .responsive-license-cc div{margin:4px}.mw-parser-output .rlicense-text div{margin:0.5em auto}@media screen and (max-width:640px){.mw-parser-output .responsive-license-cc{flex-flow:column}.mw-parser-output .rlicense-text{order:1}}</style><div class="responsive-license-cc layouttemplate licensetpl mw-content-ltr" lang="es"><div class="rlicense-icons"><span typeof="mw:File"><span title="w:es:Creative Commons"><img alt="w:es:Creative Commons" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/90px-CC_some_rights_reserved.svg.png" decoding="async" width="90" height="36" class="mw-file-element" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/135px-CC_some_rights_reserved.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/CC_some_rights_reserved.svg/180px-CC_some_rights_reserved.svg.png 2x" data-file-width="744" data-file-height="300"></span></span><br>
+<span typeof="mw:File"><span title="atribución"><img alt="atribución" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/24px-Cc-by_new_white.svg.png" decoding="async" width="24" height="24" class="mw-file-element" srcset="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/36px-Cc-by_new_white.svg.png 1.5x, https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Cc-by_new_white.svg/48px-Cc-by_new_white.svg.png 2x" data-file-width="64" data-file-height="64"></span></span></div><div class="rlicense-text"><div class="rlicense-declaration">Este archivo está disponible bajo la licencia <a href="https://en.wikipedia.org/wiki/es:Creative_Commons" class="extiw" title="w:es:Creative Commons">Creative Commons</a> <a rel="nofollow" class="external text" href="https://creativecommons.org/licenses/by/4.0/deed.es">Atribución 4.0 Internacional</a>.</div><div class="rlicense-desc" style="text-align:left;" lang="es">
+<dl><dd>Eres libre:
+<ul><li><b>de compartir</b> – de copiar, distribuir y transmitir el trabajo</li>
+<li><b>de remezclar</b> – de adaptar el trabajo</li></ul></dd>
+<dd>Bajo las siguientes condiciones:
+<ul><li><b>atribución</b> – Debes otorgar el crédito correspondiente, proporcionar un enlace a la licencia e indicar si realizaste algún cambio. Puedes hacerlo de cualquier manera razonable pero no de manera que sugiera que el licenciante te respalda a ti o al uso que hagas del trabajo.</li></ul></dd></dl>
+</div><span class="licensetpl_link" style="display:none;">https://creativecommons.org/licenses/by/4.0</span><span class="licensetpl_short" style="display:none;">CC BY 4.0 </span><span class="licensetpl_long" style="display:none;">Creative Commons Attribution 4.0 </span><span class="licensetpl_link_req" style="display:none;">true</span><span class="licensetpl_attr_req" style="display:none;">true</span></div></div><div class="center"><div lang="es" dir="ltr" class="description es" style="display:inline;"><i>Puedes usar la licencia que prefieras.</i></div></div>
+</div><h1 class="mw-slot-header"><mediainfoslotheader></mediainfoslotheader></h1><mediainfoview style="display: none"><mediainfoviewcaptions><div class="wbmi-entityview-captionsPanel oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-framed"><h3 class="wbmi-entityview-captions-header">Leyendas</h3><div class="wbmi-entityview-caption oo-ui-layout oo-ui-horizontalLayout"><label class="wbmi-language-label oo-ui-widget oo-ui-widget-enabled oo-ui-labelElement-label oo-ui-labelElement oo-ui-labelWidget">español</label><div lang="es" dir="ltr" class="wbmi-caption-value wbmi-entityview-emptyCaption">Añade una explicación corta acerca de lo que representa este archivo</div></div></div></mediainfoviewcaptions><mediainfoviewstatements><div id="P180" data-property="P180" data-statements="[]" data-formatvalue="[]" class="wbmi-entityview-statementsGroup wbmi-entityview-statementsGroup-P180 oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-framed"><div class="wbmi-statements-widget"><div class="wbmi-statement-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h3 class="wbmi-statements-title">Elementos representados en este archivo</h3><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/P180" href="https://www.wikidata.org/wiki/Special:EntityPage/P180">representa a</a></bdi></h4></div></div></div><div class="wbmi-content-items-group"></div></div></div><div id="P170" data-property="P170" data-statements="[{&quot;mainsnak&quot;:{&quot;snaktype&quot;:&quot;somevalue&quot;,&quot;property&quot;:&quot;P170&quot;,&quot;hash&quot;:&quot;d3550e860f988c6675fff913440993f58f5c40c5&quot;},&quot;type&quot;:&quot;statement&quot;,&quot;qualifiers&quot;:{&quot;P2093&quot;:[{&quot;snaktype&quot;:&quot;value&quot;,&quot;property&quot;:&quot;P2093&quot;,&quot;hash&quot;:&quot;bc945d33040e5a9a698f084a4906ff78584fba00&quot;,&quot;datavalue&quot;:{&quot;value&quot;:&quot;Marcin \u0141ukasz Kiejzik&quot;,&quot;type&quot;:&quot;string&quot;}}],&quot;P2699&quot;:[{&quot;snaktype&quot;:&quot;value&quot;,&quot;property&quot;:&quot;P2699&quot;,&quot;hash&quot;:&quot;14281a358babc42b93b7593ff2ed5e22e93cfa11&quot;,&quot;datavalue&quot;:{&quot;value&quot;:&quot;https:\/\/commons.wikimedia.org\/wiki\/user:Marcin_%C5%81ukasz_Kiejzik&quot;,&quot;type&quot;:&quot;string&quot;}}],&quot;P4174&quot;:[{&quot;snaktype&quot;:&quot;value&quot;,&quot;property&quot;:&quot;P4174&quot;,&quot;hash&quot;:&quot;b0d49ab7c6fd3aea98ef72fe97299a19f329eb55&quot;,&quot;datavalue&quot;:{&quot;value&quot;:&quot;Marcin \u0141ukasz Kiejzik&quot;,&quot;type&quot;:&quot;string&quot;}}]},&quot;qualifiers-order&quot;:[&quot;P2093&quot;,&quot;P2699&quot;,&quot;P4174&quot;],&quot;id&quot;:&quot;M17282203$6E5F6989-3482-498F-99A8-E22316C3D919&quot;,&quot;rank&quot;:&quot;normal&quot;}]" data-formatvalue="{&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;property\&quot;,\&quot;numeric-id\&quot;:170,\&quot;id\&quot;:\&quot;P170\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;es&quot;:{&quot;&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/P170\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/P170\&quot;>creador<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;es&quot;:{&quot;&quot;:&quot;creador&quot;}}},&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;property\&quot;,\&quot;numeric-id\&quot;:2093,\&quot;id\&quot;:\&quot;P2093\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;es&quot;:{&quot;&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/P2093\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/P2093\&quot;>nombre del autor<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;es&quot;:{&quot;&quot;:&quot;nombre del autor&quot;}}},&quot;{\&quot;value\&quot;:\&quot;Marcin \\u0141ukasz Kiejzik\&quot;,\&quot;type\&quot;:\&quot;string\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;es&quot;:{&quot;P2093&quot;:&quot;Marcin \u0141ukasz Kiejzik&quot;,&quot;P4174&quot;:&quot;<a target=\&quot;_blank\&quot; class=\&quot;wb-external-id external\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:CentralAuth?target=Marcin%20%C5%81ukasz%20Kiejzik\&quot; rel=\&quot;nofollow\&quot;>Marcin \u0141ukasz Kiejzik<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;es&quot;:{&quot;P2093&quot;:&quot;Marcin \u0141ukasz Kiejzik&quot;,&quot;P4174&quot;:&quot;Marcin \u0141ukasz Kiejzik&quot;}}},&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;property\&quot;,\&quot;numeric-id\&quot;:2699,\&quot;id\&quot;:\&quot;P2699\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;es&quot;:{&quot;&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/P2699\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/P2699\&quot;>URL<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;es&quot;:{&quot;&quot;:&quot;URL&quot;}}},&quot;{\&quot;value\&quot;:\&quot;https:\\\/\\\/commons.wikimedia.org\\\/wiki\\\/user:Marcin_%C5%81ukasz_Kiejzik\&quot;,\&quot;type\&quot;:\&quot;string\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;es&quot;:{&quot;P2699&quot;:&quot;<a target=\&quot;_blank\&quot; rel=\&quot;nofollow\&quot; class=\&quot;external free\&quot; href=\&quot;https:\/\/commons.wikimedia.org\/wiki\/user:Marcin_%C5%81ukasz_Kiejzik\&quot;>https:\/\/commons.wikimedia.org\/wiki\/user:Marcin_%C5%81ukasz_Kiejzik<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;es&quot;:{&quot;P2699&quot;:&quot;https:\/\/commons.wikimedia.org\/wiki\/user:Marcin_%C5%81ukasz_Kiejzik&quot;}}},&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;property\&quot;,\&quot;numeric-id\&quot;:4174,\&quot;id\&quot;:\&quot;P4174\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;es&quot;:{&quot;&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/P4174\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/P4174\&quot;>nombre de usuario en Wikimedia<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;es&quot;:{&quot;&quot;:&quot;nombre de usuario en Wikimedia&quot;}}}}" class="wbmi-entityview-statementsGroup wbmi-entityview-statementsGroup-P170 oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-framed"><div class="wbmi-statements-widget"><div class="wbmi-statement-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/P170" href="https://www.wikidata.org/wiki/Special:EntityPage/P170">creador</a></bdi></h4></div></div></div><div class="wbmi-content-items-group"><div class="wbmi-item wbmi-item-read"><div data-guid="M17282203$6E5F6989-3482-498F-99A8-E22316C3D919" class="wbmi-item-container"><div class="wbmi-entity-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi>Algún valor sin elemento de Wikidata</bdi></h4></div></div></div><div class="wbmi-item-qualifiers"><div class="wbmi-snaklist-container"><div class="wbmi-snaklist-content"><div class="wbmi-snak"><div class="wbmi-snak-value"><a target="_blank" title="d:Special:EntityPage/P2093" href="https://www.wikidata.org/wiki/Special:EntityPage/P2093">nombre del autor</a><span class="wbmi-snak-value-separator">: </span><span class="wbmi-snak-value--value">Marcin Łukasz Kiejzik</span></div></div><div class="wbmi-snak"><div class="wbmi-snak-value"><a target="_blank" title="d:Special:EntityPage/P2699" href="https://www.wikidata.org/wiki/Special:EntityPage/P2699">URL</a><span class="wbmi-snak-value-separator">: </span><span class="wbmi-snak-value--value"><a target="_blank" rel="nofollow" class="external free" href="https://commons.wikimedia.org/wiki/user:Marcin_%C5%81ukasz_Kiejzik">https://commons.wikimedia.org/wiki/user:Marcin_%C5%81ukasz_Kiejzik</a></span></div></div><div class="wbmi-snak"><div class="wbmi-snak-value"><a target="_blank" title="d:Special:EntityPage/P4174" href="https://www.wikidata.org/wiki/Special:EntityPage/P4174">nombre de usuario en Wikimedia</a><span class="wbmi-snak-value-separator">: </span><span class="wbmi-snak-value--value"><a target="_blank" class="wb-external-id external" href="https://www.wikidata.org/wiki/Special:CentralAuth?target=Marcin%20%C5%81ukasz%20Kiejzik" rel="nofollow">Marcin Łukasz Kiejzik</a></span></div></div></div></div></div></div></div></div></div></div><div id="P6216" data-property="P6216" data-statements="[{&quot;mainsnak&quot;:{&quot;snaktype&quot;:&quot;value&quot;,&quot;property&quot;:&quot;P6216&quot;,&quot;hash&quot;:&quot;5570347fdc76d2a80732f51ea10ee4b144a084e0&quot;,&quot;datavalue&quot;:{&quot;value&quot;:{&quot;entity-type&quot;:&quot;item&quot;,&quot;numeric-id&quot;:50423863,&quot;id&quot;:&quot;Q50423863&quot;},&quot;type&quot;:&quot;wikibase-entityid&quot;}},&quot;type&quot;:&quot;statement&quot;,&quot;id&quot;:&quot;M17282203$DD70FC8B-D801-4216-B658-19670E3A0490&quot;,&quot;rank&quot;:&quot;normal&quot;}]" data-formatvalue="{&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;property\&quot;,\&quot;numeric-id\&quot;:6216,\&quot;id\&quot;:\&quot;P6216\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;es&quot;:{&quot;&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/P6216\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/P6216\&quot;>estatus de los derechos de autor<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;es&quot;:{&quot;&quot;:&quot;estatus de los derechos de autor&quot;}}},&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;item\&quot;,\&quot;numeric-id\&quot;:50423863,\&quot;id\&quot;:\&quot;Q50423863\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;es&quot;:{&quot;P6216&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/Q50423863\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/Q50423863\&quot;>bajo derechos de autor<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;es&quot;:{&quot;P6216&quot;:&quot;bajo derechos de autor&quot;}}}}" class="wbmi-entityview-statementsGroup wbmi-entityview-statementsGroup-P6216 oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-framed"><div class="wbmi-statements-widget"><div class="wbmi-statement-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/P6216" href="https://www.wikidata.org/wiki/Special:EntityPage/P6216">estatus de los derechos de autor</a></bdi></h4></div></div></div><div class="wbmi-content-items-group"><div class="wbmi-item wbmi-item-read"><div data-guid="M17282203$DD70FC8B-D801-4216-B658-19670E3A0490" class="wbmi-item-container"><div class="wbmi-entity-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/Q50423863" href="https://www.wikidata.org/wiki/Special:EntityPage/Q50423863">bajo derechos de autor</a></bdi></h4></div></div></div></div></div></div></div></div><div id="P275" data-property="P275" data-statements="[{&quot;mainsnak&quot;:{&quot;snaktype&quot;:&quot;value&quot;,&quot;property&quot;:&quot;P275&quot;,&quot;hash&quot;:&quot;550d3cdad47a71b55071340fc424de090f5e93a4&quot;,&quot;datavalue&quot;:{&quot;value&quot;:{&quot;entity-type&quot;:&quot;item&quot;,&quot;numeric-id&quot;:98923445,&quot;id&quot;:&quot;Q98923445&quot;},&quot;type&quot;:&quot;wikibase-entityid&quot;}},&quot;type&quot;:&quot;statement&quot;,&quot;id&quot;:&quot;M17282203$B9C4BA2A-E0AF-46B6-90DD-38450AB2C934&quot;,&quot;rank&quot;:&quot;normal&quot;},{&quot;mainsnak&quot;:{&quot;snaktype&quot;:&quot;value&quot;,&quot;property&quot;:&quot;P275&quot;,&quot;hash&quot;:&quot;d88af718aa8a9dfc24195b73bf4f597bc66c46c3&quot;,&quot;datavalue&quot;:{&quot;value&quot;:{&quot;entity-type&quot;:&quot;item&quot;,&quot;numeric-id&quot;:20007257,&quot;id&quot;:&quot;Q20007257&quot;},&quot;type&quot;:&quot;wikibase-entityid&quot;}},&quot;type&quot;:&quot;statement&quot;,&quot;id&quot;:&quot;M17282203$983521DC-2B95-4767-B03F-4DF4A986B475&quot;,&quot;rank&quot;:&quot;normal&quot;}]" data-formatvalue="{&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;property\&quot;,\&quot;numeric-id\&quot;:275,\&quot;id\&quot;:\&quot;P275\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;es&quot;:{&quot;&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/P275\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/P275\&quot;>licencia<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;es&quot;:{&quot;&quot;:&quot;licencia&quot;}}},&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;item\&quot;,\&quot;numeric-id\&quot;:98923445,\&quot;id\&quot;:\&quot;Q98923445\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;es&quot;:{&quot;P275&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/Q98923445\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/Q98923445\&quot;>licencia que solo requiere atribuci\u00f3n<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;es&quot;:{&quot;P275&quot;:&quot;licencia que solo requiere atribuci\u00f3n&quot;}}},&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;item\&quot;,\&quot;numeric-id\&quot;:20007257,\&quot;id\&quot;:\&quot;Q20007257\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;es&quot;:{&quot;P275&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/Q20007257\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/Q20007257\&quot;>Creative Commons Atribuci\u00f3n 4.0 Internacional<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;es&quot;:{&quot;P275&quot;:&quot;Creative Commons Atribuci\u00f3n 4.0 Internacional&quot;}}}}" class="wbmi-entityview-statementsGroup wbmi-entityview-statementsGroup-P275 oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-framed"><div class="wbmi-statements-widget"><div class="wbmi-statement-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/P275" href="https://www.wikidata.org/wiki/Special:EntityPage/P275">licencia</a></bdi></h4></div></div></div><div class="wbmi-content-items-group"><div class="wbmi-item wbmi-item-read"><div data-guid="M17282203$B9C4BA2A-E0AF-46B6-90DD-38450AB2C934" class="wbmi-item-container"><div class="wbmi-entity-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/Q98923445" href="https://www.wikidata.org/wiki/Special:EntityPage/Q98923445">licencia que solo requiere atribución</a></bdi></h4></div></div></div></div></div><div class="wbmi-item wbmi-item-read"><div data-guid="M17282203$983521DC-2B95-4767-B03F-4DF4A986B475" class="wbmi-item-container"><div class="wbmi-entity-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/Q20007257" href="https://www.wikidata.org/wiki/Special:EntityPage/Q20007257">Creative Commons Atribución 4.0 Internacional</a></bdi></h4></div></div></div></div></div></div></div></div><div id="P571" data-property="P571" data-statements="[{&quot;mainsnak&quot;:{&quot;snaktype&quot;:&quot;value&quot;,&quot;property&quot;:&quot;P571&quot;,&quot;hash&quot;:&quot;ed6278f4ad667dc61a0216f8a792730c57ba2673&quot;,&quot;datavalue&quot;:{&quot;value&quot;:{&quot;time&quot;:&quot;+2011-11-09T00:00:00Z&quot;,&quot;timezone&quot;:0,&quot;before&quot;:0,&quot;after&quot;:0,&quot;precision&quot;:11,&quot;calendarmodel&quot;:&quot;http:\/\/www.wikidata.org\/entity\/Q1985727&quot;},&quot;type&quot;:&quot;time&quot;}},&quot;type&quot;:&quot;statement&quot;,&quot;id&quot;:&quot;M17282203$FBCA127A-5F44-4D39-97B5-B46B67638EF8&quot;,&quot;rank&quot;:&quot;normal&quot;}]" data-formatvalue="{&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;property\&quot;,\&quot;numeric-id\&quot;:571,\&quot;id\&quot;:\&quot;P571\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;es&quot;:{&quot;&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/P571\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/P571\&quot;>fecha de fundaci\u00f3n o creaci\u00f3n<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;es&quot;:{&quot;&quot;:&quot;fecha de fundaci\u00f3n o creaci\u00f3n&quot;}}},&quot;{\&quot;value\&quot;:{\&quot;time\&quot;:\&quot;+2011-11-09T00:00:00Z\&quot;,\&quot;timezone\&quot;:0,\&quot;before\&quot;:0,\&quot;after\&quot;:0,\&quot;precision\&quot;:11,\&quot;calendarmodel\&quot;:\&quot;http:\\\/\\\/www.wikidata.org\\\/entity\\\/Q1985727\&quot;},\&quot;type\&quot;:\&quot;time\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;es&quot;:{&quot;P571&quot;:&quot;9 nov 2011&quot;}},&quot;text\/plain&quot;:{&quot;es&quot;:{&quot;P571&quot;:&quot;9 nov 2011&quot;}}}}" class="wbmi-entityview-statementsGroup wbmi-entityview-statementsGroup-P571 oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-framed"><div class="wbmi-statements-widget"><div class="wbmi-statement-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/P571" href="https://www.wikidata.org/wiki/Special:EntityPage/P571">fecha de fundación o creación</a></bdi></h4></div></div></div><div class="wbmi-content-items-group"><div class="wbmi-item wbmi-item-read"><div data-guid="M17282203$FBCA127A-5F44-4D39-97B5-B46B67638EF8" class="wbmi-item-container"><div class="wbmi-entity-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi>9 nov 2011</bdi></h4></div></div></div></div></div></div></div></div><div id="P7482" data-property="P7482" data-statements="[{&quot;mainsnak&quot;:{&quot;snaktype&quot;:&quot;value&quot;,&quot;property&quot;:&quot;P7482&quot;,&quot;hash&quot;:&quot;83568a288a8b8b4714a68e7239d8406833762864&quot;,&quot;datavalue&quot;:{&quot;value&quot;:{&quot;entity-type&quot;:&quot;item&quot;,&quot;numeric-id&quot;:66458942,&quot;id&quot;:&quot;Q66458942&quot;},&quot;type&quot;:&quot;wikibase-entityid&quot;}},&quot;type&quot;:&quot;statement&quot;,&quot;id&quot;:&quot;M17282203$8D8635CF-A266-4110-BD88-CC375168F0F0&quot;,&quot;rank&quot;:&quot;normal&quot;}]" data-formatvalue="{&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;property\&quot;,\&quot;numeric-id\&quot;:7482,\&quot;id\&quot;:\&quot;P7482\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;es&quot;:{&quot;&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/P7482\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/P7482\&quot;>origen del archivo<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;es&quot;:{&quot;&quot;:&quot;origen del archivo&quot;}}},&quot;{\&quot;value\&quot;:{\&quot;entity-type\&quot;:\&quot;item\&quot;,\&quot;numeric-id\&quot;:66458942,\&quot;id\&quot;:\&quot;Q66458942\&quot;},\&quot;type\&quot;:\&quot;wikibase-entityid\&quot;}&quot;:{&quot;text\/html&quot;:{&quot;es&quot;:{&quot;P7482&quot;:&quot;<a target=\&quot;_blank\&quot; title=\&quot;d:Special:EntityPage\/Q66458942\&quot; href=\&quot;https:\/\/www.wikidata.org\/wiki\/Special:EntityPage\/Q66458942\&quot;>creaci\u00f3n original de la persona que sube el archivo<\/a>&quot;}},&quot;text\/plain&quot;:{&quot;es&quot;:{&quot;P7482&quot;:&quot;creaci\u00f3n original de la persona que sube el archivo&quot;}}}}" class="wbmi-entityview-statementsGroup wbmi-entityview-statementsGroup-P7482 oo-ui-layout oo-ui-panelLayout oo-ui-panelLayout-framed"><div class="wbmi-statements-widget"><div class="wbmi-statement-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/P7482" href="https://www.wikidata.org/wiki/Special:EntityPage/P7482">origen del archivo</a></bdi></h4></div></div></div><div class="wbmi-content-items-group"><div class="wbmi-item wbmi-item-read"><div data-guid="M17282203$8D8635CF-A266-4110-BD88-CC375168F0F0" class="wbmi-item-container"><div class="wbmi-entity-header"><div class="wbmi-entity-data"><div class="wbmi-entity-title"><h4 class="wbmi-entity-label"><bdi><a target="_blank" title="d:Special:EntityPage/Q66458942" href="https://www.wikidata.org/wiki/Special:EntityPage/Q66458942">creación original de la persona que sube el archivo</a></bdi></h4></div></div></div></div></div></div></div></div></mediainfoviewstatements></mediainfoview>
+<!-- 
+NewPP limit report
+Parsed by mw1411
+Cached time: 20230901201416
+Cache expiry: 1814400
+Reduced expiry: false
+Complications: []
+CPU time usage: 0.111 seconds
+Real time usage: 0.149 seconds
+Preprocessor visited node count: 2193/1000000
+Post‐expand include size: 22375/2097152 bytes
+Template argument size: 2100/2097152 bytes
+Highest expansion depth: 11/100
+Expensive parser function count: 1/500
+Unstrip recursion depth: 0/20
+Unstrip post‐expand size: 3301/5000000 bytes
+Lua time usage: 0.045/10.000 seconds
+Lua memory usage: 1252641/52428800 bytes
+Number of Wikibase entities loaded: 1/400
+-->
+<!--
+Transclusion expansion time report (%,ms,calls,template)
+100.00%  129.905      1 -total
+ 68.83%   89.412      1 Template:Information
+ 31.03%   40.304      1 Template:Self
+ 15.88%   20.626      1 Template:CC-BY-4.0
+ 11.30%   14.685      1 User:Marcin_Łukasz_Kiejzik/contact
+ 10.63%   13.803      1 Template:Cc-by-layout
+  8.73%   11.337      1 Template:Credit_line
+  8.52%   11.063      3 Template:Description
+  7.36%    9.559      2 Template:Pl
+  7.11%    9.232      2 Template:Information_field
+-->
+
+<!-- Saved in parser cache with key commonswiki:pcache:idhash:17282203-0!userlang=es!wb=3 and timestamp 20230901201416 and revision id 461601058. Rendering was triggered because: page-view
+ -->
+</div></div>
+<h2 id="filehistory">Historial del archivo</h2>
+<div id="mw-imagepage-section-filehistory">
+<p>Haz clic sobre una fecha y hora para ver el
+archivo tal como apareció en ese momento.
+</p>
+<table class="wikitable filehistory">
+<tr><th></th><th>Fecha y hora</th><th>Miniatura</th><th>Dimensiones</th><th>Usuario</th><th>Comentario</th></tr>
+<tr><td>actual</td><td class="filehistory-selected" style="white-space: nowrap;"><a href="//upload.wikimedia.org/wikipedia/commons/d/dd/Topologia_magistrali.svg">23:42 8 nov 2011</a></td><td><a href="//upload.wikimedia.org/wikipedia/commons/d/dd/Topologia_magistrali.svg"><img alt="Miniatura de la versión del 23:42 8 nov 2011" src="//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Topologia_magistrali.svg/120px-Topologia_magistrali.svg.png" decoding="async" width="120" height="104" data-file-width="466" data-file-height="405" /></a></td><td>466 × 405 <span style="white-space: nowrap;">(72 kB)</span></td><td>Random mess</td><td dir="ltr"></td></tr>
+</table>
+
+</div>
+<h2 id="filelinks">Usos del archivo</h2>
+<div id='mw-imagepage-section-linkstoimage'>
+<p>La siguiente página usa este archivo:
+</p><ul class="mw-imagepage-linkstoimage">
+<li class="mw-imagepage-linkstoimage-ns0"><a href="/wiki/Red_en_bus" title="Red en bus">Red en bus</a></li>
+</ul>
+</div>
+<h2 id="globalusage">Uso global del archivo</h2>
+<div id="mw-imagepage-section-globalusage"><p>Las wikis siguientes utilizan este archivo:
+</p><ul>
+<li class='mw-gu-onwiki-beta_wikiversity_org'>Uso en beta.wikiversity.org
+<ul>	<li><a class="external" href="https://beta.wikiversity.org/wiki/Arnito%C3%A8le/R%C3%A9sieu_pi_sierveu">Arnitoèle/Résieu pi sierveu</a></li>
+</ul></li>
+<li class='mw-gu-onwiki-ca_wikipedia_org'>Uso en ca.wikipedia.org
+<ul>	<li><a class="external" href="https://ca.wikipedia.org/wiki/Xarxa_en_bus">Xarxa en bus</a></li>
+</ul></li>
+<li class='mw-gu-onwiki-eu_wikipedia_org'>Uso en eu.wikipedia.org
+<ul>	<li><a class="external" href="https://eu.wikipedia.org/wiki/Bus_sare">Bus sare</a></li>
+</ul></li>
+<li class='mw-gu-onwiki-fr_wikipedia_org'>Uso en fr.wikipedia.org
+<ul>	<li><a class="external" href="https://fr.wikipedia.org/wiki/R%C3%A9seau_en_bus_(informatique)">Réseau en bus (informatique)</a></li>
+</ul></li>
+<li class='mw-gu-onwiki-hu_wikipedia_org'>Uso en hu.wikipedia.org
+<ul>	<li><a class="external" href="https://hu.wikipedia.org/wiki/Busztopol%C3%B3gia">Busztopológia</a></li>
+</ul></li>
+<li class='mw-gu-onwiki-pl_wikipedia_org'>Uso en pl.wikipedia.org
+<ul>	<li><a class="external" href="https://pl.wikipedia.org/wiki/Topologia_magistrali">Topologia magistrali</a></li>
+</ul></li>
+<li class='mw-gu-onwiki-sv_wikipedia_org'>Uso en sv.wikipedia.org
+<ul>	<li><a class="external" href="https://sv.wikipedia.org/wiki/Bussn%C3%A4t">Bussnät</a></li>
+</ul></li>
+<li class='mw-gu-onwiki-tr_wikipedia_org'>Uso en tr.wikipedia.org
+<ul>	<li><a class="external" href="https://tr.wikipedia.org/wiki/Ortak_yol_topolojisi">Ortak yol topolojisi</a></li>
+</ul></li>
+</ul>
+</div><h2 id="metadata">Metadatos</h2>
+<div class="mw-imagepage-section-metadata"><p>Este archivo contiene información adicional, probablemente añadida por la cámara digital o el escáner usado para crearlo o digitalizarlo.
+</p><p>
+Si el archivo ha sido modificado desde su estado original, pueden haberse perdido algunos detalles.</p><table id="mw_metadata" class="mw_metadata collapsed">
+<tbody><tr class="exif-objectname"><th>Título breve</th><td>Topologia magistrali. Copyright (c) 2011 Marcin Łukasz Kiejzik, marcin@kiejzik.eu. All rights reserved.</td></tr></tbody></table>
+</div><!--esi <esi:include src="/esitest-fa8a495983347898/content" /> --><noscript><img src="//es.wikipedia.org/wiki/Special:CentralAutoLogin/start?type=1x1" alt="" title="" width="1" height="1" style="border: none; position: absolute;" /></noscript>
+<div class="printfooter" data-nosnippet="">Obtenido de «<a dir="ltr" href="https://es.wikipedia.org/wiki/Archivo:Topologia_magistrali.svg">https://es.wikipedia.org/wiki/Archivo:Topologia_magistrali.svg</a>»</div></div>
+					<div id="catlinks" class="catlinks catlinks-allhidden" data-mw="interface"></div>
+				</div>
+			</main>
+			
+		</div>
+		<div class="mw-footer-container">
+			
+<footer id="footer" class="mw-footer" role="contentinfo" >
+	<ul id="footer-info">
+</ul>
+
+	<ul id="footer-places">
+	<li id="footer-places-privacy"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy/es">Política de privacidad</a></li>
+	<li id="footer-places-about"><a href="/wiki/Wikipedia:Acerca_de">Acerca de Wikipedia</a></li>
+	<li id="footer-places-disclaimers"><a href="/wiki/Wikipedia:Limitaci%C3%B3n_general_de_responsabilidad">Limitación de responsabilidad</a></li>
+	<li id="footer-places-wm-codeofconduct"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Universal_Code_of_Conduct">Código de conducta</a></li>
+	<li id="footer-places-mobileview"><a href="//es.m.wikipedia.org/w/index.php?title=Archivo:Topologia_magistrali.svg&amp;mobileaction=toggle_view_mobile" class="noprint stopMobileRedirectToggle">Versión para móviles</a></li>
+	<li id="footer-places-developers"><a href="https://developer.wikimedia.org">Desarrolladores</a></li>
+	<li id="footer-places-statslink"><a href="https://stats.wikimedia.org/#/es.wikipedia.org">Estadísticas</a></li>
+	<li id="footer-places-cookiestatement"><a href="https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement/es">Declaración de cookies</a></li>
+</ul>
+
+	<ul id="footer-icons" class="noprint">
+	<li id="footer-copyrightico"><a href="https://wikimediafoundation.org/"><img src="/static/images/footer/wikimedia-button.png" srcset="/static/images/footer/wikimedia-button-1.5x.png 1.5x, /static/images/footer/wikimedia-button-2x.png 2x" width="88" height="31" alt="Wikimedia Foundation" loading="lazy" /></a></li>
+	<li id="footer-poweredbyico"><a href="https://www.mediawiki.org/"><img src="/static/images/footer/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/static/images/footer/poweredby_mediawiki_132x47.png 1.5x, /static/images/footer/poweredby_mediawiki_176x62.png 2x" width="88" height="31" loading="lazy"></a></li>
+</ul>
+
+</footer>
+
+		</div>
+	</div> 
+</div> 
+<div class="vector-settings" id="p-dock-bottom">
+	<ul>
+		<li>
+		
+		<button class="cdx-button cdx-button--icon-only vector-limited-width-toggle" id=""><span class="vector-icon mw-ui-icon-fullScreen mw-ui-icon-wikimedia-fullScreen"></span>
+
+<span>Activar o desactivar el límite de anchura del contenido</span>
+</button>
+</li>
+	</ul>
+</div>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw2431","wgBackendResponseTime":90,"wgPageParseReport":{"limitreport":{"cputime":"0.001","walltime":"0.001","ppvisitednodes":{"value":2,"limit":1000000},"postexpandincludesize":{"value":0,"limit":2097152},"templateargumentsize":{"value":0,"limit":2097152},"expansiondepth":{"value":1,"limit":100},"expensivefunctioncount":{"value":0,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":0,"limit":5000000},"entityaccesscount":{"value":0,"limit":400},"timingprofile":["100.00%    0.000      1 -total"]},"cachereport":{"origin":"mw2431","timestamp":"20230926121208","ttl":1814400,"transientcontent":false}}});});</script>
+</body>
+</html>

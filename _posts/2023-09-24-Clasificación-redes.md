@@ -14,7 +14,7 @@ Las infraestructuras de red pueden variar en gran medida en términos de:
 - La cantidad y los tipos de servicios disponibles.
 - El área de responsabilidad.
 
-Los dos tipos más comunes de infraestructuras de red son las redes de área local (LAN) y las redes de área amplia (WAN). Una LAN es una infraestructura de red que proporciona acceso a usuarios y dispositivos finales en un área geográfica pequeña. Normalmente, una LAN se utiliza en un departamento dentro de una empresa, un hogar o una red de pequeñas empresas. Una WAN es una infraestructura de red que proporciona acceso a otras redes en un área geográfica amplia, que generalmente es propiedad y está administrada por una corporación más grande o un proveedor de servicios de telecomunicaciones. La figura muestra las LAN conectadas a una WAN.
+Los dos tipos más comunes de infraestructuras de red son las redes de área local (LAN) y las redes de área amplia (WAN). Una LAN es una infraestructura de red que proporciona acceso a usuarios y dispositivos finales en un área geográfica pequeña. Normalmente, una LAN se utiliza en un departamento dentro de una empresa, un hogar o una red de pequeñas empresas. Una WAN es una infraestructura de red que proporciona acceso a otras redes en un área geográfica amplia, que generalmente es propiedad y está administrada por una corporación más grande o un proveedor de servicios de telecomunicaciones.
 
 # LAN
 
@@ -69,11 +69,11 @@ Una red MAN (Metropolitan Area Network, por sus siglas en inglés) es un tipo de
 
 ## 2. Componentes de una MAN:
 
-- Enrutadores y Dispositivos de Red: Al igual que en las LAN y WAN, los enrutadores desempeñan un papel fundamental en una MAN. Dirigen el tráfico de datos entre diferentes ubicaciones de la red y determinan la mejor ruta para que los datos lleguen a su destino.
+- Enrutadores y Dispositivos de Red: Al igual que en las LAN y WAN, los routers desempeñan un papel fundamental en una MAN. Dirigen el tráfico de datos entre diferentes ubicaciones de la red y determinan la mejor ruta para que los datos lleguen a su destino.
 
 - Fibra Óptica y Otros Medios de Transmisión: Dado que las MAN suelen cubrir distancias más largas que las LAN, a menudo utilizan medios de transmisión de alta velocidad, como cables de fibra óptica, para transmitir datos de manera eficiente a través de la ciudad.
 
-- Tecnologías de Acceso: Las MAN pueden utilizar una variedad de tecnologías de acceso, como Ethernet metropolitano, redes de fibra óptica oscura, redes de área amplia inalámbrica y otros métodos para conectar ubicaciones remotas.
+- Tecnologías de Acceso: Las MAN pueden utilizar una variedad de tecnologías de acceso, como Ethernet metropolitano, redes de fibra óptica, redes de área amplia inalámbrica y otros métodos para conectar ubicaciones remotas.
 
 ## 3. Topologías y Diseño de una MAN:
 
@@ -141,7 +141,6 @@ Una red WAN, o Red de Área Amplia (Wide Area Network, en inglés), es un tipo d
 
 En resumen, una red WAN es una infraestructura de comunicación esencial que conecta ubicaciones geográficamente dispersas, facilitando la comunicación y el intercambio de datos a larga distancia. Estas redes son vitales para empresas, organizaciones y la conectividad global en la era digital.
 
-
 # Otras redes:
 
 - LAN inalámbrica (WLAN): Wireless Local Area Network – son similares a las LAN, solo que interconectan de forma inalámbrica a los usuarios y los extremos en un área geográfica pequeña.
@@ -168,4 +167,29 @@ Es posible que una organización utilice una extranet para proporcionar acceso s
 - Una secretaría de educación local que proporciona información sobre presupuesto y personal a las escuelas del distrito.
 
 La figura ilustra los niveles de acceso que los diferentes grupos tienen a una intranet de la empresa, a una extranet de la empresa y a Internet.
+
+# Redes por tología física
+## 1.Red en bus
+
+Una red en bus es aquella topología que se caracteriza por tener un único bus de comunicaciones (denominado bus, troncal o backbone) al cual se conectan los diferentes dispositivos. De esta forma todos los dispositivos comparten el mismo canal.
+
+![Red en bus](/../assets/img/topologias/Archivo:Topologia_magistrali.svg)
+_Red en bus_
+### Ventajas
+- Facilidad de implementación y crecimiento.
+- Fácil adaptación.
+- Simplicidad en la arquitectura.
+- Es una red que no ocupa mucho espacio.
+
+### Desventajas
+- Hay un límite de equipos dependiendo de la calidad de la señal.
+- Puede producirse degradación de la señal.
+- Complejidad de reconfiguración y aislamiento de fallos.
+- Limitación de las longitudes físicas del canal.
+- Un problema en el canal usualmente degrada toda la red.
+- El canal requiere ser correctamente cerrado (caminos cerrados).
+- Altas pérdidas en la transmisión debido a colisiones entre mensajes.
+- Alta demanda
+- ocupa mucho espacio.
+- Hay mejores opciones de red.
 
