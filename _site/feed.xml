@@ -4,13 +4,13 @@
   <id>/redes.github.io/_site/</id>
   <title>Redes</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-09-27T01:10:30+08:00</updated>
+  <updated>2023-09-26T19:19:20+02:00</updated>
   <author>
     <name>Luis</name>
     <uri>/redes.github.io/_site/</uri>
   </author>
   <link rel="self" type="application/atom+xml" href="/redes.github.io/_site/feed.xml"/>
-  <link rel="alternate" type="text/html" hreflang="en"
+  <link rel="alternate" type="text/html" hreflang="es"
     href="/redes.github.io/_site/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator>
   <rights> © 2023 Luis </rights>
@@ -22,9 +22,9 @@
   <entry>
     <title>Clasificación de las redes</title>
     <link href="/redes.github.io/_site/posts/Clasificaci%C3%B3n-redes/" rel="alternate" type="text/html" title="Clasificación de las redes" />
-    <published>2023-09-25T19:00:00+08:00</published>
+    <published>2023-09-25T13:00:00+02:00</published>
   
-    <updated>2023-09-27T01:10:08+08:00</updated>
+    <updated>2023-09-26T19:10:08+02:00</updated>
   
     <id>/redes.github.io/_site/posts/Clasificaci%C3%B3n-redes/</id>
     <content src="/redes.github.io/_site/posts/Clasificaci%C3%B3n-redes/" />
@@ -69,9 +69,9 @@ Los dos tipos más comunes de infraestructuras de red son las redes de área loc
   <entry>
     <title>Binario, Hexadecimal y Decimal</title>
     <link href="/redes.github.io/_site/posts/binario-hexadecimal-decimal/" rel="alternate" type="text/html" title="Binario, Hexadecimal y Decimal" />
-    <published>2023-09-24T03:30:00+08:00</published>
+    <published>2023-09-23T21:30:00+02:00</published>
   
-    <updated>2023-09-25T03:38:03+08:00</updated>
+    <updated>2023-09-24T21:38:03+02:00</updated>
   
     <id>/redes.github.io/_site/posts/binario-hexadecimal-decimal/</id>
     <content src="/redes.github.io/_site/posts/binario-hexadecimal-decimal/" />
@@ -107,9 +107,9 @@ El sistema binario es un sistema numérico que utiliza solo dos dígitos para re
   <entry>
     <title>Introducción a las redes locales</title>
     <link href="/redes.github.io/_site/posts/introduccion-redes-locales/" rel="alternate" type="text/html" title="Introducción a las redes locales" />
-    <published>2022-05-16T19:00:00+08:00</published>
+    <published>2022-05-16T13:00:00+02:00</published>
   
-    <updated>2022-05-16T19:00:00+08:00</updated>
+    <updated>2022-05-16T13:00:00+02:00</updated>
   
     <id>/redes.github.io/_site/posts/introduccion-redes-locales/</id>
     <content src="/redes.github.io/_site/posts/introduccion-redes-locales/" />
@@ -147,9 +147,9 @@ A través del cabl...
   <entry>
     <title>Customize the Favicon</title>
     <link href="/redes.github.io/_site/posts/customize-the-favicon/" rel="alternate" type="text/html" title="Customize the Favicon" />
-    <published>2019-08-11T00:34:00+08:00</published>
+    <published>2019-08-10T18:34:00+02:00</published>
   
-    <updated>2022-03-17T02:05:45+08:00</updated>
+    <updated>2022-03-16T19:05:45+01:00</updated>
   
     <id>/redes.github.io/_site/posts/customize-the-favicon/</id>
     <content src="/redes.github.io/_site/posts/customize-the-favicon/" />
@@ -187,9 +187,9 @@ Prepare a square image (PNG, JPG, or SVG) with a size of 512x512 or more, and th
   <entry>
     <title>Getting Started</title>
     <link href="/redes.github.io/_site/posts/getting-started/" rel="alternate" type="text/html" title="Getting Started" />
-    <published>2019-08-09T20:55:00+08:00</published>
+    <published>2019-08-09T14:55:00+02:00</published>
   
-    <updated>2023-09-23T17:44:44+08:00</updated>
+    <updated>2023-09-23T11:44:44+02:00</updated>
   
     <id>/redes.github.io/_site/posts/getting-started/</id>
     <content src="/redes.github.io/_site/posts/getting-started/" />

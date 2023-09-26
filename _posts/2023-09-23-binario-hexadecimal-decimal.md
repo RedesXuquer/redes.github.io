@@ -3,6 +3,9 @@ title: Binario, Hexadecimal y Decimal
 date: 2023-09-23 20:30:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [redes locales, binario, decimal, hexadecimal, smr]
+img_path: /assets/img/binario/
+image: 
+    path: binario.jpg
 ---
 
 {:.section}
