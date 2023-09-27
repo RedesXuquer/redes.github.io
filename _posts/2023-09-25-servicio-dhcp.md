@@ -43,6 +43,60 @@ Este bloque de direccionamiento se conoce como «link–local» para redes IPv4.
 
 Una vez que ya conocemos qué es el protocolo DHCP y sus principales características, vamos a ver su funcionamiento y qué mensajes se intercambian.
 
+## Funcionamiento y mensajes de intercambio
+La comunicación entre el servidor DHCP y los clientes DHCP que tengamos conectados en la red se realiza a través del protocolo UDP, un protocolo que ya conocemos de otros artículos y que es un protocolo no orientado a conexión. En el caso del servidor DHCP usamos el protocolo UDP puerto 67, en el caso de los clientes usamos el protocolo UDP en el puerto 68. Si tenemos un firewall bloqueando estos puertos, ya sea en el servidor o en el cliente, deberemos revisarlo y añadir una regla de aceptar para origen y/o destino estos puertos, de lo contrario el servicio no funcionará, y no podremos obtener las direcciones IP automáticamente.
+
+![Funcionamiento y mensajes de intercambio](funcionamiento.jpg)
+_Funcionamiento y mensajes de intercambio_
+
+Cuando conectamos un equipo por primera vez a la red no tiene direccionamiento IP, por tanto, deberemos «buscar» el servidor DHCP por toda la red, ya que tampoco tenemos información sobre el protocolo ARP en un primer momento. Por este motivo, lo primero que hará el cliente es enviar un DHCP DISCOVERY con dirección IP de origen 0.0.0.0 y dirección IP de destino 255.255.255.255 que es la IP de broadcast global. Por supuesto, se envía un datagrama UDP, con puerto de origen el 68 (cliente) y puerto de destino el 67 (servidor). Esta comunicación es de tipo broadcast en la red, e internamente se puede configurar para recibir el OFFER por broadcast o unicast, aunque generalmente es de tipo unicast en el OFFER.
+
+Si existe un servidor y está funcionando correctamente, le enviará una respuesta llamada DHCP OFFER. Este es el datagrama de respuesta del servidor al cliente ante la petición de obtener parámetros por el protocolo. En este caso la dirección IP de origen será la del propio servidor, que generalmente también actúa de router, la IP de destino será la 255.255.255.255 también, el puerto de origen el 67 y el puerto de destino el 68. En este paquete tendremos la dirección IP privada que se le puede proporcionar y se involucra a la dirección MAC del equipo. Esta comunicación es de tipo unicast generalmente, aunque de forma opcional puede ser broadcast.
+
+Una vez que el cliente recibe el OFFER, le enviará un DHCP REQUEST de vuelta. En este caso el cliente selecciona la configuración recibida por el OFFER y una vez más el cliente solicita la IP que indicó el servidor anteriormente. Esta comunicación también es broadcast, porque todavía no tiene una dirección IP privada válida.
+
+Por último, el servidor le enviará un DHCP ACK al cliente, diciéndole que lo ha recibido correctamente e incluye toda la información que hayamos configurado en el servidor, como la duración de la conexión, información sobre los servidores DNS y más. Con este último proceso se completan todos los pasos del proceso, el protocolo también esperará un cierto tiempo hasta que el cliente DHCP configure su interfaz correctamente con los parámetros negociados. Una vez que el cliente obtiene la dirección IP, el cliente empezará a recibir información del protocolo ARP con todos los equipos que hay en la red local, con el objetivo de prevenir posibles conflictos de direcciones IP o superposición de grupos de direcciones de servidores DHCP. En caso de encontrar algún problema, el cliente enviará al servidor un mensaje DHCPDECLINE indicando que la dirección ya está en uso.
+
+Una vez que hemos visto cómo funciona el protocolo DHCP, vamos a explicar qué ataques existen y cómo evitarlos.
+
+## ¿Implementación del DHCP?
+
+Cuando vemos que una empresa u organización necesita un DHCP, es necesario iniciar un proceso de implementación. Este nos ayudará con la planificación y evaluación de las necesidades que tiene la red, y las que tenemos como usuarios del mismo. Lo primero que se debe tener en cuenta es el servidor en el cual se va a realizar la instalación del DHCP, siendo el responsable de asignar las direcciones IP a todos los clientes. Por lo general, es recomendable instalar el servicio DHCP en servidores dedicados, a pesar de que también se puede hacer en un servidor de archivos o de aplicaciones.
+
+Una vez hemos elegido el servidor, es necesario realizar la configuración adecuada al servicio DHCP. Entre los parámetros a configurar se incluyen los tiempos de asignación de las direcciones, así como las puertas de enlace, direcciones del servidor DNS y la dirección del servidor WINS. También cabe la posibilidad de configurar otras opciones, las cuales dependen del servicio al que elegimos darle uso. Como las direcciones de servicios de impresión o nombres de dominio. Una vez realizada toda la configuración y creado el rango de direcciones IP, se debe implementar el servidor en la red. Esto es algo que puede requerir una configuración específica para routers y switches, de forma que permitan que los clientes tengan comunicación con el servidor DHCP y obtengan así una dirección IP válida.
+
+Después de todo esto, lo más recomendable es contar con un plan de mantenimiento para los servidores DHCP. Esto incluye la supervisión de los registros del servidor, que nos ayudarán a detectar posibles problemas o errores. También serán necesarias las actualizaciones periódicas para la configuración, y para la implementación de medidas de seguridad que nos mantengan protegidos en todo momento contra posibles ataques contra nuestro sistema.
+
+En resumen, implementar un DHCP implica disponer de una planificación cuidadosa. La configuración de todos los parámetros, es algo que nos va a ayudar a que la red sea mucho más eficiente, pero para ello debe ser la adecuada para cada caso. Lo más recomendable, es realizar una documentación adecuada para cada uno de los casos donde se implemente el servidor DHCP. De forma que, si tenemos algún problema, no tengamos que pensar en donde puede estar el origen del mismo.
+
+## Ataques que existen al DHCP
+
+El protocolo DHCP no utiliza ningún tipo de autenticación, por este motivo es muy vulnerable a ataques y existen diferentes tipos de ataques que vamos a poder realizar.
+
+Un ataque muy común es configurar un servidor DHCP no autorizado para proporcionar información «falsa» o «maliciosa» a los clientes. Cuando conectamos un servidor DHCP ilegítimo en una red local que ya tiene un servidor DHCP legítimo, los clientes obtendrán la dirección IP, DNS y demás información al primero que responda. Por este motivo, un usuario malintencionado podría levantar un «Rogue DHCP Server» en la red, para hacerse con el control de las direcciones de varios clientes. Cuando un ciberdelincuente instala un Rogue DHCP, lo hace por varios motivos:
+
+Realizar un ataque de denegación de servicio a la red: si el cliente o los clientes obtienen este direccionamiento, puede «cortar» la conexión a Internet. De esta forma, los clientes no tendrán acceso a Internet ni tampoco a la red local.
+Ataque Man in the Middle: al tener el control total sobre el direccionamiento y los servidores DNS, ni siquiera es necesario hacer un ataque ARP Spoofing porque tendremos el control total de toda la red, y podremos reenviar a los clientes a webs maliciosas modificando los servidores DNS de nuestro propio servidor DHCP que acabamos de instalar. Un servidor DHCP ilegítimo puede proporcionar información falsa de servidores DNS a los diferentes clientes. Por supuesto, no solamente accederán a las webs maliciosas, sino que también podrá espiar fácilmente las conexiones porque nosotros seremos el gateway.
+Para mitigar este ataque, se debe garantizar que no haya ningún Rogue DHCP en nuestra red local, y ahí entra en juego el «DHCP Snooping» que incorporan los switches. Esta tecnología permite bloquear los mensajes DHCP Offer y DHCP Ack de los puertos donde no esté permitido, es decir, donde no esté el servidor legítimo. De esta forma, aunque al servidor DHCP falso le lleguen los mensajes, nunca podrá contestar y los clientes de la red local permanecerán a salvo. En el siguiente esquema se puede ver cómo funciona el DHCP Snooping:
+
+![DHCP Snooping enable](snooping.jpg)
+_DHCP Snooping enable_
+
+Otro ataque muy común a los servidores DHCP, debido a que no tenemos ningún tipo de mecanismo de autenticación de los clientes, es el de realizar decenas de peticiones de direcciones IP, con el objetivo de agotar el almacenamiento de direcciones IP del servidor, al presentar nuevos identificadores de cliente cada vez que se realiza una petición. Esto haría que el servidor «colapse» y no pueda proporcionar más direccionamiento. Existen algunos mecanismos de mitigación, sobre todo a nivel de operadores de Internet que hacen uso de DHCP, como la RFC3046 usando etiquetas la cual se usa como un token de autorización, también tenemos la RFC3118 que es para autenticar los mensajes pero que no se ha usado ampliamente. Con el lanzamiento del protocolo 802.1X para autenticar a los clientes cableados, se dejó en un segundo plano estos RFC.
+
+Sea cual sea el ataque, quién lo ocasione debe tener acceso a la red para que este pueda abusar de este protocolo. Por eso es recomendable tomar ciertas medidas de seguridad que nos permita llevarlo a cabo con garantías. De cara a la red local lo más importante es tener bien configurado el DHCP Snooping para evitar los Rogue DHCP, de esta forma, estaremos protegidos.
+
+## Seguridad con DHCP Snooping
+DHCP Snooping es una función de seguridad que trabaja en el segundo nivel del modelo OSI. Esta se encuentra integrada en el dispositivo el cual conecta los clientes con el servidor. Su trabajo será verificar toda la información que pasa a través del conmutador, de forma que solo los paquetes que él apruebe y provengan de un servidor de confianza, se enviarán a los clientes.
+
+Para tener garantías de que solo los servidores correctos puedan interferir en la información que recibimos o enviamos, el DHCP Snooping utiliza varios pasos. Lo primero que tendremos que hacer es especificar un puerto seguro para nuestros dispositivos, y todo lo que entre por otro puerto que no sea el asignado, se considerará inseguro. Por lo cual, este bloqueará el envío y el cliente no recibirá nunca esa información.
+
+Este tipo de protección y solo en algunos dispositivos, puede ayudarnos generando un informe de defensa que luego se pueden analizar. Nos distinguirá diferentes errores. Primero tendremos la discrepancia entre la dirección MAC y la información que se encuentre almacenada en la base de datos. Y, por otro lado, nos informará de todos los paquetes que fueron enviados desde un puerto no seguro. Esto puede estar más orientado a un nivel profesional, pero las funcionan se pueden usar en un entorno más privado como una casa.
+
+Debemos tener en cuenta, que de todos los errores que nos podamos encontrar, muchos pueden deberse a ciertas circunstancias de la red que generan errores por mala configuración, estos no suelen ser motivo de mucha preocupación más allá de configurarlo todo correctamente. Por otro lado, si existen errores que pueden significar que se está intentando ejecutar alguna acción que puede ser de dudosa legalidad, como, por ejemplo, alguien que esté intentando entrar en nuestra red de forma deliberada.
+
+Tal y como habéis visto, el protocolo DHCP es ampliamente utilizado por todos nosotros para obtener el direccionamiento IP y otra información necesaria para el buen funcionamiento de la red local, además, no debemos olvidar los ataques y cómo podemos protegernos de ellos, finalmente, recordad que tenemos la funcionalidad de Static DHCP para que el servidor siempre nos proporcione la misma dirección IP.
+
 # Instalación del servicio en Ubuntu Server 22.04 LTS
 
 ## Cosas necesarias previas a la instalación
@@ -80,13 +134,21 @@ sudo vi /etc/dhcp/dhcpd.conf
 ```
 
 ```console
+#Declaramos la dirección de red y la máscara de nuestro DHCP
 subnet 192.168.100.0 netmask 255.255.255.0 {
+  #Definimos el rango de direcciones que va a dar nuestro DHCP
   range 192.168.100.100 192.168.100.110;
+  #Definimos los servidores DNS's
   option domain-name-servers 8.8.8.8, 8.8.4.4;
+  #Definimos la máscara de red
   option subnet-mask 255.255.255.0;
+  #Definimos la dirección de la puerta de enlace
   option routers 192.168.100.1;
+  #Definimos la dirección de broadcast
   option broadcast-address 192.168.100.255;
+  #Tiempo por defecto en que la concesión de la IP es valida.
   default-lease-time 600;
+  #Tiempo máximo que se permite asignar a una concesión de dirección IP.
   max-lease-time 7200;
   }
 ```
@@ -105,7 +167,7 @@ service isc-dhcp-server restart
 service isc-dhcp.server status
 ```
 
-## Comprobación
+## Comprobación con VM cliente Xubuntu
 En una máquina cliente Xubuntu vamos a las propiedades de red IPv4 y marcamos la opción para que asigne los parámetros de red automáticamente, tras eso podemos hacer un *ip a* para verificar que nos ha dado una IP del rango que hemos definido en la configuración del DHCP.
 
 ```console
@@ -113,3 +175,62 @@ ip a
 ```
 
 ## Extras
+Para ver la lista de hosts conectados al servidor dhcp podemos ejecutar:
+```console
+watch dhcp-lease-list
+```
+Dentro del archivo de configuración del DHCP
+```console
+sudo vi dhcpd.conf
+```
+```console
+host WinClient1{
+  #Dirección MAC del equipo
+  hardware ethernet 00:11:22:33:44:99;
+  #Dirección IP fija 
+  fixed-address 192.168.100.240;
+}
+```
+```console
+host WinClient1{
+  #Dirección MAC del equipo
+  hardware ethernet 00:11:22:33:44:99;
+  #Denegación de darle una IP
+  deny booting;
+}
+```
+
+```console
+#Declaramos la dirección de red y la máscara de nuestro DHCP
+subnet 192.168.100.0 netmask 255.255.255.0 {
+  #Definimos el rango de direcciones que va a dar nuestro DHCP
+  range 192.168.100.100 192.168.100.110;
+  #Definimos los servidores DNS's
+  option domain-name-servers 8.8.8.8, 8.8.4.4;
+  #Definimos la máscara de red
+  option subnet-mask 255.255.255.0;
+  #Definimos la dirección de la puerta de enlace
+  option routers 192.168.100.1;
+  #Definimos la dirección de broadcast
+  option broadcast-address 192.168.100.255;
+  #Tiempo por defecto en que la concesión de la IP es valida.
+  default-lease-time 600;
+  #Tiempo máximo que se permite asignar a una concesión de dirección IP.
+  max-lease-time 7200;
+  group{
+    host WinClient1{
+      #Dirección MAC del equipo
+      hardware ethernet 33:44:88:00:11:22;
+      #Dirección IP fija 
+      fixed-address 192.168.100.240;
+    }
+
+    host WinClient2{
+      #Dirección MAC del equipo
+      hardware ethernet 00:11:22:33:44:99;
+      #Denegación de darle una IP
+      deny booting;
+    }
+  }
+  }
+```
