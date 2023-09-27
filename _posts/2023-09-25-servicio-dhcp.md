@@ -46,9 +46,9 @@ Una vez que ya conocemos qué es el protocolo DHCP y sus principales caracterís
 # Instalación del servicio en Ubuntu Server 22.04 LTS
 
 ## Cosas necesarias previas a la instalación
-- Configuración de MV en red nat
-- MV Xubuntu en la misma red nat (Configuración interna DHCP)
-- Red 192.168.100.0/24
+- Configuración de MV servidor en red nat
+- MV cliente Xubuntu en la misma red nat (Configuración interna seleccionada DHCP)
+- Configuración red nat 192.168.100.0/24
 
 Con permisos de root ejecutamos el comando:
 
@@ -56,13 +56,17 @@ Con permisos de root ejecutamos el comando:
 sudo apt-get install isc-dhcp-server
 ```
 
-Comprobamos que el servicio está activo en su respectivo puerto:
+Comprobamos que el servicio está activo en su puerto 67:
 
 ```console
 netstat -putona
 ```
 
-Tras completar la instalación del servidor vamos a definir la interfaz de red sobre la que funcionará el servidor DHCP. Para este laboratorio de ejemplo será *enp0s3*, por lo que declaramos esta interfaz de IPv4 en */etc/default/isc-dhcp-server*
+Tras completar la instalación del servidor vamos a definir la interfaz de red sobre la que funcionará el servidor DHCP. Para este laboratorio de ejemplo será *enp0s3*, por lo que declaramos esta interfaz de IPv4:
+
+```console
+sudo vi /etc/default/isc-dhcp-server
+```
 
 ```console
 INTERFACESV4="enp0s3"
@@ -70,6 +74,22 @@ INTERFACESV6=""
 ```
 
 Lo siguiente es configurar nuestro DHCP, para ello vamos a */etc/dhcp* y editamos el fichero *dhcpd.conf*
+
+```console
+sudo vi /etc/dhcp/dhcpd.conf
+```
+
+```console
+subnet 192.168.100.0 netmask 255.255.255.0 {
+  range 192.168.100.100 192.168.100.110;
+  option domain-name-servers 8.8.8.8, 8.8.4.4;
+  option subnet-mask 255.255.255.0;
+  option routers 192.168.100.1;
+  option broadcast-address 192.168.100.255;
+  default-lease-time 600;
+  max-lease-time 7200;
+  }
+```
 
 Podemos comprobar la sintaxis con:
 

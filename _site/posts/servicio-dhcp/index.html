@@ -66,7 +66,7 @@
 <meta property="twitter:title" content="Montaje del servicio DHCP" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-26T21:36:11+02:00","datePublished":"2023-09-25T13:00:00+02:00","description":"Introducción El protocolo DHCP es uno de los más utilizados por los routers, tanto domésticos como también profesionales. De manera predeterminada cualquier cliente cableado o WiFi está configurado para obtener una dirección IP por DHCP. Aunque continuamente se está utilizando el DHCP, ¿sabes para qué sirve?","headline":"Montaje del servicio DHCP","image":"/redes.github.io/_site/assets/img/dhcp/dhcp.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"/redes.github.io/_site/posts/servicio-dhcp/"},"url":"/redes.github.io/_site/posts/servicio-dhcp/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-26T23:59:27+02:00","datePublished":"2023-09-25T13:00:00+02:00","description":"Introducción El protocolo DHCP es uno de los más utilizados por los routers, tanto domésticos como también profesionales. De manera predeterminada cualquier cliente cableado o WiFi está configurado para obtener una dirección IP por DHCP. Aunque continuamente se está utilizando el DHCP, ¿sabes para qué sirve?","headline":"Montaje del servicio DHCP","image":"/redes.github.io/_site/assets/img/dhcp/dhcp.jpg","mainEntityOfPage":{"@type":"WebPage","@id":"/redes.github.io/_site/posts/servicio-dhcp/"},"url":"/redes.github.io/_site/posts/servicio-dhcp/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -803,7 +803,7 @@
 
 <time
   
-  data-ts="1695756971"
+  data-ts="1695765567"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -861,7 +861,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1001 words"
+  title="1047 words"
 >
   <em>5 min</em> read</span>
 
@@ -914,9 +914,9 @@ Aunque el protocolo DHCP es muy conocido por proporcionar la dirección IP, más
 
 <h2 id="cosas-necesarias-previas-a-la-instalación"><span class="me-2">Cosas necesarias previas a la instalación</span><a href="#cosas-necesarias-previas-a-la-instalación" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <ul>
-  <li>Configuración de MV en red nat</li>
-  <li>MV Xubuntu en la misma red nat (Configuración interna DHCP)</li>
-  <li>Red 192.168.100.0/24</li>
+  <li>Configuración de MV servidor en red nat</li>
+  <li>MV cliente Xubuntu en la misma red nat (Configuración interna seleccionada DHCP)</li>
+  <li>Configuración red nat 192.168.100.0/24</li>
 </ul>
 
 <p>Con permisos de root ejecutamos el comando:</p>
@@ -927,7 +927,7 @@ Aunque el protocolo DHCP es muy conocido por proporcionar la dirección IP, más
 </pre></td><td class="rouge-code"><pre><span class="go">sudo apt-get install isc-dhcp-server
 </span></pre></td></tr></tbody></table></code></div></div>
 
-<p>Comprobamos que el servicio está activo en su respectivo puerto:</p>
+<p>Comprobamos que el servicio está activo en su puerto 67:</p>
 
 <div class="language-console highlighter-rouge"><div class="code-header">
         <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
@@ -935,7 +935,13 @@ Aunque el protocolo DHCP es muy conocido por proporcionar la dirección IP, más
 </pre></td><td class="rouge-code"><pre><span class="go">netstat -putona
 </span></pre></td></tr></tbody></table></code></div></div>
 
-<p>Tras completar la instalación del servidor vamos a definir la interfaz de red sobre la que funcionará el servidor DHCP. Para este laboratorio de ejemplo será <em>enp0s3</em>, por lo que declaramos esta interfaz de IPv4 en <em>/etc/default/isc-dhcp-server</em></p>
+<p>Tras completar la instalación del servidor vamos a definir la interfaz de red sobre la que funcionará el servidor DHCP. Para este laboratorio de ejemplo será <em>enp0s3</em>, por lo que declaramos esta interfaz de IPv4:</p>
+
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="go">sudo vi /etc/default/isc-dhcp-server
+</span></pre></td></tr></tbody></table></code></div></div>
 
 <div class="language-console highlighter-rouge"><div class="code-header">
         <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
@@ -946,6 +952,34 @@ INTERFACESV6=""
 </span></pre></td></tr></tbody></table></code></div></div>
 
 <p>Lo siguiente es configurar nuestro DHCP, para ello vamos a <em>/etc/dhcp</em> y editamos el fichero <em>dhcpd.conf</em></p>
+
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="go">sudo vi /etc/dhcp/dhcpd.conf
+</span></pre></td></tr></tbody></table></code></div></div>
+
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre><span class="go">subnet 192.168.100.0 netmask 255.255.255.0 {
+</span><span class="gp">  range 192.168.100.100 192.168.100.110;</span><span class="w">
+</span><span class="gp">  option domain-name-servers 8.8.8.8, 8.8.4.4;</span><span class="w">
+</span><span class="gp">  option subnet-mask 255.255.255.0;</span><span class="w">
+</span><span class="gp">  option routers 192.168.100.1;</span><span class="w">
+</span><span class="gp">  option broadcast-address 192.168.100.255;</span><span class="w">
+</span><span class="gp">  default-lease-time 600;</span><span class="w">
+</span><span class="gp">  max-lease-time 7200;</span><span class="w">
+</span><span class="go">  }
+</span></pre></td></tr></tbody></table></code></div></div>
 
 <p>Podemos comprobar la sintaxis con:</p>
 
