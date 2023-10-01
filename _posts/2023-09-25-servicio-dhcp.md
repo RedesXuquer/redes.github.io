@@ -234,3 +234,56 @@ subnet 192.168.100.0 netmask 255.255.255.0 {
   }
   }
 ```
+
+# Instalación del servicio en Windows Server 2012 R2
+
+![Capura 0](Captura_de_pantalla_2023-10-01_201226.png)
+_Captura 0 instlación DHCP en Windows_
+![Capura 1](Captura_de_pantalla_2023-10-01_201918.png)
+_Captura 1 instlación DHCP en Windows_
+![Capura 2](Captura_de_pantalla_2023-10-01_201934.png)
+_Captura 2 instlación DHCP en Windows_
+![Capura 3](Captura_de_pantalla_2023-10-01_201945.png)
+_Captura 3 instlación DHCP en Windows_
+![Capura 4](Captura_de_pantalla_2023-10-01_202008.png)
+_Captura 4 instlación DHCP en Windows_
+![Capura 5](Captura_de_pantalla_2023-10-01_202018.png)
+_Captura 5 instlación DHCP en Windows_
+![Capura 6](Captura_de_pantalla_2023-10-01_202028.png)
+_Captura 6 instlación DHCP en Windows_
+![Capura 7](Captura_de_pantalla_2023-10-01_202059.png)
+_Captura 7 instlación DHCP en Windows_
+![Capura 8](Captura_de_pantalla_2023-10-01_202110.png)
+_Captura 8 instlación DHCP en Windows_
+![Capura 9](Captura_de_pantalla_2023-10-01_202122.png)
+_Captura 9 instlación DHCP en Windows_
+![Capura 10](Captura_de_pantalla_2023-10-01_202131.png)
+_Captura 10 instlación DHCP en Windows_
+![Capura 11](Captura_de_pantalla_2023-10-01_202235.png)
+_Captura 11 instlación DHCP en Windows_
+![Capura 12](Captura_de_pantalla_2023-10-01_202303.png)
+_Captura 12 instlación DHCP en Windows_
+![Capura 13](Captura_de_pantalla_2023-10-01_202341.png)
+_Captura 13 instlación DHCP en Windows_
+![Capura 14](Captura_de_pantalla_2023-10-01_202401.png)
+_Captura 14 instlación DHCP en Windows_
+![Capura 15](Captura_de_pantalla_2023-10-01_202422.png)
+_Captura 15 instlación DHCP en Windows_
+![Capura 16](Captura_de_pantalla_2023-10-01_202454.png)
+_Captura 16 instlación DHCP en Windows_
+![Capura 17](Captura_de_pantalla_2023-10-01_202504.png)
+_Captura 17 instlación DHCP en Windows_
+![Capura 18](Captura_de_pantalla_2023-10-01_202522.png)
+_Captura 18 instlación DHCP en Windows_
+![Capura 19](Captura_de_pantalla_2023-10-01_202534.png)
+_Captura 19 instlación DHCP en Windows_
+![Capura 20](Captura_de_pantalla_2023-10-01_202544.png)
+_Captura 20 instlación DHCP en Windows_
+![Capura 21](Captura_de_pantalla_2023-10-01_202554.png)
+_Captura 21 instlación DHCP en Windows_
+![Capura 22](Captura_de_pantalla_2023-10-01_202834.png)
+_Captura 22 instlación DHCP en Windows_
+
+
+- [Información de la configuración en el server Ubuntu](https://infotips.es/redes/servidor-dhcp-en-ubuntu-server-22-04-lts/)
+- [Qué es el DHCP, funcionamiento y ejemplos de configuración](https://www.redeszone.net/tutoriales/internet/que-es-protocolo-dhcp/)
