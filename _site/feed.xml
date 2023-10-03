@@ -4,7 +4,7 @@
   <id>/redes.github.io/_site/</id>
   <title>Redes</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-10-03T22:00:25+02:00</updated>
+  <updated>2023-10-03T22:03:42+02:00</updated>
   <author>
     <name>Luis</name>
     <uri>/redes.github.io/_site/</uri>
@@ -24,7 +24,7 @@
     <link href="/redes.github.io/_site/posts/OSI-TCPIP/" rel="alternate" type="text/html" title="Modelo OSI vs TCP/IP" />
     <published>2023-10-03T13:00:00+02:00</published>
   
-    <updated>2023-10-03T13:00:00+02:00</updated>
+    <updated>2023-10-03T22:00:26+02:00</updated>
   
     <id>/redes.github.io/_site/posts/OSI-TCPIP/</id>
     <content src="/redes.github.io/_site/posts/OSI-TCPIP/" />
