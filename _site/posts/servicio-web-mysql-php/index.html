@@ -66,7 +66,7 @@
 <meta property="twitter:title" content="Montaje del servicio WEB, MySQL y PHP" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-09-25T13:00:00+02:00","datePublished":"2023-09-25T13:00:00+02:00","description":"Introducción Un servidor web es un componente fundamental de la infraestructura de Internet que desempeña un papel crucial en la entrega de contenido en línea. En esencia, un servidor web es un software o hardware que almacena, gestiona y distribuye páginas web, archivos, imágenes y otros recursos a través de Internet. Está diseñado para recibir solicitudes de clientes web, como navegadores de Internet, y responder a esas solicitudes enviando los archivos correspondientes para que los usuarios puedan ver y interactuar con ellos en sus dispositivos.","headline":"Montaje del servicio WEB, MySQL y PHP","image":"/redes.github.io/_site/assets/img/web/apache.png","mainEntityOfPage":{"@type":"WebPage","@id":"/redes.github.io/_site/posts/servicio-web-mysql-php/"},"url":"/redes.github.io/_site/posts/servicio-web-mysql-php/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-10-09T23:29:07+02:00","datePublished":"2023-09-25T13:00:00+02:00","description":"Introducción Un servidor web es un componente fundamental de la infraestructura de Internet que desempeña un papel crucial en la entrega de contenido en línea. En esencia, un servidor web es un software o hardware que almacena, gestiona y distribuye páginas web, archivos, imágenes y otros recursos a través de Internet. Está diseñado para recibir solicitudes de clientes web, como navegadores de Internet, y responder a esas solicitudes enviando los archivos correspondientes para que los usuarios puedan ver y interactuar con ellos en sus dispositivos.","headline":"Montaje del servicio WEB, MySQL y PHP","image":"/redes.github.io/_site/assets/img/web/apache.png","mainEntityOfPage":{"@type":"WebPage","@id":"/redes.github.io/_site/posts/servicio-web-mysql-php/"},"url":"/redes.github.io/_site/posts/servicio-web-mysql-php/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -803,6 +803,29 @@
 
     <!-- lastmod date -->
     
+      <span>
+        Updated
+        <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1696886947"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Oct  9, 2023
+</time>
+
+      </span>
+    
 
     
       
@@ -850,7 +873,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="384 words"
+  title="390 words"
 >
   <em>2 min</em> read</span>
 
@@ -1016,6 +1039,7 @@
 5
 6
 7
+8
 </pre></td><td class="rouge-code"><pre># This is the main Apache server configuration file.
 sudo vim /etc/apache2/apache2.conf
 
@@ -1023,21 +1047,20 @@ sudo vim /etc/apache2/apache2.conf
 sudo vim /etc/apache2/port.conf
 
 # Default Apache virtualhost
+sudo vim /etc/apache2/site-available/default.conf
 </pre></td></tr></tbody></table></code></div></div>
-<p>sudo vim /etc/apache2/site-available/default.conf</p>
+
+<p>Y para validar la configuración de Apache2</p>
 <div class="language-plaintext highlighter-rouge"><div class="code-header">
         <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-</pre></td><td class="rouge-code"><pre>
-Y para validar la configuración de Apache2
+</pre></td><td class="rouge-code"><pre>sudo apache2ctl configtest
 </pre></td></tr></tbody></table></code></div></div>
-<p>sudo apache2ctl configtest
-```</p>
 
 <h2 id="extras"><span class="me-2">Extras</span><a href="#extras" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
-<p>Cambia el puerto 80 al 8080</p>
+<p>Cambia el puerto 80 al 8080
+Investiga para que sirve el archivo default.conf</p>
 
 </div>
 
@@ -1196,6 +1219,13 @@ Y para validar la configuración de Apache2
         
         
         <li class="text-truncate lh-lg">
+          <a href="/redes.github.io/_site/posts/servicio-web-mysql-php/">Montaje del servicio WEB, MySQL y PHP</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/redes.github.io/_site/posts/OSI-TCPIP/">Modelo OSI vs TCP/IP</a>
         </li>
       
@@ -1218,13 +1248,6 @@ Y para validar la configuración de Apache2
         
         <li class="text-truncate lh-lg">
           <a href="/redes.github.io/_site/posts/Clasificaci%C3%B3n-redes/">Clasificación de las redes</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/redes.github.io/_site/posts/getting-started/">Getting Started</a>
         </li>
       
     </ul>

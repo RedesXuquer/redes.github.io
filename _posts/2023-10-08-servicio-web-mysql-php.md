@@ -106,7 +106,6 @@ sudo vim /etc/apache2/apache2.conf
 sudo vim /etc/apache2/port.conf
 
 # Default Apache virtualhost
-```
 sudo vim /etc/apache2/site-available/default.conf
 ```
 
@@ -118,3 +117,4 @@ sudo apache2ctl configtest
 ## Extras
 
 Cambia el puerto 80 al 8080
+Investiga para que sirve el archivo default.conf
