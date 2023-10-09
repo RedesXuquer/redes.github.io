@@ -1,11 +1,11 @@
 ---
-title: Montaje del servicio DHCP
+title: Montaje del servicio WEB, MySQL y PHP
 date: 2023-09-25 12:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Servicios en red]
 tags: [redes locales, teoría, smr]
 img_path: /assets/img/web/
 image: 
-    path: dhcp.jpg
+    path: apache.png
 ---
 
 # Introducción
@@ -85,3 +85,36 @@ Una página de ejemplo podría ser:
 </body>
 </html>
 ```
+
+## Logs de Apache2
+```
+sudo tail -f /var/log/apache2/access.log
+```
+```
+sudo tail -f /var/log/apache2/error.log
+```
+```
+sudo tail -n 100 /var/log/apache2/access.log
+```
+
+## Archivos de configuración de Apache2
+```
+# This is the main Apache server configuration file.
+sudo vim /etc/apache2/apache2.conf
+
+# If you just change the port or add more ports here
+sudo vim /etc/apache2/port.conf
+
+# Default Apache virtualhost
+```
+sudo vim /etc/apache2/site-available/default.conf
+```
+
+Y para validar la configuración de Apache2
+```
+sudo apache2ctl configtest
+```
+
+## Extras
+
+Cambia el puerto 80 al 8080
