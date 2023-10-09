@@ -1,6 +1,6 @@
 self.importScripts('/redes.github.io/_site/assets/js/data/swcache.js');
 
-const cacheName = 'chirpy-20231009.233136';
+const cacheName = 'chirpy-20231009.233408';
 
 function verifyDomain(url) {
   for (const domain of allowedDomains) {
