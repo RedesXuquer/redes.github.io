@@ -1,0 +1,72 @@
+---
+title: Comandos Switch CISCO
+date: 2023-11-10 12:00:00 +0100
+categories: [Sistemas Microinformáticos y Redes, Redes Locales]
+tags: [redes locales, teoría, smr]
+img_path: /assets/img/CISCO/
+---
+
+# Introducción
+
+Los conmutadores (switches) de Cisco utilizan un sistema operativo llamado Cisco IOS (Internetwork Operating System), que ofrece una amplia variedad de comandos para configurar y administrar estos dispositivos de red.
+
+## Comandos
+
+Pasar a modo superusuario
+```
+Switch> enable
+Switch#
+```
+
+Cambiar el nombre de un dispositivo
+```
+Switch# configure terminal
+Switch(config)# hostname Sw-Floor-1
+Sw-Floor-1(config)#
+```
+
+Establecer contraseña en el modo superusuario
+```
+Sw-Floor-1# configure terminal
+Sw-Floor-1(config)# line console 0
+Sw-Floor-1(config-line)# password cisco
+Sw-Floor-1(config-line)# login
+SW-Floor-1(config-line)# end
+Sw-Floor-1#
+```
+
+Para asegurar el acceso privilegiado a EXEC
+```
+Sw-Floor-1# configure terminal
+Sw-Floor-1(config)# enable secret class
+Sw-Floor-1(config)# exit
+Sw-Floor-1#
+```
+
+Proteger las líneas de conexión
+```
+Sw-Floor-1# configure terminal
+Sw-Floor-1(config)# line vty 0 15
+Sw-Floor-1(config-line)# password cisco 
+Sw-Floor-1(config-line)# login 
+SW-Floor-1(config-line)# end
+Sw-Floor-1#
+```
+
+Encriptación de las contraeñas
+```
+Sw-Floor-1# configure terminal
+Sw-Floor-1(config)# service password-encryption
+Sw-Floor-1(config)#
+```
+
+Estado de nuestro switch
+```
+show running-config
+```
+
+Mensaje de aviso
+```
+Sw-Floor-1# configure terminal
+Sw-Floor-1(config)# banner motd #Authorized Access Only#
+```
