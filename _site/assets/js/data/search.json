@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "Comandos Switch CISCO",
+    "url": "/redes.github.io/_site/posts/Comandos-Switch.CISCO/",
+    "categories": "Sistemas Microinformáticos y Redes, Redes Locales",
+    "tags": "redes locales, teoría, smr",
+    "date": "2023-10-10 13:00:00 +0200",
+    
+
+
+
+
+
+    
+    "snippet": "IntroducciónLos conmutadores (switches) de Cisco utilizan un sistema operativo llamado Cisco IOS (Internetwork Operating System), que ofrece una amplia variedad de comandos para configurar y admini...",
+    "content": "IntroducciónLos conmutadores (switches) de Cisco utilizan un sistema operativo llamado Cisco IOS (Internetwork Operating System), que ofrece una amplia variedad de comandos para configurar y administrar estos dispositivos de red.ComandosPasar a modo superusuarioSwitch&gt; enableSwitch#Cambiar el nombre de un dispositivoSwitch# configure terminalSwitch(config)# hostname Sw-Floor-1Sw-Floor-1(config)#Establecer contraseña en el modo superusuarioSw-Floor-1# configure terminalSw-Floor-1(config)# line console 0Sw-Floor-1(config-line)# password ciscoSw-Floor-1(config-line)# loginSW-Floor-1(config-line)# endSw-Floor-1#Para asegurar el acceso privilegiado a EXECSw-Floor-1# configure terminalSw-Floor-1(config)# enable secret classSw-Floor-1(config)# exitSw-Floor-1#Proteger las líneas de conexiónSw-Floor-1# configure terminalSw-Floor-1(config)# line vty 0 15Sw-Floor-1(config-line)# password cisco Sw-Floor-1(config-line)# login SW-Floor-1(config-line)# endSw-Floor-1#Encriptación de las contraeñasSw-Floor-1# configure terminalSw-Floor-1(config)# service password-encryptionSw-Floor-1(config)#Estado de nuestro switchshow running-configMensaje de avisoSw-Floor-1# configure terminalSw-Floor-1(config)# banner motd #Authorized Access Only#"
+  },
+  
+  {
     "title": "Modelo OSI vs TCP/IP",
     "url": "/redes.github.io/_site/posts/OSI-TCPIP/",
     "categories": "Sistemas Microinformáticos y Redes, Redes Locales",
