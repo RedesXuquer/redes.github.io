@@ -4,7 +4,7 @@
   <id>/redes.github.io/_site/</id>
   <title>Redes</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-10-11T18:52:51+02:00</updated>
+  <updated>2023-10-11T18:58:13+02:00</updated>
   <author>
     <name>Luis</name>
     <uri>/redes.github.io/_site/</uri>
@@ -21,13 +21,13 @@
   
   <entry>
     <title>Comandos Switch CISCO</title>
-    <link href="/redes.github.io/_site/posts/Comandos-Switch.CISCO/" rel="alternate" type="text/html" title="Comandos Switch CISCO" />
+    <link href="/redes.github.io/_site/posts/Comandos-Switch-CISCO/" rel="alternate" type="text/html" title="Comandos Switch CISCO" />
     <published>2023-10-10T13:00:00+02:00</published>
   
     <updated>2023-10-10T13:00:00+02:00</updated>
   
-    <id>/redes.github.io/_site/posts/Comandos-Switch.CISCO/</id>
-    <content src="/redes.github.io/_site/posts/Comandos-Switch.CISCO/" />
+    <id>/redes.github.io/_site/posts/Comandos-Switch-CISCO/</id>
+    <content src="/redes.github.io/_site/posts/Comandos-Switch-CISCO/" />
     <author>
       <name>Luis</name>
     </author>
