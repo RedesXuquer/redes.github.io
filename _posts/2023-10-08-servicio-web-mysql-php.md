@@ -8,6 +8,10 @@ image:
     path: apache.png
 ---
 
+![Logo de Apache](apache.png)
+_Logo de Apache_
+
+
 # Introducción
 Un servidor web es un componente fundamental de la infraestructura de Internet que desempeña un papel crucial en la entrega de contenido en línea. En esencia, un servidor web es un software o hardware que almacena, gestiona y distribuye páginas web, archivos, imágenes y otros recursos a través de Internet. Está diseñado para recibir solicitudes de clientes web, como navegadores de Internet, y responder a esas solicitudes enviando los archivos correspondientes para que los usuarios puedan ver y interactuar con ellos en sus dispositivos.
 
