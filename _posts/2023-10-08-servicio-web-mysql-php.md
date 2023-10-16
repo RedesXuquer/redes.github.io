@@ -191,7 +191,7 @@ use ejemplo;
 ```
 
 Creamos un tabla:
-```mysql
+```
 CREATE TABLE mitabla(
          id MEDIUMINT NOT NULL AUTO_INCREMENT,
          nombre CHAR(30) NOT NULL,
@@ -201,7 +201,7 @@ CREATE TABLE mitabla(
 ```
 
 Añadimos información a nuestra tabla:
-```mysql
+```
 INSERT INTO mitabla (nombre, edad, salario) VALUES
         ("Pedro", 24, 21000),
         ("Maria", 26, 24000),
@@ -213,11 +213,11 @@ INSERT INTO mitabla (nombre, edad, salario) VALUES
 ```
 
 Mostramos la información introducida:
-```mysql
+```
 select * from mitabla;
 ```
 
-Para slir:
-```mysql
+Para salir de maridb:
+```
 exit
 ```

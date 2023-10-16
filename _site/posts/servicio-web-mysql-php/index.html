@@ -932,7 +932,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="910 words"
+  title="928 words"
 >
   <em>5 min</em> read</span>
 
@@ -1210,16 +1210,34 @@ En general, la elección entre MariaDB y MySQL dependerá de sus necesidades esp
 </pre></td></tr></tbody></table></code></div></div>
 
 <p>Creamos un tabla:</p>
-<pre><code class="language-mysql">CREATE TABLE mitabla(
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre>CREATE TABLE mitabla(
          id MEDIUMINT NOT NULL AUTO_INCREMENT,
          nombre CHAR(30) NOT NULL,
          edad INTEGER(30),
          salario INTEGER(30),
          PRIMARY KEY (id) );
-</code></pre>
+</pre></td></tr></tbody></table></code></div></div>
 
 <p>Añadimos información a nuestra tabla:</p>
-<pre><code class="language-mysql">INSERT INTO mitabla (nombre, edad, salario) VALUES
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+</pre></td><td class="rouge-code"><pre>INSERT INTO mitabla (nombre, edad, salario) VALUES
         ("Pedro", 24, 21000),
         ("Maria", 26, 24000),
         ("Juan", 28, 25000),
@@ -1227,15 +1245,21 @@ En general, la elección entre MariaDB y MySQL dependerá de sus necesidades esp
         ("Monica", 42, 30000),
         ("Rosa", 43, 25000),
         ("Susana", 45, 39000);
-</code></pre>
+</pre></td></tr></tbody></table></code></div></div>
 
 <p>Mostramos la información introducida:</p>
-<pre><code class="language-mysql">select * from mitabla;
-</code></pre>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>select * from mitabla;
+</pre></td></tr></tbody></table></code></div></div>
 
-<p>Para slir:</p>
-<pre><code class="language-mysql">exit
-</code></pre>
+<p>Para salir de maridb:</p>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>exit
+</pre></td></tr></tbody></table></code></div></div>
 
 </div>
 
