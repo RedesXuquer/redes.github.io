@@ -4,7 +4,7 @@
   <id>/redes.github.io/_site/</id>
   <title>Redes</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-10-16T23:11:22+02:00</updated>
+  <updated>2023-10-16T23:29:48+02:00</updated>
   <author>
     <name>Luis</name>
     <uri>/redes.github.io/_site/</uri>
@@ -17,6 +17,39 @@
   <icon>redes.github.io/_site//assets/img/favicons/favicon.ico</icon>
   <logo>redes.github.io/_site//assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title></title>
+    <link href="/redes.github.io/_site/posts/2023-10-08-servicio-web-mysql-php/" rel="alternate" type="text/html" title="" />
+    <published>2023-10-16T23:29:48+02:00</published>
+  
+    <updated>2023-10-16T23:11:23+02:00</updated>
+  
+    <id>/redes.github.io/_site/posts/2023-10-08-servicio-web-mysql-php/</id>
+    <content src="/redes.github.io/_site/posts/2023-10-08-servicio-web-mysql-php/" />
+    <author>
+      <name>Luis</name>
+    </author>
+
+  
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Introducción
+Un servidor web es un componente fundamental de la infraestructura de Internet que desempeña un papel crucial en la entrega de contenido en línea. En esencia, un servidor web es un software o hardware que almacena, gestiona y distribuye páginas web, archivos, imágenes y otros recursos a través de Internet. Está diseñado para recibir solicitudes de clientes web, como navegadores de ...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -101,43 +134,6 @@ S...
       Introducción
 
 El Modelo OSI (Open Systems Interconnection) y el conjunto de protocolos TCP/IP son dos marcos fundamentales en el mundo de las redes de computadoras, que desempeñan un papel crucial en la comunicación de datos a nivel global. Estos modelos proporcionan una estructura y un conjunto de estándares que permiten que dispositivos y sistemas de diferentes fabricantes se comuniquen de ma...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Montaje del servicio WEB, MySQL y PHP</title>
-    <link href="/redes.github.io/_site/posts/servicio-web-mysql-php/" rel="alternate" type="text/html" title="Montaje del servicio WEB, MySQL y PHP" />
-    <published>2023-09-25T13:00:00+02:00</published>
-  
-    <updated>2023-10-16T23:01:52+02:00</updated>
-  
-    <id>/redes.github.io/_site/posts/servicio-web-mysql-php/</id>
-    <content src="/redes.github.io/_site/posts/servicio-web-mysql-php/" />
-    <author>
-      <name>Luis</name>
-    </author>
-
-  
-    
-    <category term="Sistemas Microinformáticos y Redes" />
-    
-    <category term="Servicios en red" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Introducción
-Un servidor web es un componente fundamental de la infraestructura de Internet que desempeña un papel crucial en la entrega de contenido en línea. En esencia, un servidor web es un software o hardware que almacena, gestiona y distribuye páginas web, archivos, imágenes y otros recursos a través de Internet. Está diseñado para recibir solicitudes de clientes web, como navegadores de ...
     </summary>
   
 
