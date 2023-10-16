@@ -5,7 +5,7 @@ categories: [Sistemas Microinformáticos y Redes, Servicios en red]
 tags: [redes locales, teoría, smr]
 img_path: /assets/img/web/
 image: 
-    path: apache.png {: .shadow }
+    path: apache.png
 ---
 
 # Introducción

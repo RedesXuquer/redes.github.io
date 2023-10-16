@@ -18,6 +18,8 @@
 <!-- `site.alt_lang` can specify a language different from the UI -->
 <html lang="es" 
   
+    data-mode="dark"
+  
 >
   <!-- The Head -->
 
@@ -134,151 +136,6 @@
   <!-- JavaScript -->
 
   
-    <!-- Switch the mode between dark and light. -->
-
-<script type="text/javascript">
-  class ModeToggle {
-    static get MODE_KEY() {
-      return 'mode';
-    }
-    static get MODE_ATTR() {
-      return 'data-mode';
-    }
-    static get DARK_MODE() {
-      return 'dark';
-    }
-    static get LIGHT_MODE() {
-      return 'light';
-    }
-    static get ID() {
-      return 'mode-toggle';
-    }
-
-    constructor() {
-      if (this.hasMode) {
-        if (this.isDarkMode) {
-          if (!this.isSysDarkPrefer) {
-            this.setDark();
-          }
-        } else {
-          if (this.isSysDarkPrefer) {
-            this.setLight();
-          }
-        }
-      }
-
-      let self = this;
-
-      /* always follow the system prefers */
-      this.sysDarkPrefers.addEventListener('change', () => {
-        if (self.hasMode) {
-          if (self.isDarkMode) {
-            if (!self.isSysDarkPrefer) {
-              self.setDark();
-            }
-          } else {
-            if (self.isSysDarkPrefer) {
-              self.setLight();
-            }
-          }
-
-          self.clearMode();
-        }
-
-        self.notify();
-      });
-    } /* constructor() */
-
-    get sysDarkPrefers() {
-      return window.matchMedia('(prefers-color-scheme: dark)');
-    }
-
-    get isSysDarkPrefer() {
-      return this.sysDarkPrefers.matches;
-    }
-
-    get isDarkMode() {
-      return this.mode === ModeToggle.DARK_MODE;
-    }
-
-    get isLightMode() {
-      return this.mode === ModeToggle.LIGHT_MODE;
-    }
-
-    get hasMode() {
-      return this.mode != null;
-    }
-
-    get mode() {
-      return sessionStorage.getItem(ModeToggle.MODE_KEY);
-    }
-
-    /* get the current mode on screen */
-    get modeStatus() {
-      if (this.isDarkMode || (!this.hasMode && this.isSysDarkPrefer)) {
-        return ModeToggle.DARK_MODE;
-      } else {
-        return ModeToggle.LIGHT_MODE;
-      }
-    }
-
-    setDark() {
-      document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.DARK_MODE);
-      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.DARK_MODE);
-    }
-
-    setLight() {
-      document.documentElement.setAttribute(ModeToggle.MODE_ATTR, ModeToggle.LIGHT_MODE);
-      sessionStorage.setItem(ModeToggle.MODE_KEY, ModeToggle.LIGHT_MODE);
-    }
-
-    clearMode() {
-      document.documentElement.removeAttribute(ModeToggle.MODE_ATTR);
-      sessionStorage.removeItem(ModeToggle.MODE_KEY);
-    }
-
-    /* Notify another plugins that the theme mode has changed */
-    notify() {
-      window.postMessage(
-        {
-          direction: ModeToggle.ID,
-          message: this.modeStatus
-        },
-        '*'
-      );
-    }
-
-    flipMode() {
-      if (this.hasMode) {
-        if (this.isSysDarkPrefer) {
-          if (this.isLightMode) {
-            this.clearMode();
-          } else {
-            this.setLight();
-          }
-        } else {
-          if (this.isDarkMode) {
-            this.clearMode();
-          } else {
-            this.setDark();
-          }
-        }
-      } else {
-        if (this.isSysDarkPrefer) {
-          this.setLight();
-        } else {
-          this.setDark();
-        }
-      }
-
-      this.notify();
-    } /* flipMode() */
-  } /* ModeToggle */
-
-  const modeToggle = new ModeToggle();
-</script>
-
-  
 
   <!-- A placeholder to allow defining custom metadata -->
 
@@ -359,14 +216,6 @@
   </nav>
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
-    
-      <button type="button" class="mode-toggle btn" aria-label="Switch Mode">
-        <i class="fas fa-adjust"></i>
-      </button>
-
-      
-        <span class="icon-border"></span>
-      
     
 
     
@@ -3195,7 +3044,14 @@ service isc-dhcp.server status
         
         
         <li class="text-truncate lh-lg">
-          <a href="/redes.github.io/_site/posts/2023-10-08-servicio-web-mysql-php/"></a>
+          <a href="/redes.github.io/_site/posts/Clasificaci%C3%B3n-redes/">Clasificación de las redes</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/redes.github.io/_site/posts/servicio-web-mysql-php/">Montaje del servicio WEB, MySQL y PHP</a>
         </li>
       
         
@@ -3217,13 +3073,6 @@ service isc-dhcp.server status
         
         <li class="text-truncate lh-lg">
           <a href="/redes.github.io/_site/posts/binario-hexadecimal-decimal/">Binario, Hexadecimal y Decimal</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/redes.github.io/_site/posts/Clasificaci%C3%B3n-redes/">Clasificación de las redes</a>
         </li>
       
     </ul>
@@ -3486,6 +3335,18 @@ service isc-dhcp.server status
   
 
   
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
   
 
@@ -3536,6 +3397,45 @@ service isc-dhcp.server status
   <aside id="related-posts" aria-labelledby="related-label">
     <h3 class="mb-4" id="related-label">Further Reading</h3>
     <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/redes.github.io/_site/posts/servicio-web-mysql-php/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+    class="small"
+  
+  data-ts="1695639600"
+  data-df="ll"
+  
+>
+  Sep 25, 2023
+</time>
+
+              <h4 class="pt-0 my-2">Montaje del servicio WEB, MySQL y PHP</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  Introducción
+Un servidor web es un componente fundamental de la infraestructura de Internet que desempeña un papel crucial en la entrega de contenido en línea. En esencia, un servidor web es un sof...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
       
         <article class="col">
           <a href="/redes.github.io/_site/posts/introduccion-redes-locales/" class="post-preview card h-100">
@@ -3622,46 +3522,6 @@ Las infraestructuras de red pueden variar en gran medida en términos de:
           </a>
         </article>
       
-        <article class="col">
-          <a href="/redes.github.io/_site/posts/OSI-TCPIP/" class="post-preview card h-100">
-            <div class="card-body">
-              <!--
-  Date format snippet
-  See: ${JS_ROOT}/utils/locale-dateime.js
--->
-
-
-
-
-<time
-  
-    class="small"
-  
-  data-ts="1696330800"
-  data-df="ll"
-  
->
-  Oct  3, 2023
-</time>
-
-              <h4 class="pt-0 my-2">Modelo OSI vs TCP/IP</h4>
-              <div class="text-muted small">
-                <p>
-                  
-
-
-
-
-
-                  Introducción
-
-El Modelo OSI (Open Systems Interconnection) y el conjunto de protocolos TCP/IP son dos marcos fundamentales en el mundo de las redes de computadoras, que desempeñan un papel crucial ...
-                </p>
-              </div>
-            </div>
-          </a>
-        </article>
-      
     </nav>
   </aside>
   <!-- #related-posts -->
@@ -3687,11 +3547,11 @@ El Modelo OSI (Open Systems Interconnection) y el conjunto de protocolos TCP/IP 
 
   
     <a
-      href="redes.github.io/_site//posts/OSI-TCPIP/"
+      href="redes.github.io/_site//posts/servicio-web-mysql-php/"
       class="btn btn-outline-primary"
       aria-label="Newer"
     >
-      <p>Modelo OSI vs TCP/IP</p>
+      <p>Montaje del servicio WEB, MySQL y PHP</p>
     </a>
   
 </nav>
