@@ -4,3 +4,102 @@
 @import 'main';
 
 /* append your custom style below */
+.post-content {
+	counter-reset: heading figure activity question step;
+}
+
+.activity:before {
+	content: "Actividad " counter(activity) ": ";
+	counter-increment: activity;
+}
+
+.section:before {
+	content: counter(heading)". ";
+	counter-increment: heading;
+}
+.section {
+	counter-reset: subheading;
+}
+.subsection:before {
+	content: counter(heading)"." counter(subheading)". ";
+	counter-increment: subheading;
+}
+.subsection {
+	counter-reset: subsubheading;
+}
+.subsubsection:before {
+	content: counter(heading)"." counter(subheading)"." counter(subsubheading)". ";
+	counter-increment: subsubheading;
+}
+
+.giscus, .giscus-frame {
+	width: 100%;
+}
+.giscus-frame {
+	border: none;
+}
+
+.post-content > p > em:before {
+	content: "Figura " counter(figure) ": ";
+	counter-increment: figure;
+}
+
+/*body {
+	font-family: 'Georgia', 'Source Sans Pro', 'Microsoft Yahei', sans-serif;
+}*/
+
+.question{
+	/*padding: 1em;
+	box-shadow: rgba(148, 148, 148, 0.3) 0px 0px 0px 3px;*/
+	font-weight: bold;
+}
+
+.question:before {
+	content: "Pregunta " counter(question) ": ";
+	counter-increment: question;
+	font-weight: bold;
+}
+
+.step:after {
+	content: " "counter(step);
+	counter-increment: step;
+}
+
+.card {
+	background-color: var(--highlight-bg-color);
+}
+
+iframe[title="YouTube video player"]{
+	width:100%;
+	aspect-ratio: 16/9;
+}
+
+iframe[title="slides"]{
+	width:100%;
+	aspect-ratio: 16/10;
+}
+
+/* Hago que las fotos transparentes tengan fondo blanco */
+img {
+	background-clip: content-box;
+	background-color: white;
+}
+
+img.mfp-img {
+	padding: 5px 0 40px !important;
+}
+
+html:not([data-mode]), html [data-mode="light"] {
+	--redes-locales-color: #6A040F;
+	--tic-ii-color: #B34A00;
+	--servicios-en-red-color: #344E41;
+	--seguridad-informatica-color: #001D3D;
+}
+
+/** Get from https://mdigi.tools/lighten-color/#001d3d */
+html[data-mode="dark"] {
+	--redes-locales-color: #f96575;
+	--tic-ii-color: #ffb17b;
+	--servicios-en-red-color: #a4c2b3;
+	--seguridad-informatica-color: #4ba1ff;
+}
