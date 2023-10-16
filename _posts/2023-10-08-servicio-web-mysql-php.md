@@ -11,7 +11,7 @@ image:
 # Introducción
 Un servidor web es un componente fundamental de la infraestructura de Internet que desempeña un papel crucial en la entrega de contenido en línea. En esencia, un servidor web es un software o hardware que almacena, gestiona y distribuye páginas web, archivos, imágenes y otros recursos a través de Internet. Está diseñado para recibir solicitudes de clientes web, como navegadores de Internet, y responder a esas solicitudes enviando los archivos correspondientes para que los usuarios puedan ver y interactuar con ellos en sus dispositivos.
 
-# Instalación del servicio en Ubuntu Server 22.04 LTS
+# Instalación del servicio web en Ubuntu Server 22.04 LTS
 
 ## Cosas necesarias previas a la instalación
 - Configuración de MV servidor en red nat
@@ -118,3 +118,106 @@ sudo apache2ctl configtest
 
 Cambia el puerto 80 al 8080
 Investiga para que sirve el archivo default.conf
+
+# Instalación del servicio MySQL en Ubuntu Server 22.04 LTS
+
+## Diferencia entre MariDB y MySql
+
+MariaDB y MySQL son dos sistemas de gestión de bases de datos relacionales (RDBMS) que comparten una historia y un propósito comunes, pero también tienen algunas diferencias clave:
+
+### Origen:
+
+MySQL: MySQL es un sistema de gestión de bases de datos relacionales de código abierto que se originó en 1995. Fue desarrollado por una empresa sueca llamada MySQL AB y posteriormente adquirido por Sun Microsystems y luego por Oracle Corporation en 2010.
+MariaDB: MariaDB es una bifurcación (fork) de MySQL que se creó en 2009. Fue desarrollado por Michael "Monty" Widenius, el cofundador de MySQL, como una respuesta a preocupaciones sobre el futuro de MySQL bajo la propiedad de Oracle.
+Licencia:
+
+MySQL: MySQL utiliza la licencia dual, lo que significa que ofrece una versión de código abierto bajo la Licencia Pública General de GNU (GPL) y una versión comercial con licencia propietaria.
+MariaDB: MariaDB utiliza la Licencia Pública General de GNU (GPL) en su versión de código abierto y no ofrece una versión comercial propietaria.
+
+### Compatibilidad:
+
+MariaDB se ha esforzado por mantener la compatibilidad con MySQL en la mayoría de los casos. La mayoría de las aplicaciones y consultas escritas para MySQL también funcionarán en MariaDB sin cambios significativos.
+Sin embargo, MariaDB ha agregado algunas características y optimizaciones que no están presentes en las versiones de MySQL más antiguas. Además, puede haber diferencias en las características específicas de la versión entre MySQL y MariaDB.
+Almacenamiento y motores de almacenamiento:
+
+Ambos sistemas admiten una variedad de motores de almacenamiento, pero MariaDB ha introducido su propio motor de almacenamiento llamado Aria, que se utiliza como reemplazo de MyISAM.
+MariaDB también ha mejorado el motor InnoDB en comparación con las versiones más antiguas de MySQL.
+Rendimiento y características:
+
+MariaDB ha trabajado en mejoras de rendimiento y en la incorporación de nuevas características en comparación con MySQL.
+MariaDB incluye capacidades de replicación y clustering mejoradas y ha desarrollado características específicas de almacenamiento en caché y optimización.
+En general, la elección entre MariaDB y MySQL dependerá de sus necesidades específicas y preferencias. Ambos sistemas son robustos y ampliamente utilizados en la comunidad de desarrollo de software, y su elección puede basarse en factores como la compatibilidad con aplicaciones existentes, la filosofía de licencia y las características específicas que requiera para su proyecto.
+
+## Instalación de mariaDB
+
+Instalamos el servicio de bases de datos:
+```
+sudo apt-get install maridb-server
+```
+
+Comprobamos:
+```
+sudo netstat -putona
+```
+
+Comprobamos:
+```
+sudo /etc/init.d/maridb status
+```
+
+Configuramos el servicio:
+```
+sudo mariadb-secure-installation
+```
+
+Entramos en maridb:
+```
+mysql -u root -p
+```
+
+Mostramos las bases de datos:
+```
+show databases;
+
+```
+Creamos una base de datos:
+```
+create database ejemplo;
+```
+
+La selecionamos:
+```
+use ejemplo;
+```
+
+Creamos un tabla:
+```mysql
+CREATE TABLE mitabla(
+         id MEDIUMINT NOT NULL AUTO_INCREMENT,
+         nombre CHAR(30) NOT NULL,
+         edad INTEGER(30),
+         salario INTEGER(30),
+         PRIMARY KEY (id) );
+```
+
+Añadimos información a nuestra tabla:
+```mysql
+INSERT INTO mitabla (nombre, edad, salario) VALUES
+        ("Pedro", 24, 21000),
+        ("Maria", 26, 24000),
+        ("Juan", 28, 25000),
+        ("Luis", 35, 28000),
+        ("Monica", 42, 30000),
+        ("Rosa", 43, 25000),
+        ("Susana", 45, 39000);
+```
+
+Mostramos la información introducida:
+```mysql
+select * from mitabla;
+```
+
+Para slir:
+```mysql
+exit
+```
