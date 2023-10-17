@@ -54,7 +54,7 @@
 <meta property="twitter:title" content="Montaje del servicio WEB, MySQL y PHP" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-10-17T00:14:51+02:00","datePublished":"2023-09-25T13:00:00+02:00","description":"Logo de Apache","headline":"Montaje del servicio WEB, MySQL y PHP","mainEntityOfPage":{"@type":"WebPage","@id":"/redes.github.io/_site/posts/servicio-web-mysql-php/"},"url":"/redes.github.io/_site/posts/servicio-web-mysql-php/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-10-17T00:22:54+02:00","datePublished":"2023-09-25T13:00:00+02:00","description":"Logo de Apache","headline":"Montaje del servicio WEB, MySQL y PHP","mainEntityOfPage":{"@type":"WebPage","@id":"/redes.github.io/_site/posts/servicio-web-mysql-php/"},"url":"/redes.github.io/_site/posts/servicio-web-mysql-php/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -479,6 +479,142 @@
     
 
   
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+
+    
+
+    <!-- lazy-load images <https://github.com/aFarkas/lazysizes#readme> -->
+    
+    
+
+    <!-- add image placeholder -->
+    
+      
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+      
+    
+
+    <!-- combine -->
+    
+
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+
+    
+
+    <!-- lazy-load images <https://github.com/aFarkas/lazysizes#readme> -->
+    
+    
+
+    <!-- add image placeholder -->
+    
+      
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+      
+    
+
+    <!-- combine -->
+    
+
+  
 
   
 
@@ -505,6 +641,18 @@
       
         
         
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
       
 
       
@@ -682,7 +830,7 @@
 
 <time
   
-  data-ts="1697494491"
+  data-ts="1697494974"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -731,9 +879,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="931 words"
+  title="1143 words"
 >
-  <em>5 min</em> read</span>
+  <em>6 min</em> read</span>
 
     </div>
     <!-- .d-flex -->
@@ -1056,12 +1204,120 @@ En general, la elección entre MariaDB y MySQL dependerá de sus necesidades esp
 </pre></td><td class="rouge-code"><pre>select * from mitabla;
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>Para salir de maridb:</p>
+<p>Para salir de mariadb:</p>
 <div class="language-plaintext highlighter-rouge"><div class="code-header">
         <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 </pre></td><td class="rouge-code"><pre>exit
 </pre></td></tr></tbody></table></code></div></div>
+
+<h1 id="instalación-de-php-y-demás-librería-para-poder-trabajar-con-mariadb">Instalación de PHP y demás librería para poder trabajar con MariaDB</h1>
+
+<h2 id="php81"><span class="me-2">PHP8.1</span><a href="#php81" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Instalamos PHP 8.1:</p>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>sudo apt-get install php8.1
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Comprobamos que la instalación ha sido correcta:</p>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>sudo vi /var/www/html/index.php
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Con el siguiente contenido:</p>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>&lt;?php
+phpinfo();
+?&gt;
+</pre></td></tr></tbody></table></code></div></div>
+<p><a href="redes.github.io/_site//assets/img/web/phpinfo.jpg" class="popup img-link "><img data-src="redes.github.io/_site//assets/img/web/phpinfo.jpg" alt="Información de PHP" class="lazyload" data-proofer-ignore></a>
+<em>Información de PHP</em></p>
+
+<p>Ahora vamos a instalar las librería necesaria para conectar PHP con MariDB:</p>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>sudo apt-get install php8.1-mysql
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Comprobamos nuevamente que la instalación ha sido correcta:</p>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>sudo vi /var/www/html/conexionmysql.php
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Con el siguiente contenido (hay que realizar los cambios pertinentes para nuestra configuración):</p>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+</pre></td><td class="rouge-code"><pre>&lt;?php
+// Conectando, seleccionando la base de datos
+$link = mysql_connect('mysql_host', 'mysql_user', 'mysql_password')
+    or die('No se pudo conectar: ' . mysql_error());
+echo 'Connected successfully';
+mysql_select_db('my_database') or die('No se pudo seleccionar la base de datos');
+
+// Realizar una consulta MySQL
+$query = 'SELECT * FROM my_table';
+$result = mysql_query($query) or die('Consulta fallida: ' . mysql_error());
+
+// Imprimir los resultados en HTML
+echo "&lt;table&gt;\n";
+while ($line = mysql_fetch_array($result, MYSQL_ASSOC)) {
+    echo "\t&lt;tr&gt;\n";
+    foreach ($line as $col_value) {
+        echo "\t\t&lt;td&gt;$col_value&lt;/td&gt;\n";
+    }
+    echo "\t&lt;/tr&gt;\n";
+}
+echo "&lt;/table&gt;\n";
+
+// Liberar resultados
+mysql_free_result($result);
+
+// Cerrar la conexión
+mysql_close($link);
+?&gt;
+</pre></td></tr></tbody></table></code></div></div>
+
+<p><a href="redes.github.io/_site//assets/img/web/exito.jpg" class="popup img-link "><img data-src="redes.github.io/_site//assets/img/web/exito.jpg" alt="Conexión de PHP a MariDB" class="lazyload" data-proofer-ignore></a>
+<em>Conexión de PHP a MariDB</em></p>
 
 </div>
 
