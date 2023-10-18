@@ -38,7 +38,7 @@ Otra opción para comprobar que el servicio está activo:
 sudo /etc/init.d/apache2 status
 ```
 
-![Información de Apache2](exitoweb.png)
+![Información de Apache2](exitophp.png)
 _Información de Apache2_
 
 La ubicación de nuestros archivos es
@@ -246,7 +246,7 @@ Con el siguiente contenido:
 phpinfo();
 ?>
 ```
-![Información de PHP](exitophp.png)
+![Información de PHP](exitoweb.png)
 _Información de PHP_
 
 Ahora vamos a instalar las librería necesaria para conectar PHP con MariDB:
