@@ -25,7 +25,7 @@ Switch(config)# hostname Sw-Floor-1
 Sw-Floor-1(config)#
 ```
 
-Establecer contraseña en el modo superusuario
+Establecer contraseña para el usuario estándar
 ```
 Sw-Floor-1# configure terminal
 Sw-Floor-1(config)# line console 0
@@ -35,7 +35,7 @@ SW-Floor-1(config-line)# end
 Sw-Floor-1#
 ```
 
-Para asegurar el acceso privilegiado a EXEC
+Para asegurar el acceso privilegiado a superusuario
 ```
 Sw-Floor-1# configure terminal
 Sw-Floor-1(config)# enable secret class

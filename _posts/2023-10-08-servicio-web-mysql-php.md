@@ -38,6 +38,9 @@ Otra opción para comprobar que el servicio está activo:
 sudo /etc/init.d/apache2 status
 ```
 
+![Información de Apache2](exitoweb.jpg)
+_Información de Apache2_
+
 La ubicación de nuestros archivos es
 ```
 cd /var/www/html/
@@ -154,7 +157,7 @@ En general, la elección entre MariaDB y MySQL dependerá de sus necesidades esp
 
 Instalamos el servicio de bases de datos:
 ```
-sudo apt-get install maridb-server
+sudo apt-get install mariadb-server
 ```
 
 Comprobamos:
@@ -164,7 +167,7 @@ sudo netstat -putona
 
 Comprobamos:
 ```
-sudo /etc/init.d/maridb status
+sudo /etc/init.d/mariadb status
 ```
 
 Configuramos el servicio:
@@ -243,7 +246,7 @@ Con el siguiente contenido:
 phpinfo();
 ?>
 ```
-![Información de PHP](phpinfo.jpg)
+![Información de PHP](exitophp.jpg)
 _Información de PHP_
 
 Ahora vamos a instalar las librería necesaria para conectar PHP con MariDB:
@@ -260,19 +263,19 @@ Con el siguiente contenido (hay que realizar los cambios pertinentes para nuestr
 ```
 <?php
 // Conectando, seleccionando la base de datos
-$link = mysql_connect('mysql_host', 'mysql_user', 'mysql_password')
-    or die('No se pudo conectar: ' . mysql_error());
+$link = mysqli_connect('local_computer', 'mysql_user', 'mysql_pass')
+    or die('No se pudo conectar: ' . mysqli_error());
 echo 'Connected successfully';
-mysql_select_db('my_database') or die('No se pudo seleccionar la base de datos');
+mysqli_select_db($link, 'database') or die('No se pudo seleccionar la base de datos');
 
 // Realizar una consulta MySQL
-$query = 'SELECT * FROM my_table';
-$result = mysql_query($query) or die('Consulta fallida: ' . mysql_error());
+$query = 'SELECT * FROM table';
+$result = mysqli_query($link, $query) or die('Consulta fallida: ' . mysql_error());
 
 // Imprimir los resultados en HTML
 echo "<table>\n";
-while ($line = mysql_fetch_array($result, MYSQL_ASSOC)) {
-    echo "\t<tr>\n";
+while ($line = mysqli_fetch_array($result)) {
+        echo "\t<tr>\n";
     foreach ($line as $col_value) {
         echo "\t\t<td>$col_value</td>\n";
     }
@@ -281,12 +284,12 @@ while ($line = mysql_fetch_array($result, MYSQL_ASSOC)) {
 echo "</table>\n";
 
 // Liberar resultados
-mysql_free_result($result);
+mysqli_free_result($result);
 
 // Cerrar la conexión
-mysql_close($link);
+mysqli_close($link);
 ?>
 ```
 
-![Conexión de PHP a MariDB](exito.jpg)
-_Conexión de PHP a MariDB_
+![Conexión de PHP a MariaDB](exitomariadb.png)
+_Conexión de PHP a MariaDB_
