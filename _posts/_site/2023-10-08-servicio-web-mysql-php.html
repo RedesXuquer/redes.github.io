@@ -1,0 +1,260 @@
+<p><img src="apache.png" alt="Logo de Apache" />
+<em>Logo de Apache</em></p>
+
+<h1 id="introducción">Introducción</h1>
+<p>Un servidor web es un componente fundamental de la infraestructura de Internet que desempeña un papel crucial en la entrega de contenido en línea. En esencia, un servidor web es un software o hardware que almacena, gestiona y distribuye páginas web, archivos, imágenes y otros recursos a través de Internet. Está diseñado para recibir solicitudes de clientes web, como navegadores de Internet, y responder a esas solicitudes enviando los archivos correspondientes para que los usuarios puedan ver y interactuar con ellos en sus dispositivos.</p>
+
+<h1 id="instalación-del-servicio-web-en-ubuntu-server-2204-lts">Instalación del servicio web en Ubuntu Server 22.04 LTS</h1>
+
+<h2 id="cosas-necesarias-previas-a-la-instalación">Cosas necesarias previas a la instalación</h2>
+<ul>
+  <li>Configuración de MV servidor en red nat</li>
+  <li>MV cliente Xubuntu en la misma red nat</li>
+  <li>Configuración red nat 192.168.100.0/24</li>
+</ul>
+
+<p>Con permisos de root ejecutamos el comando:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">sudo apt-get install apache2
+</span></code></pre></div></div>
+
+<p>Comprobamos que el servicio está activo en su puerto 80:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">netstat -putona
+</span></code></pre></div></div>
+
+<p>Otra opción para comprobar que el servicio está activo:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">sudo /etc/init.d/apache2 status
+</span></code></pre></div></div>
+
+<p><img src="exitophp.png" alt="Información de Apache2" />
+<em>Información de Apache2</em></p>
+
+<p>La ubicación de nuestros archivos es</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /var/www/html/
+</code></pre></div></div>
+
+<p>Podemos realizar pruebas en nuestro navegador de Host y poner en la dirección <em>localhost</em></p>
+
+<p>Una página de ejemplo podría ser:</p>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;title&gt;</span>Mi Página Web de Ejemplo<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;header&gt;</span>
+        <span class="nt">&lt;h1&gt;</span>Bienvenido a Mi Página Web de Ejemplo<span class="nt">&lt;/h1&gt;</span>
+        <span class="nt">&lt;nav&gt;</span>
+            <span class="nt">&lt;ul&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Inicio<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Acerca de<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Servicios<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Contacto<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/nav&gt;</span>
+    <span class="nt">&lt;/header&gt;</span>
+
+    <span class="nt">&lt;main&gt;</span>
+        <span class="nt">&lt;section&gt;</span>
+            <span class="nt">&lt;h2&gt;</span>Acerca de Nosotros<span class="nt">&lt;/h2&gt;</span>
+            <span class="nt">&lt;p&gt;</span>Somos una empresa ficticia dedicada a brindar soluciones imaginarias.<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/section&gt;</span>
+
+        <span class="nt">&lt;section&gt;</span>
+            <span class="nt">&lt;h2&gt;</span>Nuestros Servicios<span class="nt">&lt;/h2&gt;</span>
+            <span class="nt">&lt;ul&gt;</span>
+                <span class="nt">&lt;li&gt;</span>Servicio 1<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>Servicio 2<span class="nt">&lt;/li&gt;</span>
+                <span class="nt">&lt;li&gt;</span>Servicio 3<span class="nt">&lt;/li&gt;</span>
+            <span class="nt">&lt;/ul&gt;</span>
+        <span class="nt">&lt;/section&gt;</span>
+    <span class="nt">&lt;/main&gt;</span>
+
+    <span class="nt">&lt;footer&gt;</span>
+        <span class="nt">&lt;p&gt;</span>Derechos de autor <span class="ni">&amp;copy;</span> 2023 Mi Página Web de Ejemplo<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/footer&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
+<h2 id="logs-de-apache2">Logs de Apache2</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo tail -f /var/log/apache2/access.log
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo tail -f /var/log/apache2/error.log
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo tail -n 100 /var/log/apache2/access.log
+</code></pre></div></div>
+
+<h2 id="archivos-de-configuración-de-apache2">Archivos de configuración de Apache2</h2>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># This is the main Apache server configuration file.
+sudo vim /etc/apache2/apache2.conf
+
+# If you just change the port or add more ports here
+sudo vim /etc/apache2/port.conf
+
+# Default Apache virtualhost
+sudo vim /etc/apache2/site-available/default.conf
+</code></pre></div></div>
+
+<p>Y para validar la configuración de Apache2</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apache2ctl configtest
+</code></pre></div></div>
+
+<h2 id="extras">Extras</h2>
+
+<p>Cambia el puerto 80 al 8080
+Investiga para que sirve el archivo default.conf</p>
+
+<h1 id="instalación-del-servicio-mysql-en-ubuntu-server-2204-lts">Instalación del servicio MySQL en Ubuntu Server 22.04 LTS</h1>
+
+<h2 id="diferencia-entre-maridb-y-mysql">Diferencia entre MariDB y MySql</h2>
+
+<p>MariaDB y MySQL son dos sistemas de gestión de bases de datos relacionales (RDBMS) que comparten una historia y un propósito comunes, pero también tienen algunas diferencias clave:</p>
+
+<h3 id="origen">Origen:</h3>
+
+<p>MySQL: MySQL es un sistema de gestión de bases de datos relacionales de código abierto que se originó en 1995. Fue desarrollado por una empresa sueca llamada MySQL AB y posteriormente adquirido por Sun Microsystems y luego por Oracle Corporation en 2010.
+MariaDB: MariaDB es una bifurcación (fork) de MySQL que se creó en 2009. Fue desarrollado por Michael “Monty” Widenius, el cofundador de MySQL, como una respuesta a preocupaciones sobre el futuro de MySQL bajo la propiedad de Oracle.
+Licencia:</p>
+
+<p>MySQL: MySQL utiliza la licencia dual, lo que significa que ofrece una versión de código abierto bajo la Licencia Pública General de GNU (GPL) y una versión comercial con licencia propietaria.
+MariaDB: MariaDB utiliza la Licencia Pública General de GNU (GPL) en su versión de código abierto y no ofrece una versión comercial propietaria.</p>
+
+<h3 id="compatibilidad">Compatibilidad:</h3>
+
+<p>MariaDB se ha esforzado por mantener la compatibilidad con MySQL en la mayoría de los casos. La mayoría de las aplicaciones y consultas escritas para MySQL también funcionarán en MariaDB sin cambios significativos.
+Sin embargo, MariaDB ha agregado algunas características y optimizaciones que no están presentes en las versiones de MySQL más antiguas. Además, puede haber diferencias en las características específicas de la versión entre MySQL y MariaDB.
+Almacenamiento y motores de almacenamiento:</p>
+
+<p>Ambos sistemas admiten una variedad de motores de almacenamiento, pero MariaDB ha introducido su propio motor de almacenamiento llamado Aria, que se utiliza como reemplazo de MyISAM.
+MariaDB también ha mejorado el motor InnoDB en comparación con las versiones más antiguas de MySQL.
+Rendimiento y características:</p>
+
+<p>MariaDB ha trabajado en mejoras de rendimiento y en la incorporación de nuevas características en comparación con MySQL.
+MariaDB incluye capacidades de replicación y clustering mejoradas y ha desarrollado características específicas de almacenamiento en caché y optimización.
+En general, la elección entre MariaDB y MySQL dependerá de sus necesidades específicas y preferencias. Ambos sistemas son robustos y ampliamente utilizados en la comunidad de desarrollo de software, y su elección puede basarse en factores como la compatibilidad con aplicaciones existentes, la filosofía de licencia y las características específicas que requiera para su proyecto.</p>
+
+<h2 id="instalación-de-mariadb">Instalación de mariaDB</h2>
+
+<p>Instalamos el servicio de bases de datos:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install mariadb-server
+</code></pre></div></div>
+
+<p>Comprobamos:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo netstat -putona
+</code></pre></div></div>
+
+<p>Comprobamos:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo /etc/init.d/mariadb status
+</code></pre></div></div>
+
+<p>Configuramos el servicio:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mariadb-secure-installation
+</code></pre></div></div>
+
+<p>Entramos en maridb:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysql -u root -p
+</code></pre></div></div>
+
+<p>Mostramos las bases de datos:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>show databases;
+
+</code></pre></div></div>
+<p>Creamos una base de datos:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>create database ejemplo;
+</code></pre></div></div>
+
+<p>La selecionamos:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>use ejemplo;
+</code></pre></div></div>
+
+<p>Creamos un tabla:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE TABLE mitabla(
+         id MEDIUMINT NOT NULL AUTO_INCREMENT,
+         nombre CHAR(30) NOT NULL,
+         edad INTEGER(30),
+         salario INTEGER(30),
+         PRIMARY KEY (id) );
+</code></pre></div></div>
+
+<p>Añadimos información a nuestra tabla:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>INSERT INTO mitabla (nombre, edad, salario) VALUES
+        ("Pedro", 24, 21000),
+        ("Maria", 26, 24000),
+        ("Juan", 28, 25000),
+        ("Luis", 35, 28000),
+        ("Monica", 42, 30000),
+        ("Rosa", 43, 25000),
+        ("Susana", 45, 39000);
+</code></pre></div></div>
+
+<p>Mostramos la información introducida:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>select * from mitabla;
+</code></pre></div></div>
+
+<p>Para salir de mariadb:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>exit
+</code></pre></div></div>
+
+<h1 id="instalación-de-php-y-demás-librería-para-poder-trabajar-con-mariadb">Instalación de PHP y demás librería para poder trabajar con MariaDB</h1>
+
+<h2 id="php81">PHP8.1</h2>
+<p>Instalamos PHP 8.1:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install php8.1
+</code></pre></div></div>
+
+<p>Comprobamos que la instalación ha sido correcta:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo vi /var/www/html/index.php
+</code></pre></div></div>
+
+<p>Con el siguiente contenido:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
+phpinfo();
+?&gt;
+</code></pre></div></div>
+<p><img src="exitoweb.png" alt="Información de PHP" />
+<em>Información de PHP</em></p>
+
+<p>Ahora vamos a instalar las librería necesaria para conectar PHP con MariDB:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install php8.1-mysql
+</code></pre></div></div>
+
+<p>Comprobamos nuevamente que la instalación ha sido correcta:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo vi /var/www/html/conexionmysql.php
+</code></pre></div></div>
+
+<p>Con el siguiente contenido (hay que realizar los cambios pertinentes para nuestra configuración):</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
+// Conectando, seleccionando la base de datos
+$link = mysqli_connect('local_computer', 'mysql_user', 'mysql_pass')
+    or die('No se pudo conectar: ' . mysqli_error());
+echo 'Connected successfully';
+mysqli_select_db($link, 'database') or die('No se pudo seleccionar la base de datos');
+
+// Realizar una consulta MySQL
+$query = 'SELECT * FROM table';
+$result = mysqli_query($link, $query) or die('Consulta fallida: ' . mysql_error());
+
+// Imprimir los resultados en HTML
+echo "&lt;table&gt;\n";
+while ($line = mysqli_fetch_array($result)) {
+        echo "\t&lt;tr&gt;\n";
+    foreach ($line as $col_value) {
+        echo "\t\t&lt;td&gt;$col_value&lt;/td&gt;\n";
+    }
+    echo "\t&lt;/tr&gt;\n";
+}
+echo "&lt;/table&gt;\n";
+
+// Liberar resultados
+mysqli_free_result($result);
+
+// Cerrar la conexión
+mysqli_close($link);
+?&gt;
+</code></pre></div></div>
+
+<p><img src="exitomariadb.png" alt="Conexión de PHP a MariaDB" />
+<em>Conexión de PHP a MariaDB</em></p>

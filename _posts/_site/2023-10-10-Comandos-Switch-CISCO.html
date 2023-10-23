@@ -1,0 +1,56 @@
+<h1 id="introducción">Introducción</h1>
+
+<p>Los conmutadores (switches) de Cisco utilizan un sistema operativo llamado Cisco IOS (Internetwork Operating System), que ofrece una amplia variedad de comandos para configurar y administrar estos dispositivos de red.</p>
+
+<h2 id="comandos">Comandos</h2>
+
+<p>Pasar a modo superusuario</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Switch&gt; enable
+Switch#
+</code></pre></div></div>
+
+<p>Cambiar el nombre de un dispositivo</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Switch# configure terminal
+Switch(config)# hostname Sw-Floor-1
+Sw-Floor-1(config)#
+</code></pre></div></div>
+
+<p>Establecer contraseña para el usuario estándar</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Sw-Floor-1# configure terminal
+Sw-Floor-1(config)# line console 0
+Sw-Floor-1(config-line)# password cisco
+Sw-Floor-1(config-line)# login
+SW-Floor-1(config-line)# end
+Sw-Floor-1#
+</code></pre></div></div>
+
+<p>Para asegurar el acceso privilegiado a superusuario</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Sw-Floor-1# configure terminal
+Sw-Floor-1(config)# enable secret class
+Sw-Floor-1(config)# exit
+Sw-Floor-1#
+</code></pre></div></div>
+
+<p>Proteger las líneas de conexión</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Sw-Floor-1# configure terminal
+Sw-Floor-1(config)# line vty 0 15
+Sw-Floor-1(config-line)# password cisco 
+Sw-Floor-1(config-line)# login 
+SW-Floor-1(config-line)# end
+Sw-Floor-1#
+</code></pre></div></div>
+
+<p>Encriptación de las contraeñas</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Sw-Floor-1# configure terminal
+Sw-Floor-1(config)# service password-encryption
+Sw-Floor-1(config)#
+</code></pre></div></div>
+
+<p>Estado de nuestro switch</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>show running-config
+</code></pre></div></div>
+
+<p>Mensaje de aviso</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Sw-Floor-1# configure terminal
+Sw-Floor-1(config)# banner motd #Authorized Access Only#
+</code></pre></div></div>
