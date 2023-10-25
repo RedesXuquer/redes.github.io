@@ -21,7 +21,7 @@ Switch#
 Cambiar el nombre de un dispositivo
 ```
 Switch# configure terminal
-Switch(config)# hostname Sw-Floor-1
+Switch(config)# hostname *Sw-Floor-1*
 Sw-Floor-1(config)#
 ```
 
@@ -29,7 +29,7 @@ Establecer contraseña para el usuario estándar
 ```
 Sw-Floor-1# configure terminal
 Sw-Floor-1(config)# line console 0
-Sw-Floor-1(config-line)# password cisco
+Sw-Floor-1(config-line)# password *cisco*
 Sw-Floor-1(config-line)# login
 SW-Floor-1(config-line)# end
 Sw-Floor-1#
@@ -38,7 +38,7 @@ Sw-Floor-1#
 Para asegurar el acceso privilegiado a superusuario
 ```
 Sw-Floor-1# configure terminal
-Sw-Floor-1(config)# enable secret class
+Sw-Floor-1(config)# enable secret *class*
 Sw-Floor-1(config)# exit
 Sw-Floor-1#
 ```
@@ -47,7 +47,7 @@ Proteger las líneas de conexión
 ```
 Sw-Floor-1# configure terminal
 Sw-Floor-1(config)# line vty 0 15
-Sw-Floor-1(config-line)# password cisco 
+Sw-Floor-1(config-line)# password *cisco* 
 Sw-Floor-1(config-line)# login 
 SW-Floor-1(config-line)# end
 Sw-Floor-1#
@@ -68,23 +68,23 @@ show running-config
 Mensaje de aviso
 ```
 Sw-Floor-1# configure terminal
-Sw-Floor-1(config)# banner motd #Authorized Access Only#
+Sw-Floor-1(config)# banner motd *#Authorized Access Only#*
 ```
 
-Mensaje de aviso
+Establecer IP en el switch
 ```
 CCNA# configure terminal
 CCNA(config)# interface vlan 1
-CCNA(config-if)# ip address 192.168.1.100 255.255.255.0
+CCNA(config-if)# ip address *192.168.1.100 255.255.255.0*
 CCNA(config-if)# no shutdown
 00:35:07: %LINK-3-UPDOWN: Interface Vlan1, changed state to up
 00:35:08: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed
 state to up
 CCNA(config-if)# exit
-CCNA(config)# ip default-gateway 192.168.1.1
+CCNA(config)# ip default-gateway *192.168.1.1*
 ```
 
-Mensaje de aviso
+Configuración DHCP
 ```
 CCNA# show dhcp lease
 Temp IP addr: 192.168.1.101 for peer on Interface: Vlan1
@@ -110,8 +110,8 @@ CCNA# show ip default-gateway
 Conexión por SSH
 ```
 # Configuración de hostname y nombre de dominio
-Switch(config)#hostname eclassvirtual-sw
-eclassvirtual-sw(config)#ip domain-name eclassvirtual.com
+Switch(config)#hostname *eclassvirtual-sw*
+eclassvirtual-sw(config)#ip domain-name *eclassvirtual.com*
 
 # Generación de llaves RSA
 eclassvirtual-sw(config)# crypto key generate rsa
@@ -125,10 +125,10 @@ eclassvirtual-sw(config-line)# transport input ssh
 eclassvirtual-sw(config-line)# login local
 
 # Crear nombre de usuario y password
-eclassvirtual-sw(config)# username eclassvirtual privilege 15 secret cisco123
+eclassvirtual-sw(config)# username *eclassvirtual* privilege 15 secret *cisco123*
 
 # Habilitar enable secret
-eclassvirtual-sw(config)# enable secret cisco123
+eclassvirtual-sw(config)# enable secret *cisco123*
 ```
 
 Revisión de conexión SSH en el Switch
@@ -139,17 +139,17 @@ eclassvirtual-sw# show ssh
 Habilitar SSH en Router Cisco
 ```
 Router#conf t
-Router(config)#hostname eclassvirtual-router
+Router(config)#hostname *eclassvirtual-router*
 eclassvirtual-router(config)#interface vlan 1
-eclassvirtual-router(config-if)#ip address 192.168.0.1 255.255.255.0
+eclassvirtual-router(config-if)#ip address *192.168.0.1 255.255.255.0*
 eclassvirtual-router(config-if)#no shutdown
 eclassvirtual-router(config-if)#exit
-eclassvirtual-router (config)#ip domain-name cisco.com
-eclassvirtual-router(config)#username eclassvirtual privilege 15 secret cisco123
+eclassvirtual-router (config)#ip domain-name *cisco.com*
+eclassvirtual-router(config)#username eclassvirtual privilege 15 secret *cisco123*
 eclassvirtual-router(config)#crypto key generate rsa
 The name for the keys will be: eclasvirtual-router.cisco.com Choose the size of the key modulus in the range of 360 to 2048 for your General Purpose Keys. Choosing a key modulus greater than 512 may take a few minutes. How many bits in the modulus [512]: 2048 % Generating 2048 bit RSA keys, keys will be non-exportable…[OK]
 eclassvirtual-router(config)#ip ssh version 2
-eclassvirtual-router(config)#enable secret cisco123
+eclassvirtual-router(config)#enable secret *cisco123*
 eclassvirtual-router(config)#line vty 0 15
 eclassvirtual-router(config-line)#transport input ssh
 eclassvirtual-router(config-line)#login local
