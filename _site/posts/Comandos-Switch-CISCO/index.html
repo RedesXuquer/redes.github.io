@@ -551,9 +551,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="167 words"
+  title="589 words"
 >
-  <em>1 min</em> read</span>
+  <em>3 min</em> read</span>
 
     </div>
     <!-- .d-flex -->
@@ -660,6 +660,161 @@ Sw-Floor-1(config)#
 2
 </pre></td><td class="rouge-code"><pre>Sw-Floor-1# configure terminal
 Sw-Floor-1(config)# banner motd #Authorized Access Only#
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Mensaje de aviso</p>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre></td><td class="rouge-code"><pre>CCNA# configure terminal
+CCNA(config)# interface vlan 1
+CCNA(config-if)# ip address 192.168.1.100 255.255.255.0
+CCNA(config-if)# no shutdown
+00:35:07: %LINK-3-UPDOWN: Interface Vlan1, changed state to up
+00:35:08: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed
+state to up
+CCNA(config-if)# exit
+CCNA(config)# ip default-gateway 192.168.1.1
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Mensaje de aviso</p>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+</pre></td><td class="rouge-code"><pre>CCNA# show dhcp lease
+Temp IP addr: 192.168.1.101 for peer on Interface: Vlan1
+Temp sub net mask: 255.255.255.0
+   DHCP Lease server: 192.168.1.1, state: 3 Bound
+   DHCP transaction id: 1966
+   Lease: 86400 secs, Renewal: 43200 secs, Rebind: 75600 secs
+Temp default-gateway addr: 192.168.1.1
+   Next timer fires after: 11:59:45
+   Retry count: 0 Client-ID: cisco-0019.e86a.6fc0-Vl1
+   Hostname: Emma
+CCNA# show interfaces vlan 1
+Vlan1 is up, line protocol is up
+   Hardware is EtherSVI, address is 0019.e86a.6fc0 (bia 0019.e86a.6fc0)
+   Internet address is 192.168.1.101/24
+   MTU 1500 bytes, BW 1000000 Kbit, DLY 10 usec,
+      reliability 255/255, txload 1/255, rxload 1/255
+! lines omitted for brevity
+CCNA# show ip default-gateway
+192.168.1.1
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Conexión por SSH</p>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+</pre></td><td class="rouge-code"><pre># Configuración de hostname y nombre de dominio
+Switch(config)#hostname eclassvirtual-sw
+eclassvirtual-sw(config)#ip domain-name eclassvirtual.com
+
+# Generación de llaves RSA
+eclassvirtual-sw(config)# crypto key generate rsa
+
+# Cambiar SSH versión 1 a la 2 (la versión 2 es más segura)
+eclassvirtual-sw(config)#ip ssh version 2
+
+# Configuración de Line VTY
+eclassvirtual-sw(config)# line vty 0 15
+eclassvirtual-sw(config-line)# transport input ssh
+eclassvirtual-sw(config-line)# login local
+
+# Crear nombre de usuario y password
+eclassvirtual-sw(config)# username eclassvirtual privilege 15 secret cisco123
+
+# Habilitar enable secret
+eclassvirtual-sw(config)# enable secret cisco123
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Revisión de conexión SSH en el Switch</p>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>eclassvirtual-sw# show ssh
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Habilitar SSH en Router Cisco</p>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+</pre></td><td class="rouge-code"><pre>Router#conf t
+Router(config)#hostname eclassvirtual-router
+eclassvirtual-router(config)#interface vlan 1
+eclassvirtual-router(config-if)#ip address 192.168.0.1 255.255.255.0
+eclassvirtual-router(config-if)#no shutdown
+eclassvirtual-router(config-if)#exit
+eclassvirtual-router (config)#ip domain-name cisco.com
+eclassvirtual-router(config)#username eclassvirtual privilege 15 secret cisco123
+eclassvirtual-router(config)#crypto key generate rsa
+The name for the keys will be: eclasvirtual-router.cisco.com Choose the size of the key modulus in the range of 360 to 2048 for your General Purpose Keys. Choosing a key modulus greater than 512 may take a few minutes. How many bits in the modulus [512]: 2048 % Generating 2048 bit RSA keys, keys will be non-exportable…[OK]
+eclassvirtual-router(config)#ip ssh version 2
+eclassvirtual-router(config)#enable secret cisco123
+eclassvirtual-router(config)#line vty 0 15
+eclassvirtual-router(config-line)#transport input ssh
+eclassvirtual-router(config-line)#login local
+eclassvirtual-router#show ip ssh C:\&gt;ssh -l eclassvirtual 192.168.0.1 Open Password:
 </pre></td></tr></tbody></table></code></div></div>
 
 </div>
@@ -819,6 +974,13 @@ Sw-Floor-1(config)# banner motd #Authorized Access Only#
         
         
         <li class="text-truncate lh-lg">
+          <a href="/redes.github.io/_site/posts/OSI-TCPIP/">Modelo OSI vs TCP/IP</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/redes.github.io/_site/posts/servicio-web-mysql-php/">Montaje del servicio WEB, MySQL y PHP</a>
         </li>
       
@@ -834,13 +996,6 @@ Sw-Floor-1(config)# banner motd #Authorized Access Only#
         
         <li class="text-truncate lh-lg">
           <a href="/redes.github.io/_site/posts/Clasificaci%C3%B3n-redes/">Clasificación de las redes</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/redes.github.io/_site/posts/OSI-TCPIP/">Modelo OSI vs TCP/IP</a>
         </li>
       
         
