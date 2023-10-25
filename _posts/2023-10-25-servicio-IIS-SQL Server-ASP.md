@@ -3,7 +3,7 @@ title: Montaje del servicio IIS, SQL Server y ASP
 date: 2023-10-25 12:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Servicios en red]
 tags: [redes locales, teoría, smr]
-img_path: /assets/img/web/   
+img_path: /assets/img/windowsWeb/   
 ---
 
 ![Instalación de ISS](1.png)
