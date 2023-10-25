@@ -1,5 +1,5 @@
 ---
-title: Comandos Switch CISCO
+title: Comandos switch CISCO
 date: 2023-10-10 12:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [redes locales, teoría, smr]
@@ -21,7 +21,7 @@ Switch#
 Cambiar el nombre de un dispositivo
 ```
 Switch# configure terminal
-Switch(config)# hostname **Sw-Floor-1**
+Switch(config)# hostname *Sw-Floor-1*
 Sw-Floor-1(config)#
 ```
 
