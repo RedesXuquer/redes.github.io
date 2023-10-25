@@ -21,7 +21,7 @@ Switch#
 Cambiar el nombre de un dispositivo
 ```
 Switch# configure terminal
-Switch(config)# hostname * Sw-Floor-1 *
+Switch(config)# hostname **Sw-Floor-1**
 Sw-Floor-1(config)#
 ```
 
