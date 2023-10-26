@@ -41,7 +41,7 @@
   
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Comandos Switch CISCO" />
+<meta property="og:title" content="Comandos switch CISCO" />
 <meta property="og:locale" content="es" />
 <meta name="description" content="Introducción" />
 <meta property="og:description" content="Introducción" />
@@ -51,15 +51,15 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-10-10T13:00:00+02:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Comandos Switch CISCO" />
+<meta property="twitter:title" content="Comandos switch CISCO" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-10-18T23:13:51+02:00","datePublished":"2023-10-10T13:00:00+02:00","description":"Introducción","headline":"Comandos Switch CISCO","mainEntityOfPage":{"@type":"WebPage","@id":"/redes.github.io/_site/posts/Comandos-Switch-CISCO/"},"url":"/redes.github.io/_site/posts/Comandos-Switch-CISCO/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-10-25T21:07:24+02:00","datePublished":"2023-10-10T13:00:00+02:00","description":"Introducción","headline":"Comandos switch CISCO","mainEntityOfPage":{"@type":"WebPage","@id":"/redes.github.io/_site/posts/Comandos-Switch-CISCO/"},"url":"/redes.github.io/_site/posts/Comandos-Switch-CISCO/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
 
-  <title>Comandos Switch CISCO | Redes
+  <title>Comandos switch CISCO | Redes
   </title>
 
   <!--
@@ -320,7 +320,7 @@
         
           
             
-              <span>Comandos Switch CISCO</span>
+              <span>Comandos switch CISCO</span>
             
 
           
@@ -461,7 +461,7 @@
 
 
 <header>
-  <h1 data-toc-skip>Comandos Switch CISCO</h1>
+  <h1 data-toc-skip>Comandos switch CISCO</h1>
 
   <div class="post-meta text-muted">
     <!-- published date -->
@@ -502,13 +502,13 @@
 
 <time
   
-  data-ts="1697663631"
+  data-ts="1698260844"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Oct 18, 2023
+  Oct 25, 2023
 </time>
 
       </span>
@@ -551,7 +551,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="589 words"
+  title="590 words"
 >
   <em>3 min</em> read</span>
 
@@ -584,7 +584,7 @@ Switch#
 2
 3
 </pre></td><td class="rouge-code"><pre>Switch# configure terminal
-Switch(config)# hostname Sw-Floor-1
+Switch(config)# hostname *Sw-Floor-1*
 Sw-Floor-1(config)#
 </pre></td></tr></tbody></table></code></div></div>
 
@@ -599,7 +599,7 @@ Sw-Floor-1(config)#
 6
 </pre></td><td class="rouge-code"><pre>Sw-Floor-1# configure terminal
 Sw-Floor-1(config)# line console 0
-Sw-Floor-1(config-line)# password cisco
+Sw-Floor-1(config-line)# password *cisco*
 Sw-Floor-1(config-line)# login
 SW-Floor-1(config-line)# end
 Sw-Floor-1#
@@ -613,7 +613,7 @@ Sw-Floor-1#
 3
 4
 </pre></td><td class="rouge-code"><pre>Sw-Floor-1# configure terminal
-Sw-Floor-1(config)# enable secret class
+Sw-Floor-1(config)# enable secret *class*
 Sw-Floor-1(config)# exit
 Sw-Floor-1#
 </pre></td></tr></tbody></table></code></div></div>
@@ -629,7 +629,7 @@ Sw-Floor-1#
 6
 </pre></td><td class="rouge-code"><pre>Sw-Floor-1# configure terminal
 Sw-Floor-1(config)# line vty 0 15
-Sw-Floor-1(config-line)# password cisco 
+Sw-Floor-1(config-line)# password *cisco* 
 Sw-Floor-1(config-line)# login 
 SW-Floor-1(config-line)# end
 Sw-Floor-1#
@@ -659,10 +659,10 @@ Sw-Floor-1(config)#
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 </pre></td><td class="rouge-code"><pre>Sw-Floor-1# configure terminal
-Sw-Floor-1(config)# banner motd #Authorized Access Only#
+Sw-Floor-1(config)# banner motd *#Authorized Access Only#*
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>Mensaje de aviso</p>
+<p>Establecer IP en el switch</p>
 <div class="language-plaintext highlighter-rouge"><div class="code-header">
         <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -676,16 +676,16 @@ Sw-Floor-1(config)# banner motd #Authorized Access Only#
 9
 </pre></td><td class="rouge-code"><pre>CCNA# configure terminal
 CCNA(config)# interface vlan 1
-CCNA(config-if)# ip address 192.168.1.100 255.255.255.0
+CCNA(config-if)# ip address *192.168.1.100 255.255.255.0*
 CCNA(config-if)# no shutdown
 00:35:07: %LINK-3-UPDOWN: Interface Vlan1, changed state to up
 00:35:08: %LINEPROTO-5-UPDOWN: Line protocol on Interface Vlan1, changed
 state to up
 CCNA(config-if)# exit
-CCNA(config)# ip default-gateway 192.168.1.1
+CCNA(config)# ip default-gateway *192.168.1.1*
 </pre></td></tr></tbody></table></code></div></div>
 
-<p>Mensaje de aviso</p>
+<p>Configuración DHCP</p>
 <div class="language-plaintext highlighter-rouge"><div class="code-header">
         <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
       <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
@@ -752,8 +752,8 @@ CCNA# show ip default-gateway
 19
 20
 </pre></td><td class="rouge-code"><pre># Configuración de hostname y nombre de dominio
-Switch(config)#hostname eclassvirtual-sw
-eclassvirtual-sw(config)#ip domain-name eclassvirtual.com
+Switch(config)#hostname *eclassvirtual-sw*
+eclassvirtual-sw(config)#ip domain-name *eclassvirtual.com*
 
 # Generación de llaves RSA
 eclassvirtual-sw(config)# crypto key generate rsa
@@ -767,10 +767,10 @@ eclassvirtual-sw(config-line)# transport input ssh
 eclassvirtual-sw(config-line)# login local
 
 # Crear nombre de usuario y password
-eclassvirtual-sw(config)# username eclassvirtual privilege 15 secret cisco123
+eclassvirtual-sw(config)# username *eclassvirtual* privilege 15 secret *cisco123*
 
 # Habilitar enable secret
-eclassvirtual-sw(config)# enable secret cisco123
+eclassvirtual-sw(config)# enable secret *cisco123*
 </pre></td></tr></tbody></table></code></div></div>
 
 <p>Revisión de conexión SSH en el Switch</p>
@@ -800,17 +800,17 @@ eclassvirtual-sw(config)# enable secret cisco123
 15
 16
 </pre></td><td class="rouge-code"><pre>Router#conf t
-Router(config)#hostname eclassvirtual-router
+Router(config)#hostname *eclassvirtual-router*
 eclassvirtual-router(config)#interface vlan 1
-eclassvirtual-router(config-if)#ip address 192.168.0.1 255.255.255.0
+eclassvirtual-router(config-if)#ip address *192.168.0.1 255.255.255.0*
 eclassvirtual-router(config-if)#no shutdown
 eclassvirtual-router(config-if)#exit
-eclassvirtual-router (config)#ip domain-name cisco.com
-eclassvirtual-router(config)#username eclassvirtual privilege 15 secret cisco123
+eclassvirtual-router (config)#ip domain-name *cisco.com*
+eclassvirtual-router(config)#username eclassvirtual privilege 15 secret *cisco123*
 eclassvirtual-router(config)#crypto key generate rsa
 The name for the keys will be: eclasvirtual-router.cisco.com Choose the size of the key modulus in the range of 360 to 2048 for your General Purpose Keys. Choosing a key modulus greater than 512 may take a few minutes. How many bits in the modulus [512]: 2048 % Generating 2048 bit RSA keys, keys will be non-exportable…[OK]
 eclassvirtual-router(config)#ip ssh version 2
-eclassvirtual-router(config)#enable secret cisco123
+eclassvirtual-router(config)#enable secret *cisco123*
 eclassvirtual-router(config)#line vty 0 15
 eclassvirtual-router(config-line)#transport input ssh
 eclassvirtual-router(config-line)#login local
@@ -883,7 +883,7 @@ eclassvirtual-router#show ip ssh C:\&gt;ssh -l eclassvirtual 192.168.0.1 Open Pa
     
       
       <a
-        href="https://twitter.com/intent/tweet?text=Comandos%20Switch%20CISCO%20-%20Redes&url=%2Fredes.github.io%2F_site%2Fposts%2FComandos-Switch-CISCO%2F"
+        href="https://twitter.com/intent/tweet?text=Comandos%20switch%20CISCO%20-%20Redes&url=%2Fredes.github.io%2F_site%2Fposts%2FComandos-Switch-CISCO%2F"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Twitter"
@@ -896,7 +896,7 @@ eclassvirtual-router#show ip ssh C:\&gt;ssh -l eclassvirtual 192.168.0.1 Open Pa
     
       
       <a
-        href="https://www.facebook.com/sharer/sharer.php?title=Comandos%20Switch%20CISCO%20-%20Redes&u=%2Fredes.github.io%2F_site%2Fposts%2FComandos-Switch-CISCO%2F"
+        href="https://www.facebook.com/sharer/sharer.php?title=Comandos%20switch%20CISCO%20-%20Redes&u=%2Fredes.github.io%2F_site%2Fposts%2FComandos-Switch-CISCO%2F"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Facebook"
@@ -909,7 +909,7 @@ eclassvirtual-router#show ip ssh C:\&gt;ssh -l eclassvirtual 192.168.0.1 Open Pa
     
       
       <a
-        href="https://t.me/share/url?url=%2Fredes.github.io%2F_site%2Fposts%2FComandos-Switch-CISCO%2F&text=Comandos%20Switch%20CISCO%20-%20Redes"
+        href="https://t.me/share/url?url=%2Fredes.github.io%2F_site%2Fposts%2FComandos-Switch-CISCO%2F&text=Comandos%20switch%20CISCO%20-%20Redes"
         data-bs-toggle="tooltip"
         data-bs-placement="top"
         title="Telegram"
@@ -974,6 +974,20 @@ eclassvirtual-router#show ip ssh C:\&gt;ssh -l eclassvirtual 192.168.0.1 Open Pa
         
         
         <li class="text-truncate lh-lg">
+          <a href="/redes.github.io/_site/posts/servicio-IIS-SQL-Server-ASP/">Montaje del servicio IIS, SQL Server y ASP</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/redes.github.io/_site/posts/Comandos-Switch-CISCO/">Comandos switch CISCO</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/redes.github.io/_site/posts/OSI-TCPIP/">Modelo OSI vs TCP/IP</a>
         </li>
       
@@ -988,21 +1002,7 @@ eclassvirtual-router#show ip ssh C:\&gt;ssh -l eclassvirtual 192.168.0.1 Open Pa
         
         
         <li class="text-truncate lh-lg">
-          <a href="/redes.github.io/_site/posts/Comandos-Switch-CISCO/">Comandos Switch CISCO</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
           <a href="/redes.github.io/_site/posts/Clasificaci%C3%B3n-redes/">Clasificación de las redes</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/redes.github.io/_site/posts/servicio-dhcp/">Montaje del servicio DHCP</a>
         </li>
       
     </ul>
@@ -1237,6 +1237,18 @@ eclassvirtual-router#show ip ssh C:\&gt;ssh -l eclassvirtual 192.168.0.1 Open Pa
 
 
 
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
 
   
 
@@ -1477,9 +1489,13 @@ El Modelo OSI (Open Systems Interconnection) y el conjunto de protocolos TCP/IP 
   
 
   
-    <div class="btn btn-outline-primary disabled" aria-label="Newer">
-      <p>-</p>
-    </div>
+    <a
+      href="redes.github.io/_site//posts/servicio-IIS-SQL-Server-ASP/"
+      class="btn btn-outline-primary"
+      aria-label="Newer"
+    >
+      <p>Montaje del servicio IIS, SQL Server y ASP</p>
+    </a>
   
 </nav>
 
