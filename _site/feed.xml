@@ -4,7 +4,7 @@
   <id>/redes.github.io/_site/</id>
   <title>Redes</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-10-26T09:40:49+02:00</updated>
+  <updated>2023-10-26T11:27:11+02:00</updated>
   <author>
     <name>Luis</name>
     <uri>/redes.github.io/_site/</uri>
@@ -51,21 +51,9 @@
       
 Instalación de IIS
 
-
 Instalación de IIS
 
-
 Instalación de IIS
-
-
-Instalación de IIS
-
-
-Instalación de IIS
-
-
-Instalación de IIS
-
 
 Instalación de IIS
 
@@ -79,6 +67,18 @@ Instalación de IIS
 
 Instalación de IIS
 
+Instalación de IIS
+
+Instalación de IIS
+
+Instalación de IIS
+
+Creación de tabla en SQL Server
+
+USE NombreDeTuBaseDeDatos; -- Reemplaza "NombreDeTuBaseDeDatos" con el nombre de tu base de datos
+
+CREATE TABLE TuTabla (
+ ...
     </summary>
   
 
