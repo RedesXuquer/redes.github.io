@@ -31,7 +31,7 @@ _Instalación de IIS_
 ![Instalación de ISS](12.png)
 _Instalación de IIS_
 
-![Página web no segura y segura](webseguranosegura.webm)
+[![Página web no segura y segura](1.png)](webseguranosegura.webm "Prueba")
 _Instalación del puerto 80 y 443 IIS_
 
 
