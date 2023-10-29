@@ -4,7 +4,7 @@
   <id>/redes.github.io/_site/</id>
   <title>Redes</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-10-29T21:47:04+01:00</updated>
+  <updated>2023-10-29T22:20:47+01:00</updated>
   <author>
     <name>Luis</name>
     <uri>/redes.github.io/_site/</uri>
@@ -24,7 +24,7 @@
     <link href="/redes.github.io/_site/posts/servicio-IIS-SQL-Server-ASP/" rel="alternate" type="text/html" title="Montaje del servicio IIS, SQL Server y ASP" />
     <published>2023-10-25T13:00:00+02:00</published>
   
-    <updated>2023-10-29T21:40:50+01:00</updated>
+    <updated>2023-10-29T21:47:06+01:00</updated>
   
     <id>/redes.github.io/_site/posts/servicio-IIS-SQL-Server-ASP/</id>
     <content src="/redes.github.io/_site/posts/servicio-IIS-SQL-Server-ASP/" />
@@ -74,11 +74,11 @@ Instalación de IIS
 Instalación de IIS
 
 
-Instalación del puerto 80 y 443 IIS
+Instalación de http y https
 
 Creación de tabla en SQL Server
 
-USE NombreDeTuBaseDeDatos; -- Reemplaza "NombreDeTuBaseDeDatos" con el nombre de tu b...
+USE NombreDeTuBaseDeDatos; -- Reemplaza "NombreDeTuBaseDeDatos" con el nombre de tu base de d...
     </summary>
   
 
