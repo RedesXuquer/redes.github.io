@@ -31,7 +31,12 @@ _Instalación de IIS_
 ![Instalación de ISS](12.png)
 _Instalación de IIS_
 
-[![Página web no segura y segura](1.png)](https://youtu.be/_7x04US5mV8 "Prueba")
+## Instalación de ISS y configuración de HTTP y HTTPS
+[![Página web no segura y segura](1.png)](https://youtu.be/_7x04US5mV8 "Instalación de ISS y configuración de HTTP y HTTPS")
+_Instalación de http y https_
+
+## Redirección de HTTP a HTTPS
+[![Página web no segura y segura](1.png)](https://youtu.be/wu_6GzTVsY4 "Redirección de HTTP a HTTPS")
 _Instalación de http y https_
 
 
