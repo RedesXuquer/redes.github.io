@@ -68,20 +68,67 @@ Y terminamos la instalación de SQL Server:
 
 ### Instalación de SQL Server Management Studio (SSMS) 19.0.1
 
-![Alt text](MyFile_2023-10-30_13-44-41.png) ![Alt text](MyFile_2023-10-30_13-45-37.png) ![Alt text](MyFile_2023-10-30_13-45-43.png) ![Alt text](MyFile_2023-10-30_13-45-50.png) ![Alt text](MyFile_2023-10-30_13-48-07.png) ![Alt text](MyFile_2023-10-30_13-50-22.png) ![Alt text](MyFile_2023-10-30_13-44-21.png)
+![Alt text](MyFile_2023-10-30_13-44-41.png)
+![Alt text](MyFile_2023-10-30_13-45-37.png)
+![Alt text](MyFile_2023-10-30_13-45-43.png)
+![Alt text](MyFile_2023-10-30_13-45-50.png)
+![Alt text](MyFile_2023-10-30_13-48-07.png)
+![Alt text](MyFile_2023-10-30_13-50-22.png)
+![Alt text](MyFile_2023-10-30_13-44-21.png)
+
+### Instalación más roles y características
+
+![Alt text](MyFile_2023-10-30_13-51-31.png)
+![Alt text](MyFile_2023-10-30_13-51-58.png)
+![Alt text](MyFile_2023-10-30_13-54-57.png)
+
+### Creación de usuario en SQL Server
+
+![Alt text](MyFile_2023-10-30_21-35-52.png)
+![Alt text](MyFile_2023-10-30_21-36-00.png)
+![Alt text](MyFile_2023-10-30_21-36-16.png)
+![Alt text](MyFile_2023-10-30_21-36-49.png)
+![Alt text](MyFile_2023-10-30_21-36-55.png)
+
+Y probamos...
+
+### Creación de la base de datos, la tabla y rellenar
+
+![Alt text](MyFile_2023-10-30_21-37-47.png)
+![Alt text](MyFile_2023-10-30_21-37-26.png)
+![Alt text](MyFile_2023-10-30_21-42-34.png)
+![Alt text](MyFile_2023-10-30_21-37-55.png)
+![Alt text](MyFile_2023-10-30_21-38-08.png)
+![Alt text](MyFile_2023-10-30_21-39-46.png)
+![Alt text](MyFile_2023-10-30_21-40-58.png)
+![Alt text](MyFile_2023-10-30_21-42-11.png)
+
+### Creación del archivo index.asp
+
+![Alt text](MyFile_2023-10-30_21-44-56.png)
+
+Y probamos...
+![Alt text](MyFile_2023-10-30_21-45-58.png)
+
+
 
 
 ## Creación de tabla en SQL Server
 
 ```
+CREATE DATABASE NombreDeTuBaseDeDatos; -- Reemplaza "NombreDeTuBaseDeDatos" con el nombre de tu base de datos
+
 USE NombreDeTuBaseDeDatos; -- Reemplaza "NombreDeTuBaseDeDatos" con el nombre de tu base de datos
 
-CREATE TABLE TuTabla (
+CREATE TABLE TuTabla ( -- Reemplaza "TuTabla" con el nombre de tu tabla
     ID INT PRIMARY KEY,
     Nombre VARCHAR(50),
     Apellido VARCHAR(50),
     Edad INT
 );
+
+INSERT INTO TuTabla (ID, Nombre, Apellido, Edad) VALUES (1,'Rodolfo', 'Langostino', 50);
+
 ```
 
 
