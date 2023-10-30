@@ -6,32 +6,32 @@ tags: [redes locales, teoría, smr]
 img_path: /assets/img/windowsWeb/   
 ---
 
-![Instalación de ISS](1.png)
+![Instalación de IIS](1.png)
 _Instalación de IIS_
-![Instalación de ISS](2.png)
+![Instalación de IIS](2.png)
 _Instalación de IIS_
-![Instalación de ISS](3.png)
+![Instalación de IIS](3.png)
 _Instalación de IIS_
-![Instalación de ISS](4.png)
+![Instalación de IIS](4.png)
 _Instalación de IIS_
-![Instalación de ISS](5.png)
+![Instalación de IIS](5.png)
 _Instalación de IIS_
-![Instalación de ISS](6.png)
+![Instalación de IIS](6.png)
 _Instalación de IIS_
-![Instalación de ISS](7.png)
+![Instalación de IIS](7.png)
 _Instalación de IIS_
-![Instalación de ISS](8.png)
+![Instalación de IIS](8.png)
 _Instalación de IIS_
-![Instalación de ISS](9.png)
+![Instalación de IIS](9.png)
 _Instalación de IIS_
-![Instalación de ISS](10.png)
+![Instalación de IIS](10.png)
 _Instalación de IIS_
-![Instalación de ISS](11.png)
+![Instalación de IIS](11.png)
 _Instalación de IIS_
-![Instalación de ISS](12.png)
+![Instalación de IIS](12.png)
 _Instalación de IIS_
 
-## Instalación de ISS y configuración de HTTP y HTTPS
+## Instalación de IIS y configuración de HTTP y HTTPS
 [![Página web no segura y segura](1.png)](https://youtu.be/_7x04US5mV8 "Instalación de ISS y configuración de HTTP y HTTPS")
 _Instalación de http y https_
 
@@ -39,9 +39,34 @@ _Instalación de http y https_
 [![Página web no segura y segura](1.png)](https://youtu.be/wu_6GzTVsY4 "Redirección de HTTP a HTTPS")
 _Instalación de http y https_
 
+## Aplicaciones necesarias
+- Windows Framework 4.8
+- SQL Server® 2012 SP4
+- SQL Server Management Studio (SSMS) 19.0.1
 
+### Windows Framework 4.8
 
+Trivial.
 
+### Instalación de SQL Server® 2012 SP4
+
+![Alt text](image.png)
+
+![](image-1.png)
+
+Le damos a nueva instalación:
+![Alt text](image-2.png)
+
+Le damos a todo siguiente hasta que nos pregunta la forma de conectarnos a SQL Server:
+
+![Alt text](MyFile_2023-10-30_13-34-54.png) 
+![Alt text](MyFile_2023-10-30_13-35-59.png)
+![Alt text](MyFile_2023-10-30_13-36-08.png)
+![Alt text](MyFile_2023-10-30_13-36-26.png)
+
+Y terminamos la instalación de SQL Server:
+
+![Alt text](image-3.png)
 ## Creación de tabla en SQL Server
 
 ```
