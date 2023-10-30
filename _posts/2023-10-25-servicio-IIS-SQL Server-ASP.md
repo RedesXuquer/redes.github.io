@@ -94,14 +94,13 @@ Y probamos...
 
 ### Creación de la base de datos, la tabla y rellenar
 
-![Alt text](MyFile_2023-10-30_21-37-47.png)
 ![Alt text](MyFile_2023-10-30_21-37-26.png)
-![Alt text](MyFile_2023-10-30_21-42-34.png)
+![Alt text](MyFile_2023-10-30_21-37-47.png)
 ![Alt text](MyFile_2023-10-30_21-37-55.png)
 ![Alt text](MyFile_2023-10-30_21-38-08.png)
 ![Alt text](MyFile_2023-10-30_21-39-46.png)
-![Alt text](MyFile_2023-10-30_21-40-58.png)
 ![Alt text](MyFile_2023-10-30_21-42-11.png)
+![Alt text](MyFile_2023-10-30_21-42-34.png)
 
 ### Creación del archivo index.asp
 
@@ -109,9 +108,6 @@ Y probamos...
 
 Y probamos...
 ![Alt text](MyFile_2023-10-30_21-45-58.png)
-
-
-
 
 ## Creación de tabla en SQL Server
 
