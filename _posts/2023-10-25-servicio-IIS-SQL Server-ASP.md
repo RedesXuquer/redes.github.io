@@ -58,15 +58,19 @@ Le damos a nueva instalación:
 ![Alt text](image-2.png)
 
 Le damos a todo siguiente hasta que nos pregunta la forma de conectarnos a SQL Server:
-
 ![Alt text](MyFile_2023-10-30_13-34-54.png) 
 ![Alt text](MyFile_2023-10-30_13-35-59.png)
 ![Alt text](MyFile_2023-10-30_13-36-08.png)
 ![Alt text](MyFile_2023-10-30_13-36-26.png)
 
 Y terminamos la instalación de SQL Server:
-
 ![Alt text](image-3.png)
+
+### Instalación de SQL Server Management Studio (SSMS) 19.0.1
+
+![Alt text](MyFile_2023-10-30_13-44-41.png) ![Alt text](MyFile_2023-10-30_13-45-37.png) ![Alt text](MyFile_2023-10-30_13-45-43.png) ![Alt text](MyFile_2023-10-30_13-45-50.png) ![Alt text](MyFile_2023-10-30_13-48-07.png) ![Alt text](MyFile_2023-10-30_13-50-22.png) ![Alt text](MyFile_2023-10-30_13-44-21.png)
+
+
 ## Creación de tabla en SQL Server
 
 ```
