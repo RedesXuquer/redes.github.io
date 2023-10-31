@@ -50,14 +50,7 @@ Trivial.
 
 ### Instalación de SQL Server® 2012 SP4
 
-![Alt text](image.png)
-
-![](image-1.png)
-
-Le damos a nueva instalación:
-![Alt text](image-2.png)
-
-Le damos a todo siguiente hasta que nos pregunta la forma de conectarnos a SQL Server:
+Le damos a nueva instalación y a continuacióna todo siguiente hasta que nos pregunta la forma de conectarnos a SQL Server:
 ![Alt text](MyFile_2023-10-30_13-34-54.png) 
 ![Alt text](MyFile_2023-10-30_13-35-59.png)
 ![Alt text](MyFile_2023-10-30_13-36-08.png)
@@ -84,7 +77,6 @@ Y terminamos la instalación de SQL Server:
 
 ### Creación de usuario en SQL Server
 
-![Alt text](MyFile_2023-10-30_21-35-52.png)
 ![Alt text](MyFile_2023-10-30_21-36-00.png)
 ![Alt text](MyFile_2023-10-30_21-36-16.png)
 ![Alt text](MyFile_2023-10-30_21-36-49.png)
