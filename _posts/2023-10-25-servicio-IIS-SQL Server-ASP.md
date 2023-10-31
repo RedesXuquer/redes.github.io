@@ -87,7 +87,6 @@ Y probamos...
 ### Creación de la base de datos, la tabla y rellenar
 
 ![Alt text](MyFile_2023-10-30_21-37-26.png)
-![Alt text](MyFile_2023-10-30_21-37-47.png)
 ![Alt text](MyFile_2023-10-30_21-37-55.png)
 ![Alt text](MyFile_2023-10-30_21-38-08.png)
 ![Alt text](MyFile_2023-10-30_21-39-46.png)
