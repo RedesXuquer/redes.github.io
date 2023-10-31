@@ -155,3 +155,8 @@ conn.Close
 Set conn = Nothing
 %>
 ```
+
+## Extras
+
+- Utilización y configuración de VirtualHost.
+- Configuración del fichero host en el Windows anfitrión.

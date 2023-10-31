@@ -126,7 +126,7 @@ Investiga para que sirve el archivo default.conf
 
 # Instalación del servicio MySQL en Ubuntu Server 22.04 LTS
 
-## Diferencia entre MariDB y MySql
+## Diferencia entre MariaDB y MySql
 
 MariaDB y MySQL son dos sistemas de gestión de bases de datos relacionales (RDBMS) que comparten una historia y un propósito comunes, pero también tienen algunas diferencias clave:
 
@@ -175,7 +175,7 @@ Configuramos el servicio:
 sudo mariadb-secure-installation
 ```
 
-Entramos en maridb:
+Entramos en mariadb:
 ```
 mysql -u root -p
 ```
@@ -249,7 +249,7 @@ phpinfo();
 ![Información de PHP](exitoweb.png)
 _Información de PHP_
 
-Ahora vamos a instalar las librería necesaria para conectar PHP con MariDB:
+Ahora vamos a instalar las librería necesaria para conectar PHP con MariaDB:
 ```
 sudo apt-get install php8.1-mysql
 ```
@@ -293,3 +293,8 @@ mysqli_close($link);
 
 ![Conexión de PHP a MariaDB](exitomariadb.png)
 _Conexión de PHP a MariaDB_
+
+## Extra
+
+- Utilización y configuración de VirtualHost.
+- Configuración del fichero host en el Windows anfitrión.
