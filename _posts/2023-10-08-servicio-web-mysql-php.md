@@ -296,5 +296,7 @@ _Conexión de PHP a MariaDB_
 
 ## Extra
 
+- Configuración de HTTPS
+- Redirección de HTTP a HTTPS
 - Utilización y configuración de VirtualHost.
 - Configuración del fichero host en el Windows anfitrión.
