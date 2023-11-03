@@ -297,6 +297,12 @@ _Conexión de PHP a MariaDB_
 ## Extra
 
 - Configuración de HTTPS
+[Configuración de HTTPS](https://techexpert.tips/es/apache-es/habilitar-https-en-apache/)
 - Redirección de HTTP a HTTPS
+[Redirección de HTTP a HTTPS](https://techexpert.tips/es/apache-es/apache-redireccionar-http-a-https/)
+
 - Utilización y configuración de VirtualHost.
+[Utilización y configuración de VirtualHost](https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-20-04)
+
 - Configuración del fichero host en el Windows anfitrión.
+[Configuración del fichero host en el Windows anfitrión](https://www.ionos.es/digitalguide/servidores/configuracion/archivo-hosts/#:~:text=los%20sistemas%20débiles.-,Así%20editas%20el%20archivo%20hosts,XP%2C%207%2C%208%20y%2010&text=Selecciona%20la%20opción%20“Ejecutar%20como,podrás%20modificar%20el%20archivo%20hosts.)

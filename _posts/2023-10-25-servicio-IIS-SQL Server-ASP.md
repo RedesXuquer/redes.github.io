@@ -158,4 +158,7 @@ Set conn = Nothing
 ## Extras
 
 - Utilización y configuración de VirtualHost.
+[Utilización y configuración de VirtualHost](https://analisisyprogramacionoop.blogspot.com/2018/01/crear-virtual-hosts-windows-iis.html)
+
 - Configuración del fichero host en el Windows anfitrión.
+[Configuración del fichero host en el Windows anfitrión](https://www.ionos.es/digitalguide/servidores/configuracion/archivo-hosts/#:~:text=los%20sistemas%20débiles.-,Así%20editas%20el%20archivo%20hosts,XP%2C%207%2C%208%20y%2010&text=Selecciona%20la%20opción%20“Ejecutar%20como,podrás%20modificar%20el%20archivo%20hosts.)

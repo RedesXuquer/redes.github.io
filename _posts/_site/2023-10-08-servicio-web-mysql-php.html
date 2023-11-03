@@ -109,7 +109,7 @@ Investiga para que sirve el archivo default.conf</p>
 
 <h1 id="instalación-del-servicio-mysql-en-ubuntu-server-2204-lts">Instalación del servicio MySQL en Ubuntu Server 22.04 LTS</h1>
 
-<h2 id="diferencia-entre-maridb-y-mysql">Diferencia entre MariDB y MySql</h2>
+<h2 id="diferencia-entre-mariadb-y-mysql">Diferencia entre MariaDB y MySql</h2>
 
 <p>MariaDB y MySQL son dos sistemas de gestión de bases de datos relacionales (RDBMS) que comparten una historia y un propósito comunes, pero también tienen algunas diferencias clave:</p>
 
@@ -154,7 +154,7 @@ En general, la elección entre MariaDB y MySQL dependerá de sus necesidades esp
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mariadb-secure-installation
 </code></pre></div></div>
 
-<p>Entramos en maridb:</p>
+<p>Entramos en mariadb:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mysql -u root -p
 </code></pre></div></div>
 
@@ -217,7 +217,7 @@ phpinfo();
 <p><img src="exitoweb.png" alt="Información de PHP" />
 <em>Información de PHP</em></p>
 
-<p>Ahora vamos a instalar las librería necesaria para conectar PHP con MariDB:</p>
+<p>Ahora vamos a instalar las librería necesaria para conectar PHP con MariaDB:</p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install php8.1-mysql
 </code></pre></div></div>
 
@@ -258,3 +258,20 @@ mysqli_close($link);
 
 <p><img src="exitomariadb.png" alt="Conexión de PHP a MariaDB" />
 <em>Conexión de PHP a MariaDB</em></p>
+
+<h2 id="extra">Extra</h2>
+
+<ul>
+  <li>Configuración de HTTPS
+<a href="https://techexpert.tips/es/apache-es/habilitar-https-en-apache/">Configuración de HTTPS</a></li>
+  <li>
+    <p>Redirección de HTTP a HTTPS
+<a href="https://techexpert.tips/es/apache-es/apache-redireccionar-http-a-https/">Redirección de HTTP a HTTPS</a></p>
+  </li>
+  <li>
+    <p>Utilización y configuración de VirtualHost.
+<a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-apache-virtual-hosts-on-ubuntu-20-04">Utilización y configuración de VirtualHost</a></p>
+  </li>
+  <li>Configuración del fichero host en el Windows anfitrión.
+<a href="https://www.ionos.es/digitalguide/servidores/configuracion/archivo-hosts/#:~:text=los%20sistemas%20débiles.-,Así%20editas%20el%20archivo%20hosts,XP%2C%207%2C%208%20y%2010&amp;text=Selecciona%20la%20opción%20“Ejecutar%20como,podrás%20modificar%20el%20archivo%20hosts.">Configuración del fichero host en el Windows anfitrión</a></li>
+</ul>
