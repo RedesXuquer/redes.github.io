@@ -1,0 +1,2502 @@
+<!doctype html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- `site.alt_lang` can specify a language different from the UI -->
+<html lang="es" 
+  
+    data-mode="light"
+  
+>
+  <!-- The Head -->
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1b1e">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
+  >
+
+  
+
+  
+    
+
+    
+      
+      
+
+      
+        <!-- it's a local file path -->
+
+      
+    
+  
+
+  
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Capa física" />
+<meta property="og:locale" content="es" />
+<meta name="description" content="La capa Física Introducción La capa física es la primera capa del modelo OSI. También se le conoce como CAPA 1, esta es responsable de la transmisión de bits no estructurados a través de un medio de comunicación físico, ya sea cable de cobre, fibra óptica, ondas de radio, etc. Esta capa se enfoca en aspectos relacionados con la transmisión de datos en su forma más básica y física. Esta capa forma parte de la capa Acceso a red del modelo TCP/IP. Sin la capa física, no tendría una red. En este tema veremos las características, utilidades y propósitos de: Propósito de la capa física. Características de la capa física. Cableado de cobre. Cableado UTP. Cableado de fibra óptica. Medios inalámbricos. Propósito de la capa física El propósito fundamental de la capa física en el modelo OSI es facilitar la transmisión física de bits a través de un medio de comunicación. Esta capa se centra en la interfaz entre el equipo y el medio físico, asegurando que los bits se puedan enviar y recibir de manera confiable y eficiente. La conexión física: Para que se pueda producir cualquier comunicación de red se debe establecer antes una conexión a una red local. Una conexión física puede ser: Una conexión por cable Una conexión inalámbrica mediante ondas de radio. El tipo de conexión física utilizada depende de la configuración de la red. Ejemplo: En muchas oficinas corporativas, los empleados tienen PC de escritorio o portátiles que se conectan físicamente, mediante cables, a un switch compartido. Este tipo de configuración se denomina red cableada y los datos se transmiten a través de un cable físico. Muchas empresas también ofrecen conexiones inalámbricas “sin cableado” para PC portátiles, tablets y smartphones. En el caso de los dispositivos inalámbricos, los datos se transmiten mediante ondas de radio. Los dispositivos en una red inalámbrica deben estar conectados a un punto de acceso inalámbrico (AP) o router inalámbrico. En términos de rendimiento, no todas las conexiones físicas son iguales a la hora de conectarse a una red. [!¿Qué son las Tarjetas de interfaz de red?] Las tarjetas de interfaz de red (NIC) conectan un dispositivo a la red. Las NIC de Ethernet se usan para una conexión por cable, mientras que las NIC de la red de área local inalámbrica (WLAN) se usan para la conexión inalámbrica. Los dispositivos para usuarios finales pueden incluir un tipo de NIC o ambos. La capa física: Esta capa proporciona los medios de transporte de los bits que conforman una trama de la capa de enlace de datos a través de los medios de red. Esta capa acepta una trama completa desde la capa de enlace de datos y la codifica como una secuencia de señales que se transmiten en los medios locales. Un dispositivo final o un dispositivo intermediario recibe los bits codificados que componen una trama. La capa física codifica las tramas y crea las señales eléctricas, ópticas o de ondas de radio que representan los bits en cada trama. La capa física del nodo de destino recupera estas señales individuales de los medios, las restaura a sus representaciones en bits y pasa los bits a la capa de enlace de datos en forma de trama completa. Características de la capa física. Los estándares de la capa física: Vamos a ver los componentes y los medios utilizados para construir una red, así como los estándares necesarios para que todo funcione en conjunto. Los protocolos y las operaciones de las capas OSI superiores se llevan a cabo en software diseñado por ingenieros en software e informáticos. El grupo de trabajo de ingeniería de Internet (IETF) define los servicios y protocolos del conjunto TCP/IP. Existen muchas organizaciones internacionales y nacionales que intervienen en el establecimiento y el mantenimiento de los estándares de la capa física. Por ejemplo, los estándares de hardware, medios, codificación y señalización de la capa física están definidos y regidos por estas organizaciones de estándares: Organización Internacional para la Estandarización (ISO) Asociación de las Industrias de las Telecomunicaciones (TIA) y Asociación de Industrias Electrónicas (EIA) Unión Internacional de Telecomunicaciones (ITU) Instituto Nacional Estadounidense de Estándares (ANSI) Instituto de Ingenieros Eléctricos y Electrónicos (IEEE) Autoridades nacionales reguladoras de las telecomunicaciones, incluida la Federal Communication Commission (FCC) de los Estados Unidos y el Instituto Europeo de Estándares de Telecomunicaciones (ETSI). Los estándares de la capa física abarcan tres áreas funcionales Componentes físicos Codificación Señalización Componentes físicos: Los componentes físicos son los dispositivos de hardware electrónico que transmiten las señales que representan los bits. Todos los componentes de hardware, como NIC, interfaces y conectores, materiales y diseño de los cables, se especifican en los estándares asociados con la capa física. Codificación: La codificación es un método que se utiliza para convertir una transmisión de bits de datos en un “código” predefinido. La codificación es el método o patrón utilizado para representar la información digital. Señalización: La capa física debe generar las señales inalámbricas, ópticas o eléctricas. Estas representan los “1” y los “0” en los medios. La forma en que se representan los bits se denomina método de señalización. Los estándares de la capa física deben definir qué tipo de señal representa un “1” y qué tipo de señal representa un “0”. Esto puede ser tan simple como un cambio en el nivel de una señal eléctrica o de un pulso óptico. Ancho de banda: Esta es la capacidad a la que un medio puede transportar datos. El ancho de banda digital mide la cantidad de datos que pueden fluir desde un lugar hacia otro en un período de tiempo determinado. El ancho de banda generalmente se mide en kilobits por segundo (kbps), megabits por segundo (Mbps) o gigabits por segundo (Gbps). En ocasiones, el ancho de banda se piensa como la velocidad a la que viajan los bits, sin embargo, esto no es así. Una combinación de factores determina el ancho de banda práctico de una red: Las propiedades de los medios físicos. Las tecnologías seleccionadas para la señalización y la detección de señales de red. Las propiedades de los medios físicos, las tecnologías actuales y las leyes de la física desempeñan una función al momento de determinar el ancho de banda disponible. Terminología del ancho de banda: Los términos utilizados para medir la calidad del ancho de banda incluyen: Latencia: Es la cantidad de tiempo, incluidas las demoras que les toma a los datos transferirse desde un punto determinado hasta otro. (PING) Cuanta mas alta es la latencia, más demorarán los datos en llegar del punto A al punto B. Cacidad de transferencia útil: Esta es la medida de datos utilizables transferidos durante un período determinado. La capacidad de transferencia útil es el rendimiento menos la sobrecarga de tráfico para establecer sesiones, acuses de recibo, encapsulación y bits retransmitidos. Rendimiento: Es la medida de transferencia de bits a través de los medios durante un período de tiempo determinado. El rendimiento generalmente no coincide con el ancho de banda y suele ser menor. Pueden afectar: La cantidad de tráfico El tipo de tráfico La latencia creada por la cantidad de dispositivos de red encontrados entre origen y destino Cableado de cobre. Características del cableado de cobre: El cableado de cobre no es solo un tipo de cable. Hay tres tipos diferentes de cableado de cobre que se utilizan cada uno en situaciones específicas. Las redes utilizan medios de cobre porque son económicos, fáciles de instalar y tienen baja resistencia a la corriente eléctrica. Sin embargo, estos medios están limitados por la distancia y la interferencia de señal. Los datos se transmiten en cables de cobre por impulsos eléctricos. Un detector en la NIC de un dispositivo de destino debe recibir una señal que pueda decodificarse exitosamente para que coincida con la señal que fue enviada. Cuanto más lejos viaja una señal, más se deteriora. Todos los medios de cobre tienen unas limitaciones de distancia estrictas. Los valores de temporización y voltaje de los pulsos eléctricos también son vulnerables a las interferencias de dos fuentes: Interferencia electromagnética (EMI) o Interferencia de radiofrecuencia (RFI): Las señales de EMI y RFI pueden distorsionar y dañar las señales de datos que transportan los medios de cobre. Estas incluyen las ondas de radio y dispositivos electromagnéticos, como las luces fluorescentes o los motores eléctricos. Para contrarrestar los efectos negativos de la EMI y la RFI, algunos tipos de cables de cobre se empaquetan con un blindaje metálico y requieren una conexión a tierra adecuada. Crosstalk: Este se trata de una perturbación causada por los campos eléctricos o magnéticos de una señal de un hilo a la señal de un hilo adyacente. En los circuitos telefónicos, el crosstalk puede provocar que se escuche parte de otra conversación de voz de un circuito adyacente. Para contrarrestar los efectos negativos del crosstalk, algunos tipos de cables de cobre tienen pares de hilos de circuitos opuestos trenzados que cancelan dicho tipo de interferencia en forma eficaz. La susceptibilidad de los cables de cobre al ruido electrónico también se puede limitar utilizando estas recomendaciones: La elección del tipo o la categoría de cable más adecuados a un entorno de red determinado. El diseño de una infraestructura de cables para evitar las fuentes de interferencia posibles y conocidas en la estructura del edificio. El uso de técnicas de cableado que incluyen el manejo y la terminación apropiados de los cables Tipos de cableado de cobre: Existen 3 tipos de cableado: Par trenzado no blindado (UTP): El cableado UTP es el medio más común para conectar dispositivos en redes. Consiste en cuatro pares de hilos trenzados y protegidos por plástico flexible. Se utiliza con conectores RJ-45 para enlazar hosts con dispositivos de red como switches y routers, principalmente en redes LAN. El trenzado de los hilos ayuda a evitar interferencias y proporciona cierta protección física. Par trenzado blindado (STP): El cableado STP ofrece una mayor protección contra interferencias que el UTP, aunque es más costoso y difícil de instalar. Al igual que el UTP, utiliza conectores RJ-45. Este combina técnicas de blindaje para contrarrestar interferencias electromagnéticas y de radiofrecuencia, además del trenzado de hilos para mitigar el crosstalk. El cable STP consta de cuatro pares de hilos, cada par está protegido con una hoja metálica y luego se cubre con una malla tejida o una hoja metálica. Cable coaxial: El cable coaxial contiene dos conductores compartiendo un eje: uno de cobre para transmitir señales electrónicas y otro de malla de cobre o hoja metálica que actúa como blindaje contra interferencias electromagnéticas. Está recubierto por aislamiento plástico flexible y un revestimiento para protección física. Cableado UTP. Propiedades del cableado UTP: El cableado UTP consta de cuatro pares de hilos trenzados y recubiertos con plástico flexible. Su tamaño pequeño facilita la instalación. No cuenta con blindaje contra EMI y RFI, pero los diseñadores emplean técnicas como anulación y variación en la torsión de hilos para reducir el crosstalk. La anulación se logra al emparejar hilos en circuitos, generando campos magnéticos opuestos que anulan interferencias. Variar el número de vueltas por par de hilos también mejora la anulación. Los cables UTP siguen especificaciones para la cantidad de vueltas por metro, y cada par coloreado tiene un trenzado diferente. Estos cables se basan en la anulación de los hilos trenzados para mantener la calidad de la señal y proporcionar un auto blindaje efectivo en los medios de red. Conectores y estándares del cableado UTP: El cableado UTP cumple con los estándares establecidos en conjunto por la TIA/EIA. La TIA/EIA-568 estipula los estándares comerciales de cableado para las instalaciones LAN y es el estándar de mayor uso en entornos de cableado LAN. El Instituto de Ingenieros Eléctricos y Electrónicos (IEEE) establece las características eléctricas del cableado de cobre y califica el cable UTP en función de su rendimiento. Los cables UTP se categorizan según su capacidad para transportar datos a diferentes velocidades de ancho de banda. Por ejemplo, el cable de Categoría 5 es común en instalaciones de FastEthernet 100BASE-TX, y hay otras categorías como 5e, 6 y 6a diseñadas para admitir velocidades de transmisión de datos más altas. Algunos fabricantes producen cables que exceden las especificaciones de la categoría 6a de la TIA/EIA y se refieren a estos como cables de Categoría 7. Los cables UTP generalmente se terminan con un conector RJ-45. El estándar TIA/EIA-568 describe las asignaciones de los códigos por colores de los hilos a la asignación de pines (diagrama de pines) de los cables Ethernet. Cables UTP directos y cruzados: Los cables UTP pueden requerir diferentes disposiciones de hilos en los conectores RJ-45 según las situaciones. Esto implica conectar los hilos de manera diferente para distintos grupos de pines en el conector. Los principales tipos de cables que resultan de estas convenciones de cableado son: Cable directo de Ethernet: Es el tipo más común de cable de red, usado para conectar un host a un switch y un switch a un router. Cable cruzado Ethernet: Se emplea para conectar dispositivos similares, como switch a switch, host a host o router a router. No obstante, los cables cruzados se consideran obsoletos en gran medida debido a la tecnología Auto-MDIX que permite a las NIC detectar automáticamente el tipo de cable y realizar la conexión adecuada. Cableado de fibra óptica. Propiedades del cableado de fibra óptica: El cableado de fibra óptica representa otra opción en las redes, aunque es menos común debido a su costo más elevado. Este presenta propiedades que lo convierten en la elección óptima en ciertos escenarios, aspectos. Transmite datos a distancias más extensas y con capacidades de ancho de banda superiores que cualquier otro medio de red. A diferencia de los cables de cobre, la fibra óptica transmite señales con menos atenuación y es completamente inmune a las interferencias electromagnéticas (EMI) y de radiofrecuencia (RFI). Se utiliza para interconectar dispositivos de red. La fibra óptica consiste en un hilo flexible, extremadamente delgado y transparente de vidrio altamente puro, apenas más grueso que un cabello humano. Los datos se codifican en la fibra como impulsos de luz. Funciona como una guía de ondas o una “tubería de luz”, transmitiendo luz entre los extremos con una pérdida mínima de la señal. Tipos de medios de fibra: En términos generales, los cables de fibra óptica pueden clasificarse en dos tipos: Fibra monomodo (SMF): Es un tipo de cable de fibra óptica que permite la transmisión de señales de luz a través de un único modo de propagación. Esto significa que solo se permite la propagación de una señal de luz en una sola dirección, lo que reduce la atenuación y mejora la velocidad y la capacidad de ancho de banda. La SMF es ampliamente utilizada en largas distancias y aplicaciones de alta velocidad, como redes de larga distancia y conexiones de datos de alta velocidad. Fibra multimodo (MMF): Es un tipo de cable de fibra óptica que permite la transmisión de múltiples señales de luz a través de diferentes modos de propagación. Esto significa que varias señales de luz se propagan simultáneamente por la fibra en distintos ángulos, lo que puede causar mayor atenuación y dispersión de la señal en comparación con la fibra monomodo. La MMF es comúnmente utilizada en distancias más cortas y redes locales donde no se requiere una alta capacidad de ancho de banda a largas distancias. Una de las diferencias destacadas entre MMF y SMF es la cantidad de dispersión. La dispersión se refiere a la extensión de los pulsos de luz con el tiempo. El aumento de la dispersión significa una mayor pérdida de la intensidad de la señal. FMM tiene una mayor dispersión que SMF. Es por eso que MMF sólo puede viajar hasta 500 metros antes de la pérdida de señal. Uso del cableado de fibra óptica: El cableado de fibra óptica se utiliza en cuatro tipos de industrias: Redes empresariales: Se utilizan para aplicaciones de cableado backbone y dispositivos de infraestructura de interconexión. Fibra hasta el hogar (FTTH): Se utiliza para proporcionar servicios de banda ancha siempre activos a hogares y pequeñas empresas. Redes de larga distancia: Utilizadas por proveedores de servicios para conectar países y ciudades. Redes de cable submarino: Se utilizan para proporcionar soluciones confiables de alta velocidad y capacidad capaces de sobrevivir en entornos submarinos hostiles a distancias transoceánicas. Conectores de fibra óptica: Un conector de fibra óptica termina el extremo de una fibra óptica. Hay una variedad de conectores de fibra óptica disponibles. Las diferencias principales entre los tipos de conectores son las dimensiones y los métodos de acoplamiento. Las empresas deciden qué tipos de conectores utilizarán en base a sus equipos. Conectores de punta directa (ST): Son conectores de fibra óptica que utilizan una terminación tipo bayoneta para su acoplamiento. Son comunes y fáciles de conectar y desconectar. Tienen una punta cilíndrica y se utilizan en aplicaciones de fibra multimodo y monomodo. Conectores suscriptor (SC): Estos son conectores de fibra óptica que se utilizan ampliamente en aplicaciones de redes. Tienen un mecanismo de enganche tipo push-pull que facilita la conexión y desconexión. Son utilizados tanto para fibra multimodo como monomodo. Conectores Lucent (LC): Son pequeños y altamente utilizados en aplicaciones de fibra óptica. Utilizan un mecanismo de enganche similar al SC, pero son más compactos, lo que los hace ideales para espacios limitados. Son comunes en conexiones de fibra óptica de alta densidad y se utilizan para fibra multimodo y monomodo. Conectores Simplex: Son conectores de fibra óptica que permiten la conexión de una sola fibra. Son utilizados para conexiones punto a punto, donde solo se requiere una dirección de transmisión. Pueden ser tanto conectores ST, SC, LC, u otros, pero se usan para una sola fibra. Conectores LC multimodo dúplex: Estos son conectores de fibra óptica LC que permiten la conexión de dos fibras en modo multimodo. Son dúplex, lo que significa que permiten la transmisión bidireccional de datos en ambos sentidos. Son comunes en aplicaciones donde se requiere mayor capacidad de ancho de banda y se utilizan para conexiones de fibra multimodo. Cables de conexión de fibra: Los cables de conexión de fibra óptica son necesarios para interconectar dispositivos de infraestructura. El uso de colores distingue entre los cables de conexión monomodo y multimodo. El conector amarillo corresponde a los cables de fibra óptica monomodo y el naranja (o aqua) corresponde a los cables de fibra óptica multimodo. Medios inalámbricos. Propiedades de los medios inalámbricos: Estos permiten la conexión a la capa física de una red a través de señales electromagnéticas, usando frecuencias de radio y microondas para representar datos en forma binaria. La cobertura se ve afectada por obstáculos y materiales de construcción, son vulnerables a interferencias y plantean desafíos de seguridad y de compartición de medio. Tipos de medios inalámbricos: Los estándares de IEEE y de la industria de las telecomunicaciones para comunicaciones inalámbricas abarcan la capa física y de enlace de datos, definiendo especificaciones en áreas como codificación de señales a radio, frecuencia e intensidad de transmisión, requisitos de recepción y decodificación de señales, y diseño de antenas. Aquí están los principales estándares inalámbricos: Wi-Fi (IEEE 802.11): Tecnología para LAN inalámbrica (WLAN) que emplea acceso múltiple por detección de portadora con prevención de colisiones (CSMA/CA). Wi-Fi se utiliza ampliamente con dispositivos WLAN certificados basados en el estándar IEEE 802.11. Bluetooth (IEEE 802.15): Estándar para redes de área personal inalámbrica (WPAN) conocido como “Bluetooth”, que utiliza un proceso de emparejamiento de dispositivos para distancias de 1 a 100 metros. WiMAX (IEEE 802.16): También conocido como Interoperabilidad Mundial para el Acceso por Microondas (WiMAX), utiliza una topología punto a multipunto para proporcionar acceso inalámbrico de ancho de banda. Zigbee (IEEE 802.15.4): Especificación para comunicaciones de baja velocidad y potencia, ideal para aplicaciones con corto alcance, baja velocidad de datos y larga duración de batería. Se utiliza en entornos industriales e Internet de las cosas (IoT), como interruptores inalámbricos y recopilación de datos de dispositivos médicos. LAN inalámbrica: La implementación común de tecnología inalámbrica permite la conexión de dispositivos a través de una LAN inalámbrica. Para esto, se necesitan los siguientes dispositivos de red: Punto de acceso inalámbrico (AP): Concentra las señales inalámbricas de los usuarios y se conecta a la infraestructura de red existente basada en cobre, como Ethernet. En dispositivos domésticos y de pequeñas empresas, los routers inalámbricos integran las funciones de un router, switch y punto de acceso en un solo dispositivo. Adaptadores NIC inalámbricos: Proporcionan capacidad de comunicaciones inalámbricas a los hosts de la red. Con la evolución de la tecnología, han surgido diversos estándares WLAN basados en Ethernet. Al adquirir dispositivos inalámbricos, es importante garantizar la compatibilidad e interoperabilidad. Los beneficios de las tecnologías inalámbricas de comunicación de datos son notables, especialmente en la reducción de costos de cableado y en la conveniencia de la movilidad del host. No obstante, se debe implementar seguridad rigurosa para proteger las WLAN contra el acceso no autorizado y posibles amenazas." />
+<meta property="og:description" content="La capa Física Introducción La capa física es la primera capa del modelo OSI. También se le conoce como CAPA 1, esta es responsable de la transmisión de bits no estructurados a través de un medio de comunicación físico, ya sea cable de cobre, fibra óptica, ondas de radio, etc. Esta capa se enfoca en aspectos relacionados con la transmisión de datos en su forma más básica y física. Esta capa forma parte de la capa Acceso a red del modelo TCP/IP. Sin la capa física, no tendría una red. En este tema veremos las características, utilidades y propósitos de: Propósito de la capa física. Características de la capa física. Cableado de cobre. Cableado UTP. Cableado de fibra óptica. Medios inalámbricos. Propósito de la capa física El propósito fundamental de la capa física en el modelo OSI es facilitar la transmisión física de bits a través de un medio de comunicación. Esta capa se centra en la interfaz entre el equipo y el medio físico, asegurando que los bits se puedan enviar y recibir de manera confiable y eficiente. La conexión física: Para que se pueda producir cualquier comunicación de red se debe establecer antes una conexión a una red local. Una conexión física puede ser: Una conexión por cable Una conexión inalámbrica mediante ondas de radio. El tipo de conexión física utilizada depende de la configuración de la red. Ejemplo: En muchas oficinas corporativas, los empleados tienen PC de escritorio o portátiles que se conectan físicamente, mediante cables, a un switch compartido. Este tipo de configuración se denomina red cableada y los datos se transmiten a través de un cable físico. Muchas empresas también ofrecen conexiones inalámbricas “sin cableado” para PC portátiles, tablets y smartphones. En el caso de los dispositivos inalámbricos, los datos se transmiten mediante ondas de radio. Los dispositivos en una red inalámbrica deben estar conectados a un punto de acceso inalámbrico (AP) o router inalámbrico. En términos de rendimiento, no todas las conexiones físicas son iguales a la hora de conectarse a una red. [!¿Qué son las Tarjetas de interfaz de red?] Las tarjetas de interfaz de red (NIC) conectan un dispositivo a la red. Las NIC de Ethernet se usan para una conexión por cable, mientras que las NIC de la red de área local inalámbrica (WLAN) se usan para la conexión inalámbrica. Los dispositivos para usuarios finales pueden incluir un tipo de NIC o ambos. La capa física: Esta capa proporciona los medios de transporte de los bits que conforman una trama de la capa de enlace de datos a través de los medios de red. Esta capa acepta una trama completa desde la capa de enlace de datos y la codifica como una secuencia de señales que se transmiten en los medios locales. Un dispositivo final o un dispositivo intermediario recibe los bits codificados que componen una trama. La capa física codifica las tramas y crea las señales eléctricas, ópticas o de ondas de radio que representan los bits en cada trama. La capa física del nodo de destino recupera estas señales individuales de los medios, las restaura a sus representaciones en bits y pasa los bits a la capa de enlace de datos en forma de trama completa. Características de la capa física. Los estándares de la capa física: Vamos a ver los componentes y los medios utilizados para construir una red, así como los estándares necesarios para que todo funcione en conjunto. Los protocolos y las operaciones de las capas OSI superiores se llevan a cabo en software diseñado por ingenieros en software e informáticos. El grupo de trabajo de ingeniería de Internet (IETF) define los servicios y protocolos del conjunto TCP/IP. Existen muchas organizaciones internacionales y nacionales que intervienen en el establecimiento y el mantenimiento de los estándares de la capa física. Por ejemplo, los estándares de hardware, medios, codificación y señalización de la capa física están definidos y regidos por estas organizaciones de estándares: Organización Internacional para la Estandarización (ISO) Asociación de las Industrias de las Telecomunicaciones (TIA) y Asociación de Industrias Electrónicas (EIA) Unión Internacional de Telecomunicaciones (ITU) Instituto Nacional Estadounidense de Estándares (ANSI) Instituto de Ingenieros Eléctricos y Electrónicos (IEEE) Autoridades nacionales reguladoras de las telecomunicaciones, incluida la Federal Communication Commission (FCC) de los Estados Unidos y el Instituto Europeo de Estándares de Telecomunicaciones (ETSI). Los estándares de la capa física abarcan tres áreas funcionales Componentes físicos Codificación Señalización Componentes físicos: Los componentes físicos son los dispositivos de hardware electrónico que transmiten las señales que representan los bits. Todos los componentes de hardware, como NIC, interfaces y conectores, materiales y diseño de los cables, se especifican en los estándares asociados con la capa física. Codificación: La codificación es un método que se utiliza para convertir una transmisión de bits de datos en un “código” predefinido. La codificación es el método o patrón utilizado para representar la información digital. Señalización: La capa física debe generar las señales inalámbricas, ópticas o eléctricas. Estas representan los “1” y los “0” en los medios. La forma en que se representan los bits se denomina método de señalización. Los estándares de la capa física deben definir qué tipo de señal representa un “1” y qué tipo de señal representa un “0”. Esto puede ser tan simple como un cambio en el nivel de una señal eléctrica o de un pulso óptico. Ancho de banda: Esta es la capacidad a la que un medio puede transportar datos. El ancho de banda digital mide la cantidad de datos que pueden fluir desde un lugar hacia otro en un período de tiempo determinado. El ancho de banda generalmente se mide en kilobits por segundo (kbps), megabits por segundo (Mbps) o gigabits por segundo (Gbps). En ocasiones, el ancho de banda se piensa como la velocidad a la que viajan los bits, sin embargo, esto no es así. Una combinación de factores determina el ancho de banda práctico de una red: Las propiedades de los medios físicos. Las tecnologías seleccionadas para la señalización y la detección de señales de red. Las propiedades de los medios físicos, las tecnologías actuales y las leyes de la física desempeñan una función al momento de determinar el ancho de banda disponible. Terminología del ancho de banda: Los términos utilizados para medir la calidad del ancho de banda incluyen: Latencia: Es la cantidad de tiempo, incluidas las demoras que les toma a los datos transferirse desde un punto determinado hasta otro. (PING) Cuanta mas alta es la latencia, más demorarán los datos en llegar del punto A al punto B. Cacidad de transferencia útil: Esta es la medida de datos utilizables transferidos durante un período determinado. La capacidad de transferencia útil es el rendimiento menos la sobrecarga de tráfico para establecer sesiones, acuses de recibo, encapsulación y bits retransmitidos. Rendimiento: Es la medida de transferencia de bits a través de los medios durante un período de tiempo determinado. El rendimiento generalmente no coincide con el ancho de banda y suele ser menor. Pueden afectar: La cantidad de tráfico El tipo de tráfico La latencia creada por la cantidad de dispositivos de red encontrados entre origen y destino Cableado de cobre. Características del cableado de cobre: El cableado de cobre no es solo un tipo de cable. Hay tres tipos diferentes de cableado de cobre que se utilizan cada uno en situaciones específicas. Las redes utilizan medios de cobre porque son económicos, fáciles de instalar y tienen baja resistencia a la corriente eléctrica. Sin embargo, estos medios están limitados por la distancia y la interferencia de señal. Los datos se transmiten en cables de cobre por impulsos eléctricos. Un detector en la NIC de un dispositivo de destino debe recibir una señal que pueda decodificarse exitosamente para que coincida con la señal que fue enviada. Cuanto más lejos viaja una señal, más se deteriora. Todos los medios de cobre tienen unas limitaciones de distancia estrictas. Los valores de temporización y voltaje de los pulsos eléctricos también son vulnerables a las interferencias de dos fuentes: Interferencia electromagnética (EMI) o Interferencia de radiofrecuencia (RFI): Las señales de EMI y RFI pueden distorsionar y dañar las señales de datos que transportan los medios de cobre. Estas incluyen las ondas de radio y dispositivos electromagnéticos, como las luces fluorescentes o los motores eléctricos. Para contrarrestar los efectos negativos de la EMI y la RFI, algunos tipos de cables de cobre se empaquetan con un blindaje metálico y requieren una conexión a tierra adecuada. Crosstalk: Este se trata de una perturbación causada por los campos eléctricos o magnéticos de una señal de un hilo a la señal de un hilo adyacente. En los circuitos telefónicos, el crosstalk puede provocar que se escuche parte de otra conversación de voz de un circuito adyacente. Para contrarrestar los efectos negativos del crosstalk, algunos tipos de cables de cobre tienen pares de hilos de circuitos opuestos trenzados que cancelan dicho tipo de interferencia en forma eficaz. La susceptibilidad de los cables de cobre al ruido electrónico también se puede limitar utilizando estas recomendaciones: La elección del tipo o la categoría de cable más adecuados a un entorno de red determinado. El diseño de una infraestructura de cables para evitar las fuentes de interferencia posibles y conocidas en la estructura del edificio. El uso de técnicas de cableado que incluyen el manejo y la terminación apropiados de los cables Tipos de cableado de cobre: Existen 3 tipos de cableado: Par trenzado no blindado (UTP): El cableado UTP es el medio más común para conectar dispositivos en redes. Consiste en cuatro pares de hilos trenzados y protegidos por plástico flexible. Se utiliza con conectores RJ-45 para enlazar hosts con dispositivos de red como switches y routers, principalmente en redes LAN. El trenzado de los hilos ayuda a evitar interferencias y proporciona cierta protección física. Par trenzado blindado (STP): El cableado STP ofrece una mayor protección contra interferencias que el UTP, aunque es más costoso y difícil de instalar. Al igual que el UTP, utiliza conectores RJ-45. Este combina técnicas de blindaje para contrarrestar interferencias electromagnéticas y de radiofrecuencia, además del trenzado de hilos para mitigar el crosstalk. El cable STP consta de cuatro pares de hilos, cada par está protegido con una hoja metálica y luego se cubre con una malla tejida o una hoja metálica. Cable coaxial: El cable coaxial contiene dos conductores compartiendo un eje: uno de cobre para transmitir señales electrónicas y otro de malla de cobre o hoja metálica que actúa como blindaje contra interferencias electromagnéticas. Está recubierto por aislamiento plástico flexible y un revestimiento para protección física. Cableado UTP. Propiedades del cableado UTP: El cableado UTP consta de cuatro pares de hilos trenzados y recubiertos con plástico flexible. Su tamaño pequeño facilita la instalación. No cuenta con blindaje contra EMI y RFI, pero los diseñadores emplean técnicas como anulación y variación en la torsión de hilos para reducir el crosstalk. La anulación se logra al emparejar hilos en circuitos, generando campos magnéticos opuestos que anulan interferencias. Variar el número de vueltas por par de hilos también mejora la anulación. Los cables UTP siguen especificaciones para la cantidad de vueltas por metro, y cada par coloreado tiene un trenzado diferente. Estos cables se basan en la anulación de los hilos trenzados para mantener la calidad de la señal y proporcionar un auto blindaje efectivo en los medios de red. Conectores y estándares del cableado UTP: El cableado UTP cumple con los estándares establecidos en conjunto por la TIA/EIA. La TIA/EIA-568 estipula los estándares comerciales de cableado para las instalaciones LAN y es el estándar de mayor uso en entornos de cableado LAN. El Instituto de Ingenieros Eléctricos y Electrónicos (IEEE) establece las características eléctricas del cableado de cobre y califica el cable UTP en función de su rendimiento. Los cables UTP se categorizan según su capacidad para transportar datos a diferentes velocidades de ancho de banda. Por ejemplo, el cable de Categoría 5 es común en instalaciones de FastEthernet 100BASE-TX, y hay otras categorías como 5e, 6 y 6a diseñadas para admitir velocidades de transmisión de datos más altas. Algunos fabricantes producen cables que exceden las especificaciones de la categoría 6a de la TIA/EIA y se refieren a estos como cables de Categoría 7. Los cables UTP generalmente se terminan con un conector RJ-45. El estándar TIA/EIA-568 describe las asignaciones de los códigos por colores de los hilos a la asignación de pines (diagrama de pines) de los cables Ethernet. Cables UTP directos y cruzados: Los cables UTP pueden requerir diferentes disposiciones de hilos en los conectores RJ-45 según las situaciones. Esto implica conectar los hilos de manera diferente para distintos grupos de pines en el conector. Los principales tipos de cables que resultan de estas convenciones de cableado son: Cable directo de Ethernet: Es el tipo más común de cable de red, usado para conectar un host a un switch y un switch a un router. Cable cruzado Ethernet: Se emplea para conectar dispositivos similares, como switch a switch, host a host o router a router. No obstante, los cables cruzados se consideran obsoletos en gran medida debido a la tecnología Auto-MDIX que permite a las NIC detectar automáticamente el tipo de cable y realizar la conexión adecuada. Cableado de fibra óptica. Propiedades del cableado de fibra óptica: El cableado de fibra óptica representa otra opción en las redes, aunque es menos común debido a su costo más elevado. Este presenta propiedades que lo convierten en la elección óptima en ciertos escenarios, aspectos. Transmite datos a distancias más extensas y con capacidades de ancho de banda superiores que cualquier otro medio de red. A diferencia de los cables de cobre, la fibra óptica transmite señales con menos atenuación y es completamente inmune a las interferencias electromagnéticas (EMI) y de radiofrecuencia (RFI). Se utiliza para interconectar dispositivos de red. La fibra óptica consiste en un hilo flexible, extremadamente delgado y transparente de vidrio altamente puro, apenas más grueso que un cabello humano. Los datos se codifican en la fibra como impulsos de luz. Funciona como una guía de ondas o una “tubería de luz”, transmitiendo luz entre los extremos con una pérdida mínima de la señal. Tipos de medios de fibra: En términos generales, los cables de fibra óptica pueden clasificarse en dos tipos: Fibra monomodo (SMF): Es un tipo de cable de fibra óptica que permite la transmisión de señales de luz a través de un único modo de propagación. Esto significa que solo se permite la propagación de una señal de luz en una sola dirección, lo que reduce la atenuación y mejora la velocidad y la capacidad de ancho de banda. La SMF es ampliamente utilizada en largas distancias y aplicaciones de alta velocidad, como redes de larga distancia y conexiones de datos de alta velocidad. Fibra multimodo (MMF): Es un tipo de cable de fibra óptica que permite la transmisión de múltiples señales de luz a través de diferentes modos de propagación. Esto significa que varias señales de luz se propagan simultáneamente por la fibra en distintos ángulos, lo que puede causar mayor atenuación y dispersión de la señal en comparación con la fibra monomodo. La MMF es comúnmente utilizada en distancias más cortas y redes locales donde no se requiere una alta capacidad de ancho de banda a largas distancias. Una de las diferencias destacadas entre MMF y SMF es la cantidad de dispersión. La dispersión se refiere a la extensión de los pulsos de luz con el tiempo. El aumento de la dispersión significa una mayor pérdida de la intensidad de la señal. FMM tiene una mayor dispersión que SMF. Es por eso que MMF sólo puede viajar hasta 500 metros antes de la pérdida de señal. Uso del cableado de fibra óptica: El cableado de fibra óptica se utiliza en cuatro tipos de industrias: Redes empresariales: Se utilizan para aplicaciones de cableado backbone y dispositivos de infraestructura de interconexión. Fibra hasta el hogar (FTTH): Se utiliza para proporcionar servicios de banda ancha siempre activos a hogares y pequeñas empresas. Redes de larga distancia: Utilizadas por proveedores de servicios para conectar países y ciudades. Redes de cable submarino: Se utilizan para proporcionar soluciones confiables de alta velocidad y capacidad capaces de sobrevivir en entornos submarinos hostiles a distancias transoceánicas. Conectores de fibra óptica: Un conector de fibra óptica termina el extremo de una fibra óptica. Hay una variedad de conectores de fibra óptica disponibles. Las diferencias principales entre los tipos de conectores son las dimensiones y los métodos de acoplamiento. Las empresas deciden qué tipos de conectores utilizarán en base a sus equipos. Conectores de punta directa (ST): Son conectores de fibra óptica que utilizan una terminación tipo bayoneta para su acoplamiento. Son comunes y fáciles de conectar y desconectar. Tienen una punta cilíndrica y se utilizan en aplicaciones de fibra multimodo y monomodo. Conectores suscriptor (SC): Estos son conectores de fibra óptica que se utilizan ampliamente en aplicaciones de redes. Tienen un mecanismo de enganche tipo push-pull que facilita la conexión y desconexión. Son utilizados tanto para fibra multimodo como monomodo. Conectores Lucent (LC): Son pequeños y altamente utilizados en aplicaciones de fibra óptica. Utilizan un mecanismo de enganche similar al SC, pero son más compactos, lo que los hace ideales para espacios limitados. Son comunes en conexiones de fibra óptica de alta densidad y se utilizan para fibra multimodo y monomodo. Conectores Simplex: Son conectores de fibra óptica que permiten la conexión de una sola fibra. Son utilizados para conexiones punto a punto, donde solo se requiere una dirección de transmisión. Pueden ser tanto conectores ST, SC, LC, u otros, pero se usan para una sola fibra. Conectores LC multimodo dúplex: Estos son conectores de fibra óptica LC que permiten la conexión de dos fibras en modo multimodo. Son dúplex, lo que significa que permiten la transmisión bidireccional de datos en ambos sentidos. Son comunes en aplicaciones donde se requiere mayor capacidad de ancho de banda y se utilizan para conexiones de fibra multimodo. Cables de conexión de fibra: Los cables de conexión de fibra óptica son necesarios para interconectar dispositivos de infraestructura. El uso de colores distingue entre los cables de conexión monomodo y multimodo. El conector amarillo corresponde a los cables de fibra óptica monomodo y el naranja (o aqua) corresponde a los cables de fibra óptica multimodo. Medios inalámbricos. Propiedades de los medios inalámbricos: Estos permiten la conexión a la capa física de una red a través de señales electromagnéticas, usando frecuencias de radio y microondas para representar datos en forma binaria. La cobertura se ve afectada por obstáculos y materiales de construcción, son vulnerables a interferencias y plantean desafíos de seguridad y de compartición de medio. Tipos de medios inalámbricos: Los estándares de IEEE y de la industria de las telecomunicaciones para comunicaciones inalámbricas abarcan la capa física y de enlace de datos, definiendo especificaciones en áreas como codificación de señales a radio, frecuencia e intensidad de transmisión, requisitos de recepción y decodificación de señales, y diseño de antenas. Aquí están los principales estándares inalámbricos: Wi-Fi (IEEE 802.11): Tecnología para LAN inalámbrica (WLAN) que emplea acceso múltiple por detección de portadora con prevención de colisiones (CSMA/CA). Wi-Fi se utiliza ampliamente con dispositivos WLAN certificados basados en el estándar IEEE 802.11. Bluetooth (IEEE 802.15): Estándar para redes de área personal inalámbrica (WPAN) conocido como “Bluetooth”, que utiliza un proceso de emparejamiento de dispositivos para distancias de 1 a 100 metros. WiMAX (IEEE 802.16): También conocido como Interoperabilidad Mundial para el Acceso por Microondas (WiMAX), utiliza una topología punto a multipunto para proporcionar acceso inalámbrico de ancho de banda. Zigbee (IEEE 802.15.4): Especificación para comunicaciones de baja velocidad y potencia, ideal para aplicaciones con corto alcance, baja velocidad de datos y larga duración de batería. Se utiliza en entornos industriales e Internet de las cosas (IoT), como interruptores inalámbricos y recopilación de datos de dispositivos médicos. LAN inalámbrica: La implementación común de tecnología inalámbrica permite la conexión de dispositivos a través de una LAN inalámbrica. Para esto, se necesitan los siguientes dispositivos de red: Punto de acceso inalámbrico (AP): Concentra las señales inalámbricas de los usuarios y se conecta a la infraestructura de red existente basada en cobre, como Ethernet. En dispositivos domésticos y de pequeñas empresas, los routers inalámbricos integran las funciones de un router, switch y punto de acceso en un solo dispositivo. Adaptadores NIC inalámbricos: Proporcionan capacidad de comunicaciones inalámbricas a los hosts de la red. Con la evolución de la tecnología, han surgido diversos estándares WLAN basados en Ethernet. Al adquirir dispositivos inalámbricos, es importante garantizar la compatibilidad e interoperabilidad. Los beneficios de las tecnologías inalámbricas de comunicación de datos son notables, especialmente en la reducción de costos de cableado y en la conveniencia de la movilidad del host. No obstante, se debe implementar seguridad rigurosa para proteger las WLAN contra el acceso no autorizado y posibles amenazas." />
+<link rel="canonical" href="/redes.github.io/_site/posts/Capa-f%C3%ADsica/" />
+<meta property="og:url" content="/redes.github.io/_site/posts/Capa-f%C3%ADsica/" />
+<meta property="og:site_name" content="Redes" />
+<meta property="og:image" content="/redes.github.io/_site/assets/img/FISICA/cabeceraOSI.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-11-05T12:00:00+01:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="/redes.github.io/_site/assets/img/FISICA/cabeceraOSI.png" />
+<meta property="twitter:title" content="Capa física" />
+<meta name="twitter:site" content="@twitter_username" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-11-05T12:00:00+01:00","datePublished":"2023-11-05T12:00:00+01:00","description":"La capa Física Introducción La capa física es la primera capa del modelo OSI. También se le conoce como CAPA 1, esta es responsable de la transmisión de bits no estructurados a través de un medio de comunicación físico, ya sea cable de cobre, fibra óptica, ondas de radio, etc. Esta capa se enfoca en aspectos relacionados con la transmisión de datos en su forma más básica y física. Esta capa forma parte de la capa Acceso a red del modelo TCP/IP. Sin la capa física, no tendría una red. En este tema veremos las características, utilidades y propósitos de: Propósito de la capa física. Características de la capa física. Cableado de cobre. Cableado UTP. Cableado de fibra óptica. Medios inalámbricos. Propósito de la capa física El propósito fundamental de la capa física en el modelo OSI es facilitar la transmisión física de bits a través de un medio de comunicación. Esta capa se centra en la interfaz entre el equipo y el medio físico, asegurando que los bits se puedan enviar y recibir de manera confiable y eficiente. La conexión física: Para que se pueda producir cualquier comunicación de red se debe establecer antes una conexión a una red local. Una conexión física puede ser: Una conexión por cable Una conexión inalámbrica mediante ondas de radio. El tipo de conexión física utilizada depende de la configuración de la red. Ejemplo: En muchas oficinas corporativas, los empleados tienen PC de escritorio o portátiles que se conectan físicamente, mediante cables, a un switch compartido. Este tipo de configuración se denomina red cableada y los datos se transmiten a través de un cable físico. Muchas empresas también ofrecen conexiones inalámbricas “sin cableado” para PC portátiles, tablets y smartphones. En el caso de los dispositivos inalámbricos, los datos se transmiten mediante ondas de radio. Los dispositivos en una red inalámbrica deben estar conectados a un punto de acceso inalámbrico (AP) o router inalámbrico. En términos de rendimiento, no todas las conexiones físicas son iguales a la hora de conectarse a una red. [!¿Qué son las Tarjetas de interfaz de red?] Las tarjetas de interfaz de red (NIC) conectan un dispositivo a la red. Las NIC de Ethernet se usan para una conexión por cable, mientras que las NIC de la red de área local inalámbrica (WLAN) se usan para la conexión inalámbrica. Los dispositivos para usuarios finales pueden incluir un tipo de NIC o ambos. La capa física: Esta capa proporciona los medios de transporte de los bits que conforman una trama de la capa de enlace de datos a través de los medios de red. Esta capa acepta una trama completa desde la capa de enlace de datos y la codifica como una secuencia de señales que se transmiten en los medios locales. Un dispositivo final o un dispositivo intermediario recibe los bits codificados que componen una trama. La capa física codifica las tramas y crea las señales eléctricas, ópticas o de ondas de radio que representan los bits en cada trama. La capa física del nodo de destino recupera estas señales individuales de los medios, las restaura a sus representaciones en bits y pasa los bits a la capa de enlace de datos en forma de trama completa. Características de la capa física. Los estándares de la capa física: Vamos a ver los componentes y los medios utilizados para construir una red, así como los estándares necesarios para que todo funcione en conjunto. Los protocolos y las operaciones de las capas OSI superiores se llevan a cabo en software diseñado por ingenieros en software e informáticos. El grupo de trabajo de ingeniería de Internet (IETF) define los servicios y protocolos del conjunto TCP/IP. Existen muchas organizaciones internacionales y nacionales que intervienen en el establecimiento y el mantenimiento de los estándares de la capa física. Por ejemplo, los estándares de hardware, medios, codificación y señalización de la capa física están definidos y regidos por estas organizaciones de estándares: Organización Internacional para la Estandarización (ISO) Asociación de las Industrias de las Telecomunicaciones (TIA) y Asociación de Industrias Electrónicas (EIA) Unión Internacional de Telecomunicaciones (ITU) Instituto Nacional Estadounidense de Estándares (ANSI) Instituto de Ingenieros Eléctricos y Electrónicos (IEEE) Autoridades nacionales reguladoras de las telecomunicaciones, incluida la Federal Communication Commission (FCC) de los Estados Unidos y el Instituto Europeo de Estándares de Telecomunicaciones (ETSI). Los estándares de la capa física abarcan tres áreas funcionales Componentes físicos Codificación Señalización Componentes físicos: Los componentes físicos son los dispositivos de hardware electrónico que transmiten las señales que representan los bits. Todos los componentes de hardware, como NIC, interfaces y conectores, materiales y diseño de los cables, se especifican en los estándares asociados con la capa física. Codificación: La codificación es un método que se utiliza para convertir una transmisión de bits de datos en un “código” predefinido. La codificación es el método o patrón utilizado para representar la información digital. Señalización: La capa física debe generar las señales inalámbricas, ópticas o eléctricas. Estas representan los “1” y los “0” en los medios. La forma en que se representan los bits se denomina método de señalización. Los estándares de la capa física deben definir qué tipo de señal representa un “1” y qué tipo de señal representa un “0”. Esto puede ser tan simple como un cambio en el nivel de una señal eléctrica o de un pulso óptico. Ancho de banda: Esta es la capacidad a la que un medio puede transportar datos. El ancho de banda digital mide la cantidad de datos que pueden fluir desde un lugar hacia otro en un período de tiempo determinado. El ancho de banda generalmente se mide en kilobits por segundo (kbps), megabits por segundo (Mbps) o gigabits por segundo (Gbps). En ocasiones, el ancho de banda se piensa como la velocidad a la que viajan los bits, sin embargo, esto no es así. Una combinación de factores determina el ancho de banda práctico de una red: Las propiedades de los medios físicos. Las tecnologías seleccionadas para la señalización y la detección de señales de red. Las propiedades de los medios físicos, las tecnologías actuales y las leyes de la física desempeñan una función al momento de determinar el ancho de banda disponible. Terminología del ancho de banda: Los términos utilizados para medir la calidad del ancho de banda incluyen: Latencia: Es la cantidad de tiempo, incluidas las demoras que les toma a los datos transferirse desde un punto determinado hasta otro. (PING) Cuanta mas alta es la latencia, más demorarán los datos en llegar del punto A al punto B. Cacidad de transferencia útil: Esta es la medida de datos utilizables transferidos durante un período determinado. La capacidad de transferencia útil es el rendimiento menos la sobrecarga de tráfico para establecer sesiones, acuses de recibo, encapsulación y bits retransmitidos. Rendimiento: Es la medida de transferencia de bits a través de los medios durante un período de tiempo determinado. El rendimiento generalmente no coincide con el ancho de banda y suele ser menor. Pueden afectar: La cantidad de tráfico El tipo de tráfico La latencia creada por la cantidad de dispositivos de red encontrados entre origen y destino Cableado de cobre. Características del cableado de cobre: El cableado de cobre no es solo un tipo de cable. Hay tres tipos diferentes de cableado de cobre que se utilizan cada uno en situaciones específicas. Las redes utilizan medios de cobre porque son económicos, fáciles de instalar y tienen baja resistencia a la corriente eléctrica. Sin embargo, estos medios están limitados por la distancia y la interferencia de señal. Los datos se transmiten en cables de cobre por impulsos eléctricos. Un detector en la NIC de un dispositivo de destino debe recibir una señal que pueda decodificarse exitosamente para que coincida con la señal que fue enviada. Cuanto más lejos viaja una señal, más se deteriora. Todos los medios de cobre tienen unas limitaciones de distancia estrictas. Los valores de temporización y voltaje de los pulsos eléctricos también son vulnerables a las interferencias de dos fuentes: Interferencia electromagnética (EMI) o Interferencia de radiofrecuencia (RFI): Las señales de EMI y RFI pueden distorsionar y dañar las señales de datos que transportan los medios de cobre. Estas incluyen las ondas de radio y dispositivos electromagnéticos, como las luces fluorescentes o los motores eléctricos. Para contrarrestar los efectos negativos de la EMI y la RFI, algunos tipos de cables de cobre se empaquetan con un blindaje metálico y requieren una conexión a tierra adecuada. Crosstalk: Este se trata de una perturbación causada por los campos eléctricos o magnéticos de una señal de un hilo a la señal de un hilo adyacente. En los circuitos telefónicos, el crosstalk puede provocar que se escuche parte de otra conversación de voz de un circuito adyacente. Para contrarrestar los efectos negativos del crosstalk, algunos tipos de cables de cobre tienen pares de hilos de circuitos opuestos trenzados que cancelan dicho tipo de interferencia en forma eficaz. La susceptibilidad de los cables de cobre al ruido electrónico también se puede limitar utilizando estas recomendaciones: La elección del tipo o la categoría de cable más adecuados a un entorno de red determinado. El diseño de una infraestructura de cables para evitar las fuentes de interferencia posibles y conocidas en la estructura del edificio. El uso de técnicas de cableado que incluyen el manejo y la terminación apropiados de los cables Tipos de cableado de cobre: Existen 3 tipos de cableado: Par trenzado no blindado (UTP): El cableado UTP es el medio más común para conectar dispositivos en redes. Consiste en cuatro pares de hilos trenzados y protegidos por plástico flexible. Se utiliza con conectores RJ-45 para enlazar hosts con dispositivos de red como switches y routers, principalmente en redes LAN. El trenzado de los hilos ayuda a evitar interferencias y proporciona cierta protección física. Par trenzado blindado (STP): El cableado STP ofrece una mayor protección contra interferencias que el UTP, aunque es más costoso y difícil de instalar. Al igual que el UTP, utiliza conectores RJ-45. Este combina técnicas de blindaje para contrarrestar interferencias electromagnéticas y de radiofrecuencia, además del trenzado de hilos para mitigar el crosstalk. El cable STP consta de cuatro pares de hilos, cada par está protegido con una hoja metálica y luego se cubre con una malla tejida o una hoja metálica. Cable coaxial: El cable coaxial contiene dos conductores compartiendo un eje: uno de cobre para transmitir señales electrónicas y otro de malla de cobre o hoja metálica que actúa como blindaje contra interferencias electromagnéticas. Está recubierto por aislamiento plástico flexible y un revestimiento para protección física. Cableado UTP. Propiedades del cableado UTP: El cableado UTP consta de cuatro pares de hilos trenzados y recubiertos con plástico flexible. Su tamaño pequeño facilita la instalación. No cuenta con blindaje contra EMI y RFI, pero los diseñadores emplean técnicas como anulación y variación en la torsión de hilos para reducir el crosstalk. La anulación se logra al emparejar hilos en circuitos, generando campos magnéticos opuestos que anulan interferencias. Variar el número de vueltas por par de hilos también mejora la anulación. Los cables UTP siguen especificaciones para la cantidad de vueltas por metro, y cada par coloreado tiene un trenzado diferente. Estos cables se basan en la anulación de los hilos trenzados para mantener la calidad de la señal y proporcionar un auto blindaje efectivo en los medios de red. Conectores y estándares del cableado UTP: El cableado UTP cumple con los estándares establecidos en conjunto por la TIA/EIA. La TIA/EIA-568 estipula los estándares comerciales de cableado para las instalaciones LAN y es el estándar de mayor uso en entornos de cableado LAN. El Instituto de Ingenieros Eléctricos y Electrónicos (IEEE) establece las características eléctricas del cableado de cobre y califica el cable UTP en función de su rendimiento. Los cables UTP se categorizan según su capacidad para transportar datos a diferentes velocidades de ancho de banda. Por ejemplo, el cable de Categoría 5 es común en instalaciones de FastEthernet 100BASE-TX, y hay otras categorías como 5e, 6 y 6a diseñadas para admitir velocidades de transmisión de datos más altas. Algunos fabricantes producen cables que exceden las especificaciones de la categoría 6a de la TIA/EIA y se refieren a estos como cables de Categoría 7. Los cables UTP generalmente se terminan con un conector RJ-45. El estándar TIA/EIA-568 describe las asignaciones de los códigos por colores de los hilos a la asignación de pines (diagrama de pines) de los cables Ethernet. Cables UTP directos y cruzados: Los cables UTP pueden requerir diferentes disposiciones de hilos en los conectores RJ-45 según las situaciones. Esto implica conectar los hilos de manera diferente para distintos grupos de pines en el conector. Los principales tipos de cables que resultan de estas convenciones de cableado son: Cable directo de Ethernet: Es el tipo más común de cable de red, usado para conectar un host a un switch y un switch a un router. Cable cruzado Ethernet: Se emplea para conectar dispositivos similares, como switch a switch, host a host o router a router. No obstante, los cables cruzados se consideran obsoletos en gran medida debido a la tecnología Auto-MDIX que permite a las NIC detectar automáticamente el tipo de cable y realizar la conexión adecuada. Cableado de fibra óptica. Propiedades del cableado de fibra óptica: El cableado de fibra óptica representa otra opción en las redes, aunque es menos común debido a su costo más elevado. Este presenta propiedades que lo convierten en la elección óptima en ciertos escenarios, aspectos. Transmite datos a distancias más extensas y con capacidades de ancho de banda superiores que cualquier otro medio de red. A diferencia de los cables de cobre, la fibra óptica transmite señales con menos atenuación y es completamente inmune a las interferencias electromagnéticas (EMI) y de radiofrecuencia (RFI). Se utiliza para interconectar dispositivos de red. La fibra óptica consiste en un hilo flexible, extremadamente delgado y transparente de vidrio altamente puro, apenas más grueso que un cabello humano. Los datos se codifican en la fibra como impulsos de luz. Funciona como una guía de ondas o una “tubería de luz”, transmitiendo luz entre los extremos con una pérdida mínima de la señal. Tipos de medios de fibra: En términos generales, los cables de fibra óptica pueden clasificarse en dos tipos: Fibra monomodo (SMF): Es un tipo de cable de fibra óptica que permite la transmisión de señales de luz a través de un único modo de propagación. Esto significa que solo se permite la propagación de una señal de luz en una sola dirección, lo que reduce la atenuación y mejora la velocidad y la capacidad de ancho de banda. La SMF es ampliamente utilizada en largas distancias y aplicaciones de alta velocidad, como redes de larga distancia y conexiones de datos de alta velocidad. Fibra multimodo (MMF): Es un tipo de cable de fibra óptica que permite la transmisión de múltiples señales de luz a través de diferentes modos de propagación. Esto significa que varias señales de luz se propagan simultáneamente por la fibra en distintos ángulos, lo que puede causar mayor atenuación y dispersión de la señal en comparación con la fibra monomodo. La MMF es comúnmente utilizada en distancias más cortas y redes locales donde no se requiere una alta capacidad de ancho de banda a largas distancias. Una de las diferencias destacadas entre MMF y SMF es la cantidad de dispersión. La dispersión se refiere a la extensión de los pulsos de luz con el tiempo. El aumento de la dispersión significa una mayor pérdida de la intensidad de la señal. FMM tiene una mayor dispersión que SMF. Es por eso que MMF sólo puede viajar hasta 500 metros antes de la pérdida de señal. Uso del cableado de fibra óptica: El cableado de fibra óptica se utiliza en cuatro tipos de industrias: Redes empresariales: Se utilizan para aplicaciones de cableado backbone y dispositivos de infraestructura de interconexión. Fibra hasta el hogar (FTTH): Se utiliza para proporcionar servicios de banda ancha siempre activos a hogares y pequeñas empresas. Redes de larga distancia: Utilizadas por proveedores de servicios para conectar países y ciudades. Redes de cable submarino: Se utilizan para proporcionar soluciones confiables de alta velocidad y capacidad capaces de sobrevivir en entornos submarinos hostiles a distancias transoceánicas. Conectores de fibra óptica: Un conector de fibra óptica termina el extremo de una fibra óptica. Hay una variedad de conectores de fibra óptica disponibles. Las diferencias principales entre los tipos de conectores son las dimensiones y los métodos de acoplamiento. Las empresas deciden qué tipos de conectores utilizarán en base a sus equipos. Conectores de punta directa (ST): Son conectores de fibra óptica que utilizan una terminación tipo bayoneta para su acoplamiento. Son comunes y fáciles de conectar y desconectar. Tienen una punta cilíndrica y se utilizan en aplicaciones de fibra multimodo y monomodo. Conectores suscriptor (SC): Estos son conectores de fibra óptica que se utilizan ampliamente en aplicaciones de redes. Tienen un mecanismo de enganche tipo push-pull que facilita la conexión y desconexión. Son utilizados tanto para fibra multimodo como monomodo. Conectores Lucent (LC): Son pequeños y altamente utilizados en aplicaciones de fibra óptica. Utilizan un mecanismo de enganche similar al SC, pero son más compactos, lo que los hace ideales para espacios limitados. Son comunes en conexiones de fibra óptica de alta densidad y se utilizan para fibra multimodo y monomodo. Conectores Simplex: Son conectores de fibra óptica que permiten la conexión de una sola fibra. Son utilizados para conexiones punto a punto, donde solo se requiere una dirección de transmisión. Pueden ser tanto conectores ST, SC, LC, u otros, pero se usan para una sola fibra. Conectores LC multimodo dúplex: Estos son conectores de fibra óptica LC que permiten la conexión de dos fibras en modo multimodo. Son dúplex, lo que significa que permiten la transmisión bidireccional de datos en ambos sentidos. Son comunes en aplicaciones donde se requiere mayor capacidad de ancho de banda y se utilizan para conexiones de fibra multimodo. Cables de conexión de fibra: Los cables de conexión de fibra óptica son necesarios para interconectar dispositivos de infraestructura. El uso de colores distingue entre los cables de conexión monomodo y multimodo. El conector amarillo corresponde a los cables de fibra óptica monomodo y el naranja (o aqua) corresponde a los cables de fibra óptica multimodo. Medios inalámbricos. Propiedades de los medios inalámbricos: Estos permiten la conexión a la capa física de una red a través de señales electromagnéticas, usando frecuencias de radio y microondas para representar datos en forma binaria. La cobertura se ve afectada por obstáculos y materiales de construcción, son vulnerables a interferencias y plantean desafíos de seguridad y de compartición de medio. Tipos de medios inalámbricos: Los estándares de IEEE y de la industria de las telecomunicaciones para comunicaciones inalámbricas abarcan la capa física y de enlace de datos, definiendo especificaciones en áreas como codificación de señales a radio, frecuencia e intensidad de transmisión, requisitos de recepción y decodificación de señales, y diseño de antenas. Aquí están los principales estándares inalámbricos: Wi-Fi (IEEE 802.11): Tecnología para LAN inalámbrica (WLAN) que emplea acceso múltiple por detección de portadora con prevención de colisiones (CSMA/CA). Wi-Fi se utiliza ampliamente con dispositivos WLAN certificados basados en el estándar IEEE 802.11. Bluetooth (IEEE 802.15): Estándar para redes de área personal inalámbrica (WPAN) conocido como “Bluetooth”, que utiliza un proceso de emparejamiento de dispositivos para distancias de 1 a 100 metros. WiMAX (IEEE 802.16): También conocido como Interoperabilidad Mundial para el Acceso por Microondas (WiMAX), utiliza una topología punto a multipunto para proporcionar acceso inalámbrico de ancho de banda. Zigbee (IEEE 802.15.4): Especificación para comunicaciones de baja velocidad y potencia, ideal para aplicaciones con corto alcance, baja velocidad de datos y larga duración de batería. Se utiliza en entornos industriales e Internet de las cosas (IoT), como interruptores inalámbricos y recopilación de datos de dispositivos médicos. LAN inalámbrica: La implementación común de tecnología inalámbrica permite la conexión de dispositivos a través de una LAN inalámbrica. Para esto, se necesitan los siguientes dispositivos de red: Punto de acceso inalámbrico (AP): Concentra las señales inalámbricas de los usuarios y se conecta a la infraestructura de red existente basada en cobre, como Ethernet. En dispositivos domésticos y de pequeñas empresas, los routers inalámbricos integran las funciones de un router, switch y punto de acceso en un solo dispositivo. Adaptadores NIC inalámbricos: Proporcionan capacidad de comunicaciones inalámbricas a los hosts de la red. Con la evolución de la tecnología, han surgido diversos estándares WLAN basados en Ethernet. Al adquirir dispositivos inalámbricos, es importante garantizar la compatibilidad e interoperabilidad. Los beneficios de las tecnologías inalámbricas de comunicación de datos son notables, especialmente en la reducción de costos de cableado y en la conveniencia de la movilidad del host. No obstante, se debe implementar seguridad rigurosa para proteger las WLAN contra el acceso no autorizado y posibles amenazas.","headline":"Capa física","image":"/redes.github.io/_site/assets/img/FISICA/cabeceraOSI.png","mainEntityOfPage":{"@type":"WebPage","@id":"/redes.github.io/_site/posts/Capa-f%C3%ADsica/"},"url":"/redes.github.io/_site/posts/Capa-f%C3%ADsica/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  
+
+  <title>Capa física | Redes
+  </title>
+
+  <!--
+  The Favicons for Web, Android, Microsoft, and iOS (iPhone and iPad) Apps
+  Generated by: https://realfavicongenerator.net/
+-->
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/redes.github.io/_site/assets/img/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/redes.github.io/_site/assets/img/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/redes.github.io/_site/assets/img/favicons/favicon-16x16.png">
+<link rel="manifest" href="/redes.github.io/_site/assets/img/favicons/site.webmanifest">
+<link rel="shortcut icon" href="/redes.github.io/_site/assets/img/favicons/favicon.ico">
+<meta name="apple-mobile-web-app-title" content="Redes">
+<meta name="application-name" content="Redes">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/redes.github.io/_site/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+
+  
+    
+      <link rel="preconnect" href="https://fonts.googleapis.com" >
+      <link rel="dns-prefetch" href="https://fonts.googleapis.com" >
+    
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link rel="dns-prefetch" href="https://fonts.gstatic.com" crossorigin>
+    
+      <link rel="preconnect" href="https://fonts.googleapis.com" >
+      <link rel="dns-prefetch" href="https://fonts.googleapis.com" >
+    
+      <link rel="preconnect" href="https://cdn.jsdelivr.net" >
+      <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" >
+    
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@400;600;700;900&display=swap">
+  
+
+  <!-- GA -->
+  
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css">
+
+  <link rel="stylesheet" href="/redes.github.io/_site/assets/css/jekyll-theme-chirpy.css">
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.21.1/dist/tocbot.min.css">
+  
+
+  
+    <!-- Manific Popup -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/magnific-popup.min.css">
+  
+
+  <!-- JavaScript -->
+
+  
+
+  <!-- A placeholder to allow defining custom metadata -->
+
+</head>
+
+
+  <body>
+    <!-- The Side Bar -->
+
+<aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
+  <header class="profile-wrapper">
+    <a href="/redes.github.io/_site/" id="avatar" class="rounded-circle">
+      
+        
+        <img src="/redes.github.io/_site/commons/avatar.jpg" width="112" height="112" alt="avatar" onerror="this.style.display='none'">
+      
+    </a>
+
+    <h1 class="site-title">
+      <a href="/redes.github.io/_site/">Redes</a>
+    </h1>
+    <p class="site-subtitle fst-italic mb-0">A text-focused Jekyll theme</p>
+  </header>
+  <!-- .profile-wrapper -->
+
+  <nav class="flex-column flex-grow-1 w-100 ps-0">
+    <ul class="nav">
+      <!-- home -->
+      <li class="nav-item">
+        <a href="/redes.github.io/_site/" class="nav-link">
+          <i class="fa-fw fas fa-home"></i>
+          <span>HOME</span>
+        </a>
+      </li>
+      <!-- the real tabs -->
+      
+        <li class="nav-item">
+          <a href="/redes.github.io/_site/categories/" class="nav-link">
+            <i class="fa-fw fas fa-stream"></i>
+            
+
+            <span>CATEGORIES</span>
+          </a>
+        </li>
+        <!-- .nav-item -->
+      
+        <li class="nav-item">
+          <a href="/redes.github.io/_site/tags/" class="nav-link">
+            <i class="fa-fw fas fa-tags"></i>
+            
+
+            <span>TAGS</span>
+          </a>
+        </li>
+        <!-- .nav-item -->
+      
+        <li class="nav-item">
+          <a href="/redes.github.io/_site/archives/" class="nav-link">
+            <i class="fa-fw fas fa-archive"></i>
+            
+
+            <span>ARCHIVES</span>
+          </a>
+        </li>
+        <!-- .nav-item -->
+      
+        <li class="nav-item">
+          <a href="/redes.github.io/_site/about/" class="nav-link">
+            <i class="fa-fw fas fa-info-circle"></i>
+            
+
+            <span>ABOUT</span>
+          </a>
+        </li>
+        <!-- .nav-item -->
+      
+    </ul>
+  </nav>
+
+  <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
+    
+
+    
+      
+
+      
+        <a
+          href="https://github.com/github_username"
+          aria-label="github"
+          
+
+          
+            target="_blank"
+            
+          
+
+          
+
+          
+            rel="noopener noreferrer"
+          
+        >
+          <i class="fab fa-github"></i>
+        </a>
+      
+    
+      
+
+      
+        <a
+          href="https://twitter.com/twitter_username"
+          aria-label="twitter"
+          
+
+          
+            target="_blank"
+            
+          
+
+          
+
+          
+            rel="noopener noreferrer"
+          
+        >
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+      
+    
+      
+
+      
+        <a
+          href="javascript:location.href = 'mailto:' + ['example','domain.com'].join('@')"
+          aria-label="email"
+          
+
+          
+
+          
+
+          
+        >
+          <i class="fas fa-envelope"></i>
+        </a>
+      
+    
+      
+
+      
+        <a
+          href="/redes.github.io/_site/feed.xml"
+          aria-label="rss"
+          
+
+          
+
+          
+
+          
+        >
+          <i class="fas fa-rss"></i>
+        </a>
+      
+    
+  </div>
+  <!-- .sidebar-bottom -->
+</aside>
+<!-- #sidebar -->
+
+
+    <div id="main-wrapper" class="d-flex justify-content-center">
+      <div class="container d-flex flex-column px-xxl-5">
+        <!-- The Top Bar -->
+
+<header id="topbar-wrapper" aria-label="Top Bar">
+  <div
+    id="topbar"
+    class="d-flex align-items-center justify-content-between px-lg-3 h-100"
+  >
+    <nav id="breadcrumb" aria-label="Breadcrumb">
+      
+
+      
+        
+          
+            <span>
+              <a href="/redes.github.io/_site/">
+                Home
+              </a>
+            </span>
+
+          
+        
+          
+        
+          
+            
+              <span>Capa física</span>
+            
+
+          
+        
+      
+    </nav>
+    <!-- endof #breadcrumb -->
+
+    <button type="button" id="sidebar-trigger" class="btn btn-link">
+      <i class="fas fa-bars fa-fw"></i>
+    </button>
+
+    <div id="topbar-title">
+      Post
+    </div>
+
+    <button type="button" id="search-trigger" class="btn btn-link">
+      <i class="fas fa-search fa-fw"></i>
+    </button>
+
+    <search class="align-items-center ms-3 ms-lg-0">
+      <i class="fas fa-search fa-fw"></i>
+      <input
+        class="form-control"
+        id="search-input"
+        type="search"
+        aria-label="search"
+        autocomplete="off"
+        placeholder="Search..."
+      >
+    </search>
+    <button type="button" class="btn btn-link text-decoration-none" id="search-cancel">Cancel</button>
+  </div>
+</header>
+
+
+        <div class="row flex-grow-1">
+          <main
+            aria-label="Main Content"
+            class="col-12 col-lg-11 col-xl-9 px-md-4"
+          >
+            
+
+
+
+
+
+<article class="px-1">
+  
+    
+  
+    <!-- Refactor the HTML structure -->
+
+
+
+<!--
+  In order to allow a wide table to scroll horizontally,
+  we suround the markdown table with `<div class="table-wrapper">` and `</div>`
+-->
+
+
+
+<!--
+  Fixed kramdown code highlight rendering:
+  https://github.com/penibelst/jekyll-compress-html/issues/101
+  https://github.com/penibelst/jekyll-compress-html/issues/71#issuecomment-188144901
+-->
+
+
+
+<!-- Change the icon of checkbox -->
+
+
+<!-- images -->
+
+
+
+  
+  
+
+  <!-- CDN URL -->
+  
+
+  <!-- Add image path -->
+  
+
+  
+    
+      
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+
+    
+
+    <!-- lazy-load images <https://github.com/aFarkas/lazysizes#readme> -->
+    
+    
+
+    <!-- add image placeholder -->
+    
+      
+        <!-- add SVG placehoder -->
+        
+      
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+      
+    
+
+    <!-- combine -->
+    
+
+  
+
+  
+
+
+
+<!-- Add header for code snippets -->
+
+
+
+<!-- Create heading anchors -->
+
+
+
+
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+
+    
+
+  
+
+  
+  
+
+  
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+
+    
+
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+
+
+
+<!-- return -->
+
+
+
+
+<header>
+  <h1 data-toc-skip>Capa física</h1>
+
+  <div class="post-meta text-muted">
+    <!-- published date -->
+    <span>
+      Posted
+      <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+  data-ts="1699182000"
+  data-df="ll"
+  
+    data-bs-toggle="tooltip" data-bs-placement="bottom"
+  
+>
+  Nov  5, 2023
+</time>
+
+    </span>
+
+    <!-- lastmod date -->
+    
+
+    
+      
+      
+      
+
+      
+
+      <div class="mt-3 mb-3">
+        <a href="redes.github.io/_site//assets/img/FISICA/cabeceraOSI.png" class="popup img-link preview-img shimmer"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 630'%3E%3C/svg%3E" data-src="redes.github.io/_site//assets/img/FISICA/cabeceraOSI.png"  alt="Preview Image" width="1200" height="630"  class="lazyload" data-proofer-ignore></a></div>
+    
+
+    <div class="d-flex justify-content-between">
+      <!-- author(s) -->
+      <span>
+        
+
+        By
+
+        <em>
+          
+            <a href="https://twitter.com/username">Luis</a>
+          
+        </em>
+      </span>
+
+      <!-- read time -->
+      <!-- Calculate the post's reading time, and display the word count in tooltip -->
+
+
+
+<!-- words per minute -->
+
+
+
+
+
+
+
+
+
+
+<!-- return element -->
+<span
+  class="readtime"
+  data-bs-toggle="tooltip"
+  data-bs-placement="bottom"
+  title="3474 words"
+>
+  <em>19 min</em> read</span>
+
+    </div>
+    <!-- .d-flex -->
+  </div>
+  <!-- .post-meta -->
+</header>
+
+<div class="content">
+  <h1 id="la-capa-física">La capa Física</h1>
+<h2 id="introducción"><span class="me-2">Introducción</span><a href="#introducción" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>La capa física es la primera capa del <strong>modelo OSI</strong>.
+También se le conoce como CAPA 1, esta es responsable de la <strong>transmisión de bits</strong> no
+estructurados a través de un medio de comunicación <strong>físico</strong>, ya sea <em>cable de cobre</em>, <em>fibra
+óptica</em>,
+<em>ondas de radio</em>, etc.
+Esta capa se enfoca en aspectos relacionados con la <strong>transmisión de datos</strong> en su forma más
+básica y física.
+Esta capa forma parte de la capa <strong>Acceso a red</strong> del modelo TCP/IP.
+Sin la capa física, <strong><em>no tendría una red</em></strong>.
+En este tema veremos las <strong>características</strong>, <strong>utilidades</strong> y <strong>propósitos</strong> de:</p>
+<ul>
+  <li>Propósito de la capa física.</li>
+  <li>Características de la capa física.</li>
+  <li>Cableado de cobre.</li>
+  <li>Cableado UTP.</li>
+  <li>Cableado de fibra óptica.</li>
+  <li>Medios inalámbricos.
+    <h2 id="propósito-de-la-capa-física"><span class="me-2">Propósito de la capa física</span><a href="#propósito-de-la-capa-física" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <p>El propósito <strong>fundamental</strong> de la capa física en el modelo OSI es <em>facilitar la transmisión
+física</em> de
+bits a través de un medio de comunicación. Esta capa se centra en la <strong>interfaz</strong> entre el
+<em>equipo</em> y
+el <em>medio físico</em>, asegurando que los bits se puedan enviar y recibir de manera <strong>confiable</strong> y
+<strong>eficiente</strong>.</p>
+    <h3 id="la-conexión-física"><span class="me-2">La conexión física:</span><a href="#la-conexión-física" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+    <p>Para que se pueda producir cualquier <strong>comunicación de red</strong> se debe establecer antes una
+<strong>conexión a una red local</strong>.
+Una conexión física puede ser:</p>
+  </li>
+  <li>Una conexión por cable</li>
+  <li>Una conexión inalámbrica mediante ondas de radio.
+El tipo de conexión <strong>física</strong> utilizada depende de la configuración de la red.
+Ejemplo: En muchas oficinas corporativas, los empleados tienen PC de escritorio o portátiles
+que se conectan físicamente, <strong>mediante cables</strong>, a un switch compartido.
+Este tipo de configuración se denomina red cableada y los datos se transmiten a través de un
+cable físico.
+Muchas empresas también ofrecen conexiones <strong>inalámbricas</strong> “sin cableado” para PC
+portátiles, tablets y smartphones.
+En el caso de los dispositivos inalámbricos, los datos se transmiten mediante ondas de radio.
+Los dispositivos en una red inalámbrica deben estar conectados a un <strong>punto de acceso</strong>
+inalámbrico (AP) o <strong>router inalámbrico</strong>.
+En términos de <strong>rendimiento</strong>, no todas las conexiones <strong>físicas</strong> son iguales a la hora de
+<strong>conectarse</strong> a una red.
+    <blockquote>
+      <p>[!¿Qué son las <strong>Tarjetas de interfaz de red</strong>?]</p>
+
+      <p>Las tarjetas de interfaz de red (NIC) conectan un dispositivo a la red.
+Las NIC de Ethernet se usan para una <strong>conexión por cable</strong>, mientras que las NIC de la red
+de área local <strong>inalámbrica</strong> (WLAN) se usan para la conexión inalámbrica. Los dispositivos
+para usuarios finales pueden incluir <strong>un tipo</strong> de NIC o <strong>ambos</strong>.</p>
+      <h3 id="la-capa-física-1"><span class="me-2">La capa física:</span><a href="#la-capa-física-1" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+      <p>Esta capa proporciona los medios de transporte de los bits que conforman una trama de la
+capa de <strong>enlace de datos</strong> a través de los medios de red.
+Esta capa acepta una <strong>trama completa</strong> desde la capa de enlace de datos y la <strong>codifica</strong>
+como una secuencia de señales que se transmiten en los medios locales. Un dispositivo final o
+un dispositivo intermediario recibe los bits <strong>codificados</strong> que componen una trama. La capa
+física codifica las tramas y crea las señales eléctricas, ópticas o de ondas de radio que
+representan los bits en cada trama.
+La capa física del nodo de destino recupera estas señales individuales de los medios, las
+restaura a sus representaciones <strong>en bits</strong> y pasa los bits a la capa de enlace de datos en
+forma de <strong>trama completa</strong>.</p>
+      <h2 id="características-de-la-capa-física"><span class="me-2">Características de la capa física.</span><a href="#características-de-la-capa-física" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+      <h3 id="los-estándares-de-la-capa-física"><span class="me-2">Los estándares de la capa física:</span><a href="#los-estándares-de-la-capa-física" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+      <p>Vamos a ver los componentes y los medios utilizados para construir una red, así como los
+estándares necesarios para que todo funcione en conjunto.
+Los protocolos y las operaciones de las capas OSI superiores se llevan a cabo en software
+diseñado por ingenieros en <strong>software</strong> e informáticos. El grupo de trabajo de ingeniería de
+Internet (IETF) define los <strong>servicios</strong> y <strong>protocolos</strong> del conjunto TCP/IP.
+Existen muchas organizaciones internacionales y nacionales que intervienen en el
+<strong>establecimiento</strong> y el <strong>mantenimiento</strong> de los estándares de la capa física. Por ejemplo, los
+estándares de hardware, medios, codificación y señalización de la capa <strong>física</strong> están
+definidos y regidos por estas <strong>organizaciones de estándares</strong>:</p>
+      <ol>
+        <li>Organización Internacional para la Estandarización (ISO)</li>
+        <li>Asociación de las Industrias de las Telecomunicaciones (TIA) y Asociación de Industrias
+Electrónicas (EIA)</li>
+        <li>Unión Internacional de Telecomunicaciones (ITU)</li>
+        <li>Instituto Nacional Estadounidense de Estándares (ANSI)</li>
+        <li>Instituto de Ingenieros Eléctricos y Electrónicos (IEEE)</li>
+        <li>Autoridades nacionales reguladoras de las telecomunicaciones, incluida la Federal
+Communication Commission (FCC) de los Estados Unidos y el Instituto Europeo de Estándares
+de Telecomunicaciones (ETSI).
+Los <strong>estándares</strong> de la capa física abarcan tres áreas funcionales
+          <ul>
+            <li>Componentes físicos</li>
+            <li>Codificación</li>
+            <li>Señalización
+              <h3 id="componentes-físicos"><span class="me-2">Componentes físicos:</span><a href="#componentes-físicos" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+              <p>Los componentes físicos son los dispositivos de hardware electrónico que transmiten las
+señales que representan los bits. Todos los componentes de hardware, como <strong>NIC</strong>,
+<strong>interfaces</strong> y <strong>conectores</strong>, materiales y diseño de los cables, se especifican en los
+estándares asociados con la <strong>capa física</strong>.</p>
+              <h3 id="codificación"><span class="me-2">Codificación:</span><a href="#codificación" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+              <p>La codificación es un <strong>método</strong> que se utiliza para convertir una transmisión de bits de datos
+en un “código” predefinido. La codificación es el método o patrón utilizado para representar la
+información digital.</p>
+              <h3 id="señalización"><span class="me-2">Señalización:</span><a href="#señalización" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+              <p>La capa física debe generar las señales inalámbricas, ópticas o eléctricas.
+Estas representan los “1” y los “0” en los medios.
+La forma en que se representan los bits se denomina <strong>método de señalización</strong>.
+Los estándares de la capa física deben definir <strong>qué tipo de señal</strong> representa un “1” y <strong>qué
+tipo de señal</strong> representa un “0”.
+Esto puede ser tan simple como un <strong>cambio en el nivel</strong> de una señal eléctrica o de un pulso
+óptico.</p>
+              <h3 id="ancho-de-banda"><span class="me-2">Ancho de banda:</span><a href="#ancho-de-banda" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+              <p>Esta es la capacidad a la que un medio puede transportar datos.
+El ancho de banda <strong>digital</strong> mide la cantidad de datos que pueden fluir desde un lugar hacia
+otro en un <strong>período de tiempo</strong> determinado.
+El ancho de banda generalmente se mide en kilobits por segundo (kbps), megabits por
+segundo (Mbps) o gigabits por segundo (Gbps).
+En ocasiones, el ancho de banda se piensa como la velocidad a la que viajan los bits, sin
+embargo, esto no es así.
+Una <strong>combinación de factores</strong> determina el ancho de banda práctico de una red:</p>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </blockquote>
+  </li>
+  <li>Las propiedades de los medios físicos.</li>
+  <li>Las tecnologías seleccionadas para la señalización y la detección de señales de red.
+Las propiedades de los <strong>medios físicos</strong>, las <strong>tecnologías actuales</strong> y las <strong>leyes de la
+física</strong> desempeñan una función al momento de determinar el ancho de banda disponible.
+    <h3 id="terminología-del-ancho-de-banda"><span class="me-2">Terminología del ancho de banda:</span><a href="#terminología-del-ancho-de-banda" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+    <p>Los términos utilizados para medir la <strong>calidad</strong> del ancho de banda incluyen:</p>
+    <ol>
+      <li><strong>Latencia</strong>: Es la cantidad de tiempo, incluidas las demoras que les toma a los datos
+transferirse desde un punto determinado hasta otro. (PING) Cuanta mas alta es la latencia, más
+demorarán los datos en llegar del punto A al punto B.</li>
+      <li><strong>Cacidad de transferencia útil</strong>: Esta es la medida de datos utilizables transferidos durante
+un período determinado. La capacidad de transferencia útil es el rendimiento menos la
+sobrecarga de tráfico para establecer sesiones, acuses de recibo, encapsulación y bits
+retransmitidos.</li>
+      <li><strong>Rendimiento</strong>: Es la medida de transferencia de bits a través de los medios durante un
+período de tiempo determinado. El rendimiento generalmente no coincide con el ancho de
+banda y suele ser menor.
+Pueden afectar:</li>
+    </ol>
+  </li>
+  <li>La cantidad de tráfico</li>
+  <li>El tipo de tráfico</li>
+  <li>La latencia creada por la cantidad de dispositivos de red encontrados entre origen y destino
+    <h2 id="cableado-de-cobre"><span class="me-2">Cableado de cobre.</span><a href="#cableado-de-cobre" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h3 id="características-del-cableado-de-cobre"><span class="me-2">Características del cableado de cobre:</span><a href="#características-del-cableado-de-cobre" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+    <p>El <strong>cableado de cobre</strong> no es solo un tipo de cable. Hay tres tipos diferentes de cableado de
+cobre que se utilizan cada uno en situaciones específicas.
+Las redes utilizan <strong>medios de cobre</strong> porque son económicos, fáciles de instalar y tienen baja
+resistencia a la corriente eléctrica. Sin embargo, estos medios <strong>están limitados</strong> por la
+distancia y la interferencia de señal.
+Los <strong>datos</strong> se transmiten en cables de cobre por impulsos eléctricos.
+Un detector en la <strong>NIC</strong> de un dispositivo de destino debe recibir una señal que pueda
+decodificarse exitosamente para que coincida con la señal que fue enviada.
+Cuanto <strong>más lejos</strong> viaja una señal, <strong>más se deteriora</strong>.
+Todos los <strong>medios de cobre</strong> tienen unas limitaciones de distancia estrictas.
+Los valores de temporización y voltaje de los pulsos eléctricos también son vulnerables a las
+interferencias de dos fuentes:</p>
+    <ol>
+      <li>Interferencia <strong>electromagnética</strong> (<strong>EMI</strong>) o Interferencia de <strong>radiofrecuencia</strong>
+(<strong>RFI</strong>): Las señales de <strong>EMI</strong> y <strong>RFI</strong> pueden distorsionar y dañar las señales de datos
+que transportan los medios de cobre. Estas incluyen las <strong>ondas de radio</strong> y dispositivos
+<strong>electromagnéticos</strong>, como las luces fluorescentes o los motores eléctricos.
+Para contrarrestar los efectos negativos de la <strong>EMI</strong> y la <strong>RFI</strong>, algunos tipos de cables de
+cobre se empaquetan con un blindaje metálico y requieren una conexión a tierra adecuada.</li>
+      <li><strong>Crosstalk</strong>: Este se trata de una perturbación causada por los campos eléctricos o
+magnéticos de una señal <strong>de un hilo</strong> a la señal <strong>de un hilo adyacente</strong>. En los circuitos
+telefónicos, el crosstalk puede provocar que se escuche parte de otra conversación de voz de
+un circuito adyacente.
+Para contrarrestar los efectos negativos del crosstalk, algunos tipos de cables de cobre tienen
+<strong>pares de hilos</strong> de circuitos opuestos <strong>trenzados</strong> que cancelan dicho tipo de interferencia
+en forma eficaz.
+La susceptibilidad de los cables de cobre al ruido electrónico también se puede limitar
+utilizando estas recomendaciones:</li>
+    </ol>
+  </li>
+  <li>La elección del tipo o la categoría de cable más adecuados a un entorno de red determinado.</li>
+  <li>El diseño de una infraestructura de cables para evitar las fuentes de <strong>interferencia</strong> posibles
+y conocidas en la estructura del edificio.</li>
+  <li>El uso de técnicas de cableado que incluyen el <strong>manejo</strong> y la <strong>terminación</strong> apropiados de
+los cables
+    <h3 id="tipos-de-cableado-de-cobre"><span class="me-2">Tipos de cableado de cobre:</span><a href="#tipos-de-cableado-de-cobre" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+    <p>Existen 3 tipos de cableado:</p>
+  </li>
+  <li><strong>Par trenzado no blindado (UTP)</strong>: El cableado <strong>UTP</strong> es el medio más común para
+conectar dispositivos en redes. Consiste en cuatro pares de hilos trenzados y protegidos por
+plástico flexible. Se utiliza con conectores <strong>RJ-45</strong> para enlazar hosts con dispositivos de red
+como switches y routers, principalmente en redes LAN. El trenzado de los hilos ayuda a evitar
+interferencias y proporciona cierta protección física.</li>
+  <li><strong>Par trenzado blindado (STP)</strong>: El cableado <strong>STP</strong> ofrece una mayor protección
+contra interferencias que el UTP, aunque es más costoso y difícil de instalar. Al igual que el
+UTP, <strong>utiliza conectores RJ-45</strong>. Este combina técnicas de blindaje para contrarrestar
+interferencias electromagnéticas y de radiofrecuencia, además del <strong>trenzado de hilos</strong> para
+mitigar el crosstalk.
+El cable STP consta de cuatro pares de hilos, cada par está protegido con una hoja metálica y
+luego se cubre con una malla tejida o una hoja metálica.</li>
+  <li><strong>Cable coaxial</strong>: El cable <strong>coaxial</strong> contiene dos conductores compartiendo un eje:
+uno de cobre para transmitir señales electrónicas y otro de malla de cobre o hoja metálica que
+actúa como blindaje contra interferencias electromagnéticas. Está recubierto por <strong>aislamiento
+plástico flexible</strong> y un <strong>revestimiento</strong> para protección <strong>física</strong>.
+    <h2 id="cableado-utp"><span class="me-2">Cableado UTP.</span><a href="#cableado-utp" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h3 id="propiedades-del-cableado-utp"><span class="me-2">Propiedades del cableado UTP:</span><a href="#propiedades-del-cableado-utp" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+    <p>El cableado <strong>UTP</strong> consta de cuatro pares de hilos trenzados y recubiertos con plástico
+flexible. Su <strong>tamaño pequeño</strong> facilita la instalación. No cuenta con blindaje contra <strong>EMI</strong> y
+<strong>RFI</strong>, pero los diseñadores emplean técnicas como anulación y variación en la torsión de
+hilos para reducir el crosstalk.
+La <strong>anulación</strong> se logra al emparejar hilos en circuitos, generando campos magnéticos
+opuestos que anulan interferencias.
+Variar el <strong>número de vueltas</strong> por par de hilos también mejora la anulación. Los cables UTP
+siguen especificaciones para la <strong>cantidad de vueltas por metro</strong>, y cada par coloreado tiene
+un trenzado diferente. Estos cables se basan en la anulación de los hilos trenzados para
+mantener la calidad de la señal y proporcionar un auto blindaje efectivo en los medios de red.</p>
+    <h3 id="conectores-y-estándares-del-cableado-utp"><span class="me-2">Conectores y estándares del cableado UTP:</span><a href="#conectores-y-estándares-del-cableado-utp" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+    <p>El cableado <strong>UTP</strong> cumple con los estándares establecidos en conjunto por la TIA/EIA.
+La TIA/EIA-568 estipula los estándares comerciales de cableado para las instalaciones <strong>LAN</strong>
+y es el estándar de mayor uso en entornos de cableado <strong>LAN</strong>.
+El Instituto de Ingenieros Eléctricos y Electrónicos (<strong>IEEE</strong>) establece las características
+eléctricas del cableado de cobre y califica el cable UTP en función de su rendimiento. Los
+cables <strong>UTP</strong> se categorizan según su capacidad para transportar datos a diferentes
+velocidades de ancho de banda. Por ejemplo, el cable de <strong>Categoría 5</strong> es común en
+instalaciones de <strong>FastEthernet 100BASE-TX</strong>, y hay otras categorías como <strong>5e</strong>, <strong>6</strong> y
+<strong>6a</strong> diseñadas para admitir velocidades de transmisión de datos más altas.
+Algunos fabricantes producen cables que exceden las especificaciones de la categoría <strong>6a</strong>
+de la <strong>TIA/EIA</strong> y se refieren a estos como cables de <strong>Categoría 7</strong>.
+Los cables UTP generalmente se terminan con un conector <strong>RJ-45</strong>. El estándar TIA/EIA-568
+describe las asignaciones de los códigos por colores de los hilos a la asignación de pines
+(diagrama de pines) de los cables Ethernet.</p>
+    <h3 id="cables-utp-directos-y-cruzados"><span class="me-2">Cables UTP directos y cruzados:</span><a href="#cables-utp-directos-y-cruzados" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+    <p>Los cables <strong>UTP</strong> pueden requerir diferentes disposiciones de hilos en los conectores
+<strong>RJ-45</strong> según las situaciones. Esto implica conectar los hilos de manera diferente para
+distintos grupos de pines en el conector.
+Los principales tipos de cables que resultan de estas convenciones de cableado son:</p>
+  </li>
+  <li>Cable <strong>directo</strong> de Ethernet: Es el tipo más común de cable de red, usado para
+conectar un <strong>host a un switch</strong> y un <strong>switch a un router</strong>.</li>
+  <li>Cable <strong>cruzado</strong> Ethernet: Se emplea para conectar dispositivos similares, como
+<strong>switch a switch</strong>, <strong>host a host</strong> o <strong>router a router</strong>. No obstante, los cables cruzados se
+consideran obsoletos en gran medida debido a la tecnología <strong>Auto-MDIX</strong> que permite a las
+<strong>NIC</strong> detectar automáticamente el tipo de cable y realizar la conexión adecuada.
+    <h2 id="cableado-de-fibra-óptica"><span class="me-2">Cableado de fibra óptica.</span><a href="#cableado-de-fibra-óptica" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h3 id="propiedades-del-cableado-de-fibra-óptica"><span class="me-2">Propiedades del cableado de fibra óptica:</span><a href="#propiedades-del-cableado-de-fibra-óptica" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+    <p>El <strong>cableado de fibra óptica</strong> representa otra opción en las redes, aunque es menos común
+debido a su costo más elevado.
+Este presenta propiedades que lo convierten en la elección óptima en ciertos escenarios,
+aspectos. Transmite <strong>datos</strong> a distancias más extensas y con capacidades de <strong>ancho de
+banda</strong> superiores que cualquier otro medio de red.
+A diferencia de los <strong>cables de cobre</strong>, la fibra óptica transmite señales con menos atenuación
+y es completamente inmune a las interferencias electromagnéticas (<strong>EMI</strong>) y de
+radiofrecuencia (<strong>RFI</strong>). Se utiliza para interconectar dispositivos de red.
+La <strong>fibra óptica</strong> consiste en un hilo flexible, extremadamente delgado y transparente de
+<strong>vidrio</strong> altamente puro, apenas más grueso que un cabello humano.
+Los datos se codifican en la fibra como <strong>impulsos de luz</strong>. Funciona como una guía de ondas
+o una “tubería de luz”, transmitiendo luz entre los extremos con una <strong>pérdida mínima</strong> de la
+señal.</p>
+    <h3 id="tipos-de-medios-de-fibra"><span class="me-2">Tipos de medios de fibra:</span><a href="#tipos-de-medios-de-fibra" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+    <p>En términos generales, los cables de <strong>fibra óptica</strong> pueden clasificarse en dos tipos:</p>
+  </li>
+  <li>Fibra <strong>monomodo</strong> (<strong>SMF</strong>): Es un tipo de cable de fibra óptica que permite la
+transmisión de señales de luz a través de un único modo de propagación. Esto significa que
+solo se permite la propagación de una señal de luz en una sola dirección, lo que reduce la
+atenuación y <strong>mejora la velocidad</strong> y la <strong>capacidad</strong> de ancho de banda. La <strong>SMF</strong> es
+ampliamente utilizada en largas distancias y aplicaciones de alta velocidad, como redes de
+larga distancia y conexiones de datos de alta velocidad.</li>
+  <li>Fibra <strong>multimodo</strong> (<strong>MMF</strong>): Es un tipo de cable de fibra óptica que permite la
+transmisión de múltiples señales de luz a través de <strong>diferentes</strong> modos de propagación. Esto
+significa que varias señales de luz se propagan <strong>simultáneamente</strong> por la fibra en distintos
+ángulos, lo que puede causar mayor atenuación y dispersión de la señal en comparación con la
+fibra monomodo. La <strong>MMF</strong> es comúnmente utilizada en distancias más cortas y redes locales
+donde no se requiere una alta capacidad de ancho de banda a largas distancias.
+Una de las diferencias destacadas entre <strong>MMF</strong> y <strong>SMF</strong> es la cantidad de dispersión.
+La dispersión se refiere a la extensión de los pulsos de luz con el tiempo. El <strong>aumento</strong> de la
+<strong>dispersión</strong> significa una mayor <strong>pérdida</strong> de la <strong>intensidad</strong> de la señal. <strong>FMM</strong> tiene
+una mayor dispersión que <strong>SMF</strong>. Es por eso que <strong>MMF</strong> sólo puede viajar hasta 500
+metros antes de la pérdida de señal.
+    <h3 id="uso-del-cableado-de-fibra-óptica"><span class="me-2">Uso del cableado de fibra óptica:</span><a href="#uso-del-cableado-de-fibra-óptica" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+    <p>El <strong>cableado de fibra óptica</strong> se utiliza en <strong>cuatro</strong> tipos de industrias:</p>
+  </li>
+  <li><strong>Redes empresariales</strong>: Se utilizan para aplicaciones de cableado backbone y
+dispositivos de infraestructura de interconexión.</li>
+  <li><strong>Fibra hasta el hogar</strong> (<strong>FTTH</strong>): Se utiliza para proporcionar servicios de banda
+ancha siempre activos a hogares y pequeñas empresas.</li>
+  <li><strong>Redes de larga distancia</strong>: Utilizadas por proveedores de servicios para conectar
+países y ciudades.</li>
+  <li><strong>Redes de cable submarino</strong>: Se utilizan para proporcionar soluciones confiables de
+alta velocidad y capacidad capaces de sobrevivir en entornos submarinos hostiles a distancias
+transoceánicas.
+    <h3 id="conectores-de-fibra-óptica"><span class="me-2">Conectores de fibra óptica:</span><a href="#conectores-de-fibra-óptica" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+    <p>Un <strong>conector de fibra óptica</strong> termina el extremo de una <strong>fibra óptica</strong>. Hay una variedad de
+conectores de fibra óptica disponibles. Las diferencias principales entre los tipos de conectores
+son las dimensiones y los métodos de acoplamiento. Las empresas deciden qué tipos de
+conectores utilizarán en base a sus equipos.</p>
+  </li>
+  <li><strong>Conectores de punta directa (ST)</strong>: Son conectores de fibra óptica que utilizan una
+terminación tipo bayoneta para su acoplamiento. Son comunes y fáciles de conectar y
+desconectar. Tienen una <strong>punta cilíndrica</strong> y se utilizan en aplicaciones de fibra multimodo y
+monomodo.</li>
+  <li><strong>Conectores suscriptor (SC)</strong>: Estos son conectores de fibra óptica que se utilizan
+ampliamente en aplicaciones de redes. Tienen un mecanismo de enganche tipo <strong>push-pull</strong>
+que facilita la conexión y desconexión. Son utilizados tanto para fibra multimodo como
+monomodo.</li>
+  <li><strong>Conectores Lucent (LC)</strong>: Son pequeños y altamente utilizados en aplicaciones de
+fibra óptica. Utilizan un mecanismo de enganche similar al SC, pero son más compactos, lo que
+los hace ideales para espacios limitados. Son comunes en conexiones de fibra óptica de <strong>alta
+densidad</strong> y se utilizan para fibra multimodo y monomodo.</li>
+  <li><strong>Conectores Simplex</strong>: Son conectores de fibra óptica que permiten la conexión de
+una sola fibra. Son utilizados para conexiones <strong>punto a punto</strong>, donde solo se requiere una
+dirección de transmisión. Pueden ser tanto conectores ST, SC, LC, u otros, pero se usan para
+una sola fibra.</li>
+  <li><strong>Conectores LC multimodo dúplex</strong>: Estos son conectores de fibra óptica LC que
+permiten la conexión de dos fibras en modo multimodo. Son <strong>dúplex</strong>, lo que significa que
+permiten la transmisión bidireccional de datos en ambos sentidos. Son comunes en
+aplicaciones donde se requiere mayor capacidad de ancho de banda y se utilizan para
+<strong>conexiones</strong> de fibra <strong>multimodo</strong>.
+    <h3 id="cables-de-conexión-de-fibra"><span class="me-2">Cables de conexión de fibra:</span><a href="#cables-de-conexión-de-fibra" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+    <p>Los cables de <strong>conexión de fibra óptica</strong> son necesarios para interconectar dispositivos de
+infraestructura. El uso de colores distingue entre los cables de conexión <strong>monomodo</strong> y
+<strong>multimodo</strong>. El conector amarillo corresponde a los cables de fibra óptica monomodo y el
+naranja (o aqua) corresponde a los cables de fibra óptica multimodo.</p>
+    <h2 id="medios-inalámbricos"><span class="me-2">Medios inalámbricos.</span><a href="#medios-inalámbricos" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+    <h3 id="propiedades-de-los-medios-inalámbricos"><span class="me-2">Propiedades de los medios inalámbricos:</span><a href="#propiedades-de-los-medios-inalámbricos" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+    <p>Estos permiten la <strong>conexión</strong> a la capa física de una red a través de señales
+electromagnéticas, usando frecuencias de radio y microondas para representar datos en forma
+<strong>binaria</strong>.
+La cobertura se ve afectada por <strong>obstáculos</strong> y <strong>materiales de construcción</strong>, son
+vulnerables a <strong>interferencias</strong> y plantean <strong>desafíos de seguridad</strong> y de <strong>compartición de
+medio</strong>.</p>
+    <h3 id="tipos-de-medios-inalámbricos"><span class="me-2">Tipos de medios inalámbricos:</span><a href="#tipos-de-medios-inalámbricos" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+    <p>Los estándares de <strong>IEEE</strong> y de la industria de las telecomunicaciones para comunicaciones
+inalámbricas abarcan la capa física y de enlace de datos, definiendo especificaciones en áreas
+como codificación de señales a radio, frecuencia e intensidad de transmisión, requisitos de
+recepción y decodificación de señales, y diseño de antenas. Aquí están los <strong>principales</strong>
+estándares inalámbricos:</p>
+    <ol>
+      <li><strong>Wi-Fi</strong> (IEEE 802.11): Tecnología para LAN inalámbrica (<strong>WLAN</strong>) que emplea
+acceso múltiple por detección de portadora con prevención de colisiones (<strong>CSMA/CA</strong>).
+Wi-Fi se utiliza ampliamente con dispositivos <strong>WLAN</strong> certificados basados en el estándar
+IEEE 802.11.</li>
+      <li><strong>Bluetooth</strong> (IEEE 802.15): Estándar para redes de área personal inalámbrica
+(<strong>WPAN</strong>) conocido como “Bluetooth”, que utiliza un proceso de emparejamiento de
+dispositivos para distancias de 1 a 100 metros.</li>
+      <li><strong>WiMAX</strong> (IEEE 802.16): También conocido como Interoperabilidad Mundial para el
+Acceso por Microondas (<strong>WiMAX</strong>), utiliza una topología punto a multipunto para proporcionar
+acceso inalámbrico de ancho de banda.</li>
+      <li><strong>Zigbee</strong> (IEEE 802.15.4): Especificación para comunicaciones de baja velocidad y
+potencia, ideal para aplicaciones con corto alcance, baja velocidad de datos y larga duración de
+batería. Se utiliza en entornos industriales e Internet de las cosas (<strong>IoT</strong>), como interruptores
+inalámbricos y recopilación de datos de dispositivos médicos.
+        <h3 id="lan-inalámbrica"><span class="me-2">LAN inalámbrica:</span><a href="#lan-inalámbrica" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h3>
+        <p>La implementación común de tecnología inalámbrica <strong>permite</strong> la conexión de dispositivos a
+través de una LAN inalámbrica. Para esto, se necesitan los siguientes dispositivos de red:</p>
+      </li>
+    </ol>
+  </li>
+  <li><strong>Punto de acceso inalámbrico (AP)</strong>: Concentra las señales inalámbricas de los
+usuarios y se conecta a la infraestructura de red existente basada en cobre, como <strong>Ethernet</strong>.
+En dispositivos domésticos y de pequeñas empresas, los routers inalámbricos integran las
+funciones de un router, switch y punto de acceso en <strong>un solo dispositivo</strong>.</li>
+  <li><strong>Adaptadores NIC inalámbricos</strong>: Proporcionan capacidad de comunicaciones
+inalámbricas a los hosts de la red.
+Con la evolución de la tecnología, han surgido diversos estándares <strong>WLAN</strong> basados en
+<strong>Ethernet</strong>. Al adquirir dispositivos inalámbricos, es importante garantizar la compatibilidad e
+interoperabilidad. Los beneficios de las tecnologías inalámbricas de comunicación de datos son
+notables, especialmente en la reducción de costos de cableado y en la conveniencia de la
+movilidad del host. No obstante, se debe implementar seguridad rigurosa para proteger las
+<strong>WLAN</strong> contra el acceso no autorizado y posibles amenazas.</li>
+</ul>
+
+</div>
+
+<div class="post-tail-wrapper text-muted">
+  <!-- categories -->
+  
+    <div class="post-meta mb-3">
+      <i class="far fa-folder-open fa-fw me-1"></i>
+      
+        <a href="redes.github.io/_site//categories/sistemas-microinform%C3%A1ticos-y-redes/">Sistemas Microinformáticos y Redes</a>,
+        <a href="redes.github.io/_site//categories/redes-locales/">Redes Locales</a>
+    </div>
+  
+
+  <!-- tags -->
+  
+    <div class="post-tags">
+      <i class="fa fa-tags fa-fw me-1"></i>
+      
+        <a
+          href="redes.github.io/_site//tags/redes-locales/"
+          class="post-tag no-text-decoration"
+        >redes locales</a>
+      
+        <a
+          href="redes.github.io/_site//tags/teor%C3%ADa/"
+          class="post-tag no-text-decoration"
+        >teoría</a>
+      
+        <a
+          href="redes.github.io/_site//tags/smr/"
+          class="post-tag no-text-decoration"
+        >smr</a>
+      
+    </div>
+  
+
+  <div
+    class="
+      post-tail-bottom
+      d-flex justify-content-between align-items-center mt-5 pb-2
+    "
+  >
+    <div class="license-wrapper">
+      
+        
+
+        This post is licensed under 
+        <a href="https://creativecommons.org/licenses/by/4.0/">
+          CC BY 4.0
+        </a>
+         by the author.
+      
+    </div>
+
+    <!-- Post sharing snippet -->
+
+<div class="share-wrapper d-flex align-items-center">
+  <span class="share-label text-muted me-1">Share</span>
+  <span class="share-icons">
+    
+    
+    
+
+    
+      
+      <a
+        href="https://twitter.com/intent/tweet?text=Capa%20f%C3%ADsica%20-%20Redes&url=%2Fredes.github.io%2F_site%2Fposts%2FCapa-f%25C3%25ADsica%2F"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Twitter"
+        target="_blank"
+        rel="noopener"
+        aria-label="Twitter"
+      >
+        <i class="fa-fw fa-brands fa-square-x-twitter"></i>
+      </a>
+    
+      
+      <a
+        href="https://www.facebook.com/sharer/sharer.php?title=Capa%20f%C3%ADsica%20-%20Redes&u=%2Fredes.github.io%2F_site%2Fposts%2FCapa-f%25C3%25ADsica%2F"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Facebook"
+        target="_blank"
+        rel="noopener"
+        aria-label="Facebook"
+      >
+        <i class="fa-fw fab fa-facebook-square"></i>
+      </a>
+    
+      
+      <a
+        href="https://t.me/share/url?url=%2Fredes.github.io%2F_site%2Fposts%2FCapa-f%25C3%25ADsica%2F&text=Capa%20f%C3%ADsica%20-%20Redes"
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Telegram"
+        target="_blank"
+        rel="noopener"
+        aria-label="Telegram"
+      >
+        <i class="fa-fw fab fa-telegram"></i>
+      </a>
+    
+
+    <button
+      id="copy-link"
+      aria-label="Copy link"
+      class="btn small"
+      data-bs-toggle="tooltip"
+      data-bs-placement="top"
+      title="Copy link"
+      data-title-succeed="Link copied successfully!"
+    >
+      <i class="fa-fw fas fa-link pe-none"></i>
+    </button>
+  </span>
+</div>
+
+  </div>
+  <!-- .post-tail-bottom -->
+</div>
+<!-- div.post-tail-wrapper -->
+
+
+  
+
+  
+</article>
+
+          </main>
+
+          <!-- panel -->
+          <aside aria-label="Panel" id="panel-wrapper" class="col-xl-3 ps-2 text-muted">
+            <div class="access">
+              <!-- Get the last 5 posts from lastmod list. -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="access-lastmod">
+    <h2 class="panel-heading">Recently Updated</h2>
+    <ul class="content list-unstyled ps-0 pb-1 ms-1 mt-2">
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/redes.github.io/_site/posts/servicio-web-mysql-php/">Montaje del servicio WEB, MySQL y PHP</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/redes.github.io/_site/posts/servicio-IIS-SQL-Server-ASP/">Montaje del servicio IIS, SQL Server y ASP</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/redes.github.io/_site/posts/Comandos-Switch-CISCO/">Comandos switch CISCO</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/redes.github.io/_site/posts/OSI-TCPIP/">Modelo OSI vs TCP/IP</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
+          <a href="/redes.github.io/_site/posts/Clasificaci%C3%B3n-redes/">Clasificación de las redes</a>
+        </li>
+      
+    </ul>
+  </section>
+  <!-- #access-lastmod -->
+
+
+              <!-- The trending tags list -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+
+
+  <section>
+    <h2 class="panel-heading">Trending Tags</h2>
+    <div class="d-flex flex-wrap mt-3 mb-1 me-3">
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/redes.github.io/_site/tags/redes-locales/">redes locales</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/redes.github.io/_site/tags/smr/">smr</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/redes.github.io/_site/tags/teor%C3%ADa/">teoría</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/redes.github.io/_site/tags/binario/">binario</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/redes.github.io/_site/tags/decimal/">decimal</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/redes.github.io/_site/tags/hexadecimal/">hexadecimal</a>
+      
+    </div>
+  </section>
+
+
+            </div>
+
+            
+              
+              
+
+
+
+  <section id="toc-wrapper" class="ps-0 pe-4 mb-5">
+    <h2 class="panel-heading ps-3 pt-2 mb-2">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
+
+
+            
+          </aside>
+        </div>
+
+        <div class="row">
+          <!-- tail -->
+          <div id="tail-wrapper" class="col-12 col-lg-11 col-xl-9 px-md-4">
+            
+              
+                
+                <!-- Recommend the other 3 posts according to the tags and categories of the current post. -->
+
+<!-- The total size of related posts -->
+
+
+<!-- An random integer that bigger than 0 -->
+
+
+<!-- Equals to TAG_SCORE / {max_categories_hierarchy} -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  <aside id="related-posts" aria-labelledby="related-label">
+    <h3 class="mb-4" id="related-label">Further Reading</h3>
+    <nav class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4 mb-4">
+      
+        <article class="col">
+          <a href="/redes.github.io/_site/posts/introduccion-redes-locales/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+    class="small"
+  
+  data-ts="1652698800"
+  data-df="ll"
+  
+>
+  May 16, 2022
+</time>
+
+              <h4 class="pt-0 my-2">Introducción a las redes locales</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  Introducción
+
+Los ordenadores son máquinas especializadas en procesar información de acuerdo con las instrucciones recogidas en un programa. Sin embargo, no siempre la información se produce o se a...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/redes.github.io/_site/posts/Clasificaci%C3%B3n-redes/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+    class="small"
+  
+  data-ts="1695639600"
+  data-df="ll"
+  
+>
+  Sep 25, 2023
+</time>
+
+              <h4 class="pt-0 my-2">Clasificación de las redes</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  Introducción:
+
+Las infraestructuras de red pueden variar en gran medida en términos de:
+
+
+  El tamaño del área que abarcan.
+  La cantidad de usuarios conectados.
+  La cantidad y los tipos de servic...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+        <article class="col">
+          <a href="/redes.github.io/_site/posts/OSI-TCPIP/" class="post-preview card h-100">
+            <div class="card-body">
+              <!--
+  Date format snippet
+  See: ${JS_ROOT}/utils/locale-dateime.js
+-->
+
+
+
+
+<time
+  
+    class="small"
+  
+  data-ts="1696330800"
+  data-df="ll"
+  
+>
+  Oct  3, 2023
+</time>
+
+              <h4 class="pt-0 my-2">Modelo OSI vs TCP/IP</h4>
+              <div class="text-muted small">
+                <p>
+                  
+
+
+
+
+
+                  Introducción
+
+El Modelo OSI (Open Systems Interconnection) y el conjunto de protocolos TCP/IP son dos marcos fundamentales en el mundo de las redes de computadoras, que desempeñan un papel crucial ...
+                </p>
+              </div>
+            </div>
+          </a>
+        </article>
+      
+    </nav>
+  </aside>
+  <!-- #related-posts -->
+
+
+              
+                
+                <!-- Navigation buttons at the bottom of the post. -->
+
+<nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
+  
+  
+
+  
+    <a
+      href="redes.github.io/_site//posts/servicio-IIS-SQL-Server-ASP/"
+      class="btn btn-outline-primary"
+      aria-label="Older"
+    >
+      <p>Montaje del servicio IIS, SQL Server y ASP</p>
+    </a>
+  
+
+  
+    <div class="btn btn-outline-primary disabled" aria-label="Newer">
+      <p>-</p>
+    </div>
+  
+</nav>
+
+              
+                
+                <!--  The comments switcher -->
+
+
+              
+            
+
+            <!-- The Footer -->
+
+<footer
+  aria-label="Site Info"
+  class="
+    d-flex flex-column justify-content-center text-muted
+    flex-lg-row justify-content-lg-between align-items-lg-center pb-lg-3
+  "
+>
+  <p>
+    ©
+    <time>2023</time>
+    <a href="https://twitter.com/username">Luis</a>.
+    
+      <span
+        data-bs-toggle="tooltip"
+        data-bs-placement="top"
+        title="Except where otherwise noted, the blog posts on this site are licensed under the Creative Commons Attribution 4.0 International (CC BY 4.0) License by the author."
+      >Some rights reserved.</span>
+    
+  </p>
+
+  <p>Using the <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a> theme for <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>
+  </p>
+</footer>
+
+          </div>
+        </div>
+
+        <!-- The Search results -->
+
+<div id="search-result-wrapper" class="d-flex justify-content-center unloaded">
+  <div class="col-11 content">
+    <div id="search-hints">
+      <!-- The trending tags list -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+    
+  
+    
+    
+    
+    
+      
+        
+        
+
+
+
+  <section>
+    <h2 class="panel-heading">Trending Tags</h2>
+    <div class="d-flex flex-wrap mt-3 mb-1 me-3">
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/redes.github.io/_site/tags/redes-locales/">redes locales</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/redes.github.io/_site/tags/smr/">smr</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/redes.github.io/_site/tags/teor%C3%ADa/">teoría</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/redes.github.io/_site/tags/binario/">binario</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/redes.github.io/_site/tags/decimal/">decimal</a>
+      
+        
+        <a class="post-tag btn btn-outline-primary" href="/redes.github.io/_site/tags/hexadecimal/">hexadecimal</a>
+      
+    </div>
+  </section>
+
+
+    </div>
+    <div id="search-results" class="d-flex flex-wrap justify-content-center text-muted mt-3"></div>
+  </div>
+</div>
+
+      </div>
+
+      <aside aria-label="Scroll to Top">
+        <button id="back-to-top" type="button" class="btn btn-lg btn-box-shadow">
+          <i class="fas fa-angle-up"></i>
+        </button>
+      </aside>
+    </div>
+
+    <div id="mask"></div>
+
+    
+      <aside
+  id="notification"
+  class="toast"
+  role="alert"
+  aria-live="assertive"
+  aria-atomic="true"
+  data-bs-animation="true"
+  data-bs-autohide="false"
+>
+  <div class="toast-header">
+    <button
+      type="button"
+      class="btn-close ms-auto"
+      data-bs-dismiss="toast"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="toast-body text-center pt-0">
+    <p class="px-2 mb-3">A new version of content is available.</p>
+    <button type="button" class="btn btn-primary" aria-label="Update">
+      Update
+    </button>
+  </div>
+</aside>
+
+    
+
+    <!-- JavaScripts -->
+
+    <!-- JS selector for site. -->
+
+<!-- commons -->
+
+
+
+<!-- layout specified -->
+
+
+  
+
+  
+    <!-- image lazy-loading & popup & clipboard -->
+    
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+  
+    
+
+    
+
+  
+
+
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/lazysizes@5.3.2/lazysizes.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.9/dayjs.min.js,npm/dayjs@1.11.9/locale/es.min.js,npm/dayjs@1.11.9/plugin/relativeTime.min.js,npm/dayjs@1.11.9/plugin/localizedFormat.min.js,npm/tocbot@4.21.1/dist/tocbot.min.js"></script>
+
+
+
+
+
+
+<script defer src="/redes.github.io/_site/assets/js/dist/post.min.js"></script>
+
+
+
+
+
+
+    
+
+    <!--
+  Jekyll Simple Search loader
+  See: <https://github.com/christian-fei/Simple-Jekyll-Search>
+-->
+
+
+
+
+
+<script>
+  /* Note: dependent library will be loaded in `js-selector.html` */
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('search-results'),
+    json: '/redes.github.io/_site/assets/js/data/search.json',
+    searchResultTemplate: '  <article class="px-1 px-sm-2 px-lg-4 px-xl-0">    <header>      <h2><a href="{url}">{title}</a></h2>      <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">        {categories}        {tags}      </div>    </header>    <p>{snippet}</p>  </article>',
+    noResultsText: '<p class="mt-5"></p>',
+    templateMiddleware: function(prop, value, template) {
+      if (prop === 'categories') {
+        if (value === '') {
+          return `${value}`;
+        } else {
+          return `<div class="me-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`;
+        }
+      }
+
+      if (prop === 'tags') {
+        if (value === '') {
+          return `${value}`;
+        } else {
+          return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`;
+        }
+      }
+    }
+  });
+</script>
+
+  </body>
+</html>
+

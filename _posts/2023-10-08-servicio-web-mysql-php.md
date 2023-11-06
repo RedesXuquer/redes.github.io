@@ -294,7 +294,7 @@ mysqli_close($link);
 ![Conexión de PHP a MariaDB](exitomariadb.png)
 _Conexión de PHP a MariaDB_
 
-## Extra
+## Extras
 
 - Configuración de HTTPS
 [Configuración de HTTPS](https://techexpert.tips/es/apache-es/habilitar-https-en-apache/)
