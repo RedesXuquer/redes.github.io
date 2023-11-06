@@ -305,7 +305,16 @@ sudo chown ftp: -R /var/ftp/ftpUser2
 
 Añadimos otra línea al archivo de configuración de vsFTP
 ```console
-allow_writeable_chrrot=YES
+allow_writeable_chroot=YES
 ```
 
-Reiniciamos servicio FTP:
+Reiniciamos servicio FTP y comprobamos:
+
+Cliente FileZilla:
+![Alt text](<Captura de pantalla 2023-11-06 235213.png>)
+
+Cliente WinSCP:
+![Alt text](<Captura de pantalla 2023-11-06 235225.png>)
+
+Situación de los directorios virtuales:
+![Alt text](<Captura de pantalla 2023-11-06 235238.png>)
