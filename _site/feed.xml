@@ -4,7 +4,7 @@
   <id>/redes.github.io/_site/</id>
   <title>Redes</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-11-06T13:06:25+01:00</updated>
+  <updated>2023-11-06T13:20:22+01:00</updated>
   <author>
     <name>Luis</name>
     <uri>/redes.github.io/_site/</uri>
@@ -225,7 +225,7 @@ El Modelo OSI (Open Systems Interconnection) y el conjunto de protocolos TCP/IP 
     <link href="/redes.github.io/_site/posts/servicio-web-mysql-php/" rel="alternate" type="text/html" title="Montaje del servicio WEB, MySQL y PHP" />
     <published>2023-09-25T13:00:00+02:00</published>
   
-    <updated>2023-11-03T18:46:34+01:00</updated>
+    <updated>2023-11-06T13:06:34+01:00</updated>
   
     <id>/redes.github.io/_site/posts/servicio-web-mysql-php/</id>
     <content src="/redes.github.io/_site/posts/servicio-web-mysql-php/" />
