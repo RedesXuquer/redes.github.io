@@ -857,6 +857,30 @@
       
 
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
 
     
 
@@ -953,9 +977,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1684 words"
+  title="1867 words"
 >
-  <em>9 min</em> read</span>
+  <em>10 min</em> read</span>
 
     </div>
     <!-- .d-flex -->
@@ -1010,6 +1034,7 @@
   <li>Configuración red nat 192.168.100.0/24</li>
 </ul>
 
+<h2 id="instalación-y-configuración-inicial-de-vsftp"><span class="me-2">Instalación y configuración inicial de vsFTP</span><a href="#instalación-y-configuración-inicial-de-vsftp" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 <p>Con permisos de root ejecutamos el comando:</p>
 
 <div class="language-console highlighter-rouge"><div class="code-header">
@@ -1380,6 +1405,108 @@ pasv_address=127.0.0.1
 <p><a href="redes.github.io/_site//assets/img/FTP/Captura de pantalla 2023-11-06 231939.png" class="popup img-link "><img data-src="redes.github.io/_site//assets/img/FTP/Captura de pantalla 2023-11-06 231939.png" alt="Alt text" class="lazyload" data-proofer-ignore></a>
 <a href="redes.github.io/_site//assets/img/FTP/Captura de pantalla 2023-11-06 231943.png" class="popup img-link "><img data-src="redes.github.io/_site//assets/img/FTP/Captura de pantalla 2023-11-06 231943.png" alt="Alt text" class="lazyload" data-proofer-ignore></a>
 <a href="redes.github.io/_site//assets/img/FTP/Captura de pantalla 2023-11-06 231959.png" class="popup img-link "><img data-src="redes.github.io/_site//assets/img/FTP/Captura de pantalla 2023-11-06 231959.png" alt="Alt text" class="lazyload" data-proofer-ignore></a></p>
+
+<h2 id="configuración-de-usuarios-que-no-sean-del-sistema"><span class="me-2">Configuración de usuarios que no sean del sistema</span><a href="#configuración-de-usuarios-que-no-sean-del-sistema" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Nos dirigimos al archivo de configuración de VSFTP:</p>
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="go">sudo vi /etc/vsftpd.conf
+</span></pre></td></tr></tbody></table></code></div></div>
+
+<p>Añadimos al final las siguientes líneas:</p>
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="go">guest_enable=YES
+virtual_use_local_privs=YES
+</span><span class="gp">user_sub_token=$</span>USER
+<span class="gp">local_root=/var/ftp/$</span>USER
+<span class="go">chroot_local_user=YES
+</span></pre></td></tr></tbody></table></code></div></div>
+
+<p>Reiniciamos el demonio y comprobamos:</p>
+
+<p>Vamos a crear un archivo el cual será el que utilizaremos para añadir los usuarios:</p>
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="go">sudo vi /etc/virtusers.txt
+</span></pre></td></tr></tbody></table></code></div></div>
+
+<p>Añadimos el usuario ftpUser1 con su contraseña (es la misma) y ftpUser2 con su contraseña (es la misma)</p>
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="go">ftpUser1
+passUser1
+ftpUser2
+passUser2
+</span></pre></td></tr></tbody></table></code></div></div>
+
+<p>Instalamos db-util para poder trabajar con dichos usuarios:</p>
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="go">sudo apt-get install db-util
+</span></pre></td></tr></tbody></table></code></div></div>
+
+<p>Configuramos los archivos necesarios:</p>
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="go">sudo db_load -T -t hash -f /etc/virtusers.txt /etc/virtusers.db
+</span></pre></td></tr></tbody></table></code></div></div>
+
+<p>Vaciamos el siguientes archivos para que queden de esta forma:</p>
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="go">sudo vi /etc/pam.d/vsftpd
+</span></pre></td></tr></tbody></table></code></div></div>
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="gp">auth &lt;tab&gt;</span>required &lt;tab&gt;pam_userdb.so <span class="nv">db</span><span class="o">=</span>/etc/virtusers
+<span class="gp">account &lt;tab&gt;</span>required &lt;tab&gt;pam_userdb.so <span class="nv">db</span><span class="o">=</span>/etc/virtusers
+</pre></td></tr></tbody></table></code></div></div>
+
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="go">sudo mkdir -p /var/ftp/ftpUser1
+sudo mkdir -p /var/ftp/ftpUser2
+</span></pre></td></tr></tbody></table></code></div></div>
+
+<p>Reiniciamos servicio FTP:</p>
+
+<p>Cambiamos permisos:</p>
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre><span class="go">sudo chown ftp: -R /var/ftp/ftpUser1
+sudo chown ftp: -R /var/ftp/ftpUser2
+</span></pre></td></tr></tbody></table></code></div></div>
+
+<p>Añadimos otra línea al archivo de configuración de vsFTP</p>
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="go">allow_writeable_chrrot=YES
+</span></pre></td></tr></tbody></table></code></div></div>
+
+<p>Reiniciamos servicio FTP:</p>
 
 </div>
 

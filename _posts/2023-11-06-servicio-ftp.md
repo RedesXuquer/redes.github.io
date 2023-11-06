@@ -39,6 +39,7 @@ Ten en cuenta que aunque vsftpd es un servidor FTP seguro y confiable, el uso de
 - MV cliente Xubuntu en la misma red nat
 - Configuración red nat 192.168.100.0/24
 
+## Instalación y configuración inicial de vsFTP
 Con permisos de root ejecutamos el comando:
 
 ```console
@@ -238,3 +239,73 @@ Realizamos una prueba de que funciona con el cliente FTP Filezilla:
 ![Alt text](<Captura de pantalla 2023-11-06 231939.png>)
 ![Alt text](<Captura de pantalla 2023-11-06 231943.png>)
 ![Alt text](<Captura de pantalla 2023-11-06 231959.png>)
+
+## Configuración de usuarios que no sean del sistema
+
+Nos dirigimos al archivo de configuración de VSFTP:
+```console
+sudo vi /etc/vsftpd.conf
+```
+
+Añadimos al final las siguientes líneas:
+```console
+guest_enable=YES
+virtual_use_local_privs=YES
+user_sub_token=$USER
+local_root=/var/ftp/$USER
+chroot_local_user=YES
+```
+
+Reiniciamos el demonio y comprobamos:
+
+Vamos a crear un archivo el cual será el que utilizaremos para añadir los usuarios:
+```console
+sudo vi /etc/virtusers.txt
+```
+
+Añadimos el usuario ftpUser1 con su contraseña (es la misma) y ftpUser2 con su contraseña (es la misma)
+```console
+ftpUser1
+passUser1
+ftpUser2
+passUser2
+```
+
+Instalamos db-util para poder trabajar con dichos usuarios:
+```console
+sudo apt-get install db-util
+```
+
+Configuramos los archivos necesarios:
+```console
+sudo db_load -T -t hash -f /etc/virtusers.txt /etc/virtusers.db
+```
+
+Vaciamos el siguientes archivos para que queden de esta forma:
+```console
+sudo vi /etc/pam.d/vsftpd
+```
+```console
+auth <tab>required <tab>pam_userdb.so db=/etc/virtusers
+account <tab>required <tab>pam_userdb.so db=/etc/virtusers
+```
+
+```console
+sudo mkdir -p /var/ftp/ftpUser1
+sudo mkdir -p /var/ftp/ftpUser2
+```
+
+Reiniciamos servicio FTP:
+
+Cambiamos permisos:
+```console
+sudo chown ftp: -R /var/ftp/ftpUser1
+sudo chown ftp: -R /var/ftp/ftpUser2
+```
+
+Añadimos otra línea al archivo de configuración de vsFTP
+```console
+allow_writeable_chrrot=YES
+```
+
+Reiniciamos servicio FTP:
