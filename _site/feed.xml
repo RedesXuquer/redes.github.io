@@ -4,7 +4,7 @@
   <id>/redes.github.io/_site/</id>
   <title>Redes</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-11-06T13:20:22+01:00</updated>
+  <updated>2023-11-06T23:23:38+01:00</updated>
   <author>
     <name>Luis</name>
     <uri>/redes.github.io/_site/</uri>
@@ -17,6 +17,46 @@
   <icon>redes.github.io/_site//assets/img/favicons/favicon.ico</icon>
   <logo>redes.github.io/_site//assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Montaje del servicio FTP</title>
+    <link href="/redes.github.io/_site/posts/servicio-ftp/" rel="alternate" type="text/html" title="Montaje del servicio FTP" />
+    <published>2023-11-06T12:00:00+01:00</published>
+  
+    <updated>2023-11-06T12:00:00+01:00</updated>
+  
+    <id>/redes.github.io/_site/posts/servicio-ftp/</id>
+    <content src="/redes.github.io/_site/posts/servicio-ftp/" />
+    <author>
+      <name>Luis</name>
+    </author>
+
+  
+    
+    <category term="Sistemas Microinformáticos y Redes" />
+    
+    <category term="Servicios en red" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+Introducción
+
+vsftpd, que significa “Very Secure File Transfer Protocol Daemon” (Demonio de Protocolo de Transferencia de Archivos Muy Seguro), es un software de servidor FTP (File Transfer Protocol) de código abierto diseñado para sistemas operativos tipo Unix. Es conocido por su enfoque en la seguridad y el rendimiento, lo que lo convierte en una opción popular para configurar servidores FT...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -214,46 +254,6 @@ Switch(config)# hostname *Sw-Floor-1*...
       Introducción
 
 El Modelo OSI (Open Systems Interconnection) y el conjunto de protocolos TCP/IP son dos marcos fundamentales en el mundo de las redes de computadoras, que desempeñan un papel crucial en la comunicación de datos a nivel global. Estos modelos proporcionan una estructura y un conjunto de estándares que permiten que dispositivos y sistemas de diferentes fabricantes se comuniquen de ma...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Montaje del servicio WEB, MySQL y PHP</title>
-    <link href="/redes.github.io/_site/posts/servicio-web-mysql-php/" rel="alternate" type="text/html" title="Montaje del servicio WEB, MySQL y PHP" />
-    <published>2023-09-25T13:00:00+02:00</published>
-  
-    <updated>2023-11-06T13:06:34+01:00</updated>
-  
-    <id>/redes.github.io/_site/posts/servicio-web-mysql-php/</id>
-    <content src="/redes.github.io/_site/posts/servicio-web-mysql-php/" />
-    <author>
-      <name>Luis</name>
-    </author>
-
-  
-    
-    <category term="Sistemas Microinformáticos y Redes" />
-    
-    <category term="Servicios en red" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      
-Logo de Apache
-
-Introducción
-Un servidor web es un componente fundamental de la infraestructura de Internet que desempeña un papel crucial en la entrega de contenido en línea. En esencia, un servidor web es un software o hardware que almacena, gestiona y distribuye páginas web, archivos, imágenes y otros recursos a través de Internet. Está diseñado para recibir solicitudes de clientes web, com...
     </summary>
   
 
