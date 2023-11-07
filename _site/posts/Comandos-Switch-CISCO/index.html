@@ -432,6 +432,18 @@
       
 
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
 
     
 
@@ -551,7 +563,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="590 words"
+  title="691 words"
 >
   <em>3 min</em> read</span>
 
@@ -816,6 +828,75 @@ eclassvirtual-router(config-line)#transport input ssh
 eclassvirtual-router(config-line)#login local
 eclassvirtual-router#show ip ssh C:\&gt;ssh -l eclassvirtual 192.168.0.1 Open Password:
 </pre></td></tr></tbody></table></code></div></div>
+
+<h2 id="creación-de-vlan"><span class="me-2">Creación de VLAN</span><a href="#creación-de-vlan" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Entramos en superusuario:</p>
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="go">enable
+</span></pre></td></tr></tbody></table></code></div></div>
+<p>Entramos en la configuración del terminal:</p>
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="go">configure terminal
+</span></pre></td></tr></tbody></table></code></div></div>
+<p>Creamos la VLAN 10 y le ponemos nombre:</p>
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="go">vlan 10
+name Mesa1
+exit
+</span></pre></td></tr></tbody></table></code></div></div>
+<p>Creamos la VLAN 20 y le ponemos nombre:</p>
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="go">vlan 20
+name Mesa2
+exit
+</span></pre></td></tr></tbody></table></code></div></div>
+<p>exit</p>
+
+<p>Mostramos la información pertinente de a las VLANs</p>
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="go">show vlan
+</span></pre></td></tr></tbody></table></code></div></div>
+
+<p>Asignamos que interfaces pertenecen a cada VLAN</p>
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+</pre></td><td class="rouge-code"><pre><span class="go">configure terminal
+interface range f0/10-14
+switchport mode access
+switchport access vlan 10
+exit
+</span></pre></td></tr></tbody></table></code></div></div>
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="go">interface range f0/15-19
+switchport mode access
+switchport access vlan 20
+exit
+</span></pre></td></tr></tbody></table></code></div></div>
 
 </div>
 

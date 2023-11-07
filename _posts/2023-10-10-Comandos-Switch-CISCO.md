@@ -155,3 +155,47 @@ eclassvirtual-router(config-line)#transport input ssh
 eclassvirtual-router(config-line)#login local
 eclassvirtual-router#show ip ssh C:\>ssh -l eclassvirtual 192.168.0.1 Open Password:
 ```
+
+## Creación de VLAN 
+
+Entramos en superusuario:
+```console
+enable
+```
+Entramos en la configuración del terminal:
+```console
+configure terminal
+```
+Creamos la VLAN 10 y le ponemos nombre:
+```console
+vlan 10
+name Mesa1
+exit
+```
+Creamos la VLAN 20 y le ponemos nombre:
+```console
+vlan 20
+name Mesa2
+exit
+```
+exit
+
+Mostramos la información pertinente de a las VLANs
+```console
+show vlan
+```
+
+Asignamos que interfaces pertenecen a cada VLAN
+```console
+configure terminal
+interface range f0/10-14
+switchport mode access
+switchport access vlan 10
+exit
+```
+```console
+interface range f0/15-19
+switchport mode access
+switchport access vlan 20
+exit
+```
