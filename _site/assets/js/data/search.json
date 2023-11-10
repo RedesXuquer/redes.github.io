@@ -1,6 +1,23 @@
 [
   
   {
+    "title": "Escritorio remoto Windows 2012R2",
+    "url": "/redes.github.io/_site/posts/escritorio-remoto-Windows2012R2/",
+    "categories": "Sistemas Microinformáticos y Redes, Servicios en red",
+    "tags": "redes locales, teoría, smr",
+    "date": "2023-11-10 12:00:00 +0100",
+    
+
+
+
+
+
+    
+    "snippet": "Activar escritorio remoto en Windows Server 2012R2##Vamos a permitir las conexiones de escritorio remote en Widnows Server 2012R2En el Administrador del servidor nos dirigimos a Servidor Local, ahí...",
+    "content": "Activar escritorio remoto en Windows Server 2012R2##Vamos a permitir las conexiones de escritorio remote en Widnows Server 2012R2En el Administrador del servidor nos dirigimos a Servidor Local, ahí nos dirigimos a Escritorio Remoto:Le damos a la opción de “permitir las conexiones remotas a este equipo”:Aceptamos el mensaje:Si se ha activado el check de “permitir solo las conexiones…” lo desactivamos:Aplicamos y aceptamos:Ahora desde el equipo remoto nos intenamos conectar por equipo remoto:"
+  },
+  
+  {
     "title": "GitHub",
     "url": "/redes.github.io/_site/posts/GitHub/",
     "categories": "DAM, ED",
