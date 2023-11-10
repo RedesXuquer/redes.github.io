@@ -1023,6 +1023,142 @@
     
 
   
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+
+    
+
+    <!-- lazy-load images <https://github.com/aFarkas/lazysizes#readme> -->
+    
+    
+
+    <!-- add image placeholder -->
+    
+      
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+      
+    
+
+    <!-- combine -->
+    
+
+  
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+
+    
+
+    <!-- lazy-load images <https://github.com/aFarkas/lazysizes#readme> -->
+    
+    
+
+    <!-- add image placeholder -->
+    
+      
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+      
+    
+
+    <!-- combine -->
+    
+
+  
 
   
 
@@ -1049,6 +1185,18 @@
       
         
         
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
       
 
       
@@ -1204,7 +1352,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1878 words"
+  title="1917 words"
 >
   <em>10 min</em> read</span>
 
@@ -1743,6 +1891,32 @@ sudo chown ftp: -R /var/ftp/ftpUser2
 
 <p>Situación de los directorios virtuales:
 <a href="redes.github.io/_site//assets/img/FTP/Captura de pantalla 2023-11-06 235238.png" class="popup img-link "><img data-src="redes.github.io/_site//assets/img/FTP/Captura de pantalla 2023-11-06 235238.png" alt="Alt text" class="lazyload" data-proofer-ignore></a></p>
+
+<h2 id="ciframos-las-conexiones"><span class="me-2">Ciframos las conexiones</span><a href="#ciframos-las-conexiones" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Generamos el certificado:</p>
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="go">sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/vsftpd.pem -out /etc/ssl/private/vsftpd.pem
+</span></pre></td></tr></tbody></table></code></div></div>
+
+<p><a href="redes.github.io/_site//assets/img/FTP/image2.png" class="popup img-link "><img data-src="redes.github.io/_site//assets/img/FTP/image2.png" alt="Configuración del certificado" class="lazyload" data-proofer-ignore></a></p>
+
+<p>Lo establecemos en nuestro archivo de configuración de vsFTP:</p>
+<div class="language-console highlighter-rouge"><div class="code-header">
+        <span data-label-text="Console"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre><span class="go">rsa_cert_file=/etc/ssl/private/vsftpd.pem
+rsa_private_key_file=/etc/ssl/private/vsftpd.pem
+ssl_enable=YES
+</span></pre></td></tr></tbody></table></code></div></div>
+
+<p>Realizamos las pruebas pertinentes:</p>
+
+<p><a href="redes.github.io/_site//assets/img/FTP/image3.png" class="popup img-link "><img data-src="redes.github.io/_site//assets/img/FTP/image3.png" alt="Conexión con WinSCP utilizando conexión cifrada" class="lazyload" data-proofer-ignore></a></p>
 
 </div>
 

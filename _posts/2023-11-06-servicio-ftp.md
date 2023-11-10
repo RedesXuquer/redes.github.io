@@ -318,3 +318,23 @@ Cliente WinSCP:
 
 Situación de los directorios virtuales:
 ![Alt text](<Captura de pantalla 2023-11-06 235238.png>)
+
+## Ciframos las conexiones
+
+Generamos el certificado:
+```console
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/vsftpd.pem -out /etc/ssl/private/vsftpd.pem
+```
+
+![Configuración del certificado](image2.png)
+
+Lo establecemos en nuestro archivo de configuración de vsFTP:
+```console
+rsa_cert_file=/etc/ssl/private/vsftpd.pem
+rsa_private_key_file=/etc/ssl/private/vsftpd.pem
+ssl_enable=YES
+```
+
+Realizamos las pruebas pertinentes:
+
+![Conexión con WinSCP utilizando conexión cifrada](image3.png)
