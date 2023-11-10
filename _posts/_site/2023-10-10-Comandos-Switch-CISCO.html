@@ -134,3 +134,40 @@ eclassvirtual-router(config-line)#transport input ssh
 eclassvirtual-router(config-line)#login local
 eclassvirtual-router#show ip ssh C:\&gt;ssh -l eclassvirtual 192.168.0.1 Open Password:
 </code></pre></div></div>
+
+<h2 id="creación-de-vlan">Creación de VLAN</h2>
+
+<p>Entramos en superusuario:</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">enable
+</span></code></pre></div></div>
+<p>Entramos en la configuración del terminal:</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">configure terminal
+</span></code></pre></div></div>
+<p>Creamos la VLAN 10 y le ponemos nombre:</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">vlan 10
+name Mesa1
+exit
+</span></code></pre></div></div>
+<p>Creamos la VLAN 20 y le ponemos nombre:</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">vlan 20
+name Mesa2
+exit
+</span></code></pre></div></div>
+<p>exit</p>
+
+<p>Mostramos la información pertinente de a las VLANs</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">show vlan
+</span></code></pre></div></div>
+
+<p>Asignamos que interfaces pertenecen a cada VLAN</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">configure terminal
+interface range f0/10-14
+switchport mode access
+switchport access vlan 10
+exit
+</span></code></pre></div></div>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">interface range f0/15-19
+switchport mode access
+switchport access vlan 20
+exit
+</span></code></pre></div></div>

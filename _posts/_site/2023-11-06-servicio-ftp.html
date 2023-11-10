@@ -1,0 +1,326 @@
+<p><img src="image.png" alt="Logo de Linux y vsFTP" /></p>
+
+<h1 id="introducción">Introducción</h1>
+
+<p>vsftpd, que significa “Very Secure File Transfer Protocol Daemon” (Demonio de Protocolo de Transferencia de Archivos Muy Seguro), es un software de servidor FTP (File Transfer Protocol) de código abierto diseñado para sistemas operativos tipo Unix. Es conocido por su enfoque en la seguridad y el rendimiento, lo que lo convierte en una opción popular para configurar servidores FTP en sistemas Linux y otros sistemas basados en Unix.</p>
+
+<ol>
+  <li>
+    <p>Seguridad: vsftpd está diseñado con un fuerte énfasis en la seguridad. Ofrece una variedad de características de seguridad, como el soporte para conexiones cifradas (FTP sobre TLS/SSL), el soporte para usuarios virtuales y cárceles chroot para restringir el acceso a directorios específicos, y la capacidad de limitar el número de conexiones concurrentes y el acceso desde direcciones IP específicas.</p>
+  </li>
+  <li>
+    <p>Rendimiento: Es conocido por su velocidad y eficiencia. vsftpd está diseñado para ser ligero y optimizado para un alto rendimiento, lo que lo hace adecuado para manejar un gran número de conexiones concurrentes.</p>
+  </li>
+  <li>
+    <p>Configuración: vsftpd proporciona un sistema de configuración flexible que permite a los administradores personalizar diversos aspectos del comportamiento del servidor FTP. Las opciones de configuración están bien documentadas y se pueden ajustar para satisfacer requisitos específicos.</p>
+  </li>
+  <li>
+    <p>FTP Activo y Pasivo: vsftpd admite tanto los modos FTP activo como pasivo, lo que le permite funcionar con una amplia gama de clientes FTP y configuraciones de red.</p>
+  </li>
+  <li>
+    <p>Aislamiento de Usuarios: Admite el aislamiento de usuarios, lo que puede confinar a los usuarios a sus propios directorios de inicio, mejorando la seguridad al evitar que accedan a otras partes del sistema de archivos del servidor.</p>
+  </li>
+  <li>
+    <p>Registro de Actividad: vsftpd proporciona capacidades detalladas de registro, lo que facilita el monitoreo y la solución de problemas de la actividad del servidor FTP.</p>
+  </li>
+  <li>
+    <p>Soporte IPv6: Admite IPv6, lo que le permite funcionar en infraestructuras de red modernas que utilizan la última versión del Protocolo de Internet.</p>
+  </li>
+  <li>
+    <p>Código Abierto: vsftpd es software de código abierto, y su código fuente está disponible de forma gratuita, lo que significa que se puede personalizar y adaptar a necesidades específicas.</p>
+  </li>
+</ol>
+
+<p>Para instalar y configurar vsftpd en un sistema basado en Unix, generalmente tendrás que editar su archivo de configuración, que a menudo se encuentra en “/etc/vsftpd.conf”, y luego iniciar o reiniciar el servicio de vsftpd.</p>
+
+<p>Ten en cuenta que aunque vsftpd es un servidor FTP seguro y confiable, el uso de FTP en general ha perdido popularidad debido a preocupaciones de seguridad. Siempre que sea posible, se recomienda utilizar protocolos de transferencia de archivos más seguros, como SFTP (SSH File Transfer Protocol) o SCP (Copia Segura) para transferencias de archivos a través de la red. Estos protocolos ofrecen cifrado y autenticación por defecto, lo que los convierte en alternativas más seguras al FTP tradicional.</p>
+
+<h1 id="instalación-del-servicio-ftp-en-ubuntu-server-2204-lts">Instalación del servicio FTP en Ubuntu Server 22.04 LTS</h1>
+
+<h2 id="cosas-necesarias-previas-a-la-instalación">Cosas necesarias previas a la instalación</h2>
+<ul>
+  <li>Configuración de MV servidor en red nat</li>
+  <li>MV cliente Xubuntu en la misma red nat</li>
+  <li>Configuración red nat 192.168.100.0/24</li>
+</ul>
+
+<h2 id="instalación-y-configuración-inicial-de-vsftp">Instalación y configuración inicial de vsFTP</h2>
+<p>Con permisos de root ejecutamos el comando:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">sudo apt-get install vsftpd
+</span></code></pre></div></div>
+
+<p>Comprobamos que el servicio está activo en su puerto 80:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">netstat -putona
+</span></code></pre></div></div>
+
+<p>Otra opción para comprobar que el servicio está activo:</p>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">sudo /etc/init.d/vsftpd status
+</span></code></pre></div></div>
+
+<p>Modificamos y añadimos información a nuestro archivo de configuración:</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">sudo vi /etc/vsftpd.conf
+</span></code></pre></div></div>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">#</span><span class="w"> </span>Example config file /etc/vsftpd.conf
+<span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span>The default compiled <span class="k">in </span>settings are fairly paranoid. This sample file
+<span class="gp">#</span><span class="w"> </span>loosens things up a bit, to make the ftp daemon more usable.
+<span class="gp">#</span><span class="w"> </span>Please see vsftpd.conf.5 <span class="k">for </span>all compiled <span class="k">in </span>defaults.
+<span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span>READ THIS: This example file is NOT an exhaustive list of vsftpd options.
+<span class="gp">#</span><span class="w"> </span>Please <span class="nb">read </span>the vsftpd.conf.5 manual page to get a full idea of vsftpd<span class="s1">'s
+</span><span class="gp">#</span><span class="w"> </span><span class="s1">capabilities.
+</span><span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span><span class="s1">Run standalone?  vsftpd can run either from an inetd or as a standalone
+</span><span class="gp">#</span><span class="w"> </span><span class="s1">daemon started from an initscript.
+</span><span class="go">listen=YES
+</span><span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span>This directive enables listening on IPv6 sockets. By default, listening
+<span class="gp">#</span><span class="w"> </span>on the IPv6 <span class="s2">"any"</span> address <span class="o">(</span>::<span class="o">)</span> will accept connections from both IPv6
+<span class="gp">#</span><span class="w"> </span>and IPv4 clients. It is not necessary to listen on <span class="k">*</span>both<span class="k">*</span> IPv4 and IPv6
+<span class="gp">#</span><span class="w"> </span>sockets. If you want that <span class="o">(</span>perhaps because you want to listen on specific
+<span class="gp">#</span><span class="w"> </span>addresses<span class="o">)</span> <span class="k">then </span>you must run two copies of vsftpd with two configuration
+<span class="gp">#</span><span class="w"> </span>files.
+<span class="go">listen_ipv6=NO
+</span><span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span>Allow anonymous FTP? <span class="o">(</span>Disabled by default<span class="o">)</span><span class="nb">.</span>
+<span class="go">anonymous_enable=NO
+</span><span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span>Uncomment this to allow <span class="nb">local users </span>to log <span class="k">in</span><span class="nb">.</span>
+<span class="go">local_enable=YES
+</span><span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span>Uncomment this to <span class="nb">enable </span>any form of FTP write command.
+<span class="go">write_enable=YES
+</span><span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span>Default <span class="nb">umask </span><span class="k">for </span><span class="nb">local users </span>is 077. You may wish to change this to 022,
+<span class="gp">#</span><span class="w"> </span><span class="k">if </span>your <span class="nb">users </span>expect that <span class="o">(</span>022 is used by most other ftpd<span class="s1">'s)
+</span><span class="gp">#</span><span class="s1">local_umask=022
+</span><span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span><span class="s1">Uncomment this to allow the anonymous FTP user to upload files. This only
+</span><span class="gp">#</span><span class="w"> </span><span class="s1">has an effect if the above global write enable is activated. Also, you will
+</span><span class="gp">#</span><span class="w"> </span><span class="s1">obviously need to create a directory writable by the FTP user.
+</span><span class="gp">#</span><span class="s1">anon_upload_enable=YES
+</span><span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span><span class="s1">Uncomment this if you want the anonymous FTP user to be able to create
+</span><span class="gp">#</span><span class="w"> </span><span class="s1">new directories.
+</span><span class="gp">#</span><span class="s1">anon_mkdir_write_enable=YES
+</span><span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span><span class="s1">Activate directory messages - messages given to remote users when they
+</span><span class="gp">#</span><span class="w"> </span><span class="s1">go into a certain directory.
+</span><span class="go">dirmessage_enable=YES
+</span><span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span>If enabled, vsftpd will display directory listings with the <span class="nb">time</span>
+<span class="gp">#</span><span class="w"> </span><span class="k">in  </span>your  <span class="nb">local  time  </span>zone.  The default is to display GMT. The
+<span class="gp">#</span><span class="w"> </span><span class="nb">times </span>returned by the MDTM FTP <span class="nb">command </span>are also affected by this
+<span class="gp">#</span><span class="w"> </span>option.
+<span class="go">use_localtime=YES
+</span><span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span>Activate logging of uploads/downloads.
+<span class="go">xferlog_enable=YES
+</span><span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span>Make sure PORT transfer connections originate from port 20 <span class="o">(</span>ftp-data<span class="o">)</span><span class="nb">.</span>
+<span class="go">connect_from_port_20=YES
+</span><span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span>If you want, you can arrange <span class="k">for </span>uploaded anonymous files to be owned by
+<span class="gp">#</span><span class="w"> </span>a different user. Note! Using <span class="s2">"root"</span> <span class="k">for </span>uploaded files is not
+<span class="gp">#</span><span class="w"> </span>recommended!
+<span class="gp">#</span><span class="nv">chown_uploads</span><span class="o">=</span>YES
+<span class="gp">#</span><span class="nv">chown_username</span><span class="o">=</span>whoever
+<span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span>You may override where the log file goes <span class="k">if </span>you like. The default is shown
+<span class="gp">#</span><span class="w"> </span>below.
+<span class="gp">#</span><span class="nv">xferlog_file</span><span class="o">=</span>/var/log/vsftpd.log
+<span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span>If you want, you can have your log file <span class="k">in </span>standard ftpd xferlog format.
+<span class="gp">#</span><span class="w"> </span>Note that the default log file location is /var/log/xferlog <span class="k">in </span>this <span class="k">case</span><span class="nb">.</span>
+<span class="gp">#</span><span class="nv">xferlog_std_format</span><span class="o">=</span>YES
+<span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span>You may change the default value <span class="k">for </span>timing out an idle session.
+<span class="gp">#</span><span class="nv">idle_session_timeout</span><span class="o">=</span>600
+<span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span>You may change the default value <span class="k">for </span>timing out a data connection.
+<span class="gp">#</span><span class="nv">data_connection_timeout</span><span class="o">=</span>120
+<span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span>It is recommended that you define on your system a unique user which the
+<span class="gp">#</span><span class="w"> </span>ftp server can use as a totally isolated and unprivileged user.
+<span class="gp">#</span><span class="nv">nopriv_user</span><span class="o">=</span>ftpsecure
+<span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span>Enable this and the server will recognise asynchronous ABOR requests. Not
+<span class="gp">#</span><span class="w"> </span>recommended <span class="k">for </span>security <span class="o">(</span>the code is non-trivial<span class="p">)</span><span class="nb">.</span> Not enabling it,
+<span class="gp">#</span><span class="w"> </span>however, may confuse older FTP clients.
+<span class="gp">#</span><span class="nv">async_abor_enable</span><span class="o">=</span>YES
+<span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span>By default the server will pretend to allow ASCII mode but <span class="k">in </span>fact ignore
+<span class="gp">#</span><span class="w"> </span>the request. Turn on the below options to have the server actually <span class="k">do </span>ASCII
+<span class="gp">#</span><span class="w"> </span>mangling on files when <span class="k">in </span>ASCII mode.
+<span class="gp">#</span><span class="w"> </span>Beware that on some FTP servers, ASCII support allows a denial of service
+<span class="gp">#</span><span class="w"> </span>attack <span class="o">(</span>DoS<span class="o">)</span> via the <span class="nb">command</span> <span class="s2">"SIZE /big/file"</span> <span class="k">in </span>ASCII mode. vsftpd
+<span class="gp">#</span><span class="w"> </span>predicted this attack and has always been safe, reporting the size of the
+<span class="gp">#</span><span class="w"> </span>raw file.
+<span class="gp">#</span><span class="w"> </span>ASCII mangling is a horrible feature of the protocol.
+<span class="gp">#</span><span class="nv">ascii_upload_enable</span><span class="o">=</span>YES
+<span class="gp">#</span><span class="nv">ascii_download_enable</span><span class="o">=</span>YES
+<span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span>You may fully customise the login banner string:
+<span class="gp">#</span><span class="nv">ftpd_banner</span><span class="o">=</span>Welcome to blah FTP service.
+<span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span>You may specify a file of disallowed anonymous e-mail addresses. Apparently
+<span class="gp">#</span><span class="w"> </span>useful <span class="k">for </span>combatting certain DoS attacks.
+<span class="gp">#</span><span class="nv">deny_email_enable</span><span class="o">=</span>YES
+<span class="gp">#</span><span class="w"> </span><span class="o">(</span>default follows<span class="o">)</span>
+<span class="gp">#</span><span class="nv">banned_email_file</span><span class="o">=</span>/etc/vsftpd.banned_emails
+<span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span>You may restrict <span class="nb">local users </span>to their home directories.  See the FAQ <span class="k">for</span>
+<span class="gp">#</span><span class="w"> </span>the possible risks <span class="k">in </span>this before using chroot_local_user or
+<span class="gp">#</span><span class="w"> </span>chroot_list_enable below.
+<span class="gp">#</span><span class="nv">chroot_local_user</span><span class="o">=</span>YES
+<span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span>You may specify an explicit list of <span class="nb">local users </span>to <span class="nb">chroot</span><span class="o">()</span> to their home
+<span class="gp">#</span><span class="w"> </span>directory. If chroot_local_user is YES, <span class="k">then </span>this list becomes a list of
+<span class="gp">#</span><span class="w"> </span><span class="nb">users </span>to NOT <span class="nb">chroot</span><span class="o">()</span><span class="nb">.</span>
+<span class="gp">#</span><span class="w"> </span><span class="o">(</span>Warning! <span class="nb">chroot</span><span class="s1">'ing can be very dangerous. If using chroot, make sure that
+</span><span class="gp">#</span><span class="w"> </span><span class="s1">the user does not have write access to the top level directory within the
+</span><span class="gp">#</span><span class="w"> </span><span class="s1">chroot)
+</span><span class="gp">#</span><span class="s1">chroot_local_user=YES
+</span><span class="gp">#</span><span class="s1">chroot_list_enable=YES
+</span><span class="gp">#</span><span class="w"> </span><span class="s1">(default follows)
+</span><span class="gp">#</span><span class="s1">chroot_list_file=/etc/vsftpd.chroot_list
+</span><span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span><span class="s1">You may activate the "-R" option to the builtin ls. This is disabled by
+</span><span class="gp">#</span><span class="w"> </span><span class="s1">default to avoid remote users being able to cause excessive I/O on large
+</span><span class="gp">#</span><span class="w"> </span><span class="s1">sites. However, some broken FTP clients such as "ncftp" and "mirror" assume
+</span><span class="gp">#</span><span class="w"> </span><span class="s1">the presence of the "-R" option, so there is a strong case for enabling it.
+</span><span class="gp">#</span><span class="s1">ls_recurse_enable=YES
+</span><span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span><span class="s1">Customization
+</span><span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span><span class="s1">Some of vsftpd'</span>s settings don<span class="s1">'t fit the filesystem layout by
+</span><span class="gp">#</span><span class="w"> </span><span class="s1">default.
+</span><span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span><span class="s1">This option should be the name of a directory which is empty.  Also, the
+</span><span class="gp">#</span><span class="w"> </span><span class="s1">directory should not be writable by the ftp user. This directory is used
+</span><span class="gp">#</span><span class="w"> </span><span class="s1">as a secure chroot() jail at times vsftpd does not require filesystem
+</span><span class="gp">#</span><span class="w"> </span><span class="s1">access.
+</span><span class="go">secure_chroot_dir=/var/run/vsftpd/empty
+</span><span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span>This string is the name of the PAM service vsftpd will use.
+<span class="go">pam_service_name=vsftpd
+</span><span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span>This option specifies the location of the RSA certificate to use <span class="k">for </span>SSL
+<span class="gp">#</span><span class="w"> </span>encrypted connections.
+<span class="go">rsa_cert_file=/etc/ssl/certs/ssl-cert-snakeoil.pem
+rsa_private_key_file=/etc/ssl/private/ssl-cert-snakeoil.key
+ssl_enable=NO
+
+</span><span class="gp">#</span><span class="w">
+</span><span class="gp">#</span><span class="w"> </span>Uncomment this to indicate that vsftpd use a utf8 filesystem.
+<span class="gp">#</span><span class="nv">utf8_filesystem</span><span class="o">=</span>YES
+<span class="go">
+pasv_enable=YES
+pasv_min_port=10000
+pasv_max_port=10005
+pasv_address=127.0.0.1
+</span></code></pre></div></div>
+
+<p>Reiniciamos el servicio:</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">sudo vi /etc/init.d/vsftpd restart
+</span></code></pre></div></div>
+
+<p>Realizamos una prueba de que funciona con el cliente FTP WinSCP:
+<img src="Captura de pantalla 2023-11-06 231835.png" alt="Alt text" />
+<img src="Captura de pantalla 2023-11-06 231859.png" alt="Alt text" /></p>
+
+<p>Realizamos una prueba de que funciona con el cliente FTP Filezilla:</p>
+
+<p><img src="Captura de pantalla 2023-11-06 231939.png" alt="Alt text" />
+<img src="Captura de pantalla 2023-11-06 231943.png" alt="Alt text" />
+<img src="Captura de pantalla 2023-11-06 231959.png" alt="Alt text" /></p>
+
+<h2 id="configuración-de-usuarios-que-no-sean-del-sistema">Configuración de usuarios que no sean del sistema</h2>
+
+<p>Nos dirigimos al archivo de configuración de VSFTP:</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">sudo vi /etc/vsftpd.conf
+</span></code></pre></div></div>
+
+<p>Añadimos al final las siguientes líneas:</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">guest_enable=YES
+virtual_use_local_privs=YES
+</span><span class="gp">user_sub_token=$</span>USER
+<span class="gp">local_root=/var/ftp/$</span>USER
+<span class="go">chroot_local_user=YES
+</span></code></pre></div></div>
+
+<p>Reiniciamos el demonio y comprobamos:</p>
+
+<p>Vamos a crear un archivo el cual será el que utilizaremos para añadir los usuarios:</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">sudo vi /etc/virtusers.txt
+</span></code></pre></div></div>
+
+<p>Añadimos el usuario ftpUser1 con su contraseña (es la misma) y ftpUser2 con su contraseña (es la misma)</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">ftpUser1
+passUser1
+ftpUser2
+passUser2
+</span></code></pre></div></div>
+
+<p>Instalamos db-util para poder trabajar con dichos usuarios:</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">sudo apt-get install db-util
+</span></code></pre></div></div>
+
+<p>Configuramos los archivos necesarios:</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">sudo db_load -T -t hash -f /etc/virtusers.txt /etc/virtusers.db
+</span></code></pre></div></div>
+
+<p>Vaciamos el siguientes archivos para que queden de esta forma:</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">sudo vi /etc/pam.d/vsftpd
+</span></code></pre></div></div>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="gp">auth &lt;tab&gt;</span>required &lt;tab&gt;pam_userdb.so <span class="nv">db</span><span class="o">=</span>/etc/virtusers
+<span class="gp">account &lt;tab&gt;</span>required &lt;tab&gt;pam_userdb.so <span class="nv">db</span><span class="o">=</span>/etc/virtusers
+</code></pre></div></div>
+
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">sudo mkdir -p /var/ftp/ftpUser1
+sudo mkdir -p /var/ftp/ftpUser2
+</span></code></pre></div></div>
+
+<p>Reiniciamos servicio FTP:</p>
+
+<p>Cambiamos permisos:</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">sudo chown ftp: -R /var/ftp/ftpUser1
+sudo chown ftp: -R /var/ftp/ftpUser2
+</span></code></pre></div></div>
+
+<p>Añadimos otra línea al archivo de configuración de vsFTP</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">allow_writeable_chroot=YES
+</span></code></pre></div></div>
+
+<p>Reiniciamos servicio FTP y comprobamos:</p>
+
+<p>Cliente FileZilla:
+<img src="Captura de pantalla 2023-11-06 235213.png" alt="Alt text" /></p>
+
+<p>Cliente WinSCP:
+<img src="Captura de pantalla 2023-11-06 235225.png" alt="Alt text" /></p>
+
+<p>Situación de los directorios virtuales:
+<img src="Captura de pantalla 2023-11-06 235238.png" alt="Alt text" /></p>
+
+<h2 id="ciframos-las-conexiones">Ciframos las conexiones</h2>
+
+<p>Generamos el certificado:</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/vsftpd.pem -out /etc/ssl/private/vsftpd.pem
+</span></code></pre></div></div>
+
+<p><img src="image2.png" alt="Configuración del certificado" /></p>
+
+<p>Lo establecemos en nuestro archivo de configuración de vsFTP:</p>
+<div class="language-console highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go">rsa_cert_file=/etc/ssl/private/vsftpd.pem
+rsa_private_key_file=/etc/ssl/private/vsftpd.pem
+ssl_enable=YES
+</span></code></pre></div></div>
+
+<p>Realizamos las pruebas pertinentes:</p>
+
+<p><img src="image3.png" alt="Conexión con WinSCP utilizando conexión cifrada" /></p>

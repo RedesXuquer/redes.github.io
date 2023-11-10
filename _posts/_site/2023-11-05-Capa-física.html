@@ -1,0 +1,366 @@
+<h1 id="la-capa-física">La capa Física</h1>
+<h2 id="introducción">Introducción</h2>
+<p>La capa física es la primera capa del <strong>modelo OSI</strong>.
+También se le conoce como CAPA 1, esta es responsable de la <strong>transmisión de bits</strong> no
+estructurados a través de un medio de comunicación <strong>físico</strong>, ya sea <em>cable de cobre</em>, <em>fibra
+óptica</em>,
+<em>ondas de radio</em>, etc.
+Esta capa se enfoca en aspectos relacionados con la <strong>transmisión de datos</strong> en su forma más
+básica y física.
+Esta capa forma parte de la capa <strong>Acceso a red</strong> del modelo TCP/IP.
+Sin la capa física, <strong><em>no tendría una red</em></strong>.
+En este tema veremos las <strong>características</strong>, <strong>utilidades</strong> y <strong>propósitos</strong> de:</p>
+<ul>
+  <li>Propósito de la capa física.</li>
+  <li>Características de la capa física.</li>
+  <li>Cableado de cobre.</li>
+  <li>Cableado UTP.</li>
+  <li>Cableado de fibra óptica.</li>
+  <li>Medios inalámbricos.
+    <h2 id="propósito-de-la-capa-física">Propósito de la capa física</h2>
+    <p>El propósito <strong>fundamental</strong> de la capa física en el modelo OSI es <em>facilitar la transmisión
+física</em> de
+bits a través de un medio de comunicación. Esta capa se centra en la <strong>interfaz</strong> entre el
+<em>equipo</em> y
+el <em>medio físico</em>, asegurando que los bits se puedan enviar y recibir de manera <strong>confiable</strong> y
+<strong>eficiente</strong>.</p>
+    <h3 id="la-conexión-física">La conexión física:</h3>
+    <p>Para que se pueda producir cualquier <strong>comunicación de red</strong> se debe establecer antes una
+<strong>conexión a una red local</strong>.
+Una conexión física puede ser:</p>
+  </li>
+  <li>Una conexión por cable</li>
+  <li>Una conexión inalámbrica mediante ondas de radio.
+El tipo de conexión <strong>física</strong> utilizada depende de la configuración de la red.
+Ejemplo: En muchas oficinas corporativas, los empleados tienen PC de escritorio o portátiles
+que se conectan físicamente, <strong>mediante cables</strong>, a un switch compartido.
+Este tipo de configuración se denomina red cableada y los datos se transmiten a través de un
+cable físico.
+Muchas empresas también ofrecen conexiones <strong>inalámbricas</strong> “sin cableado” para PC
+portátiles, tablets y smartphones.
+En el caso de los dispositivos inalámbricos, los datos se transmiten mediante ondas de radio.
+Los dispositivos en una red inalámbrica deben estar conectados a un <strong>punto de acceso</strong>
+inalámbrico (AP) o <strong>router inalámbrico</strong>.
+En términos de <strong>rendimiento</strong>, no todas las conexiones <strong>físicas</strong> son iguales a la hora de
+<strong>conectarse</strong> a una red.
+    <blockquote>
+      <p>[!¿Qué son las <strong>Tarjetas de interfaz de red</strong>?]</p>
+
+      <p>Las tarjetas de interfaz de red (NIC) conectan un dispositivo a la red.
+Las NIC de Ethernet se usan para una <strong>conexión por cable</strong>, mientras que las NIC de la red
+de área local <strong>inalámbrica</strong> (WLAN) se usan para la conexión inalámbrica. Los dispositivos
+para usuarios finales pueden incluir <strong>un tipo</strong> de NIC o <strong>ambos</strong>.</p>
+      <h3 id="la-capa-física-1">La capa física:</h3>
+      <p>Esta capa proporciona los medios de transporte de los bits que conforman una trama de la
+capa de <strong>enlace de datos</strong> a través de los medios de red.
+Esta capa acepta una <strong>trama completa</strong> desde la capa de enlace de datos y la <strong>codifica</strong>
+como una secuencia de señales que se transmiten en los medios locales. Un dispositivo final o
+un dispositivo intermediario recibe los bits <strong>codificados</strong> que componen una trama. La capa
+física codifica las tramas y crea las señales eléctricas, ópticas o de ondas de radio que
+representan los bits en cada trama.
+La capa física del nodo de destino recupera estas señales individuales de los medios, las
+restaura a sus representaciones <strong>en bits</strong> y pasa los bits a la capa de enlace de datos en
+forma de <strong>trama completa</strong>.</p>
+      <h2 id="características-de-la-capa-física">Características de la capa física.</h2>
+      <h3 id="los-estándares-de-la-capa-física">Los estándares de la capa física:</h3>
+      <p>Vamos a ver los componentes y los medios utilizados para construir una red, así como los
+estándares necesarios para que todo funcione en conjunto.
+Los protocolos y las operaciones de las capas OSI superiores se llevan a cabo en software
+diseñado por ingenieros en <strong>software</strong> e informáticos. El grupo de trabajo de ingeniería de
+Internet (IETF) define los <strong>servicios</strong> y <strong>protocolos</strong> del conjunto TCP/IP.
+Existen muchas organizaciones internacionales y nacionales que intervienen en el
+<strong>establecimiento</strong> y el <strong>mantenimiento</strong> de los estándares de la capa física. Por ejemplo, los
+estándares de hardware, medios, codificación y señalización de la capa <strong>física</strong> están
+definidos y regidos por estas <strong>organizaciones de estándares</strong>:</p>
+      <ol>
+        <li>Organización Internacional para la Estandarización (ISO)</li>
+        <li>Asociación de las Industrias de las Telecomunicaciones (TIA) y Asociación de Industrias
+Electrónicas (EIA)</li>
+        <li>Unión Internacional de Telecomunicaciones (ITU)</li>
+        <li>Instituto Nacional Estadounidense de Estándares (ANSI)</li>
+        <li>Instituto de Ingenieros Eléctricos y Electrónicos (IEEE)</li>
+        <li>Autoridades nacionales reguladoras de las telecomunicaciones, incluida la Federal
+Communication Commission (FCC) de los Estados Unidos y el Instituto Europeo de Estándares
+de Telecomunicaciones (ETSI).
+Los <strong>estándares</strong> de la capa física abarcan tres áreas funcionales
+          <ul>
+            <li>Componentes físicos</li>
+            <li>Codificación</li>
+            <li>Señalización
+              <h3 id="componentes-físicos">Componentes físicos:</h3>
+              <p>Los componentes físicos son los dispositivos de hardware electrónico que transmiten las
+señales que representan los bits. Todos los componentes de hardware, como <strong>NIC</strong>,
+<strong>interfaces</strong> y <strong>conectores</strong>, materiales y diseño de los cables, se especifican en los
+estándares asociados con la <strong>capa física</strong>.</p>
+              <h3 id="codificación">Codificación:</h3>
+              <p>La codificación es un <strong>método</strong> que se utiliza para convertir una transmisión de bits de datos
+en un “código” predefinido. La codificación es el método o patrón utilizado para representar la
+información digital.</p>
+              <h3 id="señalización">Señalización:</h3>
+              <p>La capa física debe generar las señales inalámbricas, ópticas o eléctricas.
+Estas representan los “1” y los “0” en los medios.
+La forma en que se representan los bits se denomina <strong>método de señalización</strong>.
+Los estándares de la capa física deben definir <strong>qué tipo de señal</strong> representa un “1” y <strong>qué
+tipo de señal</strong> representa un “0”.
+Esto puede ser tan simple como un <strong>cambio en el nivel</strong> de una señal eléctrica o de un pulso
+óptico.</p>
+              <h3 id="ancho-de-banda">Ancho de banda:</h3>
+              <p>Esta es la capacidad a la que un medio puede transportar datos.
+El ancho de banda <strong>digital</strong> mide la cantidad de datos que pueden fluir desde un lugar hacia
+otro en un <strong>período de tiempo</strong> determinado.
+El ancho de banda generalmente se mide en kilobits por segundo (kbps), megabits por
+segundo (Mbps) o gigabits por segundo (Gbps).
+En ocasiones, el ancho de banda se piensa como la velocidad a la que viajan los bits, sin
+embargo, esto no es así.
+Una <strong>combinación de factores</strong> determina el ancho de banda práctico de una red:</p>
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </blockquote>
+  </li>
+  <li>Las propiedades de los medios físicos.</li>
+  <li>Las tecnologías seleccionadas para la señalización y la detección de señales de red.
+Las propiedades de los <strong>medios físicos</strong>, las <strong>tecnologías actuales</strong> y las <strong>leyes de la
+física</strong> desempeñan una función al momento de determinar el ancho de banda disponible.
+    <h3 id="terminología-del-ancho-de-banda">Terminología del ancho de banda:</h3>
+    <p>Los términos utilizados para medir la <strong>calidad</strong> del ancho de banda incluyen:</p>
+    <ol>
+      <li><strong>Latencia</strong>: Es la cantidad de tiempo, incluidas las demoras que les toma a los datos
+transferirse desde un punto determinado hasta otro. (PING) Cuanta mas alta es la latencia, más
+demorarán los datos en llegar del punto A al punto B.</li>
+      <li><strong>Cacidad de transferencia útil</strong>: Esta es la medida de datos utilizables transferidos durante
+un período determinado. La capacidad de transferencia útil es el rendimiento menos la
+sobrecarga de tráfico para establecer sesiones, acuses de recibo, encapsulación y bits
+retransmitidos.</li>
+      <li><strong>Rendimiento</strong>: Es la medida de transferencia de bits a través de los medios durante un
+período de tiempo determinado. El rendimiento generalmente no coincide con el ancho de
+banda y suele ser menor.
+Pueden afectar:</li>
+    </ol>
+  </li>
+  <li>La cantidad de tráfico</li>
+  <li>El tipo de tráfico</li>
+  <li>La latencia creada por la cantidad de dispositivos de red encontrados entre origen y destino
+    <h2 id="cableado-de-cobre">Cableado de cobre.</h2>
+    <h3 id="características-del-cableado-de-cobre">Características del cableado de cobre:</h3>
+    <p>El <strong>cableado de cobre</strong> no es solo un tipo de cable. Hay tres tipos diferentes de cableado de
+cobre que se utilizan cada uno en situaciones específicas.
+Las redes utilizan <strong>medios de cobre</strong> porque son económicos, fáciles de instalar y tienen baja
+resistencia a la corriente eléctrica. Sin embargo, estos medios <strong>están limitados</strong> por la
+distancia y la interferencia de señal.
+Los <strong>datos</strong> se transmiten en cables de cobre por impulsos eléctricos.
+Un detector en la <strong>NIC</strong> de un dispositivo de destino debe recibir una señal que pueda
+decodificarse exitosamente para que coincida con la señal que fue enviada.
+Cuanto <strong>más lejos</strong> viaja una señal, <strong>más se deteriora</strong>.
+Todos los <strong>medios de cobre</strong> tienen unas limitaciones de distancia estrictas.
+Los valores de temporización y voltaje de los pulsos eléctricos también son vulnerables a las
+interferencias de dos fuentes:</p>
+    <ol>
+      <li>Interferencia <strong>electromagnética</strong> (<strong>EMI</strong>) o Interferencia de <strong>radiofrecuencia</strong>
+(<strong>RFI</strong>): Las señales de <strong>EMI</strong> y <strong>RFI</strong> pueden distorsionar y dañar las señales de datos
+que transportan los medios de cobre. Estas incluyen las <strong>ondas de radio</strong> y dispositivos
+<strong>electromagnéticos</strong>, como las luces fluorescentes o los motores eléctricos.
+Para contrarrestar los efectos negativos de la <strong>EMI</strong> y la <strong>RFI</strong>, algunos tipos de cables de
+cobre se empaquetan con un blindaje metálico y requieren una conexión a tierra adecuada.</li>
+      <li><strong>Crosstalk</strong>: Este se trata de una perturbación causada por los campos eléctricos o
+magnéticos de una señal <strong>de un hilo</strong> a la señal <strong>de un hilo adyacente</strong>. En los circuitos
+telefónicos, el crosstalk puede provocar que se escuche parte de otra conversación de voz de
+un circuito adyacente.
+Para contrarrestar los efectos negativos del crosstalk, algunos tipos de cables de cobre tienen
+<strong>pares de hilos</strong> de circuitos opuestos <strong>trenzados</strong> que cancelan dicho tipo de interferencia
+en forma eficaz.
+La susceptibilidad de los cables de cobre al ruido electrónico también se puede limitar
+utilizando estas recomendaciones:</li>
+    </ol>
+  </li>
+  <li>La elección del tipo o la categoría de cable más adecuados a un entorno de red determinado.</li>
+  <li>El diseño de una infraestructura de cables para evitar las fuentes de <strong>interferencia</strong> posibles
+y conocidas en la estructura del edificio.</li>
+  <li>El uso de técnicas de cableado que incluyen el <strong>manejo</strong> y la <strong>terminación</strong> apropiados de
+los cables
+    <h3 id="tipos-de-cableado-de-cobre">Tipos de cableado de cobre:</h3>
+    <p>Existen 3 tipos de cableado:</p>
+  </li>
+  <li><strong>Par trenzado no blindado (UTP)</strong>: El cableado <strong>UTP</strong> es el medio más común para
+conectar dispositivos en redes. Consiste en cuatro pares de hilos trenzados y protegidos por
+plástico flexible. Se utiliza con conectores <strong>RJ-45</strong> para enlazar hosts con dispositivos de red
+como switches y routers, principalmente en redes LAN. El trenzado de los hilos ayuda a evitar
+interferencias y proporciona cierta protección física.</li>
+  <li><strong>Par trenzado blindado (STP)</strong>: El cableado <strong>STP</strong> ofrece una mayor protección
+contra interferencias que el UTP, aunque es más costoso y difícil de instalar. Al igual que el
+UTP, <strong>utiliza conectores RJ-45</strong>. Este combina técnicas de blindaje para contrarrestar
+interferencias electromagnéticas y de radiofrecuencia, además del <strong>trenzado de hilos</strong> para
+mitigar el crosstalk.
+El cable STP consta de cuatro pares de hilos, cada par está protegido con una hoja metálica y
+luego se cubre con una malla tejida o una hoja metálica.</li>
+  <li><strong>Cable coaxial</strong>: El cable <strong>coaxial</strong> contiene dos conductores compartiendo un eje:
+uno de cobre para transmitir señales electrónicas y otro de malla de cobre o hoja metálica que
+actúa como blindaje contra interferencias electromagnéticas. Está recubierto por <strong>aislamiento
+plástico flexible</strong> y un <strong>revestimiento</strong> para protección <strong>física</strong>.
+    <h2 id="cableado-utp">Cableado UTP.</h2>
+    <h3 id="propiedades-del-cableado-utp">Propiedades del cableado UTP:</h3>
+    <p>El cableado <strong>UTP</strong> consta de cuatro pares de hilos trenzados y recubiertos con plástico
+flexible. Su <strong>tamaño pequeño</strong> facilita la instalación. No cuenta con blindaje contra <strong>EMI</strong> y
+<strong>RFI</strong>, pero los diseñadores emplean técnicas como anulación y variación en la torsión de
+hilos para reducir el crosstalk.
+La <strong>anulación</strong> se logra al emparejar hilos en circuitos, generando campos magnéticos
+opuestos que anulan interferencias.
+Variar el <strong>número de vueltas</strong> por par de hilos también mejora la anulación. Los cables UTP
+siguen especificaciones para la <strong>cantidad de vueltas por metro</strong>, y cada par coloreado tiene
+un trenzado diferente. Estos cables se basan en la anulación de los hilos trenzados para
+mantener la calidad de la señal y proporcionar un auto blindaje efectivo en los medios de red.</p>
+    <h3 id="conectores-y-estándares-del-cableado-utp">Conectores y estándares del cableado UTP:</h3>
+    <p>El cableado <strong>UTP</strong> cumple con los estándares establecidos en conjunto por la TIA/EIA.
+La TIA/EIA-568 estipula los estándares comerciales de cableado para las instalaciones <strong>LAN</strong>
+y es el estándar de mayor uso en entornos de cableado <strong>LAN</strong>.
+El Instituto de Ingenieros Eléctricos y Electrónicos (<strong>IEEE</strong>) establece las características
+eléctricas del cableado de cobre y califica el cable UTP en función de su rendimiento. Los
+cables <strong>UTP</strong> se categorizan según su capacidad para transportar datos a diferentes
+velocidades de ancho de banda. Por ejemplo, el cable de <strong>Categoría 5</strong> es común en
+instalaciones de <strong>FastEthernet 100BASE-TX</strong>, y hay otras categorías como <strong>5e</strong>, <strong>6</strong> y
+<strong>6a</strong> diseñadas para admitir velocidades de transmisión de datos más altas.
+Algunos fabricantes producen cables que exceden las especificaciones de la categoría <strong>6a</strong>
+de la <strong>TIA/EIA</strong> y se refieren a estos como cables de <strong>Categoría 7</strong>.
+Los cables UTP generalmente se terminan con un conector <strong>RJ-45</strong>. El estándar TIA/EIA-568
+describe las asignaciones de los códigos por colores de los hilos a la asignación de pines
+(diagrama de pines) de los cables Ethernet.</p>
+    <h3 id="cables-utp-directos-y-cruzados">Cables UTP directos y cruzados:</h3>
+    <p>Los cables <strong>UTP</strong> pueden requerir diferentes disposiciones de hilos en los conectores
+<strong>RJ-45</strong> según las situaciones. Esto implica conectar los hilos de manera diferente para
+distintos grupos de pines en el conector.
+Los principales tipos de cables que resultan de estas convenciones de cableado son:</p>
+  </li>
+  <li>Cable <strong>directo</strong> de Ethernet: Es el tipo más común de cable de red, usado para
+conectar un <strong>host a un switch</strong> y un <strong>switch a un router</strong>.</li>
+  <li>Cable <strong>cruzado</strong> Ethernet: Se emplea para conectar dispositivos similares, como
+<strong>switch a switch</strong>, <strong>host a host</strong> o <strong>router a router</strong>. No obstante, los cables cruzados se
+consideran obsoletos en gran medida debido a la tecnología <strong>Auto-MDIX</strong> que permite a las
+<strong>NIC</strong> detectar automáticamente el tipo de cable y realizar la conexión adecuada.
+    <h2 id="cableado-de-fibra-óptica">Cableado de fibra óptica.</h2>
+    <h3 id="propiedades-del-cableado-de-fibra-óptica">Propiedades del cableado de fibra óptica:</h3>
+    <p>El <strong>cableado de fibra óptica</strong> representa otra opción en las redes, aunque es menos común
+debido a su costo más elevado.
+Este presenta propiedades que lo convierten en la elección óptima en ciertos escenarios,
+aspectos. Transmite <strong>datos</strong> a distancias más extensas y con capacidades de <strong>ancho de
+banda</strong> superiores que cualquier otro medio de red.
+A diferencia de los <strong>cables de cobre</strong>, la fibra óptica transmite señales con menos atenuación
+y es completamente inmune a las interferencias electromagnéticas (<strong>EMI</strong>) y de
+radiofrecuencia (<strong>RFI</strong>). Se utiliza para interconectar dispositivos de red.
+La <strong>fibra óptica</strong> consiste en un hilo flexible, extremadamente delgado y transparente de
+<strong>vidrio</strong> altamente puro, apenas más grueso que un cabello humano.
+Los datos se codifican en la fibra como <strong>impulsos de luz</strong>. Funciona como una guía de ondas
+o una “tubería de luz”, transmitiendo luz entre los extremos con una <strong>pérdida mínima</strong> de la
+señal.</p>
+    <h3 id="tipos-de-medios-de-fibra">Tipos de medios de fibra:</h3>
+    <p>En términos generales, los cables de <strong>fibra óptica</strong> pueden clasificarse en dos tipos:</p>
+  </li>
+  <li>Fibra <strong>monomodo</strong> (<strong>SMF</strong>): Es un tipo de cable de fibra óptica que permite la
+transmisión de señales de luz a través de un único modo de propagación. Esto significa que
+solo se permite la propagación de una señal de luz en una sola dirección, lo que reduce la
+atenuación y <strong>mejora la velocidad</strong> y la <strong>capacidad</strong> de ancho de banda. La <strong>SMF</strong> es
+ampliamente utilizada en largas distancias y aplicaciones de alta velocidad, como redes de
+larga distancia y conexiones de datos de alta velocidad.</li>
+  <li>Fibra <strong>multimodo</strong> (<strong>MMF</strong>): Es un tipo de cable de fibra óptica que permite la
+transmisión de múltiples señales de luz a través de <strong>diferentes</strong> modos de propagación. Esto
+significa que varias señales de luz se propagan <strong>simultáneamente</strong> por la fibra en distintos
+ángulos, lo que puede causar mayor atenuación y dispersión de la señal en comparación con la
+fibra monomodo. La <strong>MMF</strong> es comúnmente utilizada en distancias más cortas y redes locales
+donde no se requiere una alta capacidad de ancho de banda a largas distancias.
+Una de las diferencias destacadas entre <strong>MMF</strong> y <strong>SMF</strong> es la cantidad de dispersión.
+La dispersión se refiere a la extensión de los pulsos de luz con el tiempo. El <strong>aumento</strong> de la
+<strong>dispersión</strong> significa una mayor <strong>pérdida</strong> de la <strong>intensidad</strong> de la señal. <strong>FMM</strong> tiene
+una mayor dispersión que <strong>SMF</strong>. Es por eso que <strong>MMF</strong> sólo puede viajar hasta 500
+metros antes de la pérdida de señal.
+    <h3 id="uso-del-cableado-de-fibra-óptica">Uso del cableado de fibra óptica:</h3>
+    <p>El <strong>cableado de fibra óptica</strong> se utiliza en <strong>cuatro</strong> tipos de industrias:</p>
+  </li>
+  <li><strong>Redes empresariales</strong>: Se utilizan para aplicaciones de cableado backbone y
+dispositivos de infraestructura de interconexión.</li>
+  <li><strong>Fibra hasta el hogar</strong> (<strong>FTTH</strong>): Se utiliza para proporcionar servicios de banda
+ancha siempre activos a hogares y pequeñas empresas.</li>
+  <li><strong>Redes de larga distancia</strong>: Utilizadas por proveedores de servicios para conectar
+países y ciudades.</li>
+  <li><strong>Redes de cable submarino</strong>: Se utilizan para proporcionar soluciones confiables de
+alta velocidad y capacidad capaces de sobrevivir en entornos submarinos hostiles a distancias
+transoceánicas.
+    <h3 id="conectores-de-fibra-óptica">Conectores de fibra óptica:</h3>
+    <p>Un <strong>conector de fibra óptica</strong> termina el extremo de una <strong>fibra óptica</strong>. Hay una variedad de
+conectores de fibra óptica disponibles. Las diferencias principales entre los tipos de conectores
+son las dimensiones y los métodos de acoplamiento. Las empresas deciden qué tipos de
+conectores utilizarán en base a sus equipos.</p>
+  </li>
+  <li><strong>Conectores de punta directa (ST)</strong>: Son conectores de fibra óptica que utilizan una
+terminación tipo bayoneta para su acoplamiento. Son comunes y fáciles de conectar y
+desconectar. Tienen una <strong>punta cilíndrica</strong> y se utilizan en aplicaciones de fibra multimodo y
+monomodo.</li>
+  <li><strong>Conectores suscriptor (SC)</strong>: Estos son conectores de fibra óptica que se utilizan
+ampliamente en aplicaciones de redes. Tienen un mecanismo de enganche tipo <strong>push-pull</strong>
+que facilita la conexión y desconexión. Son utilizados tanto para fibra multimodo como
+monomodo.</li>
+  <li><strong>Conectores Lucent (LC)</strong>: Son pequeños y altamente utilizados en aplicaciones de
+fibra óptica. Utilizan un mecanismo de enganche similar al SC, pero son más compactos, lo que
+los hace ideales para espacios limitados. Son comunes en conexiones de fibra óptica de <strong>alta
+densidad</strong> y se utilizan para fibra multimodo y monomodo.</li>
+  <li><strong>Conectores Simplex</strong>: Son conectores de fibra óptica que permiten la conexión de
+una sola fibra. Son utilizados para conexiones <strong>punto a punto</strong>, donde solo se requiere una
+dirección de transmisión. Pueden ser tanto conectores ST, SC, LC, u otros, pero se usan para
+una sola fibra.</li>
+  <li><strong>Conectores LC multimodo dúplex</strong>: Estos son conectores de fibra óptica LC que
+permiten la conexión de dos fibras en modo multimodo. Son <strong>dúplex</strong>, lo que significa que
+permiten la transmisión bidireccional de datos en ambos sentidos. Son comunes en
+aplicaciones donde se requiere mayor capacidad de ancho de banda y se utilizan para
+<strong>conexiones</strong> de fibra <strong>multimodo</strong>.
+    <h3 id="cables-de-conexión-de-fibra">Cables de conexión de fibra:</h3>
+    <p>Los cables de <strong>conexión de fibra óptica</strong> son necesarios para interconectar dispositivos de
+infraestructura. El uso de colores distingue entre los cables de conexión <strong>monomodo</strong> y
+<strong>multimodo</strong>. El conector amarillo corresponde a los cables de fibra óptica monomodo y el
+naranja (o aqua) corresponde a los cables de fibra óptica multimodo.</p>
+    <h2 id="medios-inalámbricos">Medios inalámbricos.</h2>
+    <h3 id="propiedades-de-los-medios-inalámbricos">Propiedades de los medios inalámbricos:</h3>
+    <p>Estos permiten la <strong>conexión</strong> a la capa física de una red a través de señales
+electromagnéticas, usando frecuencias de radio y microondas para representar datos en forma
+<strong>binaria</strong>.
+La cobertura se ve afectada por <strong>obstáculos</strong> y <strong>materiales de construcción</strong>, son
+vulnerables a <strong>interferencias</strong> y plantean <strong>desafíos de seguridad</strong> y de <strong>compartición de
+medio</strong>.</p>
+    <h3 id="tipos-de-medios-inalámbricos">Tipos de medios inalámbricos:</h3>
+    <p>Los estándares de <strong>IEEE</strong> y de la industria de las telecomunicaciones para comunicaciones
+inalámbricas abarcan la capa física y de enlace de datos, definiendo especificaciones en áreas
+como codificación de señales a radio, frecuencia e intensidad de transmisión, requisitos de
+recepción y decodificación de señales, y diseño de antenas. Aquí están los <strong>principales</strong>
+estándares inalámbricos:</p>
+    <ol>
+      <li><strong>Wi-Fi</strong> (IEEE 802.11): Tecnología para LAN inalámbrica (<strong>WLAN</strong>) que emplea
+acceso múltiple por detección de portadora con prevención de colisiones (<strong>CSMA/CA</strong>).
+Wi-Fi se utiliza ampliamente con dispositivos <strong>WLAN</strong> certificados basados en el estándar
+IEEE 802.11.</li>
+      <li><strong>Bluetooth</strong> (IEEE 802.15): Estándar para redes de área personal inalámbrica
+(<strong>WPAN</strong>) conocido como “Bluetooth”, que utiliza un proceso de emparejamiento de
+dispositivos para distancias de 1 a 100 metros.</li>
+      <li><strong>WiMAX</strong> (IEEE 802.16): También conocido como Interoperabilidad Mundial para el
+Acceso por Microondas (<strong>WiMAX</strong>), utiliza una topología punto a multipunto para proporcionar
+acceso inalámbrico de ancho de banda.</li>
+      <li><strong>Zigbee</strong> (IEEE 802.15.4): Especificación para comunicaciones de baja velocidad y
+potencia, ideal para aplicaciones con corto alcance, baja velocidad de datos y larga duración de
+batería. Se utiliza en entornos industriales e Internet de las cosas (<strong>IoT</strong>), como interruptores
+inalámbricos y recopilación de datos de dispositivos médicos.
+        <h3 id="lan-inalámbrica">LAN inalámbrica:</h3>
+        <p>La implementación común de tecnología inalámbrica <strong>permite</strong> la conexión de dispositivos a
+través de una LAN inalámbrica. Para esto, se necesitan los siguientes dispositivos de red:</p>
+      </li>
+    </ol>
+  </li>
+  <li><strong>Punto de acceso inalámbrico (AP)</strong>: Concentra las señales inalámbricas de los
+usuarios y se conecta a la infraestructura de red existente basada en cobre, como <strong>Ethernet</strong>.
+En dispositivos domésticos y de pequeñas empresas, los routers inalámbricos integran las
+funciones de un router, switch y punto de acceso en <strong>un solo dispositivo</strong>.</li>
+  <li><strong>Adaptadores NIC inalámbricos</strong>: Proporcionan capacidad de comunicaciones
+inalámbricas a los hosts de la red.
+Con la evolución de la tecnología, han surgido diversos estándares <strong>WLAN</strong> basados en
+<strong>Ethernet</strong>. Al adquirir dispositivos inalámbricos, es importante garantizar la compatibilidad e
+interoperabilidad. Los beneficios de las tecnologías inalámbricas de comunicación de datos son
+notables, especialmente en la reducción de costos de cableado y en la conveniencia de la
+movilidad del host. No obstante, se debe implementar seguridad rigurosa para proteger las
+<strong>WLAN</strong> contra el acceso no autorizado y posibles amenazas.</li>
+</ul>
