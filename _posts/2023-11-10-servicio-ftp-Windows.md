@@ -57,21 +57,47 @@ Vamos a crear 2 usuarios y 1 grupo:
 ![Alt text](MyFile_2023-11-10_20-10-01.png)
 ![Alt text](MyFile_2023-11-10_20-10-17.png)
 
-## Paso 3: Configuración del Servidor FTP
+## Paso 4: Configuración del Servidor FTP
 
 Abre el "Administrador de IIS" (Internet Information Services).
 Navega hasta el nodo del servidor y selecciona "Sitios FTP".
 Haz clic derecho en "Sitio FTP predeterminado" y selecciona "Configurar seguridad de autenticación".
-Habilita la autenticación básica y la autenticación anónima si es necesario.
+Habilita la autenticación básica.
 
-## Paso 4: Integración con Active Directory
+![Alt text](MyFile_2023-11-13_17-33-40.png)
+![Alt text](MyFile_2023-11-13_17-32-38.png)
+![Alt text](MyFile_2023-11-13_17-32-44.png)
+![Alt text](MyFile_2023-11-13_17-33-51.png)
+![Alt text](MyFile_2023-11-13_17-34-10.png)
+![Alt text](MyFile_2023-11-13_17-34-20.png)
+![Alt text](MyFile_2023-11-13_17-34-44.png)
+
+## Paso 5: Configuración de los permisos de los directorios
 
 En el "Administrador de Servidores", selecciona "Herramientas" y luego "Usuarios y Equipos de Active Directory".
 Crea los usuarios que necesitarás para acceder al servidor FTP.
 Asegúrate de que estos usuarios tengan permisos adecuados en las carpetas del servidor FTP.
 Paso 5: Establecer Seguridad Adicional
 
+![Alt text](MyFile_2023-11-13_17-35-31.png)
+![Alt text](MyFile_2023-11-13_17-35-03.png)
+![Alt text](MyFile_2023-11-13_17-35-38.png)
+![Alt text](MyFile_2023-11-13_17-45-26.png)
+![Alt text](MyFile_2023-11-13_17-45-33.png)
+![Alt text](MyFile_2023-11-13_17-46-08.png)
+
+## Paso 6: Activa el FTP como pasivo y abre los puertos pertinentes
+
+![Alt text](MyFile_2023-11-13_17-58-25.png) ![Alt text](MyFile_2023-11-13_17-58-00.png) ![Alt text](MyFile_2023-11-13_17-58-03.png) ![Alt text](MyFile_2023-11-13_17-58-07.png)
+
+## Paso 7: Activación de SSL/TLS
+
+![Alt text](MyFile_2023-11-13_18-00-52.png) ![Alt text](MyFile_2023-11-13_17-59-58.png) ![Alt text](MyFile_2023-11-13_18-00-15.png) ![Alt text](MyFile_2023-11-13_18-00-28.png) ![Alt text](MyFile_2023-11-13_18-00-42.png)
+
+
 Para mejorar la seguridad, considera las siguientes medidas:
+
+
 
 Configuración de Firewall: Ajusta las reglas de firewall para permitir el tráfico FTP.
 Uso de SSL/TLS: Habilita el cifrado mediante SSL/TLS para proteger la transferencia de datos.
