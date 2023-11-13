@@ -3,7 +3,7 @@ title: Montaje del servicio FTP
 date: 2023-11-06 12:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Servicios en red]
 tags: [redes locales, teoría, smr]
-img_path: /assets/img/FTP/   
+img_path: /assets/img/FTP/Linux/  
 ---
 
 ![Logo de Linux y vsFTP](image.png)

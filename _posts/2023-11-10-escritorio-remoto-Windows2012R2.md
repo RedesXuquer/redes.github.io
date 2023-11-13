@@ -8,8 +8,6 @@ img_path: /assets/img/escritorioRemoto/
 
 # Activar escritorio remoto en Windows Server 2012R2
 
-##Vamos a permitir las conexiones de escritorio remote en Widnows Server 2012R2
-
 En el Administrador del servidor nos dirigimos a Servidor Local, ahí nos dirigimos a Escritorio Remoto:
 ![Alt text](MyFile_2023-11-10_19-00-45.png)
 
