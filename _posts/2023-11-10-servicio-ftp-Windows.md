@@ -6,7 +6,7 @@ tags: [redes locales, teoría, smr]
 img_path: /assets/img/FTP/Windows/
 ---
 
-# Activar escritorio remoto en Windows Server 2012R2
+# Servicio FTP con usuarios virtuales de AD en Windows Server 2012R2
 
 En este tutorial, te guiaremos a través del proceso de instalación de un servidor FTP en un entorno Windows Server, aprovechando la integración con Active Directory para gestionar usuarios y aplicando medidas de seguridad esenciales.
 
@@ -22,9 +22,8 @@ Sigue el asistente de instalación, seleccionando el rol "Servidor FTP" y cualqu
 Completa la instalación y asegúrate de habilitar la opción "Habilitar el soporte para FTP básico" y "Habilitar el soporte para FTP de escritura".
 
 ![Alt text](<Captura de pantalla 2023-11-10 194121.png>)
-![Alt text](<Captura de pantalla 2023-11-10 194520.png>)
-![Alt text](<Captura de pantalla 2023-11-10 194134.png>)
 ![Alt text](<Captura de pantalla 2023-11-10 194531.png>)
+![Alt text](<Captura de pantalla 2023-11-10 194134.png>)
 
 Una vez instalado todo vamos a configurar el AD con las siguientes características:
 - Dominio raíz: Axuquer.local
@@ -37,6 +36,26 @@ Una vez instalado todo vamos a configurar el AD con las siguientes característi
 ![Alt text](<Captura de pantalla 2023-11-10 195535.png>)
 ![Alt text](<Captura de pantalla 2023-11-10 195550.png>)
 ![Alt text](<Captura de pantalla 2023-11-10 195641.png>)
+
+## Paso 3: Creación de usuarios FTP virtuales
+
+Vamos a crear 2 usuarios y 1 grupo:
+- Primer usuario: userFtp1
+- Segundo usuario: userFtp2
+- Grupo: usuariosFtp
+
+![Alt text](MyFile_2023-11-10_20-06-33.png)
+![Alt text](MyFile_2023-11-10_20-06-41.png) 
+![Alt text](MyFile_2023-11-10_20-06-49.png)
+![Alt text](MyFile_2023-11-10_20-06-57.png)
+![Alt text](MyFile_2023-11-10_20-07-26.png)
+![Alt text](MyFile_2023-11-10_20-07-33.png)
+![Alt text](MyFile_2023-11-10_20-07-57.png)
+![Alt text](MyFile_2023-11-10_20-08-13.png)
+![Alt text](MyFile_2023-11-10_20-08-50.png)
+![Alt text](MyFile_2023-11-10_20-09-55.png)
+![Alt text](MyFile_2023-11-10_20-10-01.png)
+![Alt text](MyFile_2023-11-10_20-10-17.png)
 
 ## Paso 3: Configuración del Servidor FTP
 
