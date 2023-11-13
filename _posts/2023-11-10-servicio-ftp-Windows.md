@@ -94,10 +94,7 @@ Paso 5: Establecer Seguridad Adicional
 
 ![Alt text](MyFile_2023-11-13_18-00-52.png) ![Alt text](MyFile_2023-11-13_17-59-58.png) ![Alt text](MyFile_2023-11-13_18-00-15.png) ![Alt text](MyFile_2023-11-13_18-00-28.png) ![Alt text](MyFile_2023-11-13_18-00-42.png)
 
-
 Para mejorar la seguridad, considera las siguientes medidas:
-
-
 
 Configuración de Firewall: Ajusta las reglas de firewall para permitir el tráfico FTP.
 Uso de SSL/TLS: Habilita el cifrado mediante SSL/TLS para proteger la transferencia de datos.
