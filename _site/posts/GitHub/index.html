@@ -498,6 +498,101 @@
   
 
   
+    
+    
+
+    
+      
+        
+        
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+
+    
+
+  
 
   
   
@@ -613,9 +708,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1157 words"
+  title="1297 words"
 >
-  <em>6 min</em> read</span>
+  <em>7 min</em> read</span>
 
     </div>
     <!-- .d-flex -->
@@ -625,6 +720,80 @@
 
 <div class="content">
   <p><a href="redes.github.io/_site//assets/img/GitHub/image.png" class="popup img-link "><img data-src="redes.github.io/_site//assets/img/GitHub/image.png" alt="Alt text" class="lazyload" data-proofer-ignore></a></p>
+
+<p>Vamos a empezar configurando varias variables necesarias para trabajar un poco más cómodo:</p>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+</pre></td><td class="rouge-code"><pre>git config --global user.email          "corre@example.com"
+git config --global user.name           "Tu nombre y apellidos"
+git config --global init.defaultBranch  main
+</pre></td></tr></tbody></table></code></div></div>
+
+<h2 id="creamos-un-directorio"><span class="me-2">Creamos un directorio</span><a href="#creamos-un-directorio" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>mkdir prueba
+cd prueba
+</pre></td></tr></tbody></table></code></div></div>
+
+<h2 id="comprobamos-que-tenemos-el-directorio-vacío"><span class="me-2">Comprobamos que tenemos el directorio vacío</span><a href="#comprobamos-que-tenemos-el-directorio-vacío" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>ls -la
+</pre></td></tr></tbody></table></code></div></div>
+
+<h2 id="inicializamos-el-repositorio"><span class="me-2">Inicializamos el repositorio</span><a href="#inicializamos-el-repositorio" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>git init
+</pre></td></tr></tbody></table></code></div></div>
+
+<h2 id="comprobamos-que-se-ha-creado-el-directorio-git"><span class="me-2">Comprobamos que se ha creado el directorio .git</span><a href="#comprobamos-que-se-ha-creado-el-directorio-git" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>ls -la
+</pre></td></tr></tbody></table></code></div></div>
+
+<h2 id="creamos-un-archivo-readmemd-y-ponemos-nuestro-nombre"><span class="me-2">Creamos un archivo README.md y ponemos nuestro nombre</span><a href="#creamos-un-archivo-readmemd-y-ponemos-nuestro-nombre" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Este archivo será el que se leera por defecto en GitHub</p>
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>echo "Mi nombre" &gt; README.md
+</pre></td></tr></tbody></table></code></div></div>
+
+<h2 id="registramos-los-cambios-en-el-repositorio"><span class="me-2">Registramos los cambios en el repositorio</span><a href="#registramos-los-cambios-en-el-repositorio" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<ol>
+  <li>Añadimos el área de preparación
+    <div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>git add README.md
+</pre></td></tr></tbody></table></code></div>    </div>
+  </li>
+  <li>Añadimos al repositorio en local
+    <div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>git commit -m "Primer cambio registrado"
+</pre></td></tr></tbody></table></code></div>    </div>
+  </li>
+</ol>
+
+<h2 id="añadimos-dos-líneas-más"><span class="me-2">Añadimos dos líneas más</span><a href="#añadimos-dos-líneas-más" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<p>Cada vez que se añada una línea tenemos que hacer un commit cambiando la información</p>
 
 <h1 id="introducción">Introducción</h1>
 
@@ -1300,6 +1469,11 @@ Configura un flujo de trabajo (workflow) para realizar pruebas, despliegues u ot
               
 
 
+
+  <section id="toc-wrapper" class="ps-0 pe-4 mb-5">
+    <h2 class="panel-heading ps-3 pt-2 mb-2">Contents</h2>
+    <nav id="toc"></nav>
+  </section>
 
 
             
@@ -2021,9 +2195,16 @@ El Modelo OSI (Open Systems Interconnection) y el conjunto de protocolos TCP/IP 
 
   
 
+  
+    
+
+    
+
+  
 
 
-  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/lazysizes@5.3.2/lazysizes.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.9/dayjs.min.js,npm/dayjs@1.11.9/locale/es.min.js,npm/dayjs@1.11.9/plugin/relativeTime.min.js,npm/dayjs@1.11.9/plugin/localizedFormat.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/combine/npm/jquery@3.7.1/dist/jquery.min.js,npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js,npm/simple-jekyll-search@1.10.0/dest/simple-jekyll-search.min.js,npm/lazysizes@5.3.2/lazysizes.min.js,npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js,npm/clipboard@2.0.11/dist/clipboard.min.js,npm/dayjs@1.11.9/dayjs.min.js,npm/dayjs@1.11.9/locale/es.min.js,npm/dayjs@1.11.9/plugin/relativeTime.min.js,npm/dayjs@1.11.9/plugin/localizedFormat.min.js,npm/tocbot@4.21.1/dist/tocbot.min.js"></script>
 
 
 
