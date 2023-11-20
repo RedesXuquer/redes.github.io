@@ -54,7 +54,7 @@
 <meta property="twitter:title" content="GitHub" />
 <meta name="twitter:site" content="@twitter_username" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-11-19T22:07:08+01:00","datePublished":"2023-11-07T12:00:00+01:00","description":"A minimal, responsive and feature-rich Jekyll theme for technical writing.","headline":"GitHub","mainEntityOfPage":{"@type":"WebPage","@id":"/redes.github.io/_site/posts/GitHub/"},"url":"/redes.github.io/_site/posts/GitHub/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-11-20T09:17:41+01:00","datePublished":"2023-11-07T12:00:00+01:00","description":"A minimal, responsive and feature-rich Jekyll theme for technical writing.","headline":"GitHub","mainEntityOfPage":{"@type":"WebPage","@id":"/redes.github.io/_site/posts/GitHub/"},"url":"/redes.github.io/_site/posts/GitHub/"}</script>
 <!-- End Jekyll SEO tag -->
 
   
@@ -1017,6 +1017,138 @@
       
 
     
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
+      
+
+      
+      
+
+      
+      
+      
+
+      
+
+    
 
     
 
@@ -1087,13 +1219,13 @@
 
 <time
   
-  data-ts="1700428028"
+  data-ts="1700468261"
   data-df="ll"
   
     data-bs-toggle="tooltip" data-bs-placement="bottom"
   
 >
-  Nov 19, 2023
+  Nov 20, 2023
 </time>
 
       </span>
@@ -1136,9 +1268,9 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="1263 words"
+  title="3018 words"
 >
-  <em>7 min</em> read</span>
+  <em>16 min</em> read</span>
 
     </div>
     <!-- .d-flex -->
@@ -1564,6 +1696,342 @@ git show v2
 
 <blockquote>
   <p><em>NOTA: No borrar el repositorio local. Lo volveremos a utilizar en la siguiente actividad.</em></p>
+</blockquote>
+
+<h1 id="crear-repositorio-remoto-y-subir-commits-locales">Crear repositorio remoto y subir commits locales</h1>
+
+<p>En esta actividad crearemos un repositorio vacío en GitHub y subiremos el contenido de nuestro repositorio local.</p>
+
+<h2 id="1-primero-creamos-un-repositorio-totalmente-vacío-en-github"><span class="me-2">1. Primero, creamos un repositorio totalmente vacío en GitHub.</span><a href="#1-primero-creamos-un-repositorio-totalmente-vacío-en-github" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Accedemos a nuestra cuenta de GitHub.</p>
+
+<p>En la <strong>esquina superior derecha</strong>, pulsamos en el signo <strong>+</strong> y luego en <strong>New repository</strong></p>
+
+<p>Escogemos el nombre del repositorio. No tiene por que coincidir con el nombre del repositorio local, aunque es lo aconsejable para no hacernos un lío.</p>
+
+<p>Es muy importante que NO INICIALICES EL REPOSITORIO. Si el repositorio no estuviese vacío podría darnos un conflicto.</p>
+
+<p>En una actividad posterior crearemos conflictos y veremos como resolverlos. Pero en en esta actividad, sólo vamos a trabajar lo básico.</p>
+
+<p>Pulsaremos en <strong>Create Repository</strong> y nos aparecerá una página en la cual nos pondrá varias opciones de inicializar el reposiotrio:</p>
+
+<p>Escogemos la imagen que pone únicamente <strong>git remote y git push</strong></p>
+
+<p>Ahí podemos ver la URL del repositorio remoto. Hay 2 formas de acceso:</p>
+
+<ul>
+  <li><strong>mediante HTTPS</strong></li>
+  <li><strong>mediante SSH</strong></li>
+</ul>
+
+<p><strong>Usaremos, por ahora, HTTPS</strong>. En una actividad posterior veremos como usar SSH y utilizar cifrado público-privado para no tener que introducir cada vez nuestras credenciales.</p>
+
+<p>Más abajo se indican los comandos a ejecutar en nuestro repositorio local. Lo vemos en el siguiente punto.</p>
+
+<p>Para tu comodidad, no cierres la página. Más adelante volveremos a ella.</p>
+
+<h2 id="2-asociar-repositorio-local-con-repositorio-remoto"><span class="me-2">2. Asociar repositorio local con repositorio remoto</span><a href="#2-asociar-repositorio-local-con-repositorio-remoto" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>En nuestro repositorio local, para asociarlo con el repositorio remoto, hacemos:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>git remote add origin  ** Tu enlace **
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Nuestro repositorio remoto será identificado como <strong>origin</strong>. Podemos ponerle otro nombre, pero no debemos. Es una convención ampliamente aceptada poner este nombre al repositorio remoto de GitHub.</p>
+
+<p>Para ver si se ha añadido bien hacemos</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>git remote -v
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Deben aparecer 2 entradas, una para bajada (fetch) y otra para subida (push)</p>
+
+<blockquote>
+  <p>NOTA: Si por cualquier motivo nos equivocamos y escribimos mal el nombre o la URL, podemos borrar la asociación con</p>
+  <div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>git remote remove origin
+</pre></td></tr></tbody></table></code></div>  </div>
+  <p>y luego volver a crear la asociación.</p>
+</blockquote>
+
+<h2 id="3-subir-todos-los-commits-locales-al-repositorio-remoto"><span class="me-2">3. Subir todos los commits locales al repositorio remoto</span><a href="#3-subir-todos-los-commits-locales-al-repositorio-remoto" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Para subir el contenido de nuestro repositorio local al repositorio remoto hacemos:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>git push -u origin main
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>El identificador <strong>origin</strong> es el nombre que dimos a nuestro vínculo. El identificador main se refiere a la rama principal.</p>
+
+<p>Es una convención ampliamente seguida, así que respétala.</p>
+
+<p>Se nos pedirá nuestro usuario y contraseña. Lo introducimos, y si no hay problema, se realizará la subida.</p>
+
+<h2 id="4-comprobando-la-subida"><span class="me-2">4. Comprobando la subida.</span><a href="#4-comprobando-la-subida" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Volvemos a la página de GitHub y la actualizamos.</p>
+
+<p>Nos aparecerá dentro de nuestro repositorio nuestro archivo README.md</p>
+
+<p>GitHub ofrece muchas funcionalidades.</p>
+
+<p>Así que nos centraremos ahora mismo en las releases. Estás se corresponden con el etiquetado que realizamos en la actividad anterior con git tag.</p>
+
+<p>Teníamos 2 releases, etiquetadas como v1 y v2, pero sin embargo aquí no aparece ninguna.</p>
+
+<p>El motivo, es que debemos subir las etiquetas por separado con el comando</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>git push --tags
+</pre></td></tr></tbody></table></code></div></div>
+<p>Así que ejecutaremos dicho comando desde nuestro repositorio local. Refrescaremos la página. Et voilà !</p>
+
+<h2 id="5-examinando-commits-y-releases-en-github"><span class="me-2">5. Examinando commits y releases en GitHub.</span><a href="#5-examinando-commits-y-releases-en-github" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p><strong>Pulsa en 3 commits</strong> y haz una captura de pantalla. Por tu cuenta puedes examinar cada uno de los commits.</p>
+
+<p><strong>Pulsa en 2 releases</strong> y haz una captura de pantalla. Observa que se han creado archivos comprimidos con el código fuente para descargar.</p>
+
+<blockquote>
+  <p><em>NOTA: No borrar los repositorio local ni repositorio remoto. Los volveremos a utilizar en la siguiente actividad.</em></p>
+</blockquote>
+
+<h1 id="deshacer-cambios-en-repositorio-local">Deshacer cambios en repositorio local</h1>
+
+<p>En esta actividad, veremos que podemos hacer cuando cometemos errores.</p>
+
+<p>Si realizamos algún cambio y hemos “metido la pata”, podemos deshacer el “entuerto”.</p>
+
+<p>Vamos a verlo de forma práctica haciendo uso del comando  <strong>git reset –hard</strong></p>
+
+<h2 id="1-deshacer-cambios-en-el-directorio-de-trabajo"><span class="me-2">1. Deshacer cambios en el directorio de trabajo</span><a href="#1-deshacer-cambios-en-el-directorio-de-trabajo" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Estando en el último commit de la rama master, modificamos el archivo README.md</p>
+
+<p>Vamos a eliminar las 2 últimas líneas.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>nano README.md
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Editamos. Debe quedar una sola línea con nuestro nombre.</p>
+
+<p>Para ver los cambios que hemos introducido ejecutamos:</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">git diff HEAD</code></strong></p>
+
+<p>Es decir vamos a ver las diferencias que existen en nuestro directorio de trabajo respecto al commit HEAD, es decir el último commit confirmado.</p>
+
+<blockquote>
+  <p>NOTA: Si quisiesemos ver las diferencias de nuestro directorio de trabajo respecto al commit de la Versión 1, haríamos <strong>git diff v1</strong>.
+Observa que estamos viendo las diferencias hacia al pasado. Esta forma de uso de git diff es diferente a la que vimos en la última actividad, en la cual veíamos las diferencias hacia el futuro.</p>
+</blockquote>
+
+<p>Se ve claramente que hemos eliminado las 2 últimas líneas.</p>
+
+<p>Para volver el estado de este archivo y de CUALQUIER OTRO de nuestro directorio de trabajo que hayamos modificado, ejecutamos:</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">git reset --hard</code></strong></p>
+
+<h2 id="2-y-para-deshacer-el-área-de-preparación"><span class="me-2">2. ¿Y para deshacer el área de preparación?</span><a href="#2-y-para-deshacer-el-área-de-preparación" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Imaginemos que hemos ido un poco más lejos, y que además de modificar el directorio de trabajo, hemos añadido los cambios al Staging Area. Es decir hemos hecho</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>nano README.md
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Borrado las 2 últimas líneas.</p>
+
+<p>Y luego hemos añadido al área de preparación mediante</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>git  add  README.md
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>No te preocupes en este caso puede también aplicarse el comando anterior:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>git  reset --hard
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Dicho comando coge el contenido que hay en nuestro commit confirmado y recupera ambos: el directorio de trabajo y el área de preparación.</p>
+
+<h2 id="3-y-qué-pasa-si-ya-realicé-un-commit"><span class="me-2">3. ¿Y qué pasa si ya realicé un commit?</span><a href="#3-y-qué-pasa-si-ya-realicé-un-commit" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Imaginemos que hemos ido todavía un poco más lejos, y que además de modificar el directorio de trabajo y añadir los cambios al Staging Area, hemos realizado un commit. Es decir hemos hecho</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>nano README.md
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Borrado las 2 últimas líneas.</p>
+
+<p>Y luego hemos añadido al área de preparación mediante</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>git  add  README.md
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Y además hemos hecho</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre>git commit -m "Borras líneas de README.md"
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Pues en este caso también podemos usar el comando <strong>git reset –hard</strong> de la siguiente forma:</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">git  reset --hard  HEAD~1</code></strong></p>
+
+<p><strong>HEAD~1</strong> significa el commit anterior al actual. Es decir <strong>un commit hacia atrás</strong>.</p>
+
+<p><strong>HEAD~2</strong> significa <strong>2 commits hacia atrás</strong>.</p>
+
+<p><strong>HEAD~n</strong> significa <strong>n commits hacia atrás</strong>, sustituyendo n por un número.</p>
+
+<blockquote>
+  <p><strong>NOTA: Usar git reset –hard de esta última forma es peligroso, porque perdemos el último o últimos commits. Así que hay que asegurarse muy bien de que es eso lo que queremos</strong>.</p>
+</blockquote>
+
+<blockquote>
+  <p><em>NOTA: No borrar los repositorio local ni el remoto. Los volveremos a utilizar en la siguiente actividad.</em></p>
+</blockquote>
+
+<h1 id="archivo-gitignore">Archivo .gitignore</h1>
+
+<p>En esta actividad empezaremos a trabajar con algo más real. Por ejemplo, una sencilla aplicación de Java. Esta actividad también es práctica.</p>
+
+<p>Vamos a seguir utilizando el repositorio que estabamos usando en las actividades anteriores.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">git log  --oneline --all</code></strong></p>
+
+<h2 id="1-creamos-una-aplicación-holamundo-en-java"><span class="me-2">1. Creamos una aplicación HolaMundo en Java.</span><a href="#1-creamos-una-aplicación-holamundo-en-java" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Creamos la aplicación y después continuamos…</p>
+
+<p>Si ahora volvemos a hacer un listado, veremos que nos ha creado una nueva carpeta llamada build con el bytecode resultante de la compilación.</p>
+
+<h2 id="2-añadiendo-archivos-al-repositorio-local"><span class="me-2">2. Añadiendo archivos al repositorio local</span><a href="#2-añadiendo-archivos-al-repositorio-local" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Como vimos en la actividad anterior, si ahora ejecutamos <strong>git diff HEAD</strong>, esperariamos ver los cambios de nuestro directorio de trabajo respecto al último commit.</p>
+
+<p>Sin embargo esto no es lo que ocurre. NO SE MUESTRA NADA. ¿Por qué es esto?</p>
+
+<p>Esto es porque git diff HEAD funciona siempre teniendo en cuenta los archivos que ya habían sido añadidos previamente al repositorio. Es decir sólo tiene en cuenta los archivos con seguimiento.</p>
+
+<p><strong>Los archivos nuevos son archivos sin seguimiento</strong>. En este caso debemos usar <strong>git status</strong> para ver esta circunstancia.</p>
+
+<p>Ahora debemos añadir todos estos archivos al área de preparación (Staging Area) y luego realizar un commit.</p>
+
+<p>PERO ESPERA UN MOMENTO. Voy a explicarte algo.</p>
+
+<p><strong>Cuando se trabaja con proyectos de código fuente existen algunos archivos que no interesa añadir al repositorio, puesto que no aportan nada</strong>. En el repositorio, como norma general, no debe haber archivos ejecutables, ni bytecode, ni código objeto, y muchas veces tampoco .zip, .rar, .jar, .war, etc. Estos archivos inflan el repositorio y, cuando llevamos muchos commits, hacen crecer demasiado el repositorio y además pueden ralentizar el trabajo de descarga y subida.</p>
+
+<p>Para cada lenguaje y para cada entorno de desarrollo se recomienda no incluir ciertos tipos de archivos. Son los <strong>archivos a ignorar</strong>. Cada programador puede añadir o eliminar de la lista los que considere adecuados. Los archivos y carpetas a ignorar deben indicarse en el archivo <strong><code class="language-plaintext highlighter-rouge">.gitignore</code></strong>. En cada línea se pone un archivo, una carpeta o una expresión regular indicando varios tipos de archivos o carpetas.</p>
+
+<p>En el repositorio https://github.com/github/gitignore tienes muchos ejemplos para distintos lenguajes, herramientas de construcción y entornos.</p>
+
+<p>Para el lenguaje Java: https://github.com/github/gitignore/blob/master/Java.gitignore</p>
+
+<p>Para la herramienta Gradle: https://github.com/github/gitignore/blob/master/Gradle.gitignore</p>
+
+<p>Para el entorno Netbeans: https://github.com/github/gitignore/blob/master/Global/NetBeans.gitignore</p>
+
+<p>Simplificando, nosotros vamos a ignorar las carpetas que creás oportunas. Entonces, el archivo <strong><code class="language-plaintext highlighter-rouge">.gitignore</code></strong> debe tener el siguiente contenido:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre>el directorio que queramos/
+el archivo que queramos
+el .directorio que queramos/
+...
+</pre></td></tr></tbody></table></code></div></div>
+<p>La barra final es opcional, pero a mí me gusta ponerla cuando me refiero a carpetas, para así saber cuando se trata de un archivo y cuando de una carpeta.</p>
+
+<p>Crea el archivo .gitignore con dicho contenido y haz una captura de pantalla.</p>
+
+<p>Ahora si hacemos</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">git status</code></strong></p>
+
+<p>veremos que no nos aparecen las carpetas que habéis elegido. Y nos aparece un archivo nuevo .gitignore.</p>
+
+<p>Ahora ya podemos ejecutar</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>git add .
+git commit -m "Código fuente inicial"
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Fíjate que he escrito <code class="language-plaintext highlighter-rouge">git add .</code>. El punto indica el directorio actual, y es una forma de indicar que incluya en el área de preparación todos los archivos del directorio en el que me encuentro (salvo los archivos y carpetas indicados en <code class="language-plaintext highlighter-rouge">.gitignore</code>) Se utiliza bastante esta forma de git add cuando no queremos añadir los archivos uno a uno.</p>
+
+<h2 id="3-subir-cambios-de-repositorio-local-a-repositorio-remoto"><span class="me-2">3. Subir cambios de repositorio local a repositorio remoto</span><a href="#3-subir-cambios-de-repositorio-local-a-repositorio-remoto" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+
+<p>Ya sólo nos queda subir los cambios realizados al repositorio remoto con <strong>git push</strong></p>
+
+<p>Para hacer algo más interesante este apartado, vamos a crear una etiqueta en el commit actual y subirla a github para que éste cree una nueva <em>release</em>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="code-header">
+        <span data-label-text="Plaintext"><i class="fas fa-code fa-fw small"></i></span>
+      <button aria-label="copy" data-title-succeed="Copied!"><i class="far fa-clipboard"></i></button></div><div class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+</pre></td><td class="rouge-code"><pre>git tag v3
+git push --tags
+</pre></td></tr></tbody></table></code></div></div>
+
+<p>Bueno, las etiquetas v1 y v2 no se suben porque ya la habíamos subido previamente.</p>
+
+<p>En este caso, podríamos también haber ejecutado</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">git push origin v3</code></strong></p>
+
+<p>Y la historia de nuestro repositorio local nos quedaría…</p>
+
+<p>Accede a tu repositorio en GitHub y haz una captura de pantalla de las <em>releases</em>.</p>
+
+<p>Haz otra captura de los archivos y carpetas de código subidas a GitHub. No deberían aparecer ni la carpeta build ni la carpeta .gradle. Y sí debería aparecer el archivo .gitignore.</p>
+
+<blockquote>
+  <p>NOTA: La carpeta <code class="language-plaintext highlighter-rouge">.git</code> nunca se muestra en GitHub.</p>
+</blockquote>
+
+<blockquote>
+  <p><em>NOTA: No borrar los repositorio local ni repositorio remoto. Los volveremos a utilizar en la siguiente actividad.</em></p>
 </blockquote>
 
 </div>
