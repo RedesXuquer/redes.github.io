@@ -4,7 +4,7 @@
   <id>/redes.github.io/_site/</id>
   <title>Redes</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2023-11-20T22:31:22+01:00</updated>
+  <updated>2023-12-10T22:36:25+01:00</updated>
   <author>
     <name>Luis</name>
     <uri>/redes.github.io/_site/</uri>
@@ -17,6 +17,51 @@
   <icon>redes.github.io/_site//assets/img/favicons/favicon.ico</icon>
   <logo>redes.github.io/_site//assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Markdown Cheatsheet</title>
+    <link href="/redes.github.io/_site/posts/Markdown-Cheatsheet/" rel="alternate" type="text/html" title="Markdown Cheatsheet" />
+    <published>2023-12-10T00:00:00+01:00</published>
+  
+    <updated>2023-12-10T00:00:00+01:00</updated>
+  
+    <id>/redes.github.io/_site/posts/Markdown-Cheatsheet/</id>
+    <content src="/redes.github.io/_site/posts/Markdown-Cheatsheet/" />
+    <author>
+      <name>Luis</name>
+    </author>
+
+  
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      This is intended as a quick reference and showcase. For more complete info, see John Gruber’s original spec and the Github-flavored Markdown info page.
+
+Note that there is also a Cheatsheet specific to Markdown Here if that’s what you’re looking for. You can also check out more Markdown tools.
+
+Table of Contents
+Headers
+Emphasis
+Lists
+Links
+Images
+Code and Syntax Highlighting
+Footnotes
+Tables
+B...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -119,7 +164,7 @@ Ahora desde el equipo remoto nos i...
     <link href="/redes.github.io/_site/posts/GitHub/" rel="alternate" type="text/html" title="GitHub" />
     <published>2023-11-07T12:00:00+01:00</published>
   
-    <updated>2023-11-20T09:17:41+01:00</updated>
+    <updated>2023-11-20T22:31:28+01:00</updated>
   
     <id>/redes.github.io/_site/posts/GitHub/</id>
     <content src="/redes.github.io/_site/posts/GitHub/" />
@@ -204,53 +249,6 @@ Inic...
 Introducción
 
 vsftpd, que significa “Very Secure File Transfer Protocol Daemon” (Demonio de Protocolo de Transferencia de Archivos Muy Seguro), es un software de servidor FTP (File Transfer Protocol) de código abierto diseñado para sistemas operativos tipo Unix. Es conocido por su enfoque en la seguridad y el rendimiento, lo que lo convierte en una opción popular para configurar servidores FT...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Capa física</title>
-    <link href="/redes.github.io/_site/posts/Capa-f%C3%ADsica/" rel="alternate" type="text/html" title="Capa física" />
-    <published>2023-11-05T12:00:00+01:00</published>
-  
-    <updated>2023-11-13T13:41:02+01:00</updated>
-  
-    <id>/redes.github.io/_site/posts/Capa-f%C3%ADsica/</id>
-    <content src="/redes.github.io/_site/posts/Capa-f%C3%ADsica/" />
-    <author>
-      <name>Luis</name>
-    </author>
-
-  
-    
-    <category term="Sistemas Microinformáticos y Redes" />
-    
-    <category term="Redes Locales" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      
-
-La capa Física
-Introducción
-La capa física es la primera capa del modelo OSI.
-También se le conoce como CAPA 1, esta es responsable de la transmisión de bits no
-estructurados a través de un medio de comunicación físico, ya sea cable de cobre, fibra
-óptica,
-ondas de radio, etc.
-Esta capa se enfoca en aspectos relacionados con la transmisión de datos en su forma más
-básica y física.
-Esta capa f...
     </summary>
   
 
