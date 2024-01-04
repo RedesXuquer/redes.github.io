@@ -120,11 +120,11 @@ Aparecerá algo como esto, aceptamos y continuamos:
 
 Como se puede observar tenemos un menú en nuestra parte izquierda, en este manual vamos a añadir usuarios y permitir hacer un NAT a nuestra subred
 
-## Configuramos nuestras subredes
+### Configuramos nuestras subredes
 
 ![Alt text](Screenshot_2023-12-28_22-10-08.png)
 ![Alt text](Screenshot_2023-12-28_22-10-27.png)
-## Configuramos el NAT
+### Configuramos el NAT
 
 ![Alt text](Screenshot_2023-12-28_22-07-55.png)
 
@@ -140,12 +140,12 @@ Reiniciamos el servicio:
 
 ![Alt text](Screenshot_2023-12-28_22-08-55.png)
 
-## Añadir usuarios
+### Añadir usuarios
 
 ![Alt text](Screenshot_2023-12-29_18-36-32.png)
 ![Alt text](Screenshot_2023-12-29_18-37-05.png) 
 
-## Conectarnos desde un cliente
+### Conectarnos desde un cliente
 
 ![Alt text](<Captura de pantalla 2023-12-29 184303.png>)
 
@@ -158,3 +158,58 @@ Reiniciamos el servicio:
 Comprobamos:
 
 ![Alt text](<Captura de pantalla 2023-12-29 184755.png>)
+
+## Otra forma de configuración a través del script directamente
+
+Nos descargamos el siguiente script
+```
+wget https://git.io/vpn -O openvpn-install.sh
+```
+
+Le damos permisos de ejecución
+```
+sudo chmod +x openvpn-install.sh
+```
+
+Lo instalamos
+```
+sudo bash openvpn-install.sh
+```
+
+Debemos de obtener un salida algo similar a lo siguiente
+```
+Welcome to this OpenVPN road warrior installer!
+
+This server is behind NAT. What is the public IPv4 address or hostname?
+Public IPv4 address / hostname [**Aquí saldrá nuestra IP externa**]: **NUESTRA IP EXTERNA**
+
+Which protocol should OpenVPN use?
+   1) UDP (recommended)
+   2) TCP
+Protocol [1]: 1
+
+What port should OpenVPN listen to?
+Port [1194]: 1194
+
+Select a DNS server for the clients:
+   1) Current system resolvers
+   2) Google
+   3) 1.1.1.1
+   4) OpenDNS
+   5) Quad9
+   6) AdGuard
+DNS server [1]: 2
+
+Enter a name for the first client:
+Name [client]: alumno
+
+OpenVPN installation is ready to begin.
+Press any key to continue...
+```
+
+Después de esto nos habrá generado un archivo en /root/ con el nombre que le hayamos puesto
+```
+sudo cp /root/alumno.ovpn /home/alumno/
+```
+
+Este archivo se le hacemos llegar a nuestro cliente y probamos
