@@ -4,7 +4,7 @@
   <id>/redes.github.io/_site/</id>
   <title>Redes</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-01-04T13:43:50+01:00</updated>
+  <updated>2024-01-04T13:46:08+01:00</updated>
   <author>
     <name>Luis</name>
     <uri>/redes.github.io/_site/</uri>
@@ -57,6 +57,44 @@ Leyenda de la tabla
 | — | — |
 | Características de la capa de red | Explique cómo la capa de red utiliza los protocolos IP para una confiabilidad de comunicaciones. |
 | Paquete IPv4 | Explique la función de los principale...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Montaje del servicio OpenVPN</title>
+    <link href="/redes.github.io/_site/posts/servicio-openvpn/" rel="alternate" type="text/html" title="Montaje del servicio OpenVPN" />
+    <published>2023-12-28T12:00:00+01:00</published>
+  
+    <updated>2023-12-28T12:00:00+01:00</updated>
+  
+    <id>/redes.github.io/_site/posts/servicio-openvpn/</id>
+    <content src="/redes.github.io/_site/posts/servicio-openvpn/" />
+    <author>
+      <name>Luis</name>
+    </author>
+
+  
+    
+    <category term="Sistemas Microinformáticos y Redes" />
+    
+    <category term="Servicios en red" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+Una red privada virtual (VPN) es una tecnología que permite establecer una conexión segura y cifrada entre tu dispositivo (como una computadora, teléfono o tablet) y un servidor remoto. El propósito principal de una VPN es proteger tu privacidad y seguridad en línea al cifrar el tráfico de datos entre tu dispositivo y el servidor al que te conectas. Aquí hay una explicación más detallada sobr...
     </summary>
   
 
@@ -190,59 +228,6 @@ En este tutorial, te guiaremos a través del proceso de instalación de un servi
 Paso 1: Preparación del Entorno
 
 Antes de comenzar, asegúrate de que tu servidor Windows está ...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Escritorio remoto Windows 2012R2</title>
-    <link href="/redes.github.io/_site/posts/escritorio-remoto-Windows2012R2/" rel="alternate" type="text/html" title="Escritorio remoto Windows 2012R2" />
-    <published>2023-11-10T12:00:00+01:00</published>
-  
-    <updated>2023-11-13T13:41:02+01:00</updated>
-  
-    <id>/redes.github.io/_site/posts/escritorio-remoto-Windows2012R2/</id>
-    <content src="/redes.github.io/_site/posts/escritorio-remoto-Windows2012R2/" />
-    <author>
-      <name>Luis</name>
-    </author>
-
-  
-    
-    <category term="Sistemas Microinformáticos y Redes" />
-    
-    <category term="Servicios en red" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Activar escritorio remoto en Windows Server 2012R2
-
-En el Administrador del servidor nos dirigimos a Servidor Local, ahí nos dirigimos a Escritorio Remoto:
-
-
-Le damos a la opción de “permitir las conexiones remotas a este equipo”:
-
-
-Aceptamos el mensaje:
-
-
-Si se ha activado el check de “permitir solo las conexiones…” lo desactivamos:
-
-
-Aplicamos y aceptamos:
-
-
-Ahora desde el equipo remoto nos i...
     </summary>
   
 
