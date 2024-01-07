@@ -4,7 +4,7 @@
   <id>/redes.github.io/_site/</id>
   <title>Redes</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-01-04T13:51:36+01:00</updated>
+  <updated>2024-01-07T23:45:52+01:00</updated>
   <author>
     <name>Luis</name>
     <uri>/redes.github.io/_site/</uri>
@@ -17,6 +17,71 @@
   <icon>redes.github.io/_site//assets/img/favicons/favicon.ico</icon>
   <logo>redes.github.io/_site//assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Montaje del servicio VPN</title>
+    <link href="/redes.github.io/_site/posts/servicio-VPN_Windows/" rel="alternate" type="text/html" title="Montaje del servicio VPN" />
+    <published>2024-01-07T12:00:00+01:00</published>
+  
+    <updated>2024-01-07T12:00:00+01:00</updated>
+  
+    <id>/redes.github.io/_site/posts/servicio-VPN_Windows/</id>
+    <content src="/redes.github.io/_site/posts/servicio-VPN_Windows/" />
+    <author>
+      <name>Luis</name>
+    </author>
+
+  
+    
+    <category term="Sistemas Microinformáticos y Redes" />
+    
+    <category term="Servicios en red" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -68,7 +133,7 @@ Leyenda de la tabla
     <link href="/redes.github.io/_site/posts/servicio-openvpn/" rel="alternate" type="text/html" title="Montaje del servicio OpenVPN" />
     <published>2023-12-28T12:00:00+01:00</published>
   
-    <updated>2023-12-28T12:00:00+01:00</updated>
+    <updated>2024-01-04T13:51:38+01:00</updated>
   
     <id>/redes.github.io/_site/posts/servicio-openvpn/</id>
     <content src="/redes.github.io/_site/posts/servicio-openvpn/" />
@@ -186,48 +251,6 @@ La Capa de Enlace de Datos “Capa 2”, actúa como un facilitador que permite 
 Su función principal es asegurarse de que los datos estén listos para ser transmitidos a través de la infraestructura física y de que lleguen a su destino sin problemas.
 
 Esta c...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Servicio FTP con usuarios virtuales de AD en Windows Server</title>
-    <link href="/redes.github.io/_site/posts/servicio-ftp-Windows/" rel="alternate" type="text/html" title="Servicio FTP con usuarios virtuales de AD en Windows Server" />
-    <published>2023-11-13T12:00:00+01:00</published>
-  
-    <updated>2023-11-13T19:28:52+01:00</updated>
-  
-    <id>/redes.github.io/_site/posts/servicio-ftp-Windows/</id>
-    <content src="/redes.github.io/_site/posts/servicio-ftp-Windows/" />
-    <author>
-      <name>Luis</name>
-    </author>
-
-  
-    
-    <category term="Sistemas Microinformáticos y Redes" />
-    
-    <category term="Servicios en red" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Servicio FTP con usuarios virtuales de AD en Windows Server 2012R2
-
-En este tutorial, te guiaremos a través del proceso de instalación de un servidor FTP en un entorno Windows Server, aprovechando la integración con Active Directory para gestionar usuarios y aplicando medidas de seguridad esenciales.
-
-Paso 1: Preparación del Entorno
-
-Antes de comenzar, asegúrate de que tu servidor Windows está ...
     </summary>
   
 
