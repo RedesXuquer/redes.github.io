@@ -4,7 +4,7 @@
   <id>/redes.github.io/_site/</id>
   <title>Redes</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-01-07T23:45:52+01:00</updated>
+  <updated>2024-01-09T22:02:09+01:00</updated>
   <author>
     <name>Luis</name>
     <uri>/redes.github.io/_site/</uri>
@@ -17,6 +17,48 @@
   <icon>redes.github.io/_site//assets/img/favicons/favicon.ico</icon>
   <logo>redes.github.io/_site//assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Capa red</title>
+    <link href="/redes.github.io/_site/posts/Subnetting/" rel="alternate" type="text/html" title="Capa red" />
+    <published>2024-01-09T12:00:00+01:00</published>
+  
+    <updated>2024-01-09T12:00:00+01:00</updated>
+  
+    <id>/redes.github.io/_site/posts/Subnetting/</id>
+    <content src="/redes.github.io/_site/posts/Subnetting/" />
+    <author>
+      <name>Luis</name>
+    </author>
+
+  
+    
+    <category term="Sistemas Microinformáticos y Redes" />
+    
+    <category term="Redes Locales" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Subnetting
+
+
+
+Subnetting es el proceso de dividir una red IP en subredes más pequeñas. Una red IP se compone de direcciones IP que se utilizan para identificar dispositivos en la red. Subnetting permite dividir una red grande en segmentos más pequeños, lo que ofrece varios beneficios, como mejorar el rendimiento, facilitar la gestión de la red y proporcionar una mayor seguridad.
+
+Cuando se real...
+    </summary>
+  
+
+  </entry>
 
   
   <entry>
@@ -209,48 +251,6 @@ Code and Syntax Highlighting
 Footnotes
 Tables
 B...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Capa enlace de datos</title>
-    <link href="/redes.github.io/_site/posts/Capa-enlace-de-datos/" rel="alternate" type="text/html" title="Capa enlace de datos" />
-    <published>2023-12-10T12:00:00+01:00</published>
-  
-    <updated>2023-12-10T12:00:00+01:00</updated>
-  
-    <id>/redes.github.io/_site/posts/Capa-enlace-de-datos/</id>
-    <content src="/redes.github.io/_site/posts/Capa-enlace-de-datos/" />
-    <author>
-      <name>Luis</name>
-    </author>
-
-  
-    
-    <category term="Sistemas Microinformáticos y Redes" />
-    
-    <category term="Redes Locales" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Capa de enlace de datos
-Propósito
-La capa de enlace de datos:
-La Capa de Enlace de Datos “Capa 2”, actúa como un facilitador que permite la comunicación entre dispositivos en una red. Esta se encuentra en el modelo OSI.
-Su función principal es asegurarse de que los datos estén listos para ser transmitidos a través de la infraestructura física y de que lleguen a su destino sin problemas.
-
-Esta c...
     </summary>
   
 
