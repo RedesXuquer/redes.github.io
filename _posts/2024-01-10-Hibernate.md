@@ -1,15 +1,15 @@
 ---
-title: Subnetting
-date: 2024-01-09 12:00:00 +0100
+title: Hibernate
+date: 2024-01-10 12:00:00 +0100
 categories: [Desarrollo Aplicaciones Multiplataforma, Acceso Datos]
 tags: [acceso a datos, teoría, 2DAM]
 img_path: /assets/img/hibernate/
 ---
 
 # Hibernate
-Con la siguiente estructura de MySQL:
-```SQL
+Con la siguiente estructura SQL:
 
+```SQL
 CREATE DATABASE canciones;
 
 CREATE TABLE `song` (
@@ -25,6 +25,7 @@ CREATE TABLE `song` (
 ![Alt text](<Captura de pantalla 2024-01-10 200802.png>)
 
 1. Añadimos un archivo XML dento de nuestro proyecto, se debe llamar **hibernate.cfg.xml* con el siguiente contenido:
+   
 ```XML
 <?xml version = "1.0" encoding = "utf-8"?>
 <!DOCTYPE hibernate-configuration PUBLIC
@@ -48,8 +49,11 @@ CREATE TABLE `song` (
     </session-factory>
 </hibernate-configuration>
 ```
+```
+```
 
 1. Añadimos una clase con el siguiente contenido:
+   
 ```JAVA
 // Importing required classes
 import javax.persistence.Column;
@@ -99,7 +103,9 @@ public class Song {
     }
 }
 ```
+
 1. Los import:
+   
 ```JAVA
 import java.util.HashSet;
 import java.util.List;
@@ -109,9 +115,8 @@ import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 ```
 
-
-
 1. Trabajando con las sesiones:
+
 ```JAVA
     void crearSession(){    
         Configuration configuration = new Configuration();
@@ -125,6 +130,7 @@ import org.hibernate.cfg.Configuration;
 1. CRUD
 
 Create
+
 ```JAVA
     void crearCancion(String songName, String artist) {
         try (Session session = this.sessionFactory.openSession()) {
@@ -142,6 +148,7 @@ Create
 ```
 
 Read
+
 ```JAVA
     void crearCancion(String songName, String artist) {
         try (Session session = this.sessionFactory.openSession()) {
@@ -159,6 +166,7 @@ Read
 ```
 
 Update
+
 ```JAVA
     void actualizarProducto(int id, String songName, String artist) {
         try (Session session = this.sessionFactory.openSession()) {
@@ -180,6 +188,7 @@ Update
 ```
 
 Delete
+
 ```JAVA
     void eliminarProducto(int id) {
         try (Session session = this.sessionFactory.openSession()) {
@@ -199,8 +208,11 @@ Delete
 ```
 
 Para finalizar la sesión:
+
 ```JAVA
     void cerrar(){
         this.sessionFactory.close();
     }
 ```
+
+Esto es todo.

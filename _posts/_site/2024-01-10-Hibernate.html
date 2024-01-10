@@ -1,7 +1,7 @@
 <h1 id="hibernate">Hibernate</h1>
-<p>Con la siguiente estructura de MySQL:</p>
-<pre><code class="language-SQL">
-CREATE DATABASE canciones;
+<p>Con la siguiente estructura SQL:</p>
+
+<pre><code class="language-SQL">CREATE DATABASE canciones;
 
 CREATE TABLE `song` (
   `songId` int(11) NOT NULL,
@@ -18,35 +18,39 @@ CREATE TABLE `song` (
 <img src="Captura de pantalla 2024-01-10 200802.png" alt="Alt text" /></p>
   </li>
   <li>
-    <p>Añadimos un archivo XML dento de nuestro proyecto, se debe llamar <em>*hibernate.cfg.xml</em> con el siguiente contenido:
-```XML
-&lt;?xml version = “1.0” encoding = “utf-8”?&gt;
-&lt;!DOCTYPE hibernate-configuration PUBLIC
-     “-//Hibernate/Hibernate Configuration DTD 3.0//EN”
-     “http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd”&gt;</p>
+    <p>Añadimos un archivo XML dento de nuestro proyecto, se debe llamar <em>*hibernate.cfg.xml</em> con el siguiente contenido:</p>
   </li>
 </ol>
-<hibernate-configuration>
-    <session-factory>
-        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <!-- Set URL -->
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/canciones</property>
-        //<property name="hibernate.connection.url">jdbc:mysql://**direccion_server**:**puerto**/**nombre_BBDD**</property>
-        <!-- Set User Name -->
-        <property name="hibernate.connection.username">2DAM</property>
-        //<property name="hibernate.connection.username">**User_BBDD**</property>
-        <!-- Set Password -->
-        <property name="hibernate.connection.password">2DAM2023</property>
-        //<property name="hibernate.connection.password">**Pass_BBDD**</property>
-        <!-- Set Driver Name -->
-        <property name="hibernate.show_sql">true</property>
+
+<pre><code class="language-XML">&lt;?xml version = "1.0" encoding = "utf-8"?&gt;
+&lt;!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd"&gt;
+&lt;hibernate-configuration&gt;
+    &lt;session-factory&gt;
+        &lt;property name = "hibernate.connection.driver_class"&gt;com.mysql.jdbc.Driver&lt;/property&gt;
+        &lt;!-- Set URL --&gt;
+        &lt;property name = "hibernate.connection.url"&gt;jdbc:mysql://localhost:3306/canciones&lt;/property&gt;
+        //&lt;property name = "hibernate.connection.url"&gt;jdbc:mysql://**direccion_server**:**puerto**/**nombre_BBDD**&lt;/property&gt;
+        &lt;!-- Set User Name --&gt;
+        &lt;property name = "hibernate.connection.username"&gt;2DAM&lt;/property&gt;
+        //&lt;property name = "hibernate.connection.username"&gt;**User_BBDD**&lt;/property&gt;
+        &lt;!-- Set Password --&gt;
+        &lt;property name = "hibernate.connection.password"&gt;2DAM2023&lt;/property&gt;
+        //&lt;property name = "hibernate.connection.password"&gt;**Pass_BBDD**&lt;/property&gt;
+        &lt;!-- Set Driver Name --&gt;
+        &lt;property name = "hibernate.show_sql"&gt;true&lt;/property&gt;
         
-    </session-factory>
-</hibernate-configuration>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-1. Añadimos una clase con el siguiente contenido:
-```JAVA
-// Importing required classes
+    &lt;/session-factory&gt;
+&lt;/hibernate-configuration&gt;
+</code></pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code></code></pre></div></div>
+
+<ol>
+  <li>Añadimos una clase con el siguiente contenido:</li>
+</ol>
+
+<pre><code class="language-JAVA">// Importing required classes
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -93,31 +97,39 @@ public class Song {
         this.artist = artist;
     }
 }
-</code></pre></div></div>
+</code></pre>
+
 <ol>
-  <li>Los import:
-    <pre><code class="language-JAVA">import java.util.HashSet;
+  <li>Los import:</li>
+</ol>
+
+<pre><code class="language-JAVA">import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 </code></pre>
-  </li>
-  <li>Trabajando con las sesiones:
-    <pre><code class="language-JAVA"> void crearSession(){    
-     Configuration configuration = new Configuration();
-     configuration.configure("hibernate.cfg.xml");
-     configuration.addAnnotatedClass(Song.class);
-     this.sessionFactory = configuration.buildSessionFactory();
-     //return sessionFactory;
- }
+
+<ol>
+  <li>Trabajando con las sesiones:</li>
+</ol>
+
+<pre><code class="language-JAVA">    void crearSession(){    
+        Configuration configuration = new Configuration();
+        configuration.configure("hibernate.cfg.xml");
+        configuration.addAnnotatedClass(Song.class);
+        this.sessionFactory = configuration.buildSessionFactory();
+        //return sessionFactory;
+    }
 </code></pre>
-  </li>
+
+<ol>
   <li>CRUD</li>
 </ol>
 
 <p>Create</p>
+
 <pre><code class="language-JAVA">    void crearCancion(String songName, String artist) {
         try (Session session = this.sessionFactory.openSession()) {
             session.beginTransaction();
@@ -134,6 +146,7 @@ import org.hibernate.cfg.Configuration;
 </code></pre>
 
 <p>Read</p>
+
 <pre><code class="language-JAVA">    void crearCancion(String songName, String artist) {
         try (Session session = this.sessionFactory.openSession()) {
             session.beginTransaction();
@@ -150,6 +163,7 @@ import org.hibernate.cfg.Configuration;
 </code></pre>
 
 <p>Update</p>
+
 <pre><code class="language-JAVA">    void actualizarProducto(int id, String songName, String artist) {
         try (Session session = this.sessionFactory.openSession()) {
             session.beginTransaction();
@@ -170,6 +184,7 @@ import org.hibernate.cfg.Configuration;
 </code></pre>
 
 <p>Delete</p>
+
 <pre><code class="language-JAVA">    void eliminarProducto(int id) {
         try (Session session = this.sessionFactory.openSession()) {
             session.beginTransaction();
@@ -188,7 +203,10 @@ import org.hibernate.cfg.Configuration;
 </code></pre>
 
 <p>Para finalizar la sesión:</p>
+
 <pre><code class="language-JAVA">    void cerrar(){
         this.sessionFactory.close();
     }
 </code></pre>
+
+<p>Esto es todo.</p>
