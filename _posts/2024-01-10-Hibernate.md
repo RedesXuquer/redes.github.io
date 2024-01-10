@@ -52,7 +52,6 @@ CREATE TABLE `song` (
 1. Añadimos una clase con el siguiente contenido:
    
 ```
-// Importing required classes
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
