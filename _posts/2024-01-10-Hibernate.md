@@ -24,31 +24,6 @@ CREATE TABLE `song` (
 ![Alt text](<Captura de pantalla 2024-01-10 200537.png>)
 ![Alt text](<Captura de pantalla 2024-01-10 200802.png>)
 
-1. Añadimos un archivo XML dento de nuestro proyecto, se debe llamar **hibernate.cfg.xml* con el siguiente contenido:
-```
-<?xml version = "1.0" encoding = "utf-8"?>
-<!DOCTYPE hibernate-configuration PUBLIC
-        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
-        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
-<hibernate-configuration>
-    <session-factory>
-        <property name = "hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <!-- Set URL -->
-        <property name = "hibernate.connection.url">jdbc:mysql://localhost:3306/canciones</property>
-        //<property name = "hibernate.connection.url">jdbc:mysql://**direccion_server**:**puerto**/**nombre_BBDD**</property>
-        <!-- Set User Name -->
-        <property name = "hibernate.connection.username">2DAM</property>
-        //<property name = "hibernate.connection.username">**User_BBDD**</property>
-        <!-- Set Password -->
-        <property name = "hibernate.connection.password">2DAM2023</property>
-        //<property name = "hibernate.connection.password">**Pass_BBDD**</property>
-        <!-- Set Driver Name -->
-        <property name = "hibernate.show_sql">true</property>
-        
-    </session-factory>
-</hibernate-configuration>
-```
-
 1. Añadimos una clase con el siguiente contenido:
    
 ```
@@ -248,6 +223,31 @@ void cerrar() {
     // Cierra la fábrica de sesiones
     this.sessionFactory.close();
 }
+```
+
+1. Añadimos un archivo XML dento de nuestro proyecto, se debe llamar **hibernate.cfg.xml* con el siguiente contenido:
+```
+<?xml version = "1.0" encoding = "utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name = "hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <!-- Set URL -->
+        <property name = "hibernate.connection.url">jdbc:mysql://localhost:3306/canciones</property>
+        //<property name = "hibernate.connection.url">jdbc:mysql://**direccion_server**:**puerto**/**nombre_BBDD**</property>
+        <!-- Set User Name -->
+        <property name = "hibernate.connection.username">2DAM</property>
+        //<property name = "hibernate.connection.username">**User_BBDD**</property>
+        <!-- Set Password -->
+        <property name = "hibernate.connection.password">2DAM2023</property>
+        //<property name = "hibernate.connection.password">**Pass_BBDD**</property>
+        <!-- Set Driver Name -->
+        <property name = "hibernate.show_sql">true</property>
+        
+    </session-factory>
+</hibernate-configuration>
 ```
 
 Esto es todo.
