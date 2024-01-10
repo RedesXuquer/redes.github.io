@@ -19,7 +19,7 @@ CREATE TABLE `song` (
   </li>
   <li>
     <p>Añadimos un archivo XML dento de nuestro proyecto, se debe llamar <em>*hibernate.cfg.xml</em> con el siguiente contenido:
-```
+```XML
 &lt;?xml version = “1.0” encoding = “utf-8”?&gt;
 &lt;!DOCTYPE hibernate-configuration PUBLIC
      “-//Hibernate/Hibernate Configuration DTD 3.0//EN”
@@ -52,7 +52,9 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+
 @Entity
+// Seleccionamos el nombre de la tabla
 @Table(name = "song")
  
 // POJO class
