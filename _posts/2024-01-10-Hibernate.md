@@ -9,7 +9,7 @@ img_path: /assets/img/hibernate/
 # Hibernate
 Con la siguiente estructura SQL:
 
-```SQL
+```
 CREATE DATABASE canciones;
 
 CREATE TABLE `song` (
@@ -25,7 +25,7 @@ CREATE TABLE `song` (
 ![Alt text](<Captura de pantalla 2024-01-10 200802.png>)
 
 1. Añadimos un archivo XML dento de nuestro proyecto, se debe llamar **hibernate.cfg.xml* con el siguiente contenido:
-   
+```
 <?xml version = "1.0" encoding = "utf-8"?>
 <!DOCTYPE hibernate-configuration PUBLIC
         "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
@@ -47,10 +47,11 @@ CREATE TABLE `song` (
         
     </session-factory>
 </hibernate-configuration>
+```
 
 1. Añadimos una clase con el siguiente contenido:
    
-```JAVA
+```
 // Importing required classes
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -102,7 +103,7 @@ public class Song {
 
 1. Los import:
    
-```JAVA
+```
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -113,13 +114,20 @@ import org.hibernate.cfg.Configuration;
 
 1. Trabajando con las sesiones:
 
-```JAVA
-    void crearSession(){    
+```
+    void crearSession(){
+
+        // Paso 1: Crear una instancia de la clase Configuration
         Configuration configuration = new Configuration();
+
+        // Paso 2: Configurar Hibernate cargando la configuración desde "hibernate.cfg.xml"
         configuration.configure("hibernate.cfg.xml");
+
+        // Paso 3: Agregar la clase Song como una clase anotada en la configuración de Hibernate
         configuration.addAnnotatedClass(Song.class);
+        
+        // Paso 4: Construir la fábrica de sesiones (SessionFactory) utilizando la configuración
         this.sessionFactory = configuration.buildSessionFactory();
-        //return sessionFactory;
     }
 ```
 
@@ -127,88 +135,120 @@ import org.hibernate.cfg.Configuration;
 
 Create
 
-```JAVA
-    void crearCancion(String songName, String artist) {
-        try (Session session = this.sessionFactory.openSession()) {
-            session.beginTransaction();
+```
+void crearCancion(String songName, String artist) {
+    // Intenta abrir una sesión utilizando la fábrica de sesiones existente
+    try (Session session = this.sessionFactory.openSession()) {
+        // Inicia una transacción en la sesión
+        session.beginTransaction();
 
-            Song nuevo = new Song();
-            nuevo.setSongName(songName);
-            nuevo.setArtist(artist);
+        // Crea una nueva instancia de la clase Song y establece sus propiedades
+        Song nuevo = new Song();
+        nuevo.setSongName(songName);
+        nuevo.setArtist(artist);
 
-            session.save(nuevo);
-            session.getTransaction().commit();
-            session.close();
-        }
+        // Guarda la nueva instancia de Song en la base de datos
+        session.save(nuevo);
+
+        // Realiza commit para confirmar la transacción
+        session.getTransaction().commit();
+
+        // Cierra la sesión después de completar las operaciones
+        session.close();
     }
+}
 ```
 
 Read
 
-```JAVA
-    void crearCancion(String songName, String artist) {
-        try (Session session = this.sessionFactory.openSession()) {
-            session.beginTransaction();
+```
+void crearCancion(String songName, String artist) {
+    // Intenta abrir una sesión utilizando la fábrica de sesiones existente
+    try (Session session = this.sessionFactory.openSession()) {
+        // Inicia una transacción en la sesión
+        session.beginTransaction();
 
-            Song nuevo = new Song();
-            nuevo.setSongName(songName);
-            nuevo.setArtist(artist);
+        // Crea una nueva instancia de la clase Song
+        Song nuevo = new Song();
 
-            session.save(nuevo);
-            session.getTransaction().commit();
-            session.close();
-        }
+        // Establece el nombre de la canción y el artista en la instancia de Song
+        nuevo.setSongName(songName);
+        nuevo.setArtist(artist);
+
+        // Guarda la nueva instancia de Song en la base de datos
+        session.save(nuevo);
+
+        // Realiza commit para confirmar la transacción
+        session.getTransaction().commit();
+
+        // Cierra la sesión después de completar las operaciones
+        session.close();
     }
+}
 ```
 
 Update
 
-```JAVA
-    void actualizarProducto(int id, String songName, String artist) {
-        try (Session session = this.sessionFactory.openSession()) {
-            session.beginTransaction();
+```
+void actualizarProducto(int id, String songName, String artist) {
+    // Intenta abrir una sesión utilizando la fábrica de sesiones existente
+    try (Session session = this.sessionFactory.openSession()) {
+        // Inicia una transacción en la sesión
+        session.beginTransaction();
 
-            // Obtener el producto a actualizar
-            Song cancion = session.get(Song.class, id);
+        // Obtén el objeto Song de la base de datos con el id proporcionado
+        Song cancion = session.get(Song.class, id);
 
-            // Actualizar los campos
-            if (cancion != null) {
-                cancion.setSongName(songName);
-                cancion.setArtist(artist);
-            }
-
-            session.getTransaction().commit();
-            session.close();
+        // Actualiza los campos si se encuentra el objeto Song
+        if (cancion != null) {
+            // Establece el nuevo nombre de la canción y artista
+            cancion.setSongName(songName);
+            cancion.setArtist(artist);
         }
+
+        // Realiza commit para confirmar la transacción
+        session.getTransaction().commit();
+
+        // Cierra la sesión después de completar las operaciones
+        session.close();
     }
+}
 ```
 
 Delete
 
-```JAVA
-    void eliminarProducto(int id) {
-        try (Session session = this.sessionFactory.openSession()) {
-            session.beginTransaction();
+```
+void eliminarProducto(int id) {
+    // Intenta abrir una sesión utilizando la fábrica de sesiones existente
+    try (Session session = this.sessionFactory.openSession()) {
+        // Inicia una transacción en la sesión
+        session.beginTransaction();
 
-            // Obtener el producto a eliminar
-            Song cancion = session.get(Song.class, id);
+        // Obtén el objeto Song de la base de datos con el id proporcionado
+        Song cancion = session.get(Song.class, id);
 
-            // Eliminar el producto
-            if (cancion != null) {
-                session.delete(cancion);
-            }
-            session.getTransaction().commit();
-            session.close();
+        // Elimina el objeto Song si se encuentra
+        if (cancion != null) {
+            // Utiliza el método delete para eliminar la instancia de Song de la base de datos
+            session.delete(cancion);
         }
+
+        // Realiza commit para confirmar la transacción
+        session.getTransaction().commit();
+
+        // Cierra la sesión después de completar las operaciones
+        session.close();
     }
+}
 ```
 
 Para finalizar la sesión:
 
-```JAVA
-    void cerrar(){
-        this.sessionFactory.close();
-    }
+```
+void cerrar() {
+    // Cierra la fábrica de sesiones
+    this.sessionFactory.close();
+}
 ```
 
 Esto es todo.
