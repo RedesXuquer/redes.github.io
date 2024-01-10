@@ -26,7 +26,6 @@ CREATE TABLE `song` (
 
 1. Añadimos un archivo XML dento de nuestro proyecto, se debe llamar **hibernate.cfg.xml* con el siguiente contenido:
    
-```XML
 <?xml version = "1.0" encoding = "utf-8"?>
 <!DOCTYPE hibernate-configuration PUBLIC
         "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
@@ -48,9 +47,6 @@ CREATE TABLE `song` (
         
     </session-factory>
 </hibernate-configuration>
-```
-```
-```
 
 1. Añadimos una clase con el siguiente contenido:
    

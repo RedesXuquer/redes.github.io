@@ -22,29 +22,27 @@ CREATE TABLE `song` (
   </li>
 </ol>
 
-<pre><code class="language-XML">&lt;?xml version = "1.0" encoding = "utf-8"?&gt;
+<p>&lt;?xml version = “1.0” encoding = “utf-8”?&gt;
 &lt;!DOCTYPE hibernate-configuration PUBLIC
-        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
-        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd"&gt;
-&lt;hibernate-configuration&gt;
-    &lt;session-factory&gt;
-        &lt;property name = "hibernate.connection.driver_class"&gt;com.mysql.jdbc.Driver&lt;/property&gt;
-        &lt;!-- Set URL --&gt;
-        &lt;property name = "hibernate.connection.url"&gt;jdbc:mysql://localhost:3306/canciones&lt;/property&gt;
-        //&lt;property name = "hibernate.connection.url"&gt;jdbc:mysql://**direccion_server**:**puerto**/**nombre_BBDD**&lt;/property&gt;
-        &lt;!-- Set User Name --&gt;
-        &lt;property name = "hibernate.connection.username"&gt;2DAM&lt;/property&gt;
-        //&lt;property name = "hibernate.connection.username"&gt;**User_BBDD**&lt;/property&gt;
-        &lt;!-- Set Password --&gt;
-        &lt;property name = "hibernate.connection.password"&gt;2DAM2023&lt;/property&gt;
-        //&lt;property name = "hibernate.connection.password"&gt;**Pass_BBDD**&lt;/property&gt;
-        &lt;!-- Set Driver Name --&gt;
-        &lt;property name = "hibernate.show_sql"&gt;true&lt;/property&gt;
+        “-//Hibernate/Hibernate Configuration DTD 3.0//EN”
+        “http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd”&gt;</p>
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <!-- Set URL -->
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/canciones</property>
+        //<property name="hibernate.connection.url">jdbc:mysql://**direccion_server**:**puerto**/**nombre_BBDD**</property>
+        <!-- Set User Name -->
+        <property name="hibernate.connection.username">2DAM</property>
+        //<property name="hibernate.connection.username">**User_BBDD**</property>
+        <!-- Set Password -->
+        <property name="hibernate.connection.password">2DAM2023</property>
+        //<property name="hibernate.connection.password">**Pass_BBDD**</property>
+        <!-- Set Driver Name -->
+        <property name="hibernate.show_sql">true</property>
         
-    &lt;/session-factory&gt;
-&lt;/hibernate-configuration&gt;
-</code></pre>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code></code></pre></div></div>
+    </session-factory>
+</hibernate-configuration>
 
 <ol>
   <li>Añadimos una clase con el siguiente contenido:</li>
