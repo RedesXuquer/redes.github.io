@@ -1,0 +1,131 @@
+<h1 id="capa-de-enlace-de-datos">Capa de enlace de datos</h1>
+<h2 id="propósito">Propósito</h2>
+<h3 id="la-capa-de-enlace-de-datos">La capa de enlace de datos:</h3>
+<p>La <strong>Capa de Enlace de Datos</strong> “Capa 2”, actúa como un <strong>facilitador</strong> que permite la <strong>comunicación</strong> entre dispositivos en una red. Esta se encuentra en el modelo <strong>OSI</strong>.
+Su <strong>función principal</strong> es asegurarse de que los datos estén listos para ser <strong>transmitidos</strong> a través de la infraestructura <strong>física</strong> y de que lleguen a su destino <strong>sin problemas</strong>.</p>
+
+<p>Esta capa permite que los dispositivos se <strong>comuniquen</strong> entre sí <strong>sin</strong> necesidad de conocer los <strong>detalles técnicos</strong> de los cables y la <strong>infraestructura</strong> subyacente. También se asegura de que los <strong>datos</strong> estén <strong>bien empaquetados</strong> y que cualquier problema en la transmisión se <strong>detecte</strong> y se <strong>corrija</strong>.
+La <strong>Capa de Enlace de Datos</strong> es un <strong>traductor</strong> que hace posible que los dispositivos se entiendan en una red, evitando que tengan que preocuparse por los <strong>detalles técnicos</strong> de la comunicación. Esto es esencial para que las redes funcionen de manera <strong>eficiente</strong> y para que sea más fácil <strong>incorporar</strong> nuevas tecnologías sin cambiar todo el sistema.</p>
+
+<h3 id="subcapas-de-enlace-de-datos-ieee-802-lanman">Subcapas de enlace de datos IEEE 802 LAN/MAN:</h3>
+<p>Los estándares <strong>IEEE 802 LAN/MAN</strong> se aplican a diferentes tipos de redes, como <strong>Ethernet con cable</strong>, <strong>redes inalámbricas</strong> y <strong>redes personales inalámbricas</strong>. La <strong>capa de enlace de datos</strong> en estos estándares se divide en dos partes:</p>
+<ul>
+  <li><strong>Control de Enlace Lógico (LLC)</strong>: Es un <strong>intermediario</strong> que coloca <strong>etiquetas</strong> en los datos para que los dispositivos sepan cómo manejarlos. Esto es útil cuando tienes <strong>diferentes tipos</strong> de datos viajando por la misma red.</li>
+  <li><strong>Control de Acceso a Medios (MAC)</strong>: Este se encarga de <strong>preparar los datos</strong> para <strong>enviarlos</strong> y <strong>recibirlos</strong> en la red. También se asegura de que los datos lleguen <strong>correctamente</strong> y ayuda a múltiples dispositivos a compartir <strong>la misma red</strong> de manera organizada.</li>
+</ul>
+
+<p>La parte de <strong>Control de Acceso a Medios</strong> realiza algunas tareas específicas:</p>
+<ul>
+  <li>Divide los datos en paquetes <strong>identificables</strong>.</li>
+  <li>Agrega <strong>direcciones</strong> a los datos para saber quién envía y quién recibe.</li>
+  <li><strong>Revisa</strong> si los datos se han dañado en el camino.</li>
+  <li>Coordina cómo varios dispositivos <strong>comparten la red</strong> (como hablar por turnos).</li>
+</ul>
+
+<h3 id="provisión-de-acceso-a-los-medios">Provisión de acceso a los medios:</h3>
+<p>Cuando los datos viajan de un <strong>dispositivo local</strong> a uno <strong>remoto</strong> a través de <strong>una red</strong>, pueden encontrarse con diferentes <strong>tipos de redes</strong>. Por ejemplo, en una red <strong>Ethernet local</strong>, donde varios dispositivos compiten por usar el <strong>mismo cable</strong>, la capa de <strong>enlace de datos</strong> (MAC) ayuda a organizar esta competencia. En cambio, en conexiones más simples, como las que involucran <strong>dos routers</strong>, no necesitamos las mismas reglas de competencia que se utilizan en <strong>Ethernet</strong>.
+En el caso de los routers, cuando un paquete llega a ellos, se encargan de <strong>empaquetar</strong> adecuadamente los datos y <strong>enviarlos</strong> al siguiente lugar. Para hacer esto, utilizan un conjunto específico de reglas que se adaptan a cada tipo de <strong>medio de transmisión</strong>. A medida que los paquetes viajan a través de diferentes <strong>partes de la red</strong>, pueden cambiar de <strong>medio</strong> y de <strong>conjunto de reglas</strong>.
+Los routers hacen un trabajo muy importante en la capa de enlace de datos, donde se encargan de <strong>empacar</strong>, <strong>desempacar</strong> y <strong>reenviar</strong> los datos en función de las <strong>características</strong> de cada parte de la red por la que pasan.</p>
+
+<h3 id="estándares-de-la-capa-de-enlace-de-datos">Estándares de la capa de enlace de datos:</h3>
+<p>Los <strong>protocolos</strong> de la capa de enlace de datos <strong>no están definidos</strong> por las <strong>Solicitud de Comentarios (RFC)</strong>, a diferencia de los protocolos de capas <strong>superiores</strong> en el conjunto <strong>TCP/IP</strong>. El <strong>Grupo de Trabajo de Ingeniería de Internet (IETF)</strong> es responsable de mantener los <strong>protocolos</strong> y <strong>servicios</strong> de las capas superiores en <strong>TCP/IP</strong>, pero no establece las funciones y el funcionamiento de la <strong>capa de acceso a la red</strong> en <strong>TCP/IP</strong>.
+La definición de <strong>estándares abiertos</strong> y <strong>protocolos aplicables</strong> a la capa de acceso a la red, que abarca las capas <strong>físicas</strong> y de <strong>enlace de datos</strong> en el modelo <strong>OSI</strong>, se lleva a cabo por organizaciones de ingeniería. Algunas de estas organizaciones incluyen:</p>
+<ul>
+  <li>Instituto de Ingenieros Eléctricos y Electrónicos <strong>(IEEE)</strong>.</li>
+  <li>Unión Internacional de Telecomunicaciones <strong>(ITU)</strong>.</li>
+  <li>Organización Internacional para la Estandarización <strong>(ISO)</strong>.</li>
+  <li>Instituto Nacional Estadounidense de Estándares <strong>(ANSI)</strong>.</li>
+</ul>
+
+<h2 id="topologias">Topologias</h2>
+<h3 id="topologías-física-y-lógica">Topologías física y lógica:</h3>
+<p>La <strong>capa de enlace de datos</strong> se encarga de <strong>preparar</strong> los datos de red para su <strong>transmisión</strong> en la <strong>red física</strong>. Para lograr esto, necesita comprender la <strong>topología</strong> de la red. Hay <strong>dos tipos</strong> de topologías en redes <strong>LAN</strong> y <strong>WAN</strong>:</p>
+<ol>
+  <li>Topología <strong>Física</strong>: Describe cómo están conectados <strong>físicamente</strong> los dispositivos, incluyendo los dispositivos <strong>finales</strong> y los dispositivos <strong>intermedios</strong> (como routers, switches y puntos de acceso inalámbrico). También puede incluir detalles como la <strong>ubicación física</strong> de los dispositivos. Las topologías físicas suelen ser <strong>punto a punto</strong> o en <strong>forma de estrella</strong>.</li>
+  <li>Topología <strong>Lógica</strong>: Se refiere a cómo se transfieren las <strong>tramas de datos</strong> de un nodo a otro en la red. Identifica las <strong>conexiones virtuales</strong> a través de <strong>interfaces</strong> de dispositivos y <strong>esquemas</strong> de direccionamiento IP en la <strong>capa 3</strong>.
+La capa de <strong>enlace de datos</strong> visualiza la topología <strong>lógica</strong> de la red mientras controla el <strong>acceso a los medios</strong> de transmisión. La topología <strong>lógica</strong> influye en el <strong>tipo de trama</strong> de red y en el <strong>control de acceso a los medios</strong> que se utilizan.</li>
+</ol>
+
+<h3 id="topologías-de-wan">Topologías de WAN:</h3>
+<p>Las topologías <strong>WAN</strong> son formas de organizar conexiones en redes de <strong>gran alcance</strong> geográfico:</p>
+<ol>
+  <li><strong>Punto a Punto</strong> en <strong>WAN</strong>: Es como una conversación directa entre dos ubicaciones <strong>remotas</strong>, a menudo usando <strong>líneas dedicadas</strong>. Las topologías punto a punto conectan <strong>directamente</strong> dos dispositivos, sin necesidad de compartir la red con otros. Cuando se usan protocolos como <strong>PPP</strong>, los dispositivos no tienen que preocuparse por distinguir entre tramas dirigidas a ellos o a otros. Esto simplifica mucho el manejo de las <strong>comunicaciones</strong>, ya que todas las tramas se mueven solo entre esos dos dispositivos conectados. Incluso si hay dispositivos <strong>intermedios</strong> entre los dispositivos de <strong>origen</strong> y <strong>destino</strong>, la topología <strong>lógica</strong> sigue siendo <strong>punto a punto</strong>. Agregar dispositivos intermedios no cambia la forma en que se establece la conexión punto a punto.</li>
+  <li><strong>Hub and Spoke</strong> en <strong>WAN</strong>: Implica una <strong>ubicación central</strong> que se conecta con <strong>varias ubicaciones remotas</strong>, como una estrella con un centro y muchas ramas hacia afuera. El centro administra la red.</li>
+  <li><strong>Malla</strong> en <strong>WAN</strong>: Conecta <strong>todas las ubicaciones remotas</strong> entre sí, como si todas estuvieran entrelazadas, proporcionando muchas <strong>rutas</strong> para la comunicación.</li>
+</ol>
+
+<p>La elección de la <strong>topología WAN</strong> depende de las <strong>necesidades</strong> específicas de la organización, la importancia de la <strong>redundancia</strong> y la <strong>administración</strong> en la red.</p>
+
+<h3 id="topologías-de-lan">Topologías de LAN:</h3>
+<p>En las redes de área local <strong>(LAN)</strong> donde varios dispositivos se conectan, generalmente usamos <strong>tres tipos</strong> de configuraciones principales:</p>
+<ul>
+  <li>Topología en <strong>Estrella</strong>: Aquí, <strong>todos los dispositivos</strong> se conectan a un dispositivo <strong>central</strong>, como un switch. Si ampliamos esto, podemos interconectar varios switches. Esta configuración es <strong>fácil de usar</strong>, permite agregar o quitar dispositivos <strong>sin complicaciones</strong> y facilita la <strong>solución de problemas</strong>.</li>
+  <li>Topología en <strong>Bus</strong>: En una topología de bus, <strong>todos los dispositivos</strong> están conectados <strong>uno tras otro</strong> en una línea y terminan en <strong>ambos extremos</strong>. No se necesitan dispositivos intermedios como switches.</li>
+  <li>Topología en <strong>Anillo</strong>: Aquí, los dispositivos se conectan en un <strong>círculo</strong>, creando un anillo. A diferencia de la topología de bus, el anillo <strong>no necesita</strong> terminarse en ambos extremos.</li>
+</ul>
+
+<h3 id="comunicación-dúplex-completo-y-semidúplex">Comunicación Dúplex completo y semidúplex:</h3>
+<p>Es fundamental comprender la <strong>comunicación dúplex</strong> al hablar de topologías de <strong>LAN</strong>, ya que se refiere a cómo los datos se transmiten entre <strong>dos dispositivos</strong>. Hay dos modos comunes de dúplex:</p>
+<ul>
+  <li>Comunicación <strong>Semidúplex</strong>: En este modo, dos dispositivos pueden <strong>enviar</strong> y <strong>recibir</strong> datos, pero <strong>no</strong> al mismo tiempo. Se utiliza en <strong>WLAN</strong> y en algunas topologías de <strong>bus</strong> heredadas con switches <strong>Ethernet</strong>. Solo un dispositivo puede <strong>enviar</strong> o <strong>recibir</strong> datos a la vez en un medio compartido.</li>
+  <li>Comunicación de <strong>Dúplex Completo</strong>: En este modo, <strong>ambos dispositivos</strong> pueden <strong>enviar</strong> y <strong>recibir</strong> datos <strong>simultáneamente</strong> en el <strong>mismo medio</strong> compartido. Los switches Ethernet suelen funcionar en este modo de forma <strong>predeterminada</strong>, pero pueden cambiar a <strong>semidúplex</strong> si se conectan a dispositivos externos.</li>
+</ul>
+
+<p>La comunicación en modo <strong>semidúplex</strong> restringe la <strong>transmisión de datos</strong> a una dirección a la vez, mientras que el modo de <strong>dúplex completo</strong> permite el <strong>envío</strong> y la <strong>recepción</strong> de datos al <strong>mismo tiempo</strong>.
+Es crucial que dos interfaces interconectadas, como la tarjeta de red de una computadora y una interfaz en un switch Ethernet, operen en el mismo modo dúplex. Si no coinciden, puede haber <strong>problemas de compatibilidad</strong> que generen <strong>ineficiencia</strong> y <strong>retrasos en la comunicación</strong>.</p>
+
+<h3 id="métodos-de-control-de-acceso">Métodos de control de acceso:</h3>
+<p>En una red de <strong>acceso múltiple</strong>, como las LAN Ethernet y WLAN, varios dispositivos intentan comunicarse al <strong>mismo tiempo</strong>. Hay dos enfoques para regular cómo estos dispositivos <strong>comparten</strong> el medio de comunicación:</p>
+<ul>
+  <li>Acceso Basado en la <strong>Contienda</strong>:
+En este enfoque, <strong>todos</strong> los dispositivos <strong>compiten</strong> por el acceso al medio y <strong>solo uno</strong> puede transmitir a la vez. Cuando varios dispositivos intentan transmitir <strong>simultáneamente</strong>, se utiliza un sistema de <strong>resolución de conflictos</strong>. Esto se ve en redes Ethernet antiguas de bus, donde se detectan colisiones y se gestionan.</li>
+  <li>Acceso <strong>Controlado</strong>:
+En este caso, cada dispositivo tiene un <strong>turno asignado</strong> para usar el medio. Aunque es más <strong>predecible</strong>, <strong>no</strong> es tan <strong>eficiente</strong>, ya que los dispositivos deben esperar su <strong>turno</strong> para transmitir. Ejemplos incluyen el método de <strong>“token”</strong> utilizado en redes de <strong>anillo</strong>, donde solo el dispositivo con el <strong>“token”</strong> puede <strong>transmitir</strong>.
+En las redes Ethernet modernas, no se necesitan estos métodos de control de acceso, ya que permiten la transmisión y la recepción <strong>simultáneas</strong>.</li>
+</ul>
+
+<h3 id="acceso-por-contención-csmacd">Acceso por contención: CSMA/CD:</h3>
+<p>Estos son ejemplos de redes que utilizan este <strong>método de acceso</strong>:</p>
+<ul>
+  <li>LAN <strong>inalámbrica</strong>, que usa <strong>CSMA/CA</strong> (Acceso Múltiple con Prevención de Colisiones).</li>
+  <li>LAN <strong>Ethernet</strong> de topología de <strong>bus heredada</strong>, que utiliza <strong>CSMA/CD</strong> (Acceso Múltiple con Detección de Colisiones).</li>
+  <li>LAN <strong>Ethernet</strong> heredada con un <strong>hub</strong>, que también usa <strong>CSMA/CD</strong>.</li>
+</ul>
+
+<p>En estas redes, la <strong>comunicación</strong> se realiza en modo <strong>semidúplex</strong>, lo que significa que <strong>solo un</strong> dispositivo puede transmitir o recibir datos a la vez. Para gestionar esto, se emplea un proceso que coordina cuándo un dispositivo puede <strong>transmitir</strong> y cómo se <strong>resuelven</strong> las situaciones en las que varios dispositivos intentan <strong>transmitir</strong> al <strong>mismo tiempo</strong>.</p>
+
+<p>Cuando dos dispositivos intentan transmitir <strong>simultáneamente</strong>, se produce lo que se conoce como una <strong>colisión</strong>. En las redes LAN Ethernet <strong>heredadas</strong>, ambos dispositivos <strong>detectan</strong> esta colisión en la red, lo que se refiere a la <strong>función de detección de colisiones</strong> (CD) en CSMA/CD. La tarjeta de red (NIC) <strong>compara</strong> los datos enviados con los recibidos o <strong>identifica</strong> irregularidades en la señal en el medio. Cuando ocurre una colisión, los datos enviados por ambos dispositivos se <strong>dañan</strong> y necesitan ser <strong>retransmitidos</strong>. Este proceso asegura que la comunicación en redes basadas en competencia sea <strong>ordenada</strong> y <strong>sin conflictos</strong>.</p>
+
+<h3 id="acceso-por-contención-csmaca">Acceso por contención: CSMA/CA:</h3>
+<p>En las <strong>WLAN IEEE 802.11</strong>, se utiliza una variante del protocolo <strong>CSMA</strong> llamada <strong>CSMA/CA</strong> (Acceso Múltiple con Detección de Portadora). Esta técnica es similar a <strong>CSMA/CD</strong> en el sentido de que <strong>verifica</strong> si el medio de comunicación está <strong>libre</strong> antes de transmitir. Sin embargo, <strong>CSMA/CA</strong> emplea <strong>métodos adicionales</strong> para prevenir colisiones en entornos <strong>inalámbricos</strong>.
+A diferencia de <strong>CSMA/CD</strong>, <strong>CSMA/CA</strong> no detecta las <strong>colisiones</strong>, pero trata de evitarlas. Esto se logra esperando un breve período antes de transmitir. Además, cada dispositivo <strong>inalámbrico</strong> que transmite incluye <strong>información</strong> sobre cuánto tiempo necesitará el medio para la transmisión. Todos los otros dispositivos <strong>inalámbricos</strong> reciben esta <strong>información</strong> y saben cuánto <strong>tiempo</strong> el medio no estará disponible para su uso.
+Después de que un dispositivo <strong>inalámbrico</strong> envía una trama <strong>802.11</strong>, el receptor envía un <strong>acuse de recibo</strong> para <strong>confirmar</strong> que la trama se recibió correctamente.
+Tanto en redes <strong>LAN Ethernet</strong> con concentradores como en redes <strong>WLAN</strong>, los sistemas <strong>basados en contienda</strong> no son eficientes cuando se utilizan intensivamente. Es importante destacar que las redes <strong>LAN Ethernet</strong> con switches <strong>no utilizan</strong> sistemas basados en contienda, ya que los <strong>switches</strong> y las <strong>NIC</strong> de los dispositivos operan en modo <strong>dúplex completo</strong>, lo que permite la transmisión y recepción simultáneas.</p>
+
+<h2 id="trama-de-enlace-de-datos">Trama de enlace de datos</h2>
+<h3 id="la-trama">La trama:</h3>
+<p>Este tema se enfoca en explicar el <strong>proceso</strong> que sigue una trama de datos a medida que viaja <strong>a través</strong> de una <strong>red</strong>. La <strong>información</strong> contenida en una trama está determinada por el <strong>tipo de protocolo</strong> que se utiliza.
+La capa de <strong>enlace de datos</strong> se encarga de <strong>preparar</strong>** los datos encapsulados (que normalmente son paquetes <strong>IPv4</strong> o <strong>IPv6</strong>) para que puedan ser transmitidos a través de la red local. Esto se logra al añadir un <strong>encabezado</strong> y un <strong>tráiler</strong> a los datos, lo que crea una unidad llamada <strong>“trama”</strong>.</p>
+
+<p>El protocolo de capa de enlace de datos es responsable de <strong>gestionar</strong> las <strong>comunicaciones</strong> entre las tarjetas de interfaz de red (NIC) dentro de la misma red. Aunque existen varios protocolos de capa de enlace de datos que <strong>describen</strong> las tramas, todas comparten <strong>tres partes básicas</strong>: un <strong>encabezado</strong>, los <strong>datos reales</strong> y un <strong>tráiler</strong>. Lo que hace especial a la capa de enlace de datos es que, a diferencia de otros protocolos de encapsulación, <strong>agrega información</strong> al final de la trama, conocida como tráiler.
+Cada protocolo de <strong>capa de enlace de datos</strong> tiene su propia manera de encapsular los datos <strong>en la trama</strong>. No existe un formato de trama único que funcione para todas las situaciones. La cantidad de <strong>información de control</strong> que se agrega a la trama depende del <strong>entorno</strong>, las <strong>necesidades de control de acceso</strong> al medio y la <strong>topología lógica</strong> de la red. Por ejemplo, una trama de una red inalámbrica <strong>(WLAN)</strong> debe incluir <strong>información adicional</strong> para evitar colisiones, lo que la diferencia de una trama en una red Ethernet.
+La estructura de las tramas de <strong>capa de enlace de datos</strong> varía según el <strong>protocolo</strong> utilizado y el <strong>entorno</strong> de la red, ajustándose a las necesidades <strong>específicas</strong> de cada caso.</p>
+
+<h3 id="campos-de-la-trama">Campos de la trama:</h3>
+<p>La <strong>capa de enlace de datos</strong> divide la transmisión en <strong>bloques comprensibles</strong>, con información de control ubicada en el <strong>encabezado</strong> y el <strong>tráiler</strong> en campos separados. Esto crea una <strong>estructura</strong> reconocible por los nodos y permite que las señales <strong>físicas</strong> se descifren en <strong>paquetes</strong> en el destino.
+Las tramas de <strong>enlace de datos</strong> incluyen campos genéricos, como indicadores de inicio y fin de trama para marcar los límites de la trama, direcciones que indican los nodos de <strong>origen</strong> y <strong>destino</strong> en los medios, un campo de tipo que identifica el protocolo de capa 3 en el campo de datos, un campo de control que puede identificar servicios especiales de <strong>control de flujo</strong>, como la calidad de servicio <strong>(QoS)</strong>, y, por supuesto, los datos reales que contienen el contenido de la trama. Además, se agrega una parte de detección de errores al final de la trama, que se utiliza para verificar si la trama llegó sin errores debido a posibles <strong>interferencias</strong>, <strong>distorsiones</strong> o <strong>pérdida de señales</strong> en los medios.
+La capa de enlace de datos asigna <strong>direcciones físicas</strong> a los dispositivos en la red local. Estas direcciones se encuentran en el <strong>encabezado</strong> de la trama y especifican tanto el nodo de <strong>origen</strong> como el nodo de <strong>destino</strong> en la red local. A diferencia de las direcciones lógicas de la Capa 3, que son jerárquicas y se utilizan para identificar la red a la que pertenece un dispositivo, las direcciones <strong>físicas</strong> son únicas para cada dispositivo individual. Estas direcciones solo se utilizan para la <strong>comunicación</strong> dentro de la misma red local y no tienen relevancia fuera de ella.
+La capa de enlace de datos <strong>segmenta</strong> y <strong>controla</strong> las tramas de datos a medida que se mueven a través de una red local y se encarga de asignar direcciones <strong>físicas</strong> para la comunicación dentro de la misma red.</p>
+
+<h3 id="direcciones-de-capa-2">Direcciones de Capa 2:</h3>
+<p>La <strong>capa de enlace de datos</strong> se encarga de proporcionar las direcciones que se utilizan para <strong>enviar</strong> tramas a través de una red local compartida. Estas direcciones, llamadas <strong>direcciones físicas</strong>, se encuentran en el encabezado de la trama y especifican a qué dispositivo de la red local se envía la trama. Estas direcciones son <strong>únicas</strong> para cada dispositivo y no indican en qué parte de la red se encuentra el dispositivo. La capa 2 se encarga de que los dispositivos se comuniquen dentro de la <strong>misma red</strong>.
+Las <strong>direcciones</strong> de Capa 2 se usan solo para enviar datos dentro de la misma red y <strong>no tienen relevancia fuera de ella</strong>. A diferencia de las direcciones lógicas de la <strong>Capa 3</strong>, que son <strong>jerárquicas</strong> y se usan para <strong>guiar</strong> datos a través de diferentes redes, las direcciones de <strong>Capa 2</strong> son específicas para cada dispositivo y <strong>no cambian</strong>, aunque el dispositivo se mueva a otra red o subred.
+Cuando los datos deben viajar a través de diferentes segmentos de red, se necesita un dispositivo intermedio, como un router. El router utiliza la dirección <strong>física</strong> de <strong>Capa 2</strong> para <strong>recibir</strong> y <strong>desempaquetar</strong> la trama, y luego examina la dirección jerárquica de Capa 3. Usando la dirección IP, el router determina <strong>dónde se encuentra</strong> la red del dispositivo de destino y <strong>cuál es la mejor ruta</strong> para llegar a él. Luego, el router crea una nueva trama y la envía al siguiente segmento de red en el camino hacia su destino final.</p>
+
+<h3 id="tramas-lan-y-wan">Tramas LAN y WAN:</h3>
+<p>Los protocolos de comunicación utilizados en las redes varían según si se trata de <strong>redes locales cableadas</strong> (LAN) o <strong>redes inalámbricas</strong> (WLAN). En LAN cableadas, como las que utilizan cables Ethernet, se emplean <strong>protocolos Ethernet</strong>. Por otro lado, las comunicaciones inalámbricas se rigen por los protocolos WLAN, específicamente el estándar <strong>IEEE 802.11</strong>.
+Tradicionalmente, las redes de área amplia (WAN) han utilizado una serie de <strong>protocolos</strong>, como Protocolo punto a punto <strong>(PPP)</strong>, Control de enlace de datos de alto nivel <strong>(HDLC)</strong>, Frame Relay, Modo de transferencia asíncrona <strong>(ATM)</strong> y <strong>X.25</strong>, para adaptarse a diversas topologías de red, como conexiones punto a punto, configuraciones en forma de estrella (hub-and-spoke) y redes de malla completa.
+En la actualidad, muchas de estas tecnologías de capa 2 utilizadas en WAN están siendo <strong>reemplazadas</strong> por la tecnología Ethernet, lo que simplifica y unifica los protocolos de capa 2 en las redes de área amplia.
+El protocolo de capa 2 que se selecciona para una <strong>topología de red específica</strong> depende de la <strong>tecnología utilizada</strong> para implementar esa topología. La elección se basa en <strong>factores</strong> como el tamaño de la red <strong>(número de hosts)</strong>, la extensión geográfica de la red y los servicios que se desean ofrecer a través de ella.
+Una LAN, que abarca una <strong>zona geográfica más pequeña</strong>, utiliza tecnologías de alto ancho de banda que son capaces de soportar un <strong>gran número</strong> de dispositivos. En cambio, en redes WAN que abarcan áreas geográficas <strong>más amplias</strong>, como varias ciudades, los enlaces de larga distancia y las limitaciones de ancho de banda <strong>influyen</strong> en la elección de los protocolos.
+Cada vez más se tiende a adoptar Ethernet en las WAN para <strong>simplificar la infraestructura</strong> y <strong>mejorar</strong> la eficiencia de las redes.</p>

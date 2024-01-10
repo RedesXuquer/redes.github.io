@@ -1,294 +1,600 @@
 <p><img src="image.png" alt="Alt text" /></p>
 
-<h1 id="introducción">Introducción</h1>
+<h2 id="iniciamos-la-configuración">Iniciamos la configuración</h2>
+<p>Vamos a empezar configurando varias variables necesarias para trabajar un poco más cómodo:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global user.email          "corre@example.com"
+git config --global user.name           "Tu nombre y apellidos"
+git config --global init.defaultBranch  main
+</code></pre></div></div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Nº Ejercicio</th>
-      <th>Ejercicio</th>
-      <th>Descripción</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>Crear una cuenta en GitHub</td>
-      <td>Regístrate en GitHub en https://github.com/.</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>Solución: Para crear una cuenta en GitHub, sigue estos pasos:</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>Accede a https://github.com/.</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>Haz clic en el botón “Sign up” para registrarte.</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>Completa el formulario de registro con tu información, incluyendo tu nombre de usuario, dirección de correo electrónico y contraseña.</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>Verifica tu dirección de correo electrónico siguiendo las instrucciones enviadas a tu bandeja de entrada.</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>Ahora tienes una cuenta en GitHub!</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Clonar un repositorio</td>
-      <td>Clona un repositorio existente en tu ordenador.</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>Busca en Google y copia el repositorio curso-programacion-java del instituto Lluís Simarro de Xàtiva</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>Haz clic en el botón “Code” y copia la URL del repositorio.</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>En tu ordenador, abre la línea de comandos de Git Bash.</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>Utiliza el comando git clone [URL del repositorio] para clonar el repositorio en tu máquina.</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>Busca y ejecuta el ejemplo de Hola Mundo</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Crear tu primer repositorio</td>
-      <td>Crea un repositorio en GitHub para almacenar tu código.</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>Inicia sesión en tu cuenta de GitHub.</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>Haz clic en el botón “New” en la página principal de GitHub.</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>Asigna un nombre a tu repositorio, elige la visibilidad (público o privado), y selecciona opciones adicionales si es necesario.</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>Haz clic en el botón “Create repository”.</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>Tu repositorio ha sido creado.</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>Crear tu primer repositorio</td>
-      <td>Crea un repositorio en GitHub para almacenar tu código.</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>Inicia sesión en tu cuenta de GitHub.</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>Haz clic en el botón “New” en la página principal de GitHub.</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>Asigna un nombre a tu repositorio, elige la visibilidad (público o privado), y selecciona opciones adicionales si es necesario.</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>Haz clic en el botón “Create repository”.</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>Tu repositorio ha sido creado.</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>Subir un txt a tu repositorio</td>
-      <td>Sube un txt que contenga tu nombre.</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>Abre GitHub Bash</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>Prepara el directorio y los archivos</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>echo “# EntornosDesarrollo” » README.md</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>git init</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>git add README.md</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>git commit -m “first commit”</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>git branch -M main</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>git remote add origin https://github.com/RedesXuquer/EntornosDesarrollo.git</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>git push -u origin main</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>echo “miNombre” » miNombre.txt</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>git add miNombre.txt</td>
-    </tr>
-    <tr>
-      <td> </td>
-      <td> </td>
-      <td>git push</td>
-    </tr>
-  </tbody>
-</table>
+<h2 id="creamos-un-directorio">Creamos un directorio</h2>
 
-<table>
-  <tbody>
-    <tr>
-      <td>Día 4</td>
-      <td>Realizar cambios</td>
-      <td>Edita archivos en tu repositorio y realiza tu primer commit.</td>
-    </tr>
-    <tr>
-      <td>Solución: Para realizar cambios en un repositorio y realizar tu primer commit, sigue estos pasos:</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-  </tbody>
-</table>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir prueba
+cd prueba
+</code></pre></div></div>
 
-<p>Abre los archivos en tu repositorio clonado en tu editor de código.
-Realiza las modificaciones que desees en los archivos.
-Guarda los cambios en tu editor de código.
-En la línea de comandos, utiliza los siguientes comandos:
-git add . para preparar los cambios.
-git commit -m “Descripción de los cambios” para realizar el commit.
-git push para enviar los cambios al repositorio en GitHub.
-| Día 5 | Crear una rama | Aprende a trabajar con ramas en Git y crea una nueva rama para tu proyecto. |
-| Solución: Para crear una nueva rama en Git, sigue estos pasos:</p>
+<h2 id="comprobamos-que-tenemos-el-directorio-vacío">Comprobamos que tenemos el directorio vacío</h2>
 
-<p>Asegúrate de estar en la rama principal (normalmente llamada “main”).
-Utiliza el comando git checkout -b [nombre-de-la-rama] para crear y cambiar a una nueva rama.
-Ahora puedes realizar cambios en esta nueva rama sin afectar la rama principal.
-| Día 6 | Fusionar ramas | Fusiona cambios de una rama a otra (por ejemplo, de la rama “feature” a “main”). |
-| Solución: Para fusionar cambios de una rama a otra en Git, sigue estos pasos:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ls -la
+</code></pre></div></div>
 
-<p>Asegúrate de estar en la rama de destino (por ejemplo, “main”).
-Utiliza el comando git merge [nombre-de-la-rama] para fusionar los cambios de la rama especificada en la rama actual.
-Resuelve conflictos si los hay.
-| Día 7 | Colaborar en proyectos | Aprende a colaborar con otros desarrolladores en proyectos compartidos. |
-| Solución: Para colaborar en proyectos en GitHub:</p>
+<h2 id="inicializamos-el-repositorio">Inicializamos el repositorio</h2>
 
-<p>Invita a colaboradores a tu repositorio o únete como colaborador a un repositorio existente.
-Utiliza solicitudes de “pull request” para proponer cambios y colaborar en el proyecto.
-Revisa y comenta las solicitudes de “pull request” de otros colaboradores.
-| Día 8 | Crear un archivo README | Crea un archivo README.md para documentar tu proyecto. |
-| Solución: Para crear un archivo README.md:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git init
+</code></pre></div></div>
 
-<p>En la página de inicio de tu repositorio en GitHub, haz clic en el botón “Add a README”.
-Utiliza el editor en línea de GitHub para crear y dar formato a tu README.
-| Día 9 | Crear un “pull request” | Aprende a enviar cambios a otros repositorios y solicitar que se fusionen. |
-| Solución: Para crear un “pull request” en GitHub:</p>
+<h2 id="comprobamos-que-se-ha-creado-el-directorio-git">Comprobamos que se ha creado el directorio .git</h2>
 
-<p>Realiza cambios en una rama de tu repositorio.
-En la página de GitHub de tu repositorio, haz clic en la pestaña “Pull requests”.
-Haz clic en “New pull request” y sigue las instrucciones para crear la solicitud.
-Los cambios propuestos serán revisados y, si son aceptados, fusionados en la rama de destino.
-| Día 10 | Gestionar problemas | Aprende a utilizar la funcionalidad de seguimiento de problemas (issues) en GitHub. |
-| Solución: Para gestionar problemas en GitHub:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ls -la
+</code></pre></div></div>
 
-<p>En la página de GitHub de tu repositorio, haz clic en la pestaña “Issues”.
-Crea problemas para hacer un seguimiento de tareas, errores o mejoras.
-Asigna problemas a colaboradores, etiquétalos y realiza un seguimiento de su estado.
-| Día 11 | Configurar integraciones | Explora la configuración de integraciones y servicios en tu repositorio. |
-| Solución: En la página de tu repositorio en GitHub, ve a la pestaña “Settings” (Configuración) para explorar y configurar integraciones y servicios como GitHub Actions, GitHub Pages, y más.</p>
+<h2 id="creamos-un-archivo-readmemd-y-ponemos-nuestro-nombre">Creamos un archivo README.md y ponemos nuestro nombre</h2>
+<p>Este archivo será el que se leera por defecto en GitHub</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>echo "Mi nombre" &gt; README.md
+</code></pre></div></div>
 
-<table>
-  <tbody>
-    <tr>
-      <td>Día 12</td>
-      <td>Explorar GitHub Pages</td>
-      <td>Publica un sitio web utilizando GitHub Pages.</td>
-    </tr>
-    <tr>
-      <td>Solución: Para publicar un sitio web con GitHub Pages:</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-  </tbody>
-</table>
+<h2 id="registramos-los-cambios-en-el-repositorio">Registramos los cambios en el repositorio</h2>
+<ol>
+  <li>Añadimos el área de preparación
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add README.md
+</code></pre></div>    </div>
+  </li>
+  <li>Añadimos al repositorio en local
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit -m "Primer cambio registrado"
+</code></pre></div>    </div>
+  </li>
+</ol>
 
-<p>Crea un archivo HTML o utiliza un generador de sitios web estáticos.
-En la configuración de tu repositorio, ve a la sección “GitHub Pages” y elige la rama y la carpeta que contiene tu sitio web.
-Tu sitio web estará disponible en una URL proporcionada por GitHub.
-| Día 13 | Usar GitHub Actions | Configura una acción automatizada para realizar pruebas o despliegues. |
-| Solución: Para configurar una acción automatizada en GitHub:</p>
+<h2 id="añadimos-dos-líneas-más">Añadimos dos líneas más</h2>
+<p>Cada vez que se añada una línea tenemos que hacer un commit cambiando la información
+2ª línea la fecha de hoy
+2ª AXúquer</p>
 
-<p>En la página de tu repositorio, ve a la pestaña “Actions” (Acciones).
-Configura un flujo de trabajo (workflow) para realizar pruebas, despliegues u otras tareas automatizadas.
-| Día 14 | Aprender Markdown | Familiarízate con la sintaxis Markdown para dar formato a tus archivos README. |
-| Solución: Markdown es un lenguaje de marcado ligero utilizado en archivos README y otros documentos en GitHub. Puedes aprender la sintaxis de Markdown en la guía de GitHub aquí.</p>
+<h2 id="por-último-vemos-cambios-realizados">Por último vemos cambios realizados</h2>
 
-<p>Estas soluciones te ayudarán a comprender y realizar cada uno de los ejercicios propuestos en la tabla. ¡Espero que te sean de utilidad!</p>
+<p>Para ello ejecutamos</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git  log
+git  log  --oneline
+</code></pre></div></div>
+
+<p>Deberían aparecer 3 commits tal que así:</p>
+
+<p><img src="gitlogcommit.png" alt="Alt text" /></p>
+
+<h1 id="revisar-commits-realizados">Revisar commits realizados</h1>
+
+<p>En la actividad siguiente, haremos uso del comando <strong>git checkout</strong> para movernos por los distintos commits .</p>
+
+<p>Antes de nada comprueba que tienes al menos 3 commits realizados. Para ello ejecuta:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git  log  --oneline --all
+</code></pre></div></div>
+
+<p><img src="gitlogcommitv2.png" alt="Alt text" /></p>
+
+<p>La opción –oneline, nos muestra la información de cada commit en una línea.</p>
+
+<p>La opción –all, nos muestra todos los commits.</p>
+
+<p>La primera columna es un <strong>hash</strong>, un identificador.</p>
+
+<p>Los números no están ordenados. En mi caso, el primer commit tiene un hash 55b9b0b. El último commit mio es el ba90153. 
+Tú tendrás otro hash distinto. No te preocupes, es así.</p>
+
+<p>La segunda columna es el mensaje que pusimos cuando hicimos el commit.</p>
+
+<p>Fíjate también que en el último commit, en mi caso ba90153, existe un <strong>identificador HEAD</strong>. 
+Ésta es una referencia que apunta al commit en el que estamos situados en el momento actual. 
+Además aparece otro <strong>identificador main</strong>, que indica en la rama en la que estamos. Por defecto, siempre es main.</p>
+
+<p><strong>El identificador main siempre apunta al último commit de la rama</strong>. 
+Sin embargo el identificador HEAD podemos moverlo y desplazarmos entre distintos commit y ver como estaban los archivos en cada momento.</p>
+
+<p>Para mover el identificador HEAD utilizamos el comando <strong>git checkout</strong>  <em>numero_hash</em>.</p>
+
+<p>Realiza los siguientes pasos:</p>
+
+<h2 id="1-vamos-a-ver-el-contenido-del-archivo-readmemd-en-el-commit-actual">1. Vamos a ver el contenido del archivo README.md en el commit actual.</h2>
+
+<p>Para ello hacemos:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat  README.md
+</code></pre></div></div>
+
+<p>Deben aparecer 3 líneas de texto: tu nombre, la fecha y el nombre del centro AXúquer.</p>
+
+<h2 id="2-vamos-a-movernos-al-primer-commit">2. Vamos a movernos al primer commit.</h2>
+
+<p>Para ello hacemos:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git  checkout  55b9b0b
+</code></pre></div></div>
+
+<p>Tú deberás poner el hash que tengas.</p>
+
+<p>Te aparecerá un mensaje que contiene “Te encuentras en estado ‘detached HEAD’”. Esto indica que la referencia HEAD no está al final de la rama. No te preocupes por ello.</p>
+
+<p>Ahora veamos el contenido del archivo README.md.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat README.md
+</code></pre></div></div>
+
+<p>Debe aparecer sólo una línea con tu nombre. Es el contenido que tenía dicho archivo en ese commit.</p>
+
+<h2 id="3-veamos-en-que-posición-de-la-rama-nos-encontramos-para-ello-ejecutamos">3. Veamos en que posición de la rama nos encontramos. Para ello ejecutamos:</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git  log  --oneline --all
+</code></pre></div></div>
+
+<p>Fíjate donde apunta la referencia HEAD en este momento.</p>
+
+<p>Algo que quizás te haya pasado desapercibido pero que es extremadamente IMPORTANTE es que cada vez que nos movemos de un commit a otro, el contenido del directorio de trabajo cambia. Esto lo hace git de forma automática.</p>
+
+<p>NO REALIZAREMOS ningún cambio a los archivos, sólo vamos a echar un vistazo.</p>
+
+<h2 id="4-vamos-a-movernos-al-segundo-commit">4. Vamos a movernos al segundo commit.</h2>
+
+<p>Para ello hacemos:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git  checkout  9ca2b54
+</code></pre></div></div>
+
+<p>Tú deberás poner el hash que tengas. No es necesario poner todos los dígitos, con cuatro será suficiente.</p>
+
+<p>Ejecuta</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat README.md
+</code></pre></div></div>
+
+<p>y haz una captura de pantalla.</p>
+
+<p>Deberían aparecer 2 líneas: tu nombre y la fecha.</p>
+
+<h2 id="5-vuelve-a-hacer">5. Vuelve a hacer</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git  log  --oneline --all
+</code></pre></div></div>
+
+<p>Y comprueba que HEAD está en el segundo commit.</p>
+
+<h2 id="6-por-último">6. Por último,</h2>
+
+<p>para volver al último commit de la rama master, simplemente hacemos:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout main
+</code></pre></div></div>
+
+<p>Podemos ver que todo está en su sitio haciendo</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git  log  --oneline --all
+</code></pre></div></div>
+
+<blockquote>
+  <p><em>NOTA: No borrar el repositorio local. Lo volveremos a utilizar en la siguiente actividad.</em></p>
+</blockquote>
+
+<h1 id="etiquetar-commits-y-ver-diferencias">Etiquetar commits y ver diferencias</h1>
+
+<p>En esta actividad vamos a ver 3 comandos:</p>
+
+<ul>
+  <li><strong>git tag</strong></li>
+  <li><strong>git show</strong></li>
+  <li><strong>git diff</strong></li>
+</ul>
+
+<p>El primer comando (<strong>git tag</strong>) nos permite poner etiquetas a los commits.  <strong>No se etiquetan todos los commits, solo las releases que deseemos</strong>.</p>
+
+<p>Los 2 siguientes (<strong>git show</strong> y <strong>git diff</strong>) son para ver los cambios realizados entre distintos commits. Son muy parecidos aunque con pequeñas diferencias.</p>
+
+<p><strong>Básicamente git show nos permite ver los cambios de un commit respecto al anterior, mientras que git diff nos permite ver cambios en un rango de commits</strong>.</p>
+
+<p>De todas formas tanto git show como git diff tienen tantas opciones que aquí sólo nos centraremos en las esenciales.</p>
+
+<p>Empecemos:</p>
+
+<h2 id="1-etiquetamos-el-commit-primero-y-el-tercero">1. Etiquetamos el commit primero y el tercero.</h2>
+
+<p>El primer commit será la versión 1 de nuestro proyecto. La etiqueta será v1.</p>
+
+<p>El tercer commit será la versión 2 de nuestro proyecto. La etiqueta será v2.</p>
+
+<p>El segundo commit no será etiquetado.</p>
+
+<p>Para etiquetar utilizamos el comando</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git  tag  -a  nombre_etiqueta  -m  "Mensaje"   commit_a_etiquetar
+</code></pre></div></div>
+
+<p>Por ejemplo, en mi caso:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git tag  -a v1  -m "Primera versión estable"  55b9
+git tag  -a v2  -m "Versión 2"  fdeb
+</code></pre></div></div>
+
+<p>La opción -a significa annotate.</p>
+
+<p>La opción -m nos permite poner un mensaje.</p>
+
+<p>Finalmente debemos poner el commit al que deseamos aplicar la etiqueta.</p>
+
+<p>Si por cualquier motivo nos equivocamos al crear la etiqueta podemos eliminarla con</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git tag -d nombre_etiqueta
+</code></pre></div></div>
+
+<h2 id="2-usando-etiquetas-para-movernos">2. Usando etiquetas para movernos</h2>
+
+<p>Las etiquetas nos permiten referenciar commits de una forma más cómoda que usando el identificador de hash.</p>
+
+<p>Por ejemplo es más cómodo usar:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout v1
+</code></pre></div></div>
+
+<p>Que usar:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout 55b9
+</code></pre></div></div>
+
+<p>Para volver al último commit haz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git checkout main
+</code></pre></div></div>
+
+<h2 id="3-examinado-cambios-de-un-commit-respecto-al-anterior">3. Examinado cambios de un commit respecto al anterior.</h2>
+
+<p>Para ver los cambios introducidos respecto al commit anterior hacemos:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git show
+</code></pre></div></div>
+
+<p><img src="gitshow.png" alt="Alt text" /></p>
+
+<p>En este caso, al coincidir todos los apuntadores  (HEAD, master, v2 y ba90) al mismo sitio, el comando anterior es equivalente a:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git show HEAD
+git show master
+git show ba90
+git show v2
+</code></pre></div></div>
+
+<p>Como podemos observar, se añadió una línea, la que contiene AXúquer.</p>
+
+<p><strong>Las líneas añadidas aparecen en verde y con un signo +</strong>.</p>
+
+<p><strong>Las líneas eliminadas aparecen en rojo y con un signo -</strong>.</p>
+
+<p>En este caso solo hemos realizado operaciones de adición.</p>
+
+<p>Para ver el cambio realizado en el commit segundo respecto al primero, hacemos</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git show 9ca2
+</code></pre></div></div>
+
+<p>Debe aparecer añadida la línea con la fecha.</p>
+
+<p>Y para ver el cambio realizado en el commit primero respecto al repositorio vacío, hacemos:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git show v1
+</code></pre></div></div>
+
+<p>Debe aparecer añadida la línea con el nombre.</p>
+
+<h2 id="4-examinado-cambios-de-un-commit-respecto-a-varios-anteriores">4. Examinado cambios de un commit respecto a varios anteriores.</h2>
+
+<p>Si deseamos ver todos los cambios realizados a lo largo de varios commits, haremos uso de git diff.</p>
+
+<p>La forma de uso es</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git  diff  commit1..commit2
+</code></pre></div></div>
+
+<p>Por ejemplo, para ver los cambios entre la versión 1 y la versión 2, hacemos</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git  diff  v1..v2
+</code></pre></div></div>
+
+<p>Podemos ver que se han añadido 2 líneas desde el commit v1.</p>
+
+<p>Es muy aconsejable poner primero el commit más antiguo y después el commit más moderno. Si lo hacemos al contrario, el resultado en lugar de aparecer en color verde aparecerá en color rojo, y su interpretación será más confusa.</p>
+
+<h2 id="5-diferencia-entre-git-show-y-git-diff">5. Diferencia entre git show y git diff</h2>
+
+<p>También podemos hacer</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git show v1..v2
+</code></pre></div></div>
+
+<p><img src="gitshow.png" alt="Alt text" /></p>
+
+<blockquote>
+  <p><em>NOTA: No borrar el repositorio local. Lo volveremos a utilizar en la siguiente actividad.</em></p>
+</blockquote>
+
+<h1 id="crear-repositorio-remoto-y-subir-commits-locales">Crear repositorio remoto y subir commits locales</h1>
+
+<p>En esta actividad crearemos un repositorio vacío en GitHub y subiremos el contenido de nuestro repositorio local.</p>
+
+<h2 id="1-primero-creamos-un-repositorio-totalmente-vacío-en-github">1. Primero, creamos un repositorio totalmente vacío en GitHub.</h2>
+
+<p>Accedemos a nuestra cuenta de GitHub.</p>
+
+<p>En la <strong>esquina superior derecha</strong>, pulsamos en el signo <strong>+</strong> y luego en <strong>New repository</strong></p>
+
+<p>Escogemos el nombre del repositorio. No tiene por que coincidir con el nombre del repositorio local, aunque es lo aconsejable para no hacernos un lío.</p>
+
+<p>Es muy importante que NO INICIALICES EL REPOSITORIO. Si el repositorio no estuviese vacío podría darnos un conflicto.</p>
+
+<p>En una actividad posterior crearemos conflictos y veremos como resolverlos. Pero en en esta actividad, sólo vamos a trabajar lo básico.</p>
+
+<p>Pulsaremos en <strong>Create Repository</strong> y nos aparecerá una página en la cual nos pondrá varias opciones de inicializar el reposiotrio:</p>
+
+<p>Escogemos la imagen que pone únicamente <strong>git remote y git push</strong></p>
+
+<p>Ahí podemos ver la URL del repositorio remoto. Hay 2 formas de acceso:</p>
+
+<ul>
+  <li><strong>mediante HTTPS</strong></li>
+  <li><strong>mediante SSH</strong></li>
+</ul>
+
+<p><strong>Usaremos, por ahora, HTTPS</strong>. En una actividad posterior veremos como usar SSH y utilizar cifrado público-privado para no tener que introducir cada vez nuestras credenciales.</p>
+
+<p>Más abajo se indican los comandos a ejecutar en nuestro repositorio local. Lo vemos en el siguiente punto.</p>
+
+<p>Para tu comodidad, no cierres la página. Más adelante volveremos a ella.</p>
+
+<h2 id="2-asociar-repositorio-local-con-repositorio-remoto">2. Asociar repositorio local con repositorio remoto</h2>
+
+<p>En nuestro repositorio local, para asociarlo con el repositorio remoto, hacemos:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote add origin  ** Tu enlace **
+</code></pre></div></div>
+
+<p>Nuestro repositorio remoto será identificado como <strong>origin</strong>. Podemos ponerle otro nombre, pero no debemos. Es una convención ampliamente aceptada poner este nombre al repositorio remoto de GitHub.</p>
+
+<p>Para ver si se ha añadido bien hacemos</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote -v
+</code></pre></div></div>
+
+<p>Deben aparecer 2 entradas, una para bajada (fetch) y otra para subida (push)</p>
+
+<blockquote>
+  <p>NOTA: Si por cualquier motivo nos equivocamos y escribimos mal el nombre o la URL, podemos borrar la asociación con</p>
+  <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote remove origin
+</code></pre></div>  </div>
+  <p>y luego volver a crear la asociación.</p>
+</blockquote>
+
+<h2 id="3-subir-todos-los-commits-locales-al-repositorio-remoto">3. Subir todos los commits locales al repositorio remoto</h2>
+
+<p>Para subir el contenido de nuestro repositorio local al repositorio remoto hacemos:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push -u origin main
+</code></pre></div></div>
+
+<p>El identificador <strong>origin</strong> es el nombre que dimos a nuestro vínculo. El identificador main se refiere a la rama principal.</p>
+
+<p>Es una convención ampliamente seguida, así que respétala.</p>
+
+<p>Se nos pedirá nuestro usuario y contraseña. Lo introducimos, y si no hay problema, se realizará la subida.</p>
+
+<h2 id="4-comprobando-la-subida">4. Comprobando la subida.</h2>
+
+<p>Volvemos a la página de GitHub y la actualizamos.</p>
+
+<p>Nos aparecerá dentro de nuestro repositorio nuestro archivo README.md</p>
+
+<p>GitHub ofrece muchas funcionalidades.</p>
+
+<p>Así que nos centraremos ahora mismo en las releases. Estás se corresponden con el etiquetado que realizamos en la actividad anterior con git tag.</p>
+
+<p>Teníamos 2 releases, etiquetadas como v1 y v2, pero sin embargo aquí no aparece ninguna.</p>
+
+<p>El motivo, es que debemos subir las etiquetas por separado con el comando</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push --tags
+</code></pre></div></div>
+<p>Así que ejecutaremos dicho comando desde nuestro repositorio local. Refrescaremos la página. Et voilà !</p>
+
+<h2 id="5-examinando-commits-y-releases-en-github">5. Examinando commits y releases en GitHub.</h2>
+
+<p><strong>Pulsa en 3 commits</strong> y haz una captura de pantalla. Por tu cuenta puedes examinar cada uno de los commits.</p>
+
+<p><strong>Pulsa en 2 releases</strong> y haz una captura de pantalla. Observa que se han creado archivos comprimidos con el código fuente para descargar.</p>
+
+<blockquote>
+  <p><em>NOTA: No borrar los repositorio local ni repositorio remoto. Los volveremos a utilizar en la siguiente actividad.</em></p>
+</blockquote>
+
+<h1 id="deshacer-cambios-en-repositorio-local">Deshacer cambios en repositorio local</h1>
+
+<p>En esta actividad, veremos que podemos hacer cuando cometemos errores.</p>
+
+<p>Si realizamos algún cambio y hemos “metido la pata”, podemos deshacer el “entuerto”.</p>
+
+<p>Vamos a verlo de forma práctica haciendo uso del comando  <strong>git reset –hard</strong></p>
+
+<h2 id="1-deshacer-cambios-en-el-directorio-de-trabajo">1. Deshacer cambios en el directorio de trabajo</h2>
+
+<p>Estando en el último commit de la rama master, modificamos el archivo README.md</p>
+
+<p>Vamos a eliminar las 2 últimas líneas.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nano README.md
+</code></pre></div></div>
+
+<p>Editamos. Debe quedar una sola línea con nuestro nombre.</p>
+
+<p>Para ver los cambios que hemos introducido ejecutamos:</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">git diff HEAD</code></strong></p>
+
+<p>Es decir vamos a ver las diferencias que existen en nuestro directorio de trabajo respecto al commit HEAD, es decir el último commit confirmado.</p>
+
+<blockquote>
+  <p>NOTA: Si quisiesemos ver las diferencias de nuestro directorio de trabajo respecto al commit de la Versión 1, haríamos <strong>git diff v1</strong>.
+Observa que estamos viendo las diferencias hacia al pasado. Esta forma de uso de git diff es diferente a la que vimos en la última actividad, en la cual veíamos las diferencias hacia el futuro.</p>
+</blockquote>
+
+<p>Se ve claramente que hemos eliminado las 2 últimas líneas.</p>
+
+<p>Para volver el estado de este archivo y de CUALQUIER OTRO de nuestro directorio de trabajo que hayamos modificado, ejecutamos:</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">git reset --hard</code></strong></p>
+
+<h2 id="2-y-para-deshacer-el-área-de-preparación">2. ¿Y para deshacer el área de preparación?</h2>
+
+<p>Imaginemos que hemos ido un poco más lejos, y que además de modificar el directorio de trabajo, hemos añadido los cambios al Staging Area. Es decir hemos hecho</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nano README.md
+</code></pre></div></div>
+
+<p>Borrado las 2 últimas líneas.</p>
+
+<p>Y luego hemos añadido al área de preparación mediante</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git  add  README.md
+</code></pre></div></div>
+
+<p>No te preocupes en este caso puede también aplicarse el comando anterior:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git  reset --hard
+</code></pre></div></div>
+
+<p>Dicho comando coge el contenido que hay en nuestro commit confirmado y recupera ambos: el directorio de trabajo y el área de preparación.</p>
+
+<h2 id="3-y-qué-pasa-si-ya-realicé-un-commit">3. ¿Y qué pasa si ya realicé un commit?</h2>
+
+<p>Imaginemos que hemos ido todavía un poco más lejos, y que además de modificar el directorio de trabajo y añadir los cambios al Staging Area, hemos realizado un commit. Es decir hemos hecho</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nano README.md
+</code></pre></div></div>
+
+<p>Borrado las 2 últimas líneas.</p>
+
+<p>Y luego hemos añadido al área de preparación mediante</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git  add  README.md
+</code></pre></div></div>
+
+<p>Y además hemos hecho</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit -m "Borras líneas de README.md"
+</code></pre></div></div>
+
+<p>Pues en este caso también podemos usar el comando <strong>git reset –hard</strong> de la siguiente forma:</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">git  reset --hard  HEAD~1</code></strong></p>
+
+<p><strong>HEAD~1</strong> significa el commit anterior al actual. Es decir <strong>un commit hacia atrás</strong>.</p>
+
+<p><strong>HEAD~2</strong> significa <strong>2 commits hacia atrás</strong>.</p>
+
+<p><strong>HEAD~n</strong> significa <strong>n commits hacia atrás</strong>, sustituyendo n por un número.</p>
+
+<blockquote>
+  <p><strong>NOTA: Usar git reset –hard de esta última forma es peligroso, porque perdemos el último o últimos commits. Así que hay que asegurarse muy bien de que es eso lo que queremos</strong>.</p>
+</blockquote>
+
+<blockquote>
+  <p><em>NOTA: No borrar los repositorio local ni el remoto. Los volveremos a utilizar en la siguiente actividad.</em></p>
+</blockquote>
+
+<h1 id="archivo-gitignore">Archivo .gitignore</h1>
+
+<p>En esta actividad empezaremos a trabajar con algo más real. Por ejemplo, una sencilla aplicación de Java. Esta actividad también es práctica.</p>
+
+<p>Vamos a seguir utilizando el repositorio que estabamos usando en las actividades anteriores.</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">git log  --oneline --all</code></strong></p>
+
+<h2 id="1-creamos-una-aplicación-holamundo-en-java">1. Creamos una aplicación HolaMundo en Java.</h2>
+
+<p>Creamos la aplicación y después continuamos…</p>
+
+<p>Si ahora volvemos a hacer un listado, veremos que nos ha creado una nueva carpeta llamada build con el bytecode resultante de la compilación.</p>
+
+<h2 id="2-añadiendo-archivos-al-repositorio-local">2. Añadiendo archivos al repositorio local</h2>
+
+<p>Como vimos en la actividad anterior, si ahora ejecutamos <strong>git diff HEAD</strong>, esperariamos ver los cambios de nuestro directorio de trabajo respecto al último commit.</p>
+
+<p>Sin embargo esto no es lo que ocurre. NO SE MUESTRA NADA. ¿Por qué es esto?</p>
+
+<p>Esto es porque git diff HEAD funciona siempre teniendo en cuenta los archivos que ya habían sido añadidos previamente al repositorio. Es decir sólo tiene en cuenta los archivos con seguimiento.</p>
+
+<p><strong>Los archivos nuevos son archivos sin seguimiento</strong>. En este caso debemos usar <strong>git status</strong> para ver esta circunstancia.</p>
+
+<p>Ahora debemos añadir todos estos archivos al área de preparación (Staging Area) y luego realizar un commit.</p>
+
+<p>PERO ESPERA UN MOMENTO. Voy a explicarte algo.</p>
+
+<p><strong>Cuando se trabaja con proyectos de código fuente existen algunos archivos que no interesa añadir al repositorio, puesto que no aportan nada</strong>. En el repositorio, como norma general, no debe haber archivos ejecutables, ni bytecode, ni código objeto, y muchas veces tampoco .zip, .rar, .jar, .war, etc. Estos archivos inflan el repositorio y, cuando llevamos muchos commits, hacen crecer demasiado el repositorio y además pueden ralentizar el trabajo de descarga y subida.</p>
+
+<p>Para cada lenguaje y para cada entorno de desarrollo se recomienda no incluir ciertos tipos de archivos. Son los <strong>archivos a ignorar</strong>. Cada programador puede añadir o eliminar de la lista los que considere adecuados. Los archivos y carpetas a ignorar deben indicarse en el archivo <strong><code class="language-plaintext highlighter-rouge">.gitignore</code></strong>. En cada línea se pone un archivo, una carpeta o una expresión regular indicando varios tipos de archivos o carpetas.</p>
+
+<p>En el repositorio https://github.com/github/gitignore tienes muchos ejemplos para distintos lenguajes, herramientas de construcción y entornos.</p>
+
+<p>Para el lenguaje Java: https://github.com/github/gitignore/blob/master/Java.gitignore</p>
+
+<p>Para la herramienta Gradle: https://github.com/github/gitignore/blob/master/Gradle.gitignore</p>
+
+<p>Para el entorno Netbeans: https://github.com/github/gitignore/blob/master/Global/NetBeans.gitignore</p>
+
+<p>Simplificando, nosotros vamos a ignorar las carpetas que creás oportunas. Entonces, el archivo <strong><code class="language-plaintext highlighter-rouge">.gitignore</code></strong> debe tener el siguiente contenido:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>el directorio que queramos/
+el archivo que queramos
+el .directorio que queramos/
+...
+</code></pre></div></div>
+<p>La barra final es opcional, pero a mí me gusta ponerla cuando me refiero a carpetas, para así saber cuando se trata de un archivo y cuando de una carpeta.</p>
+
+<p>Crea el archivo .gitignore con dicho contenido y haz una captura de pantalla.</p>
+
+<p>Ahora si hacemos</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">git status</code></strong></p>
+
+<p>veremos que no nos aparecen las carpetas que habéis elegido. Y nos aparece un archivo nuevo .gitignore.</p>
+
+<p>Ahora ya podemos ejecutar</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add .
+git commit -m "Código fuente inicial"
+</code></pre></div></div>
+
+<p>Fíjate que he escrito <code class="language-plaintext highlighter-rouge">git add .</code>. El punto indica el directorio actual, y es una forma de indicar que incluya en el área de preparación todos los archivos del directorio en el que me encuentro (salvo los archivos y carpetas indicados en <code class="language-plaintext highlighter-rouge">.gitignore</code>) Se utiliza bastante esta forma de git add cuando no queremos añadir los archivos uno a uno.</p>
+
+<h2 id="3-subir-cambios-de-repositorio-local-a-repositorio-remoto">3. Subir cambios de repositorio local a repositorio remoto</h2>
+
+<p>Ya sólo nos queda subir los cambios realizados al repositorio remoto con <strong>git push</strong></p>
+
+<p>Para hacer algo más interesante este apartado, vamos a crear una etiqueta en el commit actual y subirla a github para que éste cree una nueva <em>release</em>.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git tag v3
+git push --tags
+</code></pre></div></div>
+
+<p>Bueno, las etiquetas v1 y v2 no se suben porque ya la habíamos subido previamente.</p>
+
+<p>En este caso, podríamos también haber ejecutado</p>
+
+<p><strong><code class="language-plaintext highlighter-rouge">git push origin v3</code></strong></p>
+
+<p>Y la historia de nuestro repositorio local nos quedaría…</p>
+
+<p>Accede a tu repositorio en GitHub y haz una captura de pantalla de las <em>releases</em>.</p>
+
+<p>Haz otra captura de los archivos y carpetas de código subidas a GitHub. No deberían aparecer ni la carpeta build ni la carpeta .gradle. Y sí debería aparecer el archivo .gitignore.</p>
+
+<blockquote>
+  <p>NOTA: La carpeta <code class="language-plaintext highlighter-rouge">.git</code> nunca se muestra en GitHub.</p>
+</blockquote>
+
+<blockquote>
+  <p><em>NOTA: No borrar los repositorio local ni repositorio remoto. Los volveremos a utilizar en la siguiente actividad.</em></p>
+</blockquote>
