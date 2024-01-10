@@ -1,13 +1,13 @@
 ---
 title: Subnetting
 date: 2024-01-09 12:00:00 +0100
-categories: [Sistemas Microinformáticos y Redes, Redes Locales]
-tags: [redes locales, teoría, smr]
+categories: [Desarrollo Aplicaciones Multiplataforma, Acceso Datos]
+tags: [acceso a datos, teoría, 2DAM]
 img_path: /assets/img/hibernate/
 ---
 
 # Hibernate
-Con la siguiente extructura de MySQL:
+Con la siguiente estructura de MySQL:
 ```SQL
 
 CREATE DATABASE canciones;
