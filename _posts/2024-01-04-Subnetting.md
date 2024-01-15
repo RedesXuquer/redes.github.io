@@ -1,5 +1,5 @@
 ---
-title: Capa red
+title: Subnetting
 date: 2024-01-09 12:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Redes Locales]
 tags: [redes locales, teoría, smr]
