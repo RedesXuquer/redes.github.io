@@ -4,7 +4,7 @@
   <id>/redes.github.io/_site/</id>
   <title>Redes</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-01-09T22:02:09+01:00</updated>
+  <updated>2024-01-15T22:37:15+01:00</updated>
   <author>
     <name>Luis</name>
     <uri>/redes.github.io/_site/</uri>
@@ -20,8 +20,108 @@
 
   
   <entry>
-    <title>Capa red</title>
-    <link href="/redes.github.io/_site/posts/Subnetting/" rel="alternate" type="text/html" title="Capa red" />
+    <title>Hibernate</title>
+    <link href="/redes.github.io/_site/posts/NextCloud/" rel="alternate" type="text/html" title="Hibernate" />
+    <published>2024-01-10T12:00:00+01:00</published>
+  
+    <updated>2024-01-10T12:00:00+01:00</updated>
+  
+    <id>/redes.github.io/_site/posts/NextCloud/</id>
+    <content src="/redes.github.io/_site/posts/NextCloud/" />
+    <author>
+      <name>Luis</name>
+    </author>
+
+  
+    
+    <category term="Desarrollo Aplicaciones Multiplataforma" />
+    
+    <category term="Acceso Datos" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      NextCloud
+
+Nextcloud es una plataforma de software de código abierto que ofrece una amplia gama de servicios en la nube para individuos, empresas y organizaciones. Fundada como un proyecto derivado de ownCloud en 2016, Nextcloud se centra en proporcionar una solución de almacenamiento y colaboración en línea que pone énfasis en la privacidad, la seguridad y la autonomía del usuario.
+
+Una de las...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Hibernate</title>
+    <link href="/redes.github.io/_site/posts/Hibernate/" rel="alternate" type="text/html" title="Hibernate" />
+    <published>2024-01-10T12:00:00+01:00</published>
+  
+    <updated>2024-01-10T21:28:14+01:00</updated>
+  
+    <id>/redes.github.io/_site/posts/Hibernate/</id>
+    <content src="/redes.github.io/_site/posts/Hibernate/" />
+    <author>
+      <name>Luis</name>
+    </author>
+
+  
+    
+    <category term="Desarrollo Aplicaciones Multiplataforma" />
+    
+    <category term="Acceso Datos" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Hibernate
+Con la siguiente estructura SQL:
+
+CREATE DATABASE canciones;
+
+CREATE TABLE `song` (
+  `songId` int(11) NOT NULL,
+  `songName` varchar(25) NOT NULL,
+  `singer` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+
+  
+    Añadimos las librerías, deben quedar de la siguiente manera:
+
+
+
+  
+  
+    Añadimos una clase con el siguiente contenido:
+  
+
+
+imp...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Subnetting</title>
+    <link href="/redes.github.io/_site/posts/Subnetting/" rel="alternate" type="text/html" title="Subnetting" />
     <published>2024-01-09T12:00:00+01:00</published>
   
     <updated>2024-01-09T12:00:00+01:00</updated>
@@ -164,93 +264,6 @@ Leyenda de la tabla
 | — | — |
 | Características de la capa de red | Explique cómo la capa de red utiliza los protocolos IP para una confiabilidad de comunicaciones. |
 | Paquete IPv4 | Explique la función de los principale...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Montaje del servicio OpenVPN</title>
-    <link href="/redes.github.io/_site/posts/servicio-openvpn/" rel="alternate" type="text/html" title="Montaje del servicio OpenVPN" />
-    <published>2023-12-28T12:00:00+01:00</published>
-  
-    <updated>2024-01-04T13:51:38+01:00</updated>
-  
-    <id>/redes.github.io/_site/posts/servicio-openvpn/</id>
-    <content src="/redes.github.io/_site/posts/servicio-openvpn/" />
-    <author>
-      <name>Luis</name>
-    </author>
-
-  
-    
-    <category term="Sistemas Microinformáticos y Redes" />
-    
-    <category term="Servicios en red" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      
-
-Una red privada virtual (VPN) es una tecnología que permite establecer una conexión segura y cifrada entre tu dispositivo (como una computadora, teléfono o tablet) y un servidor remoto. El propósito principal de una VPN es proteger tu privacidad y seguridad en línea al cifrar el tráfico de datos entre tu dispositivo y el servidor al que te conectas. Aquí hay una explicación más detallada sobr...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Markdown cheatsheet</title>
-    <link href="/redes.github.io/_site/posts/Markdown-Cheatsheet/" rel="alternate" type="text/html" title="Markdown cheatsheet" />
-    <published>2023-12-10T12:00:00+01:00</published>
-  
-    <updated>2023-12-10T22:43:42+01:00</updated>
-  
-    <id>/redes.github.io/_site/posts/Markdown-Cheatsheet/</id>
-    <content src="/redes.github.io/_site/posts/Markdown-Cheatsheet/" />
-    <author>
-      <name>Luis</name>
-    </author>
-
-  
-    
-    <category term="DAM" />
-    
-    <category term="ED" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      This is intended as a quick reference and showcase. For more complete info, see John Gruber’s original spec and the Github-flavored Markdown info page.
-
-Note that there is also a Cheatsheet specific to Markdown Here if that’s what you’re looking for. You can also check out more Markdown tools.
-
-Table of Contents
-Headers
-Emphasis
-Lists
-Links
-Images
-Code and Syntax Highlighting
-Footnotes
-Tables
-B...
     </summary>
   
 
