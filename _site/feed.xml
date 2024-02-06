@@ -4,7 +4,7 @@
   <id>/redes.github.io/_site/</id>
   <title>Redes</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-01-15T22:37:15+01:00</updated>
+  <updated>2024-02-06T21:36:58+01:00</updated>
   <author>
     <name>Luis</name>
     <uri>/redes.github.io/_site/</uri>
@@ -20,11 +20,51 @@
 
   
   <entry>
-    <title>Hibernate</title>
-    <link href="/redes.github.io/_site/posts/NextCloud/" rel="alternate" type="text/html" title="Hibernate" />
-    <published>2024-01-10T12:00:00+01:00</published>
+    <title>Transporte</title>
+    <link href="/redes.github.io/_site/posts/Transporte/" rel="alternate" type="text/html" title="Transporte" />
+    <published>2024-02-06T12:00:00+01:00</published>
   
-    <updated>2024-01-10T12:00:00+01:00</updated>
+    <updated>2024-02-06T12:00:00+01:00</updated>
+  
+    <id>/redes.github.io/_site/posts/Transporte/</id>
+    <content src="/redes.github.io/_site/posts/Transporte/" />
+    <author>
+      <name>Luis</name>
+    </author>
+
+  
+    
+    <category term="Sistemas Microinformáticos y Redes" />
+    
+    <category term="Servicios en red" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Capa de transporte
+
+Transporte de datos:
+Función de la Capa de Transporte
+La Capa de Transporte juega un papel clave al facilitar el intercambio de datos generados por programas de capa de aplicación entre los hosts de origen y destino. Su tarea principal es gestionar las comunicaciones lógicas entre aplicaciones que se ejecutan en diferentes hosts. Esto implica acciones como establecer sesione...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>NextCloud</title>
+    <link href="/redes.github.io/_site/posts/NextCloud/" rel="alternate" type="text/html" title="NextCloud" />
+    <published>2024-01-15T12:00:00+01:00</published>
+  
+    <updated>2024-02-06T21:35:53+01:00</updated>
   
     <id>/redes.github.io/_site/posts/NextCloud/</id>
     <content src="/redes.github.io/_site/posts/NextCloud/" />
@@ -34,9 +74,9 @@
 
   
     
-    <category term="Desarrollo Aplicaciones Multiplataforma" />
+    <category term="Sistemas Microinformáticos y Redes" />
     
-    <category term="Acceso Datos" />
+    <category term="Servicios en red" />
     
   
 
@@ -124,7 +164,7 @@ imp...
     <link href="/redes.github.io/_site/posts/Subnetting/" rel="alternate" type="text/html" title="Subnetting" />
     <published>2024-01-09T12:00:00+01:00</published>
   
-    <updated>2024-01-09T12:00:00+01:00</updated>
+    <updated>2024-01-15T22:37:53+01:00</updated>
   
     <id>/redes.github.io/_site/posts/Subnetting/</id>
     <content src="/redes.github.io/_site/posts/Subnetting/" />
@@ -220,50 +260,6 @@ Cuando se real...
 
 
 
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Capa red</title>
-    <link href="/redes.github.io/_site/posts/Capa-red/" rel="alternate" type="text/html" title="Capa red" />
-    <published>2024-01-04T12:00:00+01:00</published>
-  
-    <updated>2024-01-04T12:00:00+01:00</updated>
-  
-    <id>/redes.github.io/_site/posts/Capa-red/</id>
-    <content src="/redes.github.io/_site/posts/Capa-red/" />
-    <author>
-      <name>Luis</name>
-    </author>
-
-  
-    
-    <category term="Sistemas Microinformáticos y Redes" />
-    
-    <category term="Redes Locales" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Capa de red
-
-Explique cómo los routers utilizan los protocolos y los servicios de capa de red para habilitar la conectividad integral.
-
-Leyenda de la tabla
-| Título del tema | Objetivo del tema |
-| — | — |
-| Características de la capa de red | Explique cómo la capa de red utiliza los protocolos IP para una confiabilidad de comunicaciones. |
-| Paquete IPv4 | Explique la función de los principale...
     </summary>
   
 
