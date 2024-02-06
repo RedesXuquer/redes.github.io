@@ -1,8 +1,8 @@
 ---
-title: Hibernate
-date: 2024-01-10 12:00:00 +0100
-categories: [Desarrollo Aplicaciones Multiplataforma, Acceso Datos]
-tags: [acceso a datos, teoría, 2DAM]
+title: NextCloud
+date: 2024-01-15 12:00:00 +0100
+categories: [Sistemas Microinformáticos y Redes, Servicios en red]
+tags: [redes locales, teoría, smr]
 img_path: /assets/img/nextcloud/
 ---
 
