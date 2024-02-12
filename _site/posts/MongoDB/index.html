@@ -398,6 +398,91 @@
 
 
 
+  
+  
+
+  <!-- CDN URL -->
+  
+
+  <!-- Add image path -->
+  
+
+  
+    
+      
+      
+    
+
+    
+    
+
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+      
+
+      
+      
+      
+
+      
+    
+      
+
+      
+      
+      
+
+      
+    
+
+    <!-- take out classes -->
+    
+
+    
+
+    
+
+    
+
+    <!-- lazy-load images <https://github.com/aFarkas/lazysizes#readme> -->
+    
+    
+
+    <!-- add image placeholder -->
+    
+      
+    
+
+    <!-- Bypass the HTML-proofer test -->
+    
+
+    
+      <!-- make sure the `<img>` is wrapped by `<a>` -->
+      
+
+      
+        <!-- create the image wrapper -->
+        
+      
+    
+
+    <!-- combine -->
+    
+
+  
+
+  
+
+
 
 <!-- Add header for code snippets -->
 
@@ -528,7 +613,7 @@
   class="readtime"
   data-bs-toggle="tooltip"
   data-bs-placement="bottom"
-  title="394 words"
+  title="415 words"
 >
   <em>2 min</em> read</span>
 
@@ -563,38 +648,59 @@
 
 <p>MongoDB es utilizado en una amplia variedad de aplicaciones, desde aplicaciones web hasta análisis de datos y aplicaciones móviles, debido a su capacidad para manejar grandes volúmenes de datos no estructurados y semi-estructurados de manera eficiente.</p>
 
-<h2 id="cómo-instalar-mongodb-si-te-sale-el-error-core-dumped"><span class="me-2">¿Cómo instalar MongoDB si te sale el error Core Dumped?</span><a href="#cómo-instalar-mongodb-si-te-sale-el-error-core-dumped" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
+<h2 id="cómo-instalar-mongodb-si-te-sale-el-error-failed-resultcore-dump"><span class="me-2">¿Cómo instalar MongoDB si te sale el error “failed (Result:core-dump)”?</span><a href="#cómo-instalar-mongodb-si-te-sale-el-error-failed-resultcore-dump" class="anchor text-muted"><i class="fas fa-hashtag"></i></a></h2>
 
 <p>Vamos a instalar MongoDB 4.4.8</p>
 
-<p>Importamos la clave pública usada por el sistema de paquetes:
-<code class="language-plaintext highlighter-rouge">wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -</code></p>
+<p>Importamos la clave pública usada por el sistema de paquetes:</p>
 
-<p>Añadimos el repositorio al sistema:
-<code class="language-plaintext highlighter-rouge">echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list</code></p>
+<p><code class="language-plaintext highlighter-rouge">wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | sudo apt-key add -</code></p>
 
-<p>Actualizamos el source de apt:
-<code class="language-plaintext highlighter-rouge">sudo apt-get update</code></p>
+<p>Añadimos el repositorio al sistema:</p>
 
-<p>Si lo intentamos instalar nos dará un error en la librería de libssl1.1, por lo tanto:
-<code class="language-plaintext highlighter-rouge">wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_amd64.deb
+<p><code class="language-plaintext highlighter-rouge">echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.4.list</code></p>
+
+<p>Actualizamos el source de apt:</p>
+
+<p><code class="language-plaintext highlighter-rouge">sudo apt-get update</code></p>
+
+<p>Si lo intentamos instalar nos dará un error en la librería de libssl1.1, por lo tanto:</p>
+
+<p><code class="language-plaintext highlighter-rouge">wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.0g-2ubuntu4_amd64.deb
 sudo dpkg -i libssl1.1_1.1.0g-2ubuntu4_amd64.deb
 </code></p>
 
-<p>Instalamos MongoDB propiamente dicho:
-<code class="language-plaintext highlighter-rouge">sudo apt-get install mongodb-org=4.4.8 mongodb-org-server=4.4.8 mongodb-org-shell=4.4.8 mongodb-org-mongos=4.4.8 mongodb-org-tools=4.4.8</code></p>
+<p>Instalamos MongoDB propiamente dicho:</p>
 
-<p>Comprobamos la versión:
-<code class="language-plaintext highlighter-rouge">mongodb --version</code></p>
+<p><code class="language-plaintext highlighter-rouge">sudo apt-get install mongodb-org=4.4.8 mongodb-org-server=4.4.8 mongodb-org-shell=4.4.8 mongodb-org-mongos=4.4.8 mongodb-org-tools=4.4.8</code></p>
 
-<p>Ahora falta un último detalle, si nos intentamos conectar desde un equipo remoto a la BBDD nos dará error, esto es debido a que solo acepta conexiones en local, la forma de solucionar esto sería:
-<code class="language-plaintext highlighter-rouge">sudo vi /etc/mongod.conf</code></p>
+<p>Comprobamos la versión:</p>
 
-<p>Y modificamos las siguientes líneas:
-<code class="language-plaintext highlighter-rouge">bindIp: 127.0.0.1</code></p>
+<p><code class="language-plaintext highlighter-rouge">mongod --version</code></p>
 
-<p>Por la sigiuente:
-<code class="language-plaintext highlighter-rouge">bindIp: 0.0.0.0</code></p>
+<p>Ahora falta un último detalle, si nos intentamos conectar desde un equipo remoto a la BBDD nos dará error, esto es debido a que solo acepta conexiones en local, la forma de solucionar esto sería:</p>
+
+<p><code class="language-plaintext highlighter-rouge">sudo vi /etc/mongod.conf</code></p>
+
+<p>Y modificamos las siguientes líneas:</p>
+
+<p><code class="language-plaintext highlighter-rouge">bindIp: 127.0.0.1</code></p>
+
+<p>Por la sigiuente:</p>
+
+<p><code class="language-plaintext highlighter-rouge">bindIp: 0.0.0.0</code></p>
+
+<p>Iniciamos el servicio:</p>
+
+<p><code class="language-plaintext highlighter-rouge">sudo systemctl start mongod</code></p>
+
+<p>Comprobamos el servicio:</p>
+
+<p><code class="language-plaintext highlighter-rouge">sudo systemctl status mongod</code></p>
+
+<p>Y ahora la conexión ya es posible:</p>
+
+<p><a href="redes.github.io/_site//assets/img/mongo/conexionMongoDB.png" class="popup img-link "><img data-src="redes.github.io/_site//assets/img/mongo/conexionMongoDB.png" alt="Alt text" class="lazyload" data-proofer-ignore></a></p>
 
 </div>
 
@@ -753,6 +859,13 @@ sudo dpkg -i libssl1.1_1.1.0g-2ubuntu4_amd64.deb
         
         
         <li class="text-truncate lh-lg">
+          <a href="/redes.github.io/_site/posts/Transporte/">Capa de transporte</a>
+        </li>
+      
+        
+        
+        
+        <li class="text-truncate lh-lg">
           <a href="/redes.github.io/_site/posts/NextCloud/">NextCloud</a>
         </li>
       
@@ -775,13 +888,6 @@ sudo dpkg -i libssl1.1_1.1.0g-2ubuntu4_amd64.deb
         
         <li class="text-truncate lh-lg">
           <a href="/redes.github.io/_site/posts/servicio-openvpn/">Montaje del servicio OpenVPN</a>
-        </li>
-      
-        
-        
-        
-        <li class="text-truncate lh-lg">
-          <a href="/redes.github.io/_site/posts/Markdown-Cheatsheet/">Markdown cheatsheet</a>
         </li>
       
     </ul>
