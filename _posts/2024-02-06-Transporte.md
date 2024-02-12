@@ -1,20 +1,16 @@
 ---
-title: Transporte
+title: Capa de transporte
 date: 2024-02-06 12:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Servicios en red]
 tags: [redes locales, teoría, smr]
 img_path: /assets/img/transporte/
 ---
 
-# Capa de transporte
-
-# Transporte de datos:
 ### Función de la Capa de Transporte
 La Capa de Transporte juega un papel clave al facilitar el intercambio de datos generados por programas de capa de aplicación entre los hosts de origen y destino. Su tarea principal es gestionar las comunicaciones lógicas entre aplicaciones que se ejecutan en diferentes hosts. Esto implica acciones como establecer sesiones temporales entre dos hosts y asegurar la transmisión confiable de información para una aplicación específica.
 En el modelo TCP/IP, la Capa de Transporte se muestra como el puente entre la capa de aplicación y las capas inferiores, encargadas de la transmisión a través de la red. En un diagrama, se ilustra cómo los dispositivos utilizan esta capa para mover datos entre aplicaciones.
 La Capa de Transporte facilita el traslado de datos entre aplicaciones en dispositivos de la red, sin necesidad de conocer detalles como el tipo de host de destino, el medio de transmisión, la ruta específica de los datos, la congestión en un enlace o el tamaño de la red.
 Dentro de esta capa, encontramos dos protocolos esenciales: el Protocolo de Control de Transmisión (TCP), que garantiza una transmisión más detallada y fiable, y el Protocolo de Datagramas de Usuario (UDP), que ofrece una transmisión más ágil pero menos fiable, siendo útil en situaciones específicas.
-
 
 ### Responsabilidades de la Capa de Transporte
 * Seguimiento de Conversaciones Individuales: La Capa de Transporte se encarga de hacer un seguimiento de las conversaciones individuales entre aplicaciones en hosts diferentes. Esto implica coordinar el intercambio de datos de manera lógica y asegurar que la información llegue correctamente a su destino.
@@ -23,7 +19,6 @@ Dentro de esta capa, encontramos dos protocolos esenciales: el Protocolo de Cont
 * Identificación de las Aplicaciones: La Capa de Transporte identifica las aplicaciones asociadas con los datos que está gestionando. Esto permite diferenciar y dirigir los datos a las aplicaciones correspondientes en los hosts de origen y destino.
 * Multiplexión de Conversaciones: Realiza la multiplexión, que es la gestión simultánea de múltiples conversaciones o flujos de datos. La capa asigna recursos y prioridades para asegurar la transmisión eficiente de datos de diversas aplicaciones a través de un mismo canal de comunicación.
 Estas responsabilidades son esenciales para garantizar la eficiencia, la integridad y la entrega precisa de los datos en entornos de red.
-
 
 ### Protocolos de la Capa de Transporte
 Aunque el protocolo IP se encarga de la estructura, direccionamiento y enrutamiento de paquetes, no se involucra directamente en la forma en que se realiza la entrega o el transporte de esos paquetes.
@@ -36,7 +31,6 @@ En cambio, el TCP se destaca como un protocolo confiable y completo en la capa d
 Un aspecto clave a tener en cuenta es que TCP divide los datos en segmentos, similar al seguimiento de paquetes desde el origen hasta el destino. Esta división permite que un cliente verifique en tiempo real el orden de entrega cuando un envío se divide en varios paquetes.
 Las funciones esenciales de TCP para proporcionar confiabilidad y control de flujo incluyen enumerar y rastrear segmentos de datos, confirmar la recepción de datos, retransmitir información no reconocida después de un tiempo determinado, secuenciar datos desordenados y enviar datos a una velocidad eficiente aceptable por el receptor.
 Para mantener el estado de una conversación y realizar un seguimiento de la información, TCP establece inicialmente una conexión entre el remitente y el receptor, por lo que se le conoce como un protocolo orientado a la conexión. La animación asociada ilustra este proceso mediante una conexión a un servidor FTP, donde se inicia una conexión con un protocolo de enlace TCP de 3 vías y se transmiten segmentos de datos junto con confirmaciones.
-
  
 ### Protocolo de Datagramas de Usuario (UDP)
 UDP es un protocolo de transporte más sencillo que TCP. A diferencia de TCP, no se preocupa por garantizar la entrega segura ni controlar el flujo de datos, lo que se traduce en un encabezado más ligero. Esto permite que los datagramas UDP se procesen de manera más rápida, ya que no hay necesidad de gestionar la confiabilidad y el control de flujo en los procesos de envío y recepción.
@@ -44,7 +38,6 @@ Es crucial destacar que UDP divide los datos en datagramas, que son como segment
 UDP se considera un protocolo de "mejor esfuerzo" porque no hay confirmación de que los datos hayan llegado al destino. De manera análoga, enviar datos con UDP es como enviar una carta común por correo sin obtener confirmación de entrega. En este contexto, no hay procesos en la capa de transporte que informen al remitente sobre el éxito o el fracaso de la entrega.
 La animación asociada ilustra cómo los datagramas UDP se transmiten del remitente al receptor. En esta situación, UDP se asemeja a enviar una carta regular sin registro, donde el remitente no tiene certeza sobre la recepción y no hay mecanismos para informar sobre el estado de la entrega.
 
- 
 ### Protocolo de la capa de transporte correcto para la aplicación adecuada
 La elección entre UDP (Protocolo de Datagramas de Usuario) y TCP (Protocolo de Control de Transmisión) depende de las necesidades específicas de cada aplicación. UDP es ideal cuando algunas pérdidas de datos son aceptables, pero se requiere una transmisión rápida, como en aplicaciones de Voz sobre IP (VoIP) o servicios de solicitud-respuesta como el sistema de nombres de dominio (DNS). Además, UDP es adecuado para la transmisión de video y audio en tiempo real, donde la pérdida ocasional de datos no es perceptible para el usuario.
 En cambio, TCP es la elección cuando es esencial que todos los datos lleguen y se procesen en orden. Aplicaciones críticas, como bases de datos, navegadores web y clientes de correo electrónico, necesitan la entrega completa y precisa de datos, por lo que TCP se utiliza en estas situaciones. Es especialmente importante en transacciones en línea, como las operaciones bancarias, donde la integridad de la información es crucial.
@@ -92,7 +85,6 @@ UDP es más adecuado para tres tipos específicos de aplicaciones:
 3.	Manejo Interno de Confiabilidad:
 -	Comunicaciones unidireccionales donde el control de flujo, la detección de errores, los reconocimientos y la recuperación de errores no son necesarios o pueden ser gestionados por la aplicación. Ejemplos: SNMP y TFTP.
 
-
 # Números de puerto:
 ### Comunicaciones Múltiples Separadas
 Tanto TCP como UDP utilizan números de puerto para gestionar múltiples conversaciones simultáneas. Los campos de encabezado TCP y UDP contienen números de puerto de origen y destino, cada uno de 2 bytes. El número de puerto de origen se asocia con la aplicación de origen en el host local, mientras que el número de puerto de destino se asocia con la aplicación de destino en el host remoto. Este enfoque permite establecer varias conversaciones simultáneas, y el número de puerto de destino identifica el tipo de servicio solicitado al servidor. Por ejemplo, el puerto 80 indica servicios web. Un servidor puede ofrecer múltiples servicios simultáneamente en diferentes puertos.
@@ -102,14 +94,11 @@ En la comunicación de red, los pares de sockets juegan un papel esencial. Los p
 En un ejemplo práctico, un PC realiza solicitudes simultáneas de servicios FTP y web al mismo servidor de destino. Cada solicitud utiliza direcciones MAC y IP, junto con números de puerto de origen y destino específicos. Estos elementos forman sockets distintos que identifican las conexiones FTP y web.
 Los sockets permiten a los procesos en un cliente diferenciarse y facilitan la identificación de diversas conexiones en un servidor. El número de puerto de origen actúa como dirección de retorno para la aplicación solicitante, permitiendo que la capa de transporte dirija las respuestas a la aplicación correcta. En conjunto, estos pares de sockets, como "192.168.1.5:1099, 192.168.1.7:80", son fundamentales para el direccionamiento preciso en la red.
 
-
 ### Grupos de números de puerto
 La Autoridad de Números Asignados de Internet (IANA) administra los números de puerto de 16 bits, dividiéndolos en tres grupos:
 1.	Puertos Bien Conocidos (0 a 1,023): Reservados para servicios comunes como navegadores web y correo electrónico.
 2.	Puertos Registrados (1,024 a 49,151): Asignados a entidades para aplicaciones específicas, ej. Cisco RADIUS.
 3.	Puertos Privados/Dinámicos (49,152 a 65,535): Conocidos como puertos efímeros, asignados dinámicamente al iniciar conexiones.
- 
-
 
 Ejemplos de Puertos Bien Conocidos:
 •	FTP Datos: 20 (TCP)
@@ -147,7 +136,6 @@ Para cerrar una conexión TCP, se utiliza el marcador de control de finalizació
 2.	Paso 2 (ACK): El receptor envía un segmento de reconocimiento (ACK) en respuesta al segmento FIN, indicando que ha recibido la solicitud de finalización.
 3.	Paso 3 (FIN): El receptor, que también puede ser el iniciador de la terminación, envía un segmento con FIN para indicar su propia intención de cerrar la conexión.
 4.	Paso 4 (ACK): El iniciador original envía un segmento de reconocimiento (ACK) en respuesta al segundo segmento FIN, completando así el proceso de finalización de la sesión TCP de dos vías.
-
  
 ### Análisis del enlace de tres vías de TCP
 TCP, siendo un protocolo full-duplex, realiza el seguimiento de cada segmento de datos dentro de una sesión y utiliza un enlace de tres vías para establecer la conexión. El proceso de enlace de tres vías utiliza seis bits de control en el encabezado TCP, conocidos como marcadores o banderas, que cumplen funciones específicas:

@@ -4,7 +4,7 @@
   <id>/redes.github.io/_site/</id>
   <title>Redes</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-02-06T21:36:58+01:00</updated>
+  <updated>2024-02-12T21:23:15+01:00</updated>
   <author>
     <name>Luis</name>
     <uri>/redes.github.io/_site/</uri>
@@ -20,8 +20,50 @@
 
   
   <entry>
-    <title>Transporte</title>
-    <link href="/redes.github.io/_site/posts/Transporte/" rel="alternate" type="text/html" title="Transporte" />
+    <title>MongoDB</title>
+    <link href="/redes.github.io/_site/posts/MongoDB/" rel="alternate" type="text/html" title="MongoDB" />
+    <published>2024-02-12T12:00:00+01:00</published>
+  
+    <updated>2024-02-12T12:00:00+01:00</updated>
+  
+    <id>/redes.github.io/_site/posts/MongoDB/</id>
+    <content src="/redes.github.io/_site/posts/MongoDB/" />
+    <author>
+      <name>Luis</name>
+    </author>
+
+  
+    
+    <category term="Sistemas Microinformáticos y Redes" />
+    
+    <category term="Servicios en red" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      MongoDB es un sistema de gestión de bases de datos NoSQL, lo que significa que no sigue el modelo relacional tradicional de las bases de datos SQL. En cambio, utiliza un enfoque basado en documentos, donde los datos se almacenan en documentos JSON (JavaScript Object Notation) en lugar de en filas y columnas.
+
+Algunas características clave de MongoDB son:
+
+
+  
+    Flexibilidad del esquema: A dif...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
+    <title>Capa de transporte</title>
+    <link href="/redes.github.io/_site/posts/Transporte/" rel="alternate" type="text/html" title="Capa de transporte" />
     <published>2024-02-06T12:00:00+01:00</published>
   
     <updated>2024-02-06T12:00:00+01:00</updated>
@@ -48,11 +90,8 @@
 
 
 
-      Capa de transporte
-
-Transporte de datos:
-Función de la Capa de Transporte
-La Capa de Transporte juega un papel clave al facilitar el intercambio de datos generados por programas de capa de aplicación entre los hosts de origen y destino. Su tarea principal es gestionar las comunicaciones lógicas entre aplicaciones que se ejecutan en diferentes hosts. Esto implica acciones como establecer sesione...
+      Función de la Capa de Transporte
+La Capa de Transporte juega un papel clave al facilitar el intercambio de datos generados por programas de capa de aplicación entre los hosts de origen y destino. Su tarea principal es gestionar las comunicaciones lógicas entre aplicaciones que se ejecutan en diferentes hosts. Esto implica acciones como establecer sesiones temporales entre dos hosts y asegurar l...
     </summary>
   
 
@@ -195,71 +234,6 @@ imp...
 Subnetting es el proceso de dividir una red IP en subredes más pequeñas. Una red IP se compone de direcciones IP que se utilizan para identificar dispositivos en la red. Subnetting permite dividir una red grande en segmentos más pequeños, lo que ofrece varios beneficios, como mejorar el rendimiento, facilitar la gestión de la red y proporcionar una mayor seguridad.
 
 Cuando se real...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Montaje del servicio VPN</title>
-    <link href="/redes.github.io/_site/posts/servicio-VPN_Windows/" rel="alternate" type="text/html" title="Montaje del servicio VPN" />
-    <published>2024-01-07T12:00:00+01:00</published>
-  
-    <updated>2024-01-07T12:00:00+01:00</updated>
-  
-    <id>/redes.github.io/_site/posts/servicio-VPN_Windows/</id>
-    <content src="/redes.github.io/_site/posts/servicio-VPN_Windows/" />
-    <author>
-      <name>Luis</name>
-    </author>
-
-  
-    
-    <category term="Sistemas Microinformáticos y Redes" />
-    
-    <category term="Servicios en red" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </summary>
   
 
