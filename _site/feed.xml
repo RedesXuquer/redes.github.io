@@ -4,7 +4,7 @@
   <id>/redes.github.io/_site/</id>
   <title>Redes</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-03-11T08:29:05+01:00</updated>
+  <updated>2024-03-11T08:32:47+01:00</updated>
   <author>
     <name>Luis</name>
     <uri>/redes.github.io/_site/</uri>
@@ -20,11 +20,50 @@
 
   
   <entry>
+    <title>Capa de sesión</title>
+    <link href="/redes.github.io/_site/posts/Capa-sesion/" rel="alternate" type="text/html" title="Capa de sesión" />
+    <published>2024-03-10T12:00:00+01:00</published>
+  
+    <updated>2024-03-10T12:00:00+01:00</updated>
+  
+    <id>/redes.github.io/_site/posts/Capa-sesion/</id>
+    <content src="/redes.github.io/_site/posts/Capa-sesion/" />
+    <author>
+      <name>Luis</name>
+    </author>
+
+  
+    
+    <category term="Sistemas Microinformáticos y Redes" />
+    
+    <category term="Servicios en red" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      La Capa de Sesión, también conocida como Capa 5, es la quinta capa del Modelo OSI (Open Systems Interconnection). Esta capa proporciona los medios para que las aplicaciones en sistemas de extremo a extremo establezcan, administren y finalicen las sesiones de comunicación entre ellas. Aquí tienes un temario extenso sobre la Capa de Sesión del Modelo OSI:
+
+1. Introducción a la Capa de Sesión
+La C...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>MongoDB</title>
     <link href="/redes.github.io/_site/posts/MongoDB/" rel="alternate" type="text/html" title="MongoDB" />
     <published>2024-02-12T12:00:00+01:00</published>
   
-    <updated>2024-02-12T21:46:29+01:00</updated>
+    <updated>2024-03-11T08:29:11+01:00</updated>
   
     <id>/redes.github.io/_site/posts/MongoDB/</id>
     <content src="/redes.github.io/_site/posts/MongoDB/" />
@@ -192,48 +231,6 @@ CREATE TABLE `song` (
 
 
 imp...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Subnetting</title>
-    <link href="/redes.github.io/_site/posts/Subnetting/" rel="alternate" type="text/html" title="Subnetting" />
-    <published>2024-01-09T12:00:00+01:00</published>
-  
-    <updated>2024-01-15T22:37:53+01:00</updated>
-  
-    <id>/redes.github.io/_site/posts/Subnetting/</id>
-    <content src="/redes.github.io/_site/posts/Subnetting/" />
-    <author>
-      <name>Luis</name>
-    </author>
-
-  
-    
-    <category term="Sistemas Microinformáticos y Redes" />
-    
-    <category term="Redes Locales" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Subnetting
-
-
-
-Subnetting es el proceso de dividir una red IP en subredes más pequeñas. Una red IP se compone de direcciones IP que se utilizan para identificar dispositivos en la red. Subnetting permite dividir una red grande en segmentos más pequeños, lo que ofrece varios beneficios, como mejorar el rendimiento, facilitar la gestión de la red y proporcionar una mayor seguridad.
-
-Cuando se real...
     </summary>
   
 

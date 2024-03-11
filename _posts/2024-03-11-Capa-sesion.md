@@ -1,6 +1,6 @@
 ---
 title: Capa de sesión
-date: 2024-03-11 12:00:00 +0100
+date: 2024-03-10 12:00:00 +0100
 categories: [Sistemas Microinformáticos y Redes, Servicios en red]
 tags: [redes locales, teoría, smr]
 img_path: /assets/img/mongo/
