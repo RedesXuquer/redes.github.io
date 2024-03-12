@@ -36,7 +36,7 @@ img_path: /assets/img/redespractica/
    - Si el probador muestra que la conexión es exitosa, ¡tu cable está listo para ser utilizado!
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=PnAiE2vInt8" frameborder="0" allowfullscreen></iframe>
+[![Creación de cables de red](http://img.youtube.com/vi/PnAiE2vInt8/0.jpg)](https://www.youtube.com/watch?v=PnAiE2vInt8)
 
 
 ## Instalación de canaletas
@@ -81,8 +81,7 @@ img_path: /assets/img/redespractica/
    - Finalmente, verifica que las canaletas estén correctamente instaladas y que estén listas para recibir los cables.
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=LA5jQEYnXzE" frameborder="0" allowfullscreen></iframe>
-
+[![Instalación de canaletas](http://img.youtube.com/vi/LA5jQEYnXzE/0.jpg)](https://www.youtube.com/watch?v=LA5jQEYnXzE)
 
 ## Instalación de hembras RJ-45 empotradas en la pared
 
@@ -127,8 +126,7 @@ img_path: /assets/img/redespractica/
    - Una vez que hayas instalado todas las hembras RJ-45 empotradas necesarias, conecta los cables de red al router, switch u otro dispositivo de red.
    - Utiliza un dispositivo compatible con Ethernet para verificar que la conexión funcione correctamente.
 
-[![Instalación de hembras RJ-45 empotradas en la pared]()](https://www.youtube.com/watch?v=DIwNkSCYKao)
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=DIwNkSCYKao" frameborder="0" allowfullscreen></iframe>
+[![Instalación de hembras RJ-45 empotradas en la pared](http://img.youtube.com/vi/DIwNkSCYKao/0.jpg)](https://www.youtube.com/watch?v=DIwNkSCYKao)
 
 
 
