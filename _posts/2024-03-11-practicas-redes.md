@@ -199,4 +199,30 @@ img_path: /assets/img/redespractica/
 ## Proceso completo de montaje de Rack y Patch Panel
 
 
-[![Proceso para Montar un Patch Panel](http://img.youtube.com/vi/teah142FGBc/0.jpg)](https://www.youtube.com/watch?v=teah142FGBc)
+[![Proceso completo configuración de Rack](http://img.youtube.com/vi/teah142FGBc/0.jpg)](https://www.youtube.com/watch?v=teah142FGBc)
+
+
+## Etiquetar los cables
+
+**Proceso para Etiquetar los Cables de Red:**
+
+1. **Preparación de las etiquetas:**
+   - Asegúrate de tener suficientes etiquetas autoadhesivas y una rotuladora o marcador permanente a mano.
+
+2. **Identificación de los extremos de los cables:**
+   - Identifica cada extremo del cable que deseas etiquetar, ya sea en el conector RJ-45, el patch panel, el dispositivo de red o en cualquier punto intermedio del cable.
+
+3. **Asignación de nombres o códigos:**
+   - Decide un sistema de nomenclatura o codificación para tus cables de red, como la ubicación física, el número de puerto, el nombre del dispositivo conectado, el tipo de dispositivo, etc.
+
+4. **Etiquetado de los cables:**
+   - Coloca una etiqueta autoadhesiva en cada extremo del cable.
+   - Utiliza la rotuladora o el marcador permanente para imprimir o escribir el nombre o código asignado a ese cable.
+   - Aplica la etiqueta de manera que sea claramente visible y legible, asegurándote de que esté firmemente adherida al cable.
+
+5. **Documentación:**
+   - Lleva un registro de la identificación de cada cable en una hoja de cálculo, diagrama de red u otro sistema de documentación.
+
+6. **Mantenimiento:**
+   - A medida que realices cambios en la red o añadas nuevos cables, asegúrate de etiquetarlos adecuadamente siguiendo el mismo proceso.
+
