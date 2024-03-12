@@ -128,6 +128,75 @@ img_path: /assets/img/redespractica/
 
 [![Instalación de hembras RJ-45 empotradas en la pared](http://img.youtube.com/vi/DIwNkSCYKao/0.jpg)](https://www.youtube.com/watch?v=DIwNkSCYKao)
 
+## Montaje de rack 
+
+**Proceso para Montar un Rack de Redes:**
+
+1. **Selecciona el lugar adecuado:**
+   - Elige un lugar adecuado para montar el rack, preferiblemente cerca de una fuente de alimentación y donde haya suficiente espacio para acceder fácilmente al equipo de red.
+
+2. **Monta el rack:**
+   - Si el rack no está preensamblado, ensambla las partes según las instrucciones del fabricante. Esto puede incluir la instalación de los rieles, paneles laterales y otras partes estructurales del rack.
+
+3. **Instala los dispositivos de red:**
+   - Coloca los dispositivos de red, como switches, routers, patch panels y otros equipos, en las posiciones deseadas dentro del rack. Asegúrate de dejar suficiente espacio entre los dispositivos para permitir una buena circulación de aire y facilitar el acceso para el mantenimiento.
+
+4. **Conecta los dispositivos:**
+   - Conecta los dispositivos entre sí utilizando cables de red apropiados. Conecta los cables de red a los puertos correspondientes en los dispositivos y en los patch panels, siguiendo un esquema de cableado lógico y organizado.
+
+5. **Organiza los cables:**
+   - Utiliza organizadores de cables, bandejas para equipos y bridas para cables para mantener los cables ordenados y evitar enredos. Asegúrate de dejar suficiente holgura en los cables para facilitar futuras modificaciones y mantenimiento.
+
+6. **Etiqueta los cables y dispositivos:**
+   - Etiqueta cada cable y dispositivo de red con identificadores claros y legibles. Esto facilitará la identificación y solución de problemas en el futuro.
+
+7. **Prueba la conectividad:**
+   - Una vez que todos los dispositivos estén conectados y organizados, realiza pruebas de conectividad para asegurarte de que todos los dispositivos estén funcionando correctamente y puedan comunicarse entre sí.
+
+8. **Seguridad y mantenimiento:**
+   - Asegúrate de que el rack esté correctamente asegurado al suelo o a la pared para evitar accidentes. Realiza mantenimiento periódico para asegurarte de que el rack y los dispositivos estén en buen estado de funcionamiento.
 
 
+[![Proceso para Montar un Rack de Redes](http://img.youtube.com/vi/C2IYfDShDyU/0.jpg)](https://www.youtube.com/watch?v=C2IYfDShDyU)
 
+
+## Proceso para montar un Patch Panel
+
+**Proceso para Montar un Patch Panel:**
+
+1. **Preparación del área de montaje:**
+   - Selecciona el lugar adecuado para montar el patch panel. Asegúrate de tener suficiente espacio para trabajar y que el patch panel esté accesible para la conexión de cables.
+
+2. **Montaje del patch panel:**
+   - Coloca el patch panel en la posición deseada en la pared o en el rack. Algunos patch panels se montan en rieles o soportes, mientras que otros se fijan directamente a la superficie con tornillos.
+   - Utiliza los tornillos de montaje suministrados para asegurar el patch panel en su lugar. Asegúrate de que esté nivelado y correctamente alineado.
+
+3. **Preparación de los cables:**
+   - Corta los cables de red al tamaño necesario para alcanzar el patch panel desde su origen (por ejemplo, el área de trabajo o el armario de distribución).
+   - Utiliza un pelacables para quitar aproximadamente 2-3 cm del revestimiento exterior del cable y exponer los hilos internos.
+
+4. **Conexión de los cables al patch panel:**
+   - Organiza los cables según el esquema de cableado deseado. Por lo general, se sigue el estándar T568A o T568B.
+   - Inserta los cables en los puertos correspondientes del patch panel, asegurándote de que estén correctamente asentados y que los hilos estén en el orden correcto.
+
+5. **Crimpado de los cables:**
+   - Utiliza una crimpadora para asegurar los cables en su lugar en el patch panel. Aplica presión suficiente para garantizar una conexión segura, pero evita aplastar los cables en exceso.
+
+6. **Organización de los cables:**
+   - Utiliza organizadores de cables si es necesario para mantener los cables ordenados y evitar enredos. Asegúrate de dejar suficiente holgura en los cables para futuras modificaciones o mantenimiento.
+
+7. **Prueba de la conectividad:**
+   - Una vez que todos los cables estén conectados al patch panel, realiza pruebas de conectividad para asegurarte de que todos los cables estén correctamente terminados y funcionando correctamente.
+
+8. **Etiquetado y documentación:**
+   - Etiqueta cada puerto del patch panel con una identificación clara y legible que indique su ubicación y función.
+   - Documenta el esquema de cableado y la configuración del patch panel para facilitar futuras modificaciones o solución de problemas.
+
+
+[![Proceso para Montar un Patch Panel](http://img.youtube.com/vi/SKBtpfueRAc/0.jpg)](https://www.youtube.com/watch?v=SKBtpfueRAc)
+
+
+## Proceso completo de montaje de Rack y Patch Panel
+
+
+[![Proceso para Montar un Patch Panel](http://img.youtube.com/vi/teah142FGBc/0.jpg)](https://www.youtube.com/watch?v=teah142FGBc)
