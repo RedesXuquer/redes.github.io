@@ -127,5 +127,9 @@ img_path: /assets/img/redespractica/
    - Una vez que hayas instalado todas las hembras RJ-45 empotradas necesarias, conecta los cables de red al router, switch u otro dispositivo de red.
    - Utiliza un dispositivo compatible con Ethernet para verificar que la conexión funcione correctamente.
 
-
+[![Instalación de hembras RJ-45 empotradas en la pared]()](https://www.youtube.com/watch?v=DIwNkSCYKao)
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=DIwNkSCYKao" frameborder="0" allowfullscreen></iframe>
+
+
+
+
