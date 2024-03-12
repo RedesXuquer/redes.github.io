@@ -4,7 +4,7 @@
   <id>/redes.github.io/_site/</id>
   <title>Redes</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-03-11T08:32:47+01:00</updated>
+  <updated>2024-03-12T21:18:43+01:00</updated>
   <author>
     <name>Luis</name>
     <uri>/redes.github.io/_site/</uri>
@@ -20,11 +20,63 @@
 
   
   <entry>
+    <title>Prácticas de redes</title>
+    <link href="/redes.github.io/_site/posts/Capa-sesion-copy/" rel="alternate" type="text/html" title="Prácticas de redes" />
+    <published>2024-03-12T12:00:00+01:00</published>
+  
+    <updated>2024-03-12T12:00:00+01:00</updated>
+  
+    <id>/redes.github.io/_site/posts/Capa-sesion-copy/</id>
+    <content src="/redes.github.io/_site/posts/Capa-sesion-copy/" />
+    <author>
+      <name>Luis</name>
+    </author>
+
+  
+    
+    <category term="Sistemas Microinformáticos y Redes" />
+    
+    <category term="Servicios en red" />
+    
+  
+
+  
+    <summary>
+      
+
+
+
+
+
+      Creación de cables de red
+
+Materiales necesarios:
+
+  Cable de red (por ejemplo, cable UTP Cat5e, Cat6, Cat6a)
+  Conectores RJ45
+  Herramienta de pelado y corte de cables
+  Crimpadora
+  Probador de cables
+
+
+Procedimiento:
+
+
+  Preparación del cable:
+    
+      Corta el cable Ethernet al tamaño deseado, asegurándote de dejar un poco de margen adicional para evitar cortar los hilos demasiado cortos...
+    </summary>
+  
+
+  </entry>
+
+  
+  <entry>
     <title>Capa de sesión</title>
     <link href="/redes.github.io/_site/posts/Capa-sesion/" rel="alternate" type="text/html" title="Capa de sesión" />
     <published>2024-03-10T12:00:00+01:00</published>
   
-    <updated>2024-03-10T12:00:00+01:00</updated>
+    <updated>2024-03-11T08:32:50+01:00</updated>
   
     <id>/redes.github.io/_site/posts/Capa-sesion/</id>
     <content src="/redes.github.io/_site/posts/Capa-sesion/" />
@@ -171,66 +223,6 @@ La Capa de Transporte juega un papel clave al facilitar el intercambio de datos 
 Nextcloud es una plataforma de software de código abierto que ofrece una amplia gama de servicios en la nube para individuos, empresas y organizaciones. Fundada como un proyecto derivado de ownCloud en 2016, Nextcloud se centra en proporcionar una solución de almacenamiento y colaboración en línea que pone énfasis en la privacidad, la seguridad y la autonomía del usuario.
 
 Una de las...
-    </summary>
-  
-
-  </entry>
-
-  
-  <entry>
-    <title>Hibernate</title>
-    <link href="/redes.github.io/_site/posts/Hibernate/" rel="alternate" type="text/html" title="Hibernate" />
-    <published>2024-01-10T12:00:00+01:00</published>
-  
-    <updated>2024-01-10T21:28:14+01:00</updated>
-  
-    <id>/redes.github.io/_site/posts/Hibernate/</id>
-    <content src="/redes.github.io/_site/posts/Hibernate/" />
-    <author>
-      <name>Luis</name>
-    </author>
-
-  
-    
-    <category term="Desarrollo Aplicaciones Multiplataforma" />
-    
-    <category term="Acceso Datos" />
-    
-  
-
-  
-    <summary>
-      
-
-
-
-
-
-      Hibernate
-Con la siguiente estructura SQL:
-
-CREATE DATABASE canciones;
-
-CREATE TABLE `song` (
-  `songId` int(11) NOT NULL,
-  `songName` varchar(25) NOT NULL,
-  `singer` varchar(25) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
-
-
-  
-    Añadimos las librerías, deben quedar de la siguiente manera:
-
-
-
-  
-  
-    Añadimos una clase con el siguiente contenido:
-  
-
-
-imp...
     </summary>
   
 
